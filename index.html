@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="midnight" data-font-size="large">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tawheed — The 99 Names of Allah | Asma-ul-Husna Experience</title>
+  <meta name="description" content="A spiritually sublime, visually stunning web experience exploring the 99 Names of Allah with profound insights from Dr. Yasir Qadhi and Nouman Ali Khan, Quranic Arabic calligraphy, real nature visuals, and interactive memorization tools.">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/modal.css">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+</head>
+<body>
+
+  <!-- Ambient Stardust Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Sticky Top Header -->
+  <header class="site-header">
+    <div class="app-container">
+      <div class="header-inner">
+        <!-- Brand Logo -->
+        <a href="#" class="logo-wrap">
+          <div class="logo-symbol">ﷲ</div>
+          <div class="logo-title-group">
+            <h1>TAWHEED</h1>
+            <span class="logo-sub">Asma-ul-Husna Sanctuary</span>
+          </div>
+        </a>
+
+        <!-- Header Actions & Navigation -->
+        <div class="header-actions">
+          <!-- Arabic Font Size Preference -->
+          <div class="font-scale-group" title="Adjust Quranic Arabic Font Size">
+            <button class="font-scale-btn" data-size="standard">Standard</button>
+            <button class="font-scale-btn active" data-size="large">Large</button>
+            <button class="font-scale-btn" data-size="xl">Extra Large</button>
+          </div>
+
+          <!-- Progress Ring Widget -->
+          <div class="header-progress-widget" title="99 Names Memorization Progress">
+            <div class="progress-ring-mini">
+              <svg width="28" height="28" viewBox="0 0 36 36">
+                <path class="ring-bg" stroke-width="3.5" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                <path id="progress-ring-circle" class="ring-val" stroke-width="3.5" stroke-dasharray="100, 100" stroke-dashoffset="100" stroke-linecap="round" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+              </svg>
+            </div>
+            <span class="progress-text-label" id="learned-count-text">0 / 99</span>
+          </div>
+
+          <!-- Feature Buttons -->
+          <button class="btn btn-glass" id="open-flashcards-btn" title="Practice with 3D Flashcards">
+            <span>🎴</span>
+            <span>Flashcards</span>
+          </button>
+
+          <button class="btn btn-glass" id="open-quiz-btn" title="Test your memorization">
+            <span>🎯</span>
+            <span>Hifz Quiz</span>
+          </button>
+
+          <button class="btn btn-glass" id="open-tasbeeh-btn" title="Digital Dhikr Counter">
+            <span>📿</span>
+            <span>Tasbeeh</span>
+          </button>
+
+          <!-- Theme Toggle -->
+          <button class="icon-btn" id="theme-toggle-btn" title="Switch Theme (Midnight / Emerald / Pearl)" aria-label="Toggle Theme">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main class="app-container">
+    
+    <!-- Procedural Ambient Nature Soundscape Bar -->
+    <section class="ambient-bar" aria-label="Nature soundscapes">
+      <div class="ambient-left">
+        <button class="btn btn-sm btn-glass" id="ambient-play-toggle">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <span>Play Nature Sound</span>
+        </button>
+
+        <div class="ambient-select-wrap">
+          <select id="ambient-sound-select" aria-label="Select ambient soundscape">
+            <option value="rain">🌧️ Gentle Rain on Leaves</option>
+            <option value="ocean">🌊 Deep Ocean Waves</option>
+            <option value="wind">🌌 Desert Night Breeze</option>
+            <option value="stream">💧 Mountain Stream</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="ambient-vol-wrap">
+        <span>Volume</span>
+        <input type="range" id="ambient-volume-slider" min="0" max="1" step="0.05" value="0.35" aria-label="Ambient volume">
+      </div>
+    </section>
+
+    <!-- Hero: Name of the Day Showcase -->
+    <section class="hero-name-section" id="hero-name-day" aria-label="Name of the Day">
+      <!-- Injected by app.js -->
+    </section>
+
+    <!-- Situational Du'a Selector: Call Upon Him -->
+    <section class="situational-section" aria-label="Situational Du'as">
+      <div class="section-heading-row">
+        <div class="section-title-wrap">
+          <h2>Call Upon Him By His Names</h2>
+          <p>Select your present state of heart to discover the Divine Names most beloved to invoke in your prayers.</p>
+        </div>
+      </div>
+      <div class="situational-grid" id="situational-chips">
+        <!-- Injected by app.js -->
+      </div>
+    </section>
+
+    <!-- Search, Filter & Categories Panel -->
+    <section class="controls-panel" aria-label="Filter names">
+      <div class="controls-top-row">
+        <div class="search-box">
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="search-input" class="search-input" placeholder="Search by English, Arabic, Transliteration, Root, or Meaning (Press / to search)..." autocomplete="off" spellcheck="false">
+          <button class="clear-search-btn" id="clear-search-btn" aria-label="Clear search">✕</button>
+        </div>
+
+        <div class="filter-select-wrap">
+          <select id="filter-select" aria-label="Filter status">
+            <option value="all">All Names (100)</option>
+            <option value="bookmarked">Bookmarked Only</option>
+            <option value="learned">Memorized Only</option>
+            <option value="unlearned">Unmemorized Only</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="category-pills-row" id="category-pills">
+        <!-- Injected by app.js -->
+      </div>
+    </section>
+
+    <!-- Results Meta Bar -->
+    <div class="results-meta-bar">
+      <span id="results-count">Showing 100 Divine Names</span>
+      <span>Tap any card to view classical commentary, linguistic gems & du'a</span>
+    </div>
+
+    <!-- 99 Names Grid -->
+    <section class="names-grid" id="names-grid" aria-label="All Divine Names">
+      <!-- Injected by app.js -->
+    </section>
+
+    <!-- Empty State -->
+    <div class="empty-state hidden" id="empty-state">
+      <h3>No Divine Names Matched Your Search</h3>
+      <p>Try searching for a different Arabic root, transliteration, or meaning.</p>
+    </div>
+
+  </main>
+
+  <!-- ==========================================================================
+       Modals & Dialogs
+       ========================================================================== -->
+
+  <!-- 1. Deep-Dive Name Modal -->
+  <dialog id="name-detail-modal" aria-labelledby="modal-arabic-title" closedby="any">
+    <button class="modal-close-x-btn" aria-label="Close dialog">✕</button>
+    <div class="modal-scroll-body" id="modal-inner-content">
+      <!-- Injected by app.js -->
+    </div>
+  </dialog>
+
+  <!-- 2. Interactive 3D Flashcard Modal -->
+  <dialog id="flashcard-modal" closedby="any">
+    <button class="modal-close-x-btn" aria-label="Close dialog">✕</button>
+    <div class="flashcard-modal-content" id="flashcard-deck-container">
+      <!-- Injected by app.js -->
+    </div>
+  </dialog>
+
+  <!-- 3. Hifz Memorization Quiz Modal -->
+  <dialog id="quiz-modal" closedby="any">
+    <button class="modal-close-x-btn" aria-label="Close dialog">✕</button>
+    <div class="quiz-modal-content" id="quiz-container">
+      <!-- Injected by app.js -->
+    </div>
+  </dialog>
+
+  <!-- 4. Digital Tasbeeh Modal -->
+  <dialog id="tasbeeh-modal" closedby="any">
+    <button class="modal-close-x-btn" aria-label="Close dialog">✕</button>
+    <div class="tasbeeh-modal-content">
+      <h3 class="tasbeeh-name-label quranic-arabic" id="tasbeeh-current-name">سُبْحَانَ اللَّهِ</h3>
+      <p class="tasbeeh-target-hint" id="tasbeeh-target-text">Target: 33</p>
+
+      <div class="tasbeeh-counter-circle-wrap">
+        <svg class="tasbeeh-ring-svg" viewBox="0 0 100 100">
+          <circle class="tasbeeh-ring-bg" cx="50" cy="50" r="44" stroke-width="4" fill="none"/>
+          <circle id="tasbeeh-ring-circle" class="tasbeeh-ring-bar" cx="50" cy="50" r="44" stroke-width="4" stroke-linecap="round" fill="none"/>
+        </svg>
+        <button class="tasbeeh-click-surface" id="tasbeeh-click-btn" aria-label="Tap to count">
+          <span class="tasbeeh-count-large" id="tasbeeh-count-num">0</span>
+          <span class="tasbeeh-tap-label">Tap to Count</span>
+        </button>
+      </div>
+
+      <div class="tasbeeh-bottom-toolbar">
+        <select id="tasbeeh-target-select" class="btn btn-sm btn-glass" aria-label="Select tasbeeh target">
+          <option value="33">Target: 33</option>
+          <option value="99">Target: 99</option>
+          <option value="100">Target: 100</option>
+          <option value="500">Target: 500</option>
+        </select>
+        <button class="btn btn-sm btn-glass" id="tasbeeh-reset-btn">
+          <span>🔄 Reset</span>
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 5. Situational Drawer Modal -->
+  <dialog id="situational-drawer-modal" closedby="any">
+    <button class="modal-close-x-btn" aria-label="Close dialog">✕</button>
+    <div class="sit-drawer-content" id="situational-drawer-body">
+      <!-- Injected by app.js -->
+    </div>
+  </dialog>
+
+  <!-- Celebration Toast -->
+  <div class="celebration-toast" id="celebration-toast"></div>
+
+  <!-- Site Footer with Global Automation Version Rule -->
+  <footer class="site-footer">
+    <div class="app-container">
+      <div class="footer-inner">
+        <div class="footer-ayah-banner">
+          <p class="footer-ayah-arabic quranic-arabic">وَلِلَّهِ الْأَسْمَاءُ الْحُسْنَىٰ فَادْعُوهُ بِهَا</p>
+          <p class="footer-ayah-trans">"And to Allah belong the most beautiful names, so invoke Him by them." (Surah Al-A'raf 7:180)</p>
+        </div>
+        <p class="footer-credits">
+          Explanations synthesizing theological lectures from <strong>Dr. Yasir Qadhi</strong> & linguistic Quranic gems from <strong>Ustadh Nouman Ali Khan</strong>.
+          Curated natural landscape photography from Unsplash.
+        </p>
+        <div class="footer-version-badge">
+          <span>v1.0.0 (updated 2026-09-02 18:12)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Module Scripts -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
