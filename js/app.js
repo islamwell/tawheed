@@ -8,7 +8,7 @@ import { TasbeehCounter } from './tasbeeh.js';
 
 class TawheedApp {
   constructor() {
-    this.names = NAMES_DATA;
+    this.names = NAMES_DATA || [];
     this.filteredNames = [...this.names];
     this.currentCategory = 'All';
     this.currentFilter = 'all'; // all, bookmarked, learned, unlearned
@@ -24,16 +24,16 @@ class TawheedApp {
   }
 
   init() {
-    this.loadSettings();
-    this.initCanvasBackground();
-    this.initCategoryPills();
-    this.initSituationalBar();
-    this.initNameOfTheDay();
-    this.renderGrid();
-    this.updateLearnedProgress();
-    this.initEventListeners();
-    this.initKeyboardShortcuts();
-    this.initTasbeehUI();
+    try { this.loadSettings(); } catch (e) { console.error('Settings error:', e); }
+    try { this.initCanvasBackground(); } catch (e) { console.error('Canvas error:', e); }
+    try { this.initCategoryPills(); } catch (e) { console.error('Category pills error:', e); }
+    try { this.initSituationalBar(); } catch (e) { console.error('Situational bar error:', e); }
+    try { this.initNameOfTheDay(); } catch (e) { console.error('Hero error:', e); }
+    try { this.renderGrid(); } catch (e) { console.error('Grid render error:', e); }
+    try { this.updateLearnedProgress(); } catch (e) { console.error('Progress error:', e); }
+    try { this.initEventListeners(); } catch (e) { console.error('Event listeners error:', e); }
+    try { this.initKeyboardShortcuts(); } catch (e) { console.error('Shortcuts error:', e); }
+    try { this.initTasbeehUI(); } catch (e) { console.error('Tasbeeh error:', e); }
   }
 
   loadSettings() {
@@ -43,18 +43,25 @@ class TawheedApp {
     document.documentElement.setAttribute('data-font-size', this.currentFontSize);
     document.documentElement.setAttribute('data-theme', this.currentTheme);
     AmbientSound.setVolume(settings.ambientVolume !== undefined ? settings.ambientVolume : 0.35);
+
+    // Update active state on font size buttons
+    document.querySelectorAll('.font-scale-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.size === this.currentFontSize);
+    });
   }
 
-  // Animated celestial particle canvas for the x-factor background
+  // Animated celestial particle canvas for ambient background
   initCanvasBackground() {
     const canvas = document.getElementById('bg-canvas');
-    if (!canvas) return;
+    if (!canvas || !canvas.getContext) return;
     const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
     let width = canvas.width = window.innerWidth;
     let height = canvas.height = window.innerHeight;
 
     const stars = [];
-    const count = Math.min(width > 768 ? 90 : 45, 100);
+    const count = Math.min(width > 768 ? 85 : 40, 90);
 
     for (let i = 0; i < count; i++) {
       stars.push({
@@ -84,7 +91,9 @@ class TawheedApp {
         ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
         ctx.fill();
       }
-      requestAnimationFrame(render);
+      if (typeof window !== 'undefined' && window.requestAnimationFrame) {
+        window.requestAnimationFrame(render);
+      }
     };
     render();
 
@@ -97,12 +106,11 @@ class TawheedApp {
   // Name of the Day
   initNameOfTheDay() {
     const today = new Date();
-    // Deterministic selection based on day of the year
     const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
-    const dayName = this.names[dayOfYear % this.names.length];
+    const dayName = this.names.length > 0 ? this.names[dayOfYear % this.names.length] : ALLAH_SUPREME;
 
     const heroSection = document.getElementById('hero-name-day');
-    if (!heroSection) return;
+    if (!heroSection || !dayName) return;
 
     heroSection.innerHTML = `
       <div class="hero-backdrop" style="background-image: linear-gradient(to right, rgba(7, 11, 25, 0.92) 15%, rgba(7, 11, 25, 0.65) 60%, rgba(7, 11, 25, 0.9)), url('${dayName.natureImage}');"></div>
@@ -127,7 +135,7 @@ class TawheedApp {
             </div>
             <p class="hero-meaning">${dayName.meaning}</p>
             <p class="hero-insight-snippet">
-              <strong>Spiritual Core:</strong> ${dayName.howToLive.slice(0, 160)}...
+              <strong>Spiritual Core:</strong> ${dayName.howToLive ? dayName.howToLive.slice(0, 160) : ''}...
             </p>
             <div class="hero-actions">
               <button class="btn btn-primary open-deep-dive-btn" data-name-id="${dayName.id}">
@@ -197,10 +205,10 @@ class TawheedApp {
       // Search query
       if (this.searchQuery) {
         const q = this.searchQuery.toLowerCase().trim();
-        const matchesArabic = item.arabic.includes(q);
-        const matchesTranslit = item.transliteration.toLowerCase().includes(q);
-        const matchesMeaning = item.meaning.toLowerCase().includes(q);
-        const matchesRoot = item.root.toLowerCase().includes(q);
+        const matchesArabic = item.arabic && item.arabic.includes(q);
+        const matchesTranslit = item.transliteration && item.transliteration.toLowerCase().includes(q);
+        const matchesMeaning = item.meaning && item.meaning.toLowerCase().includes(q);
+        const matchesRoot = item.root && item.root.toLowerCase().includes(q);
         const matchesTags = item.moodTags && item.moodTags.some(t => t.toLowerCase().includes(q));
         return matchesArabic || matchesTranslit || matchesMeaning || matchesRoot || matchesTags;
       }
@@ -225,14 +233,14 @@ class TawheedApp {
       const isBookmarked = Storage.isBookmarked(item.id);
 
       return `
-        <article class="name-card ${item.isSupreme ? 'supreme-card' : ''} ${isLearned ? 'is-learned' : ''}" data-name-id="${item.id}">
+        <article class="name-card ${item.isSupreme ? 'supreme-card' : ''} ${isLearned ? 'is-learned' : ''}" data-name-id="${item.id}" style="cursor: pointer;">
           <div class="card-bg-image" style="background-image: url('${item.natureImage}');"></div>
           <div class="card-glass-overlay"></div>
           
           <div class="card-top-bar">
             <span class="name-badge-num">${item.id === 0 ? '★ Supreme' : '#' + item.id}</span>
             <div class="card-quick-actions">
-              <button class="icon-btn audio-quick-btn" data-name-id="${item.id}" title="Pronounce Arabic" aria-label="Listen">
+              <button class="icon-btn play-audio-btn audio-quick-btn" data-name-id="${item.id}" title="Pronounce Arabic" aria-label="Listen">
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
               </button>
               <button class="icon-btn bookmark-card-btn ${isBookmarked ? 'active' : ''}" data-name-id="${item.id}" title="Bookmark" aria-label="Bookmark">
@@ -266,20 +274,17 @@ class TawheedApp {
   updateLearnedProgress() {
     const learnedList = Storage.getLearned();
     const count = learnedList.length;
-    const percent = Math.round((count / 99) * 100);
+    const percent = Math.min(Math.round((count / 99) * 100), 100);
 
     const progressNumber = document.getElementById('learned-count-text');
-    const progressBar = document.getElementById('learned-progress-bar');
     const ringCircle = document.getElementById('progress-ring-circle');
 
     if (progressNumber) progressNumber.textContent = `${count} / 99`;
-    if (progressBar) progressBar.style.width = `${percent}%`;
 
     if (ringCircle) {
-      const radius = ringCircle.r.baseVal.value;
-      const circumference = 2 * Math.PI * radius;
-      ringCircle.style.strokeDasharray = `${circumference} ${circumference}`;
-      const offset = circumference - (count / 99) * circumference;
+      // The SVG path in index.html has a normalized length of 100
+      ringCircle.style.strokeDasharray = '100, 100';
+      const offset = 100 - percent;
       ringCircle.style.strokeDashoffset = offset;
     }
   }
@@ -294,14 +299,19 @@ class TawheedApp {
     if (!modal) return;
 
     this.renderModalContent(nameObj);
-    modal.showModal();
+    if (typeof modal.showModal === 'function') {
+      modal.showModal();
+    } else {
+      modal.setAttribute('open', '');
+    }
     document.body.classList.add('modal-open');
   }
 
   closeModal() {
     const modal = document.getElementById('name-detail-modal');
     if (modal && modal.open) {
-      modal.close();
+      if (typeof modal.close === 'function') modal.close();
+      else modal.removeAttribute('open');
       document.body.classList.remove('modal-open');
       PronounceAudio.stop();
     }
@@ -408,7 +418,7 @@ class TawheedApp {
           </div>
           <div class="scholarly-footer-callout">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
-            <span>Drawing from Imam Al-Ghazali's <em>Al-Maqsad Al-Asna</em> and Ibn Al-Qayyim's theological discourses on Divine Names.</span>
+            <span>Drawing from Imam Al-Ghazali's <em>Al-Maqsad Al-Asna</em> and Ibn Al-Qayyim's discourses on the Divine Names.</span>
           </div>
         </div>
 
@@ -435,9 +445,9 @@ class TawheedApp {
         <!-- Tab 3: Quranic Ayah -->
         <div class="tab-panel" id="tab-quran">
           <div class="ayah-display-card">
-            <span class="ayah-surah-tag">${nameObj.quranAyah.surah}</span>
-            <p class="ayah-arabic quranic-arabic">${nameObj.quranAyah.arabic}</p>
-            <p class="ayah-translation">"${nameObj.quranAyah.translation}"</p>
+            <span class="ayah-surah-tag">${nameObj.quranAyah ? nameObj.quranAyah.surah : ''}</span>
+            <p class="ayah-arabic quranic-arabic">${nameObj.quranAyah ? nameObj.quranAyah.arabic : ''}</p>
+            <p class="ayah-translation">"${nameObj.quranAyah ? nameObj.quranAyah.translation : ''}"</p>
           </div>
         </div>
 
@@ -528,20 +538,19 @@ class TawheedApp {
 
   // Tasbeeh UI handling
   initTasbeehUI() {
-    const tasbeehModal = document.getElementById('tasbeeh-modal');
     const countDisplay = document.getElementById('tasbeeh-count-num');
     const targetDisplay = document.getElementById('tasbeeh-target-text');
     const nameDisplay = document.getElementById('tasbeeh-current-name');
     const ringCircle = document.getElementById('tasbeeh-ring-circle');
 
-    const updateTasbeehDisplay = (state) => {
+    this.updateTasbeehDisplay = (state = this.tasbeeh.getState()) => {
       if (countDisplay) countDisplay.textContent = state.count;
       if (targetDisplay) targetDisplay.textContent = `Target: ${state.target} (Total today: ${state.totalToday || 0})`;
       if (nameDisplay) {
         nameDisplay.textContent = state.nameArabic || 'اللَّٰه (Allah)';
       }
       if (ringCircle) {
-        const radius = ringCircle.r.baseVal.value;
+        const radius = 44;
         const circumference = 2 * Math.PI * radius;
         ringCircle.style.strokeDasharray = `${circumference} ${circumference}`;
         const progress = Math.min(state.count / state.target, 1);
@@ -549,14 +558,14 @@ class TawheedApp {
       }
     };
 
-    updateTasbeehDisplay(this.tasbeeh.getState());
+    this.updateTasbeehDisplay();
 
-    // Click counter button
+    // Click counter button (only bound once)
     const clickBtn = document.getElementById('tasbeeh-click-btn');
     if (clickBtn) {
-      clickBtn.addEventListener('click', (e) => {
+      clickBtn.addEventListener('click', () => {
         const res = this.tasbeeh.increment();
-        updateTasbeehDisplay(res);
+        this.updateTasbeehDisplay(res);
 
         // Ripple micro-animation
         const ripple = document.createElement('span');
@@ -565,7 +574,7 @@ class TawheedApp {
         setTimeout(() => ripple.remove(), 600);
 
         if (res.completedCycle) {
-          this.triggerCelebration('Target reached! Alhamdulillah');
+          this.triggerCelebration('Target reached! Alhamdulillah ✨');
         }
       });
     }
@@ -575,7 +584,7 @@ class TawheedApp {
     if (resetBtn) {
       resetBtn.addEventListener('click', () => {
         const res = this.tasbeeh.reset();
-        updateTasbeehDisplay(res);
+        this.updateTasbeehDisplay(res);
       });
     }
 
@@ -584,7 +593,7 @@ class TawheedApp {
     if (targetSelect) {
       targetSelect.addEventListener('change', (e) => {
         const res = this.tasbeeh.setTarget(Number(e.target.value));
-        updateTasbeehDisplay(res);
+        this.updateTasbeehDisplay(res);
       });
     }
   }
@@ -593,10 +602,13 @@ class TawheedApp {
     if (nameObj) {
       this.tasbeeh.setName(nameObj);
     }
+    if (this.updateTasbeehDisplay) {
+      this.updateTasbeehDisplay();
+    }
     const modal = document.getElementById('tasbeeh-modal');
     if (modal) {
-      this.initTasbeehUI();
-      modal.showModal();
+      if (typeof modal.showModal === 'function') modal.showModal();
+      else modal.setAttribute('open', '');
       document.body.classList.add('modal-open');
     }
   }
@@ -606,7 +618,8 @@ class TawheedApp {
     const modal = document.getElementById('flashcard-modal');
     if (!modal) return;
     this.renderFlashcardUI();
-    modal.showModal();
+    if (typeof modal.showModal === 'function') modal.showModal();
+    else modal.setAttribute('open', '');
     document.body.classList.add('modal-open');
   }
 
@@ -710,7 +723,8 @@ class TawheedApp {
     const modal = document.getElementById('quiz-modal');
     if (!modal) return;
     this.renderNextQuizQuestion();
-    modal.showModal();
+    if (typeof modal.showModal === 'function') modal.showModal();
+    else modal.setAttribute('open', '');
     document.body.classList.add('modal-open');
   }
 
@@ -771,6 +785,7 @@ class TawheedApp {
         if (this.quizManager.isAnswered) return;
         const chosenId = Number(btn.dataset.optionId);
         const result = this.quizManager.submitAnswer(chosenId);
+        if (!result) return;
 
         // Highlight buttons
         optionBtns.forEach(b => {
@@ -781,6 +796,12 @@ class TawheedApp {
             b.classList.add('incorrect');
           }
         });
+
+        // Update streak & score immediately in UI
+        const streakEl = container.querySelector('.streak-badge');
+        if (streakEl) streakEl.textContent = `🔥 ${result.streak}`;
+        const scoreEl = container.querySelectorAll('.quiz-stat-value')[1];
+        if (scoreEl) scoreEl.textContent = `⭐ ${result.score}`;
 
         const feedback = container.querySelector('#quiz-feedback');
         const nextRow = container.querySelector('#quiz-next-row');
@@ -817,7 +838,7 @@ class TawheedApp {
     }
   }
 
-  // Confetti / Particle celebration
+  // Confetti celebration
   triggerCelebration(message = '') {
     const toast = document.getElementById('celebration-toast');
     if (toast) {
@@ -847,7 +868,7 @@ class TawheedApp {
 Category: ${nameObj.category} | Root: ${nameObj.root}
 
 📖 Quranic Ayah:
-"${nameObj.quranAyah.translation}" (${nameObj.quranAyah.surah})
+"${nameObj.quranAyah ? nameObj.quranAyah.translation : ''}" (${nameObj.quranAyah ? nameObj.quranAyah.surah : ''})
 
 🎙️ Gem from Dr. Yasir Qadhi:
 ${nameObj.yqExplanation.slice(0, 200)}...
@@ -860,11 +881,15 @@ ${nameObj.dua}
 
 — Learned via Tawheed (Asma-ul-Husna Experience)`;
 
-    navigator.clipboard.writeText(text).then(() => {
-      this.triggerCelebration('Reflection card copied to clipboard! 📋');
-    }).catch(() => {
-      alert('Copied reflection text.');
-    });
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(() => {
+        this.triggerCelebration('Reflection card copied to clipboard! 📋');
+      }).catch(() => {
+        this.triggerCelebration('Reflection copied! 📋');
+      });
+    } else {
+      this.triggerCelebration('Reflection copied! 📋');
+    }
   }
 
   // Global Event Listeners
@@ -1004,11 +1029,12 @@ ${nameObj.dua}
     const openTasbeehBtn = document.getElementById('open-tasbeeh-btn');
     if (openTasbeehBtn) openTasbeehBtn.addEventListener('click', () => this.openTasbeehModal());
 
-    // Delegated clicks for cards & buttons across the app
+    // Delegated clicks for cards & buttons across the entire app
     document.addEventListener('click', (e) => {
-      // Audio button
-      const audioBtn = e.target.closest('.play-audio-btn');
+      // Audio button (card or modal or hero)
+      const audioBtn = e.target.closest('.play-audio-btn, .audio-quick-btn');
       if (audioBtn) {
+        e.stopPropagation();
         const nameId = audioBtn.dataset.nameId;
         const nameObj = this.names.find(n => n.id === Number(nameId));
         if (nameObj) {
@@ -1022,16 +1048,10 @@ ${nameObj.dua}
         return;
       }
 
-      // Open deep-dive
-      const deepDiveBtn = e.target.closest('.open-deep-dive-btn');
-      if (deepDiveBtn) {
-        this.openModal(deepDiveBtn.dataset.nameId);
-        return;
-      }
-
       // Card bookmark
       const bookmarkBtn = e.target.closest('.bookmark-card-btn, .bookmark-toggle-btn');
       if (bookmarkBtn) {
+        e.stopPropagation();
         const id = Number(bookmarkBtn.dataset.nameId);
         const isNow = Storage.toggleBookmark(id);
         bookmarkBtn.classList.toggle('active', isNow);
@@ -1042,6 +1062,7 @@ ${nameObj.dua}
       // Card learned
       const learnedBtn = e.target.closest('.learned-card-btn, .learned-toggle-btn');
       if (learnedBtn) {
+        e.stopPropagation();
         const id = Number(learnedBtn.dataset.nameId);
         const isNow = Storage.toggleLearned(id);
         learnedBtn.classList.toggle('active', isNow);
@@ -1056,9 +1077,15 @@ ${nameObj.dua}
       // Send to tasbeeh
       const tasbeehBtn = e.target.closest('.send-to-tasbeeh-btn');
       if (tasbeehBtn) {
+        e.stopPropagation();
         const id = Number(tasbeehBtn.dataset.nameId);
         const nameObj = this.names.find(n => n.id === id);
         this.closeModal();
+        const sitDrawer = document.getElementById('situational-drawer-modal');
+        if (sitDrawer && sitDrawer.open) {
+          if (typeof sitDrawer.close === 'function') sitDrawer.close();
+          else sitDrawer.removeAttribute('open');
+        }
         this.openTasbeehModal(nameObj);
         return;
       }
@@ -1066,9 +1093,30 @@ ${nameObj.dua}
       // Copy quote
       const copyBtn = e.target.closest('.copy-quote-btn');
       if (copyBtn) {
+        e.stopPropagation();
         const id = Number(copyBtn.dataset.nameId);
         const nameObj = this.names.find(n => n.id === id);
         if (nameObj) this.copyQuoteCard(nameObj);
+        return;
+      }
+
+      // Open deep-dive from button
+      const deepDiveBtn = e.target.closest('.open-deep-dive-btn, .card-deep-link');
+      if (deepDiveBtn) {
+        e.stopPropagation();
+        const sitDrawer = document.getElementById('situational-drawer-modal');
+        if (sitDrawer && sitDrawer.open) {
+          if (typeof sitDrawer.close === 'function') sitDrawer.close();
+          else sitDrawer.removeAttribute('open');
+        }
+        this.openModal(deepDiveBtn.dataset.nameId);
+        return;
+      }
+
+      // Click card itself to open deep-dive
+      const nameCard = e.target.closest('.name-card');
+      if (nameCard && !e.target.closest('.icon-btn, .card-quick-actions, .card-footer')) {
+        this.openModal(nameCard.dataset.nameId);
         return;
       }
 
@@ -1076,7 +1124,10 @@ ${nameObj.dua}
       const closeBtn = e.target.closest('.modal-close-x-btn, .close-dialog-btn');
       if (closeBtn) {
         const dialog = closeBtn.closest('dialog');
-        if (dialog) dialog.close();
+        if (dialog) {
+          if (typeof dialog.close === 'function') dialog.close();
+          else dialog.removeAttribute('open');
+        }
         document.body.classList.remove('modal-open');
         PronounceAudio.stop();
         return;
@@ -1087,9 +1138,15 @@ ${nameObj.dua}
     document.querySelectorAll('dialog').forEach(dlg => {
       dlg.addEventListener('click', (e) => {
         if (e.target === dlg) {
-          dlg.close();
-          document.body.classList.remove('modal-open');
-          PronounceAudio.stop();
+          const rect = dlg.getBoundingClientRect();
+          const isInDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height &&
+            rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
+          if (!isInDialog) {
+            if (typeof dlg.close === 'function') dlg.close();
+            else dlg.removeAttribute('open');
+            document.body.classList.remove('modal-open');
+            PronounceAudio.stop();
+          }
         }
       });
     });
@@ -1138,7 +1195,8 @@ ${nameObj.dua}
       `;
     }
 
-    drawer.showModal();
+    if (typeof drawer.showModal === 'function') drawer.showModal();
+    else drawer.setAttribute('open', '');
     document.body.classList.add('modal-open');
   }
 
@@ -1149,7 +1207,8 @@ ${nameObj.dua}
       if (e.key === 'Escape') {
         const openDialog = document.querySelector('dialog[open]');
         if (openDialog) {
-          openDialog.close();
+          if (typeof openDialog.close === 'function') openDialog.close();
+          else openDialog.removeAttribute('open');
           document.body.classList.remove('modal-open');
           PronounceAudio.stop();
         }
@@ -1157,7 +1216,7 @@ ${nameObj.dua}
       }
 
       // Quick slash focuses search
-      if (e.key === '/' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+      if (e.key === '/' && document.activeElement && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
         e.preventDefault();
         const search = document.getElementById('search-input');
         if (search) search.focus();
@@ -1166,7 +1225,7 @@ ${nameObj.dua}
 
       // Spacebar flips flashcard if flashcard modal is open
       const flashcardModal = document.getElementById('flashcard-modal');
-      if (flashcardModal && flashcardModal.open && document.activeElement.tagName !== 'TEXTAREA') {
+      if (flashcardModal && flashcardModal.open && document.activeElement && document.activeElement.tagName !== 'TEXTAREA') {
         if (e.code === 'Space') {
           e.preventDefault();
           this.quizManager.flipCard();
@@ -1184,7 +1243,15 @@ ${nameObj.dua}
   }
 }
 
-// Start application on DOM ready
-document.addEventListener('DOMContentLoaded', () => {
-  window.app = new TawheedApp();
-});
+// Start application safely regardless of when script is loaded
+function launchApp() {
+  if (!window.app) {
+    window.app = new TawheedApp();
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', launchApp);
+} else {
+  launchApp();
+}

@@ -79,5 +79,5 @@ The platform synthesizes theological precision from **Dr. Yasir Qadhi** and ling
 ---
 
 ## 📜 Footer Version
-- `v1.0.1 (updated 2026-09-03 06:40)`
+- `v1.0.2 (updated 2026-09-03 06:52)`
 
