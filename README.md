@@ -72,5 +72,12 @@ The platform synthesizes theological precision from **Dr. Yasir Qadhi** and ling
 
 ---
 
+## 🌐 Live Deployments
+- **Cloudflare Pages**: [https://tawheed-bm6.pages.dev](https://tawheed-bm6.pages.dev)
+- **GitHub Repository**: [https://github.com/islamwell/tawheed](https://github.com/islamwell/tawheed)
+
+---
+
 ## 📜 Footer Version
-- `v1.0.0 (updated 2026-09-02 18:12)`
+- `v1.0.1 (updated 2026-09-03 06:40)`
+
