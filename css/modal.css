@@ -146,30 +146,7 @@ dialog[open]::backdrop {
   margin-bottom: 0.5rem;
 }
 
-.modal-audio-row {
-  margin-bottom: 1rem;
-}
 
-.modal-play-audio-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.65rem;
-  padding: 0.65rem 1.4rem;
-  background: linear-gradient(135deg, rgba(212, 175, 55, 0.3), rgba(245, 158, 11, 0.4));
-  border: 1px solid var(--accent-gold);
-  border-radius: var(--radius-pill);
-  color: #FFFFFF;
-  font-weight: 700;
-  font-size: 0.95rem;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
-}
-
-.modal-play-audio-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 22px rgba(212, 175, 55, 0.35);
-}
 
 .modal-transliteration {
   font-family: var(--font-serif);
@@ -586,11 +563,7 @@ dialog[open]::backdrop {
   margin-top: 1.25rem;
 }
 
-.fc-audio-btn {
-  position: absolute;
-  bottom: 1.25rem;
-  right: 1.25rem;
-}
+
 
 .fc-arabic-back {
   font-size: 2.8rem;

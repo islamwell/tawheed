@@ -2,7 +2,6 @@
 import { NAMES_DATA, ALLAH_SUPREME, CATEGORIES } from './data/names.js';
 import { SITUATIONAL_THEMES } from './data/situational.js';
 import { Storage } from './storage.js';
-import { AmbientSound, PronounceAudio } from './audio.js';
 import { QuizManager } from './quiz.js';
 import { TasbeehCounter } from './tasbeeh.js';
 
@@ -42,7 +41,6 @@ class TawheedApp {
     this.currentTheme = settings.theme || 'midnight';
     document.documentElement.setAttribute('data-font-size', this.currentFontSize);
     document.documentElement.setAttribute('data-theme', this.currentTheme);
-    AmbientSound.setVolume(settings.ambientVolume !== undefined ? settings.ambientVolume : 0.35);
 
     // Update active state on font size buttons
     document.querySelectorAll('.font-scale-btn').forEach(btn => {
@@ -122,10 +120,6 @@ class TawheedApp {
         <div class="hero-main-row">
           <div class="hero-arabic-wrap">
             <h1 class="hero-arabic quranic-arabic">${dayName.arabic}</h1>
-            <button class="hero-audio-btn play-audio-btn" data-name-id="${dayName.id}" aria-label="Listen pronunciation">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
-              <span>Listen</span>
-            </button>
           </div>
           <div class="hero-details">
             <div class="hero-translit-row">
@@ -240,9 +234,6 @@ class TawheedApp {
           <div class="card-top-bar">
             <span class="name-badge-num">${item.id === 0 ? '★ Supreme' : '#' + item.id}</span>
             <div class="card-quick-actions">
-              <button class="icon-btn play-audio-btn audio-quick-btn" data-name-id="${item.id}" title="Pronounce Arabic" aria-label="Listen">
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
-              </button>
               <button class="icon-btn bookmark-card-btn ${isBookmarked ? 'active' : ''}" data-name-id="${item.id}" title="Bookmark" aria-label="Bookmark">
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="${isBookmarked ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path></svg>
               </button>
@@ -313,7 +304,6 @@ class TawheedApp {
       if (typeof modal.close === 'function') modal.close();
       else modal.removeAttribute('open');
       document.body.classList.remove('modal-open');
-      PronounceAudio.stop();
     }
   }
 
@@ -341,15 +331,6 @@ class TawheedApp {
 
         <div class="modal-hero-body">
           <h2 class="modal-arabic-title quranic-arabic">${nameObj.arabic}</h2>
-          <div class="modal-audio-row">
-            <button class="modal-play-audio-btn play-audio-btn" data-name-id="${nameObj.id}">
-              <svg class="audio-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
-              <span>Pronounce & Listen</span>
-              <div class="audio-wave-bars">
-                <span></span><span></span><span></span><span></span>
-              </div>
-            </button>
-          </div>
           <h3 class="modal-transliteration">${nameObj.transliteration}</h3>
           <p class="modal-english-meaning">${nameObj.meaning}</p>
           <div class="modal-meta-pills">
@@ -654,9 +635,6 @@ class TawheedApp {
                 <span class="fc-tap-hint">Tap or press Space to reveal Arabic</span>
               `}
             </div>
-            <button class="icon-btn fc-audio-btn play-audio-btn" data-name-id="${card.id}">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
-            </button>
           </div>
 
           <!-- Back -->
@@ -692,8 +670,7 @@ class TawheedApp {
     // Events
     const cardEl = container.querySelector('#fc-card-trigger');
     if (cardEl) {
-      cardEl.addEventListener('click', (e) => {
-        if (e.target.closest('.fc-audio-btn')) return;
+      cardEl.addEventListener('click', () => {
         this.quizManager.flipCard();
         cardEl.querySelector('.flashcard-inner').classList.toggle('flipped', this.quizManager.isCardFlipped);
       });
@@ -984,41 +961,6 @@ ${nameObj.dua}
       });
     }
 
-    // Ambient Audio Bar controls
-    const ambientBtn = document.getElementById('ambient-play-toggle');
-    const ambientSelect = document.getElementById('ambient-sound-select');
-    const ambientVol = document.getElementById('ambient-volume-slider');
-
-    if (ambientBtn && ambientSelect) {
-      ambientBtn.addEventListener('click', () => {
-        if (AmbientSound.isPlaying) {
-          AmbientSound.stop();
-          ambientBtn.classList.remove('playing');
-          ambientBtn.querySelector('span').textContent = 'Play Nature Sound';
-        } else {
-          AmbientSound.play(ambientSelect.value);
-          ambientBtn.classList.add('playing');
-          ambientBtn.querySelector('span').textContent = 'Pause Soundscape';
-        }
-      });
-
-      ambientSelect.addEventListener('change', () => {
-        if (AmbientSound.isPlaying) {
-          AmbientSound.play(ambientSelect.value);
-        }
-      });
-    }
-
-    if (ambientVol) {
-      ambientVol.addEventListener('input', (e) => {
-        const val = Number(e.target.value);
-        AmbientSound.setVolume(val);
-        const settings = Storage.getSettings();
-        settings.ambientVolume = val;
-        Storage.saveSettings(settings);
-      });
-    }
-
     // Top Navigation buttons: Flashcards, Quiz, Tasbeeh
     const openFlashcardBtn = document.getElementById('open-flashcards-btn');
     if (openFlashcardBtn) openFlashcardBtn.addEventListener('click', () => this.openFlashcardsModal());
@@ -1031,23 +973,6 @@ ${nameObj.dua}
 
     // Delegated clicks for cards & buttons across the entire app
     document.addEventListener('click', (e) => {
-      // Audio button (card or modal or hero)
-      const audioBtn = e.target.closest('.play-audio-btn, .audio-quick-btn');
-      if (audioBtn) {
-        e.stopPropagation();
-        const nameId = audioBtn.dataset.nameId;
-        const nameObj = this.names.find(n => n.id === Number(nameId));
-        if (nameObj) {
-          audioBtn.classList.add('audio-active');
-          PronounceAudio.speak(
-            nameObj.arabic,
-            () => audioBtn.classList.add('audio-active'),
-            () => audioBtn.classList.remove('audio-active')
-          );
-        }
-        return;
-      }
-
       // Card bookmark
       const bookmarkBtn = e.target.closest('.bookmark-card-btn, .bookmark-toggle-btn');
       if (bookmarkBtn) {
@@ -1129,7 +1054,6 @@ ${nameObj.dua}
           else dialog.removeAttribute('open');
         }
         document.body.classList.remove('modal-open');
-        PronounceAudio.stop();
         return;
       }
     });
@@ -1145,7 +1069,6 @@ ${nameObj.dua}
             if (typeof dlg.close === 'function') dlg.close();
             else dlg.removeAttribute('open');
             document.body.classList.remove('modal-open');
-            PronounceAudio.stop();
           }
         }
       });
@@ -1210,7 +1133,6 @@ ${nameObj.dua}
           if (typeof openDialog.close === 'function') openDialog.close();
           else openDialog.removeAttribute('open');
           document.body.classList.remove('modal-open');
-          PronounceAudio.stop();
         }
         return;
       }

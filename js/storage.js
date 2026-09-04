@@ -116,9 +116,9 @@ export const Storage = {
 
   getSettings() {
     try {
-      return JSON.parse(safeStorage.getItem(STORAGE_KEYS.SETTINGS)) || { theme: 'midnight', fontSize: 'large', ambientVolume: 0.35 };
+      return JSON.parse(safeStorage.getItem(STORAGE_KEYS.SETTINGS)) || { theme: 'midnight', fontSize: 'large' };
     } catch {
-      return { theme: 'midnight', fontSize: 'large', ambientVolume: 0.35 };
+      return { theme: 'midnight', fontSize: 'large' };
     }
   },
   saveSettings(settings) {

@@ -2,33 +2,8 @@
 import { Storage } from './storage.js';
 
 export class TasbeehCounter {
-  constructor(audioCtx = null) {
+  constructor() {
     this.data = Storage.getTasbeeh();
-    this.audioCtx = audioCtx;
-  }
-
-  playClickSound() {
-    try {
-      const AudioCtx = window.AudioContext || window.webkitAudioContext;
-      const ctx = this.audioCtx || new AudioCtx();
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-      
-      osc.type = 'sine';
-      osc.frequency.setValueAtTime(650, ctx.currentTime);
-      osc.frequency.exponentialRampToValueAtTime(320, ctx.currentTime + 0.04);
-
-      gain.gain.setValueAtTime(0.12, ctx.currentTime);
-      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.04);
-
-      osc.connect(gain);
-      gain.connect(ctx.destination);
-
-      osc.start();
-      osc.stop(ctx.currentTime + 0.045);
-    } catch (e) {
-      // Audio context might require initial user gesture
-    }
   }
 
   increment() {
@@ -46,7 +21,6 @@ export class TasbeehCounter {
       } catch (e) {}
     }
 
-    this.playClickSound();
     Storage.saveTasbeeh(this.data);
     return { ...this.data, completedCycle: this.data.count % this.data.target === 0 };
   }

@@ -28,36 +28,7 @@
   }
 }
 
-/* Audio wave animation */
-.audio-wave-bars {
-  display: none;
-  align-items: center;
-  gap: 3px;
-  height: 16px;
-}
 
-.modal-play-audio-btn.audio-active .audio-wave-bars,
-.hero-audio-btn.audio-active .audio-wave-bars {
-  display: inline-flex;
-}
-
-.audio-wave-bars span {
-  display: inline-block;
-  width: 3px;
-  height: 100%;
-  background-color: var(--accent-gold);
-  border-radius: 3px;
-  animation: audio-bounce 0.8s ease infinite alternate;
-}
-
-.audio-wave-bars span:nth-child(2) { animation-delay: 0.2s; }
-.audio-wave-bars span:nth-child(3) { animation-delay: 0.4s; }
-.audio-wave-bars span:nth-child(4) { animation-delay: 0.1s; }
-
-@keyframes audio-bounce {
-  0% { height: 4px; }
-  100% { height: 16px; }
-}
 
 /* Ripple effect on buttons */
 .ripple-effect {
@@ -130,12 +101,7 @@
   opacity: 1;
 }
 
-/* Ambient bar play animation */
-#ambient-play-toggle.playing {
-  background: rgba(16, 185, 129, 0.2);
-  border-color: var(--accent-emerald);
-  color: var(--accent-emerald);
-}
+
 
 /* Card hover glow */
 @keyframes gold-shimmer {

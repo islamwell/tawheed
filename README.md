@@ -2,7 +2,7 @@
 
 A spiritually sublime, visually breathtaking web application designed to foster deep contemplation, understanding, and memorization of the Divine Names of Allah (**Asma-ul-Husna**). 
 
-The platform synthesizes theological precision from **Dr. Yasir Qadhi** and linguistic Quranic gems from **Ustadh Nouman Ali Khan**, paired with curated nature visuals, micro-animations, audio recitations, ambient soundscapes, and interactive memorization tools.
+The platform synthesizes theological precision from **Dr. Yasir Qadhi** and linguistic Quranic gems from **Ustadh Nouman Ali Khan**, paired with curated nature visuals, micro-animations, and interactive memorization tools.
 
 ---
 
@@ -20,29 +20,17 @@ The platform synthesizes theological precision from **Dr. Yasir Qadhi** and ling
 ### 2. Natural Imagery (Strictly No Faces or Human Figures)
 - 100% pure natural landscapes, starry night skies, mountain peaks, crystal rivers, aurora borealis, and golden sand dunes from Unsplash that mirror the majesty of the Creator (*Khaliq*).
 
-### 3. Procedural Ambient Nature Soundscape Engine (Web Audio API)
-- Zero external audio network dependencies. Procedurally synthesized nature sounds:
-  - 🌧️ *Gentle Rain on Leaves*
-  - 🌊 *Deep Ocean Waves*
-  - 🌌 *Desert Night Breeze*
-  - 💧 *Mountain Stream*
-- Master volume controls and smooth cross-fading.
-
-### 4. Audio Pronunciation Engine
-- Real-time speech synthesis configured with classical Arabic vocalization cadence.
-- Synchronized visual waveform bars during playback.
-
-### 5. Interactive Hifz & Memorization Studio
+### 3. Interactive Hifz & Memorization Studio
 - **3D Interactive Flashcards**: Realistic 3D card-flip animation, shuffle deck, "Arabic First" or "Meaning First" toggle, and "Mark as Memorized" tracking.
 - **Hifz Companion Quiz**: Multiple choice quiz with running streaks, scores, instant feedback, and celebratory particle confetti.
 - **Progress Tracking**: Real-time circular progress ring tracking memorization of all 99 names, saved persistently to `localStorage`.
 
-### 6. Digital Tasbeeh / Dhikr Counter
-- Tactile radial click counter with acoustic click sound and device haptics.
+### 4. Digital Tasbeeh / Dhikr Counter
+- Tactile radial click counter with device vibration haptics.
 - Target settings (33, 99, 100, 500) and daily recitation tally.
 - "Send to Tasbeeh" button to recite any Divine Name directly.
 
-### 7. Situational Du'a Explorer ("Call Upon Him")
+### 5. Situational Du'a Explorer ("Call Upon Him")
 - Quick selector based on emotional and life states:
   - *Anxiety, Stress & Restlessness*
   - *Broken Heart, Grief & Sadness*
@@ -66,7 +54,6 @@ The platform synthesizes theological precision from **Dr. Yasir Qadhi** and ling
 
 ## 💻 Tech Stack
 - **Architecture**: Vanilla HTML5, CSS3 Custom Properties, ES6 Modules.
-- **Audio**: Web Audio API (procedural synthesis) + Web Speech API.
 - **Data**: Curated static dataset (`js/data/names.js`).
 - **Offline Storage**: Safe wrapper around `localStorage` with in-memory fallbacks.
 
@@ -79,5 +66,5 @@ The platform synthesizes theological precision from **Dr. Yasir Qadhi** and ling
 ---
 
 ## 📜 Footer Version
-- `v1.0.2 (updated 2026-09-03 06:52)`
+- `v1.0.3 (updated 2026-09-05 00:15)`
 

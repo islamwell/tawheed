@@ -380,57 +380,7 @@ body.modal-open {
   color: #070B19;
 }
 
-/* ==========================================================================
-   Ambient Soundscape Bar
-   ========================================================================== */
-.ambient-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 0.65rem 1.25rem;
-  margin: 1.25rem 0;
-  background: var(--bg-glass);
-  border: 1px solid var(--border-glass);
-  border-radius: var(--radius-pill);
-  backdrop-filter: blur(16px);
-  flex-wrap: wrap;
-}
 
-.ambient-left {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.ambient-select-wrap select {
-  background: rgba(7, 11, 25, 0.6);
-  color: var(--text-primary);
-  border: 1px solid var(--border-glass);
-  border-radius: var(--radius-pill);
-  padding: 0.35rem 0.85rem;
-  font-size: 0.82rem;
-  cursor: pointer;
-  outline: none;
-}
-
-[data-theme="pearl"] .ambient-select-wrap select {
-  background: #FFFFFF;
-}
-
-.ambient-vol-wrap {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--text-secondary);
-  font-size: 0.8rem;
-}
-
-.ambient-vol-wrap input[type="range"] {
-  accent-color: var(--accent-gold);
-  cursor: pointer;
-  width: 90px;
-}
 
 /* ==========================================================================
    Hero: Name of the Day
@@ -502,26 +452,7 @@ body.modal-open {
   margin-bottom: 1rem;
 }
 
-.hero-audio-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.55rem 1.25rem;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid var(--border-glass);
-  border-radius: var(--radius-pill);
-  color: #FFFFFF;
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all var(--transition-fast);
-}
 
-.hero-audio-btn:hover {
-  background: rgba(212, 175, 55, 0.3);
-  border-color: var(--accent-gold);
-  transform: scale(1.05);
-}
 
 .hero-translit-row {
   display: flex;
