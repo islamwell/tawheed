@@ -1,4 +1,27 @@
 /* ==========================================================================
+   King Fahad Glorious Quran Printing Complex (KFGQPC) - Madinah Mushaf Fonts
+   ========================================================================== */
+@font-face {
+  font-family: 'KFGQPC Uthmanic Script HAFS';
+  src: url('../fonts/kfgqpc-uthmanic-script-hafs.woff2') format('woff2'),
+       url('../fonts/kfgqpc-uthmanic-script-hafs.woff') format('woff'),
+       url('../fonts/kfgqpc-uthmanic-script-hafs.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'KFGQPC Uthman Taha Naskh';
+  src: url('../fonts/kfgqpc-uthman-taha-naskh.woff2') format('woff2'),
+       url('../fonts/kfgqpc-uthman-taha-naskh.woff') format('woff'),
+       url('../fonts/kfgqpc-uthman-taha-naskh.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==========================================================================
    Tawheed (Asma-ul-Husna Experience) - Core Stylesheet
    Design Language: Celestial Islamic Elegance, Modern Glassmorphism
    ========================================================================== */
@@ -27,7 +50,7 @@
   /* Typography */
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-serif: 'Cinzel', serif;
-  --font-arabic: 'Amiri Quran', 'Amiri', 'Scheherazade New', serif;
+  --font-arabic: 'KFGQPC Uthmanic Script HAFS', 'KFGQPC Uthman Taha Naskh', 'Amiri Quran', 'Amiri', serif;
 
   /* Font Scaling for Quranic Arabic */
   --arabic-card-size: 2.75rem;

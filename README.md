@@ -10,7 +10,7 @@ The platform synthesizes theological precision from **Dr. Yasir Qadhi** and ling
 
 ### 1. Lafz al-Jalalah & Complete 99 Divine Names
 - **The Supreme Foundation**: Begins with **Allah (اللَّٰه)** — the supreme proper name (*Al-Ism al-A'zam*) encompassing all divine attributes, followed by all 99 Asma-ul-Husna.
-- **Large Quranic Arabic Typography**: Rendered with high-fidelity fonts (`Amiri Quran`, `Amiri`) with complete tashkeel, diacritics, and interactive font-scaling controls (Standard, Large, Extra Large).
+- **Large Quranic Arabic Typography**: Rendered with authentic **King Fahad Complex Othmani Madinah Quran Fonts** (`KFGQPC Uthmanic Script HAFS` and `KFGQPC Uthman Taha Naskh`) with full vocalization, tashkeel, diacritics, and interactive font-scaling controls (Standard, Large, Extra Large).
 - **Dual Scholarly Syntheses**:
   - **Dr. Yasir Qadhi**: Theological depth, classical insights (drawing from Imam Al-Ghazali's *Al-Maqsad Al-Asna* and Ibn Al-Qayyim), and essential distinctions between similar names.
   - **Ustadh Nouman Ali Khan**: Quranic Arabic root morphology (*Fa'lan* vs *Fa'eel*), emotional resonance, contextual storytelling, and practical psychological reflections.
@@ -66,5 +66,5 @@ The platform synthesizes theological precision from **Dr. Yasir Qadhi** and ling
 ---
 
 ## 📜 Footer Version
-- `v1.0.3 (updated 2026-09-05 00:15)`
+- `v1.0.4 (updated 2026-09-05 07:12)`
 
