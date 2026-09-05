@@ -3,7 +3,6 @@ import { NAMES_DATA, ALLAH_SUPREME, CATEGORIES } from './data/names.js';
 import { SITUATIONAL_THEMES } from './data/situational.js';
 import { Storage } from './storage.js';
 import { QuizManager } from './quiz.js';
-import { TasbeehCounter } from './tasbeeh.js';
 
 class TawheedApp {
   constructor() {
@@ -16,7 +15,6 @@ class TawheedApp {
     this.currentFontSize = 'large'; // standard, large, xl
     this.currentTheme = 'midnight'; // midnight, emerald, pearl
 
-    this.tasbeeh = new TasbeehCounter();
     this.quizManager = new QuizManager(this.names, () => this.updateLearnedProgress());
 
     this.init();
@@ -32,7 +30,6 @@ class TawheedApp {
     try { this.updateLearnedProgress(); } catch (e) { console.error('Progress error:', e); }
     try { this.initEventListeners(); } catch (e) { console.error('Event listeners error:', e); }
     try { this.initKeyboardShortcuts(); } catch (e) { console.error('Shortcuts error:', e); }
-    try { this.initTasbeehUI(); } catch (e) { console.error('Tasbeeh error:', e); }
   }
 
   loadSettings() {
@@ -139,9 +136,6 @@ class TawheedApp {
               <button class="btn btn-glass bookmark-toggle-btn ${Storage.isBookmarked(dayName.id) ? 'active' : ''}" data-name-id="${dayName.id}" aria-label="Bookmark">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="${Storage.isBookmarked(dayName.id) ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path></svg>
                 <span>${Storage.isBookmarked(dayName.id) ? 'Bookmarked' : 'Save'}</span>
-              </button>
-              <button class="btn btn-glass send-to-tasbeeh-btn" data-name-id="${dayName.id}">
-                <span>📿 Recite in Tasbeeh</span>
               </button>
             </div>
           </div>
@@ -348,9 +342,6 @@ class TawheedApp {
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
             <span>${isLearned ? 'Memorized ✓' : 'Mark Memorized'}</span>
           </button>
-          <button class="modal-tool-btn send-to-tasbeeh-btn" data-name-id="${nameObj.id}">
-            <span>📿 Recite in Tasbeeh</span>
-          </button>
           <button class="modal-tool-btn copy-quote-btn" data-name-id="${nameObj.id}">
             <span>📋 Copy Reflection Card</span>
           </button>
@@ -517,82 +508,7 @@ class TawheedApp {
     }
   }
 
-  // Tasbeeh UI handling
-  initTasbeehUI() {
-    const countDisplay = document.getElementById('tasbeeh-count-num');
-    const targetDisplay = document.getElementById('tasbeeh-target-text');
-    const nameDisplay = document.getElementById('tasbeeh-current-name');
-    const ringCircle = document.getElementById('tasbeeh-ring-circle');
 
-    this.updateTasbeehDisplay = (state = this.tasbeeh.getState()) => {
-      if (countDisplay) countDisplay.textContent = state.count;
-      if (targetDisplay) targetDisplay.textContent = `Target: ${state.target} (Total today: ${state.totalToday || 0})`;
-      if (nameDisplay) {
-        nameDisplay.textContent = state.nameArabic || 'اللَّٰه (Allah)';
-      }
-      if (ringCircle) {
-        const radius = 44;
-        const circumference = 2 * Math.PI * radius;
-        ringCircle.style.strokeDasharray = `${circumference} ${circumference}`;
-        const progress = Math.min(state.count / state.target, 1);
-        ringCircle.style.strokeDashoffset = circumference - (progress * circumference);
-      }
-    };
-
-    this.updateTasbeehDisplay();
-
-    // Click counter button (only bound once)
-    const clickBtn = document.getElementById('tasbeeh-click-btn');
-    if (clickBtn) {
-      clickBtn.addEventListener('click', () => {
-        const res = this.tasbeeh.increment();
-        this.updateTasbeehDisplay(res);
-
-        // Ripple micro-animation
-        const ripple = document.createElement('span');
-        ripple.classList.add('ripple-effect');
-        clickBtn.appendChild(ripple);
-        setTimeout(() => ripple.remove(), 600);
-
-        if (res.completedCycle) {
-          this.triggerCelebration('Target reached! Alhamdulillah ✨');
-        }
-      });
-    }
-
-    // Reset button
-    const resetBtn = document.getElementById('tasbeeh-reset-btn');
-    if (resetBtn) {
-      resetBtn.addEventListener('click', () => {
-        const res = this.tasbeeh.reset();
-        this.updateTasbeehDisplay(res);
-      });
-    }
-
-    // Target change
-    const targetSelect = document.getElementById('tasbeeh-target-select');
-    if (targetSelect) {
-      targetSelect.addEventListener('change', (e) => {
-        const res = this.tasbeeh.setTarget(Number(e.target.value));
-        this.updateTasbeehDisplay(res);
-      });
-    }
-  }
-
-  openTasbeehModal(nameObj = null) {
-    if (nameObj) {
-      this.tasbeeh.setName(nameObj);
-    }
-    if (this.updateTasbeehDisplay) {
-      this.updateTasbeehDisplay();
-    }
-    const modal = document.getElementById('tasbeeh-modal');
-    if (modal) {
-      if (typeof modal.showModal === 'function') modal.showModal();
-      else modal.setAttribute('open', '');
-      document.body.classList.add('modal-open');
-    }
-  }
 
   // Flashcards UI
   openFlashcardsModal() {
@@ -961,15 +877,12 @@ ${nameObj.dua}
       });
     }
 
-    // Top Navigation buttons: Flashcards, Quiz, Tasbeeh
+    // Top Navigation buttons: Flashcards, Quiz
     const openFlashcardBtn = document.getElementById('open-flashcards-btn');
     if (openFlashcardBtn) openFlashcardBtn.addEventListener('click', () => this.openFlashcardsModal());
 
     const openQuizBtn = document.getElementById('open-quiz-btn');
     if (openQuizBtn) openQuizBtn.addEventListener('click', () => this.openQuizModal());
-
-    const openTasbeehBtn = document.getElementById('open-tasbeeh-btn');
-    if (openTasbeehBtn) openTasbeehBtn.addEventListener('click', () => this.openTasbeehModal());
 
     // Delegated clicks for cards & buttons across the entire app
     document.addEventListener('click', (e) => {
@@ -999,21 +912,6 @@ ${nameObj.dua}
         return;
       }
 
-      // Send to tasbeeh
-      const tasbeehBtn = e.target.closest('.send-to-tasbeeh-btn');
-      if (tasbeehBtn) {
-        e.stopPropagation();
-        const id = Number(tasbeehBtn.dataset.nameId);
-        const nameObj = this.names.find(n => n.id === id);
-        this.closeModal();
-        const sitDrawer = document.getElementById('situational-drawer-modal');
-        if (sitDrawer && sitDrawer.open) {
-          if (typeof sitDrawer.close === 'function') sitDrawer.close();
-          else sitDrawer.removeAttribute('open');
-        }
-        this.openTasbeehModal(nameObj);
-        return;
-      }
 
       // Copy quote
       const copyBtn = e.target.closest('.copy-quote-btn');
@@ -1110,7 +1008,6 @@ ${nameObj.dua}
               </div>
               <div class="sit-row-btns">
                 <button class="btn btn-sm btn-primary open-deep-dive-btn" data-name-id="${n.id}">Learn More</button>
-                <button class="btn btn-sm btn-glass send-to-tasbeeh-btn" data-name-id="${n.id}">📿 Recite</button>
               </div>
             </div>
           `).join('')}

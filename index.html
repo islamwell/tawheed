@@ -71,11 +71,6 @@
             <span>Hifz Quiz</span>
           </button>
 
-          <button class="btn btn-glass" id="open-tasbeeh-btn" title="Digital Dhikr Counter">
-            <span>📿</span>
-            <span>Tasbeeh</span>
-          </button>
-
           <!-- Theme Toggle -->
           <button class="icon-btn" id="theme-toggle-btn" title="Switch Theme (Midnight / Emerald / Pearl)" aria-label="Toggle Theme">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
@@ -178,39 +173,7 @@
     </div>
   </dialog>
 
-  <!-- 4. Digital Tasbeeh Modal -->
-  <dialog id="tasbeeh-modal" closedby="any">
-    <button class="modal-close-x-btn" aria-label="Close dialog">✕</button>
-    <div class="tasbeeh-modal-content">
-      <h3 class="tasbeeh-name-label quranic-arabic" id="tasbeeh-current-name">سُبْحَانَ اللَّهِ</h3>
-      <p class="tasbeeh-target-hint" id="tasbeeh-target-text">Target: 33</p>
-
-      <div class="tasbeeh-counter-circle-wrap">
-        <svg class="tasbeeh-ring-svg" viewBox="0 0 100 100">
-          <circle class="tasbeeh-ring-bg" cx="50" cy="50" r="44" stroke-width="4" fill="none"/>
-          <circle id="tasbeeh-ring-circle" class="tasbeeh-ring-bar" cx="50" cy="50" r="44" stroke-width="4" stroke-linecap="round" fill="none"/>
-        </svg>
-        <button class="tasbeeh-click-surface" id="tasbeeh-click-btn" aria-label="Tap to count">
-          <span class="tasbeeh-count-large" id="tasbeeh-count-num">0</span>
-          <span class="tasbeeh-tap-label">Tap to Count</span>
-        </button>
-      </div>
-
-      <div class="tasbeeh-bottom-toolbar">
-        <select id="tasbeeh-target-select" class="btn btn-sm btn-glass" aria-label="Select tasbeeh target">
-          <option value="33">Target: 33</option>
-          <option value="99">Target: 99</option>
-          <option value="100">Target: 100</option>
-          <option value="500">Target: 500</option>
-        </select>
-        <button class="btn btn-sm btn-glass" id="tasbeeh-reset-btn">
-          <span>🔄 Reset</span>
-        </button>
-      </div>
-    </div>
-  </dialog>
-
-  <!-- 5. Situational Drawer Modal -->
+  <!-- 3. Situational Drawer Modal -->
   <dialog id="situational-drawer-modal" closedby="any">
     <button class="modal-close-x-btn" aria-label="Close dialog">✕</button>
     <div class="sit-drawer-content" id="situational-drawer-body">
@@ -234,7 +197,7 @@
           Curated natural landscape photography from Unsplash.
         </p>
         <div class="footer-version-badge">
-          <span>v1.0.5 (updated 2026-09-05 23:05)</span>
+          <span>v1.0.6 (updated 2026-09-05 23:15)</span>
         </div>
       </div>
     </div>

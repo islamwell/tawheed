@@ -3,7 +3,6 @@ const STORAGE_KEYS = {
   BOOKMARKS: 'tawheed_bookmarks',
   LEARNED: 'tawheed_learned',
   NOTES: 'tawheed_notes',
-  TASBEEH: 'tawheed_tasbeeh',
   QUIZ: 'tawheed_quiz',
   SETTINGS: 'tawheed_settings'
 };
@@ -92,16 +91,7 @@ export const Storage = {
     }
   },
 
-  getTasbeeh() {
-    try {
-      return JSON.parse(safeStorage.getItem(STORAGE_KEYS.TASBEEH)) || { count: 0, target: 33, totalToday: 0, nameId: 0 };
-    } catch {
-      return { count: 0, target: 33, totalToday: 0, nameId: 0 };
-    }
-  },
-  saveTasbeeh(data) {
-    safeStorage.setItem(STORAGE_KEYS.TASBEEH, JSON.stringify(data));
-  },
+
 
   getQuizStats() {
     try {

@@ -25,12 +25,7 @@ The platform synthesizes classical theological precision and Quranic linguistic 
 - **Hifz Companion Quiz**: Multiple choice quiz with running streaks, scores, instant feedback, and celebratory particle confetti.
 - **Progress Tracking**: Real-time circular progress ring tracking memorization of all 99 names, saved persistently to `localStorage`.
 
-### 4. Digital Tasbeeh / Dhikr Counter
-- Tactile radial click counter with device vibration haptics.
-- Target settings (33, 99, 100, 500) and daily recitation tally.
-- "Send to Tasbeeh" button to recite any Divine Name directly.
-
-### 5. Situational Du'a Explorer ("Call Upon Him")
+### 4. Situational Du'a Explorer ("Call Upon Him")
 - Quick selector based on emotional and life states:
   - *Anxiety, Stress & Restlessness*
   - *Broken Heart, Grief & Sadness*
@@ -66,5 +61,5 @@ The platform synthesizes classical theological precision and Quranic linguistic 
 ---
 
 ## 📜 Footer Version
-- `v1.0.5 (updated 2026-09-05 23:05)`
+- `v1.0.6 (updated 2026-09-05 23:15)`
 
