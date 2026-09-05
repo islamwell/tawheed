@@ -133,7 +133,7 @@ class TawheedApp {
             </p>
             <div class="hero-actions">
               <button class="btn btn-primary open-deep-dive-btn" data-name-id="${dayName.id}">
-                <span>Deep Dive with YQ & NAK</span>
+                <span>Deep Dive & Reflections</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
               </button>
               <button class="btn btn-glass bookmark-toggle-btn ${Storage.isBookmarked(dayName.id) ? 'active' : ''}" data-name-id="${dayName.id}" aria-label="Bookmark">
@@ -359,13 +359,13 @@ class TawheedApp {
 
       <!-- Tab Navigation -->
       <div class="modal-tabs-nav">
-        <button class="tab-btn active" data-tab="tab-yq">
-          <span class="tab-icon">🎙️</span>
-          <span>Dr. Yasir Qadhi</span>
+        <button class="tab-btn active" data-tab="tab-theology">
+          <span class="tab-icon">📖</span>
+          <span>Theological Depth</span>
         </button>
-        <button class="tab-btn" data-tab="tab-nak">
+        <button class="tab-btn" data-tab="tab-linguistic">
           <span class="tab-icon">💡</span>
-          <span>Nouman Ali Khan</span>
+          <span>Linguistic Nuances</span>
         </button>
         <button class="tab-btn" data-tab="tab-quran">
           <span class="tab-icon">📜</span>
@@ -383,14 +383,14 @@ class TawheedApp {
 
       <!-- Tab Contents -->
       <div class="modal-tab-body">
-        <!-- Tab 1: Yasir Qadhi -->
-        <div class="tab-panel active" id="tab-yq">
+        <!-- Tab 1: Theological Depth -->
+        <div class="tab-panel active" id="tab-theology">
           <div class="commentary-header">
             <div class="scholar-badge">
-              <div class="scholar-avatar-initial">YQ</div>
+              <div class="scholar-avatar-initial">TD</div>
               <div>
-                <strong>Dr. Yasir Qadhi</strong>
-                <span class="scholar-role">Theological Depth & Classical Scholarly Synthesis</span>
+                <strong>Theological Depth</strong>
+                <span class="scholar-role">Classical Scholarly Synthesis & Divine Attributes</span>
               </div>
             </div>
           </div>
@@ -399,18 +399,18 @@ class TawheedApp {
           </div>
           <div class="scholarly-footer-callout">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
-            <span>Drawing from Imam Al-Ghazali's <em>Al-Maqsad Al-Asna</em> and Ibn Al-Qayyim's discourses on the Divine Names.</span>
+            <span>Drawing from classical works including Imam Al-Ghazali's <em>Al-Maqsad Al-Asna</em> and Ibn Al-Qayyim's discourses on the Divine Names.</span>
           </div>
         </div>
 
-        <!-- Tab 2: Nouman Ali Khan -->
-        <div class="tab-panel" id="tab-nak">
+        <!-- Tab 2: Linguistic Nuances -->
+        <div class="tab-panel" id="tab-linguistic">
           <div class="commentary-header">
             <div class="scholar-badge nak-badge">
-              <div class="scholar-avatar-initial nak-avatar">NAK</div>
+              <div class="scholar-avatar-initial nak-avatar">LN</div>
               <div>
-                <strong>Nouman Ali Khan</strong>
-                <span class="scholar-role">Quranic Arabic Nuance & Heart-Centered Reflection</span>
+                <strong>Linguistic Nuance</strong>
+                <span class="scholar-role">Quranic Arabic Morphology & Heart-Centered Reflection</span>
               </div>
             </div>
           </div>
@@ -847,10 +847,10 @@ Category: ${nameObj.category} | Root: ${nameObj.root}
 📖 Quranic Ayah:
 "${nameObj.quranAyah ? nameObj.quranAyah.translation : ''}" (${nameObj.quranAyah ? nameObj.quranAyah.surah : ''})
 
-🎙️ Gem from Dr. Yasir Qadhi:
+🎙️ Classical Theological Insight:
 ${nameObj.yqExplanation.slice(0, 200)}...
 
-💡 Linguistic Insight from Nouman Ali Khan:
+💡 Quranic Linguistic Gem:
 ${nameObj.nakExplanation.slice(0, 200)}...
 
 🤲 Dua:

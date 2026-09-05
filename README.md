@@ -2,7 +2,7 @@
 
 A spiritually sublime, visually breathtaking web application designed to foster deep contemplation, understanding, and memorization of the Divine Names of Allah (**Asma-ul-Husna**). 
 
-The platform synthesizes theological precision from **Dr. Yasir Qadhi** and linguistic Quranic gems from **Ustadh Nouman Ali Khan**, paired with curated nature visuals, micro-animations, and interactive memorization tools.
+The platform synthesizes classical theological precision and Quranic linguistic reflections, paired with curated nature visuals, micro-animations, and interactive memorization tools.
 
 ---
 
@@ -12,8 +12,8 @@ The platform synthesizes theological precision from **Dr. Yasir Qadhi** and ling
 - **The Supreme Foundation**: Begins with **Allah (اللَّٰه)** — the supreme proper name (*Al-Ism al-A'zam*) encompassing all divine attributes, followed by all 99 Asma-ul-Husna.
 - **Large Quranic Arabic Typography**: Rendered with authentic **King Fahad Complex Othmani Madinah Quran Fonts** (`KFGQPC Uthmanic Script HAFS` and `KFGQPC Uthman Taha Naskh`) with full vocalization, tashkeel, diacritics, and interactive font-scaling controls (Standard, Large, Extra Large).
 - **Dual Scholarly Syntheses**:
-  - **Dr. Yasir Qadhi**: Theological depth, classical insights (drawing from Imam Al-Ghazali's *Al-Maqsad Al-Asna* and Ibn Al-Qayyim), and essential distinctions between similar names.
-  - **Ustadh Nouman Ali Khan**: Quranic Arabic root morphology (*Fa'lan* vs *Fa'eel*), emotional resonance, contextual storytelling, and practical psychological reflections.
+  - **Theological Depth**: Classical scholarly synthesis (drawing from Imam Al-Ghazali's *Al-Maqsad Al-Asna* and Ibn Al-Qayyim), divine attributes, and essential distinctions between similar names.
+  - **Linguistic Nuances**: Quranic Arabic root morphology (*Fa'lan* vs *Fa'eel*), emotional resonance, contextual storytelling, and practical psychological reflections.
 - **Quranic Ayahs & References**: Key Quranic verses for every name with full vocalized Arabic and English translations.
 - **Living by the Name & Du'as**: Concrete daily character habits, mindset shifts, and custom supplications formulated around each Name.
 
@@ -66,5 +66,5 @@ The platform synthesizes theological precision from **Dr. Yasir Qadhi** and ling
 ---
 
 ## 📜 Footer Version
-- `v1.0.4 (updated 2026-09-05 07:12)`
+- `v1.0.5 (updated 2026-09-05 23:05)`
 
