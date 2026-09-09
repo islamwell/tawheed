@@ -625,6 +625,9 @@ class TawheedApp {
     const container = document.getElementById('quiz-container');
     if (!container) return;
 
+    // Reset scroll position to top for the fresh question
+    container.scrollTop = 0;
+
     const q = this.quizManager.generateQuestion();
     const stats = Storage.getQuizStats();
 
@@ -719,7 +722,13 @@ class TawheedApp {
           }
         }
 
-        if (nextRow) nextRow.classList.remove('hidden');
+        if (nextRow) {
+          nextRow.classList.remove('hidden');
+          // Smoothly ensure Next Question button is scrolled into complete view
+          requestAnimationFrame(() => {
+            nextRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          });
+        }
       });
     });
 
@@ -1056,6 +1065,34 @@ ${nameObj.dua}
         } else if (e.key === 'ArrowLeft') {
           this.quizManager.prevCard();
           this.renderFlashcardUI();
+        }
+      }
+
+      // Quiz modal keyboard shortcuts (Next Question: Enter/Space, Options: 1-4 or A-D)
+      const quizModal = document.getElementById('quiz-modal');
+      if (quizModal && quizModal.open && document.activeElement && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+        const nextRow = document.getElementById('quiz-next-row');
+        const isNextVisible = nextRow && !nextRow.classList.contains('hidden');
+        if (isNextVisible && (e.key === 'Enter' || e.code === 'Space')) {
+          e.preventDefault();
+          this.renderNextQuizQuestion();
+          return;
+        }
+        if (!this.quizManager.isAnswered) {
+          const key = e.key.toUpperCase();
+          let keyIdx = -1;
+          if (['1', '2', '3', '4'].includes(e.key)) {
+            keyIdx = parseInt(e.key, 10) - 1;
+          } else if (['A', 'B', 'C', 'D'].includes(key)) {
+            keyIdx = ['A', 'B', 'C', 'D'].indexOf(key);
+          }
+          if (keyIdx >= 0) {
+            const btns = quizModal.querySelectorAll('.quiz-option-btn');
+            if (btns[keyIdx]) {
+              e.preventDefault();
+              btns[keyIdx].click();
+            }
+          }
         }
       }
     });
