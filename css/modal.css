@@ -714,6 +714,58 @@ dialog[open]::backdrop {
   color: #F59E0B;
 }
 
+.timer-badge {
+  color: var(--accent-emerald);
+  font-variant-numeric: tabular-nums;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.timer-badge.warning {
+  color: #F59E0B;
+}
+
+.timer-badge.danger {
+  color: #EF4444;
+  animation: timerPulse 0.5s infinite alternate ease-in-out;
+}
+
+@keyframes timerPulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+.quiz-timer-track {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+  margin-top: -0.35rem;
+  margin-bottom: 0.85rem;
+  border: 1px solid var(--border-glass);
+  position: relative;
+}
+
+.quiz-timer-bar {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #10B981, #F59E0B);
+  border-radius: var(--radius-pill);
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
+  transition: width 0.06s linear, background 0.3s ease;
+  will-change: width;
+}
+
+.quiz-timer-bar.warning {
+  background: linear-gradient(90deg, #F59E0B, #EF4444);
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.6);
+}
+
+.quiz-timer-bar.danger {
+  background: linear-gradient(90deg, #EF4444, #DC2626);
+  box-shadow: 0 0 14px rgba(239, 68, 68, 0.85);
+}
+
 .quiz-question-box {
   text-align: center;
   margin-bottom: 1rem;

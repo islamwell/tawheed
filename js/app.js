@@ -16,6 +16,9 @@ class TawheedApp {
     this.currentTheme = 'midnight'; // midnight, emerald, pearl
 
     this.quizManager = new QuizManager(this.names, () => this.updateLearnedProgress());
+    this.quizCountdownInterval = null;
+    this.quizAutoAdvanceTimeout = null;
+    this.quizModalCloseBound = false;
 
     this.init();
   }
@@ -615,17 +618,140 @@ class TawheedApp {
   openQuizModal() {
     const modal = document.getElementById('quiz-modal');
     if (!modal) return;
+    this.stopQuizTimer();
     this.renderNextQuizQuestion();
     if (typeof modal.showModal === 'function') modal.showModal();
     else modal.setAttribute('open', '');
     document.body.classList.add('modal-open');
+
+    if (!this.quizModalCloseBound) {
+      this.quizModalCloseBound = true;
+      modal.addEventListener('close', () => this.stopQuizTimer());
+    }
+  }
+
+  stopQuizTimer() {
+    if (this.quizCountdownInterval) {
+      clearInterval(this.quizCountdownInterval);
+      this.quizCountdownInterval = null;
+    }
+    if (this.quizAutoAdvanceTimeout) {
+      clearTimeout(this.quizAutoAdvanceTimeout);
+      this.quizAutoAdvanceTimeout = null;
+    }
+  }
+
+  startQuizCountdown() {
+    this.stopQuizTimer();
+
+    const timerBar = document.getElementById('quiz-timer-bar');
+    const timerSec = document.getElementById('quiz-timer-sec');
+    if (!timerBar || !timerSec) return;
+
+    const DURATION = 10000; // 10-second countdown
+    const startTime = performance.now();
+
+    this.quizCountdownInterval = setInterval(() => {
+      const elapsed = performance.now() - startTime;
+      const remainingMs = Math.max(0, DURATION - elapsed);
+      const remainingPercent = (remainingMs / DURATION) * 100;
+      const secondsLeft = Math.ceil(remainingMs / 1000);
+
+      if (timerBar) {
+        timerBar.style.width = `${remainingPercent}%`;
+        if (secondsLeft <= 3) {
+          timerBar.className = 'quiz-timer-bar danger';
+        } else if (secondsLeft <= 5) {
+          timerBar.className = 'quiz-timer-bar warning';
+        } else {
+          timerBar.className = 'quiz-timer-bar';
+        }
+      }
+
+      if (timerSec) {
+        timerSec.textContent = `${secondsLeft}s`;
+        if (secondsLeft <= 3) {
+          timerSec.className = 'quiz-stat-value timer-badge danger';
+        } else if (secondsLeft <= 5) {
+          timerSec.className = 'quiz-stat-value timer-badge warning';
+        } else {
+          timerSec.className = 'quiz-stat-value timer-badge';
+        }
+      }
+
+      if (remainingMs <= 0) {
+        this.stopQuizTimer();
+        this.handleQuizTimeout();
+      }
+    }, 50);
+  }
+
+  handleQuizTimeout() {
+    if (this.quizManager.isAnswered) return;
+    const container = document.getElementById('quiz-container');
+    if (!container) return;
+
+    const result = this.quizManager.handleTimeout();
+    if (!result) return;
+
+    // Highlight correct answer and lock buttons
+    const optionBtns = container.querySelectorAll('.quiz-option-btn');
+    optionBtns.forEach(b => {
+      const bId = Number(b.dataset.optionId);
+      if (bId === result.correctId) {
+        b.classList.add('correct');
+      }
+      b.disabled = true;
+      b.style.pointerEvents = 'none';
+    });
+
+    // Update streak & timer visuals
+    const streakEl = container.querySelector('.streak-badge');
+    if (streakEl) streakEl.textContent = `🔥 ${result.streak}`;
+
+    const timerSec = container.querySelector('#quiz-timer-sec');
+    if (timerSec) {
+      timerSec.textContent = '0s';
+      timerSec.className = 'quiz-stat-value timer-badge danger';
+    }
+
+    const timerBar = container.querySelector('#quiz-timer-bar');
+    if (timerBar) {
+      timerBar.style.width = '0%';
+      timerBar.className = 'quiz-timer-bar danger';
+    }
+
+    const feedback = container.querySelector('#quiz-feedback');
+    const nextRow = container.querySelector('#quiz-next-row');
+
+    if (feedback) {
+      feedback.classList.remove('hidden');
+      feedback.className = 'quiz-feedback-box error';
+      feedback.innerHTML = `
+        <strong>⏰ Time's up! (10s limit)</strong>
+        <p>The correct Divine Name is <strong>${result.correctName.transliteration} (${result.correctName.arabic})</strong>: ${result.correctName.meaning}.</p>
+      `;
+    }
+
+    if (nextRow) {
+      nextRow.classList.remove('hidden');
+      requestAnimationFrame(() => {
+        nextRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+    }
+
+    // Automatically advance to the next question
+    this.quizAutoAdvanceTimeout = setTimeout(() => {
+      this.renderNextQuizQuestion();
+    }, 1500);
   }
 
   renderNextQuizQuestion() {
     const container = document.getElementById('quiz-container');
     if (!container) return;
 
-    // Reset scroll position to top for the fresh question
+    // Reset timer and scroll position for fresh question
+    this.stopQuizTimer();
     container.scrollTop = 0;
 
     const q = this.quizManager.generateQuestion();
@@ -642,9 +768,17 @@ class TawheedApp {
           <span class="quiz-stat-value">⭐ ${this.quizManager.score}</span>
         </div>
         <div class="quiz-stat-item">
+          <span class="quiz-stat-label">Time</span>
+          <span class="quiz-stat-value timer-badge" id="quiz-timer-sec">10s</span>
+        </div>
+        <div class="quiz-stat-item">
           <span class="quiz-stat-label">Best Streak</span>
           <span class="quiz-stat-value">🏆 ${stats.bestStreak || 0}</span>
         </div>
+      </div>
+
+      <div class="quiz-timer-track" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10" aria-label="Question countdown">
+        <div class="quiz-timer-bar" id="quiz-timer-bar"></div>
       </div>
 
       <div class="quiz-question-box">
@@ -669,21 +803,26 @@ class TawheedApp {
       <div class="quiz-feedback-box hidden" id="quiz-feedback"></div>
       <div class="quiz-next-row hidden" id="quiz-next-row">
         <button class="btn btn-primary" id="quiz-continue-btn">
-          <span>Next Question</span>
+          <span>Next</span>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"></path></svg>
         </button>
       </div>
     `;
 
+    // Start the 10s countdown bar
+    this.startQuizCountdown();
+
     const optionBtns = container.querySelectorAll('.quiz-option-btn');
     optionBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         if (this.quizManager.isAnswered) return;
+        this.stopQuizTimer();
+
         const chosenId = Number(btn.dataset.optionId);
         const result = this.quizManager.submitAnswer(chosenId);
         if (!result) return;
 
-        // Highlight buttons
+        // Highlight buttons and disable options
         optionBtns.forEach(b => {
           const bId = Number(b.dataset.optionId);
           if (bId === result.correctId) {
@@ -691,6 +830,8 @@ class TawheedApp {
           } else if (bId === chosenId && !result.isCorrect) {
             b.classList.add('incorrect');
           }
+          b.disabled = true;
+          b.style.pointerEvents = 'none';
         });
 
         // Update streak & score immediately in UI
@@ -724,7 +865,7 @@ class TawheedApp {
 
         if (nextRow) {
           nextRow.classList.remove('hidden');
-          // Smoothly ensure Next Question button is scrolled into complete view
+          // Smoothly ensure Next button is scrolled into complete view
           requestAnimationFrame(() => {
             nextRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
           });
@@ -735,6 +876,7 @@ class TawheedApp {
     const continueBtn = container.querySelector('#quiz-continue-btn');
     if (continueBtn) {
       continueBtn.addEventListener('click', () => {
+        this.stopQuizTimer();
         this.renderNextQuizQuestion();
       });
     }
@@ -961,6 +1103,7 @@ ${nameObj.dua}
           else dialog.removeAttribute('open');
         }
         document.body.classList.remove('modal-open');
+        this.stopQuizTimer();
         return;
       }
     });
@@ -976,6 +1119,7 @@ ${nameObj.dua}
             if (typeof dlg.close === 'function') dlg.close();
             else dlg.removeAttribute('open');
             document.body.classList.remove('modal-open');
+            this.stopQuizTimer();
           }
         }
       });
@@ -1039,6 +1183,7 @@ ${nameObj.dua}
           if (typeof openDialog.close === 'function') openDialog.close();
           else openDialog.removeAttribute('open');
           document.body.classList.remove('modal-open');
+          this.stopQuizTimer();
         }
         return;
       }
@@ -1068,13 +1213,14 @@ ${nameObj.dua}
         }
       }
 
-      // Quiz modal keyboard shortcuts (Next Question: Enter/Space, Options: 1-4 or A-D)
+      // Quiz modal keyboard shortcuts (Next: Enter/Space, Options: 1-4 or A-D)
       const quizModal = document.getElementById('quiz-modal');
       if (quizModal && quizModal.open && document.activeElement && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
         const nextRow = document.getElementById('quiz-next-row');
         const isNextVisible = nextRow && !nextRow.classList.contains('hidden');
         if (isNextVisible && (e.key === 'Enter' || e.code === 'Space')) {
           e.preventDefault();
+          this.stopQuizTimer();
           this.renderNextQuizQuestion();
           return;
         }

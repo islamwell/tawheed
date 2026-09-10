@@ -125,4 +125,25 @@ export class QuizManager {
       correctName: this.currentQuestion.correctName
     };
   }
+
+  handleTimeout() {
+    if (this.isAnswered) return null;
+    this.isAnswered = true;
+    this.totalAnswered++;
+    this.streak = 0;
+
+    const stats = Storage.getQuizStats();
+    stats.totalQuestions = (stats.totalQuestions || 0) + 1;
+    Storage.saveQuizStats(stats);
+
+    return {
+      isTimeout: true,
+      isCorrect: false,
+      correctId: this.currentQuestion.correctName.id,
+      streak: this.streak,
+      score: this.score,
+      correctName: this.currentQuestion.correctName
+    };
+  }
 }
+
