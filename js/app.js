@@ -123,7 +123,7 @@ class TawheedApp {
           </div>
           <div class="hero-details">
             <div class="hero-translit-row">
-              <span class="hero-number">#${dayName.id === 0 ? 'Supreme' : dayName.id}</span>
+              <span class="hero-number">${dayName.id === 0 ? '#0 • Lafz al-Jalālah' : '#' + dayName.id}</span>
               <h2 class="hero-transliteration">${dayName.transliteration}</h2>
               <span class="hero-category-chip">${dayName.category}</span>
             </div>
@@ -208,7 +208,9 @@ class TawheedApp {
     });
 
     if (countBadge) {
-      countBadge.textContent = `Showing ${this.filteredNames.length} of 100 Divine Names`;
+      countBadge.textContent = this.filteredNames.length === 100 
+        ? 'Showing Lafz al-Jalālah & the 99 Divine Names (100 Total)'
+        : `Showing ${this.filteredNames.length} of 100 Divine Names`;
     }
 
     if (this.filteredNames.length === 0) {
@@ -229,7 +231,7 @@ class TawheedApp {
           <div class="card-glass-overlay"></div>
           
           <div class="card-top-bar">
-            <span class="name-badge-num">${item.id === 0 ? '★ Supreme' : '#' + item.id}</span>
+            <span class="name-badge-num">${item.id === 0 ? '★ Lafz al-Jalālah' : '#' + item.id}</span>
             <div class="card-quick-actions">
               <button class="icon-btn bookmark-card-btn ${isBookmarked ? 'active' : ''}" data-name-id="${item.id}" title="Bookmark" aria-label="Bookmark">
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="${isBookmarked ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path></svg>
@@ -319,7 +321,7 @@ class TawheedApp {
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"></path></svg>
             <span>Prev</span>
           </button>
-          <span class="modal-num-badge">#${nameObj.id === 0 ? 'Supreme Name' : nameObj.id + ' of 99'}</span>
+          <span class="modal-num-badge">${nameObj.id === 0 ? 'Lafz al-Jalālah (The Greatest Name)' : '#' + nameObj.id + ' of 99'}</span>
           <button class="nav-arrow-btn modal-next-btn" title="Next Name (Arrow Right)" aria-label="Next">
             <span>Next</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"></path></svg>
