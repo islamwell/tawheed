@@ -692,10 +692,9 @@ body.modal-open {
 .category-pills-row {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.5rem;
-  overflow-x: auto;
   padding-bottom: 0.4rem;
-  scrollbar-width: thin;
 }
 
 .pill-btn {
@@ -998,7 +997,7 @@ body.modal-open {
   .hero-content {
     padding: 2.2rem 1.5rem;
   }
-  .header-actions .btn span {
+  .header-actions .btn span:last-child {
     display: none;
   }
 }

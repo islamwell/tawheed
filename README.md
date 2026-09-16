@@ -67,4 +67,4 @@ The platform synthesizes classical theological precision and Quranic linguistic 
 ---
 
 ## 📜 Footer Version
-- `v1.1.0 (updated 2026-09-17 00:09)`
+- `v1.1.1 (updated 2026-09-17 00:26)`

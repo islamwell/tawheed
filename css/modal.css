@@ -272,23 +272,24 @@ dialog[open]::backdrop {
 /* Modal Tabs Navigation */
 .modal-tabs-nav {
   display: flex;
-  background: rgba(7, 11, 25, 0.95);
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  background: var(--bg-card, rgba(7, 11, 25, 0.95));
   border-bottom: 1px solid var(--border-glass);
-  padding: 0 1.5rem;
-  overflow-x: auto;
-  scrollbar-width: none;
+  padding: 0.65rem 1.25rem;
 }
 
 .tab-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 1.1rem 1.25rem;
-  background: none;
-  border: none;
-  border-bottom: 3px solid transparent;
+  gap: 0.45rem;
+  padding: 0.55rem 0.9rem;
+  background: var(--bg-glass, rgba(255, 255, 255, 0.04));
+  border: 1px solid var(--border-glass, rgba(255, 255, 255, 0.1));
+  border-radius: var(--radius-pill, 9999px);
   color: var(--text-secondary);
-  font-size: 0.92rem;
+  font-size: 0.84rem;
   font-weight: 600;
   cursor: pointer;
   white-space: nowrap;
@@ -297,11 +298,14 @@ dialog[open]::backdrop {
 
 .tab-btn:hover {
   color: var(--text-primary);
+  background: var(--bg-glass-hover, rgba(255, 255, 255, 0.08));
+  border-color: var(--border-glass-gold, rgba(212, 175, 55, 0.3));
 }
 
 .tab-btn.active {
   color: var(--text-gold);
-  border-bottom-color: var(--accent-gold);
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.22), rgba(245, 158, 11, 0.28));
+  border-color: var(--accent-gold);
 }
 
 /* Modal Tab Contents */
@@ -370,18 +374,6 @@ dialog[open]::backdrop {
   line-height: 1.8;
   color: #CBD5E1;
   margin-bottom: 1.5rem;
-}
-
-.scholarly-footer-callout {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-  padding: 0.85rem 1.25rem;
-  background: rgba(212, 175, 55, 0.08);
-  border: 1px solid var(--border-glass-gold);
-  border-radius: var(--radius-md);
-  font-size: 0.85rem;
-  color: var(--text-gold);
 }
 
 .linguistic-box {
@@ -976,6 +968,15 @@ dialog[open]::backdrop {
 }
 
 @media (max-width: 700px) {
+  .modal-tabs-nav {
+    padding: 0.5rem 0.75rem;
+    gap: 0.25rem 0.35rem;
+  }
+  .tab-btn {
+    padding: 0.42rem 0.7rem;
+    font-size: 0.78rem;
+    gap: 0.35rem;
+  }
   .quiz-modal-content {
     padding: 1.25rem 1rem 1.5rem 1rem;
   }
