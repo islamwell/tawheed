@@ -36,12 +36,18 @@
           <div class="logo-symbol">ﷲ</div>
           <div class="logo-title-group">
             <h1>TAWHEED</h1>
-            <span class="logo-sub">Asma-ul-Husna Sanctuary</span>
+            <span class="logo-sub">The Beautiful Names of Allah</span>
           </div>
         </a>
 
         <!-- Header Actions & Navigation -->
         <div class="header-actions">
+          <!-- About This Collection Button -->
+          <button class="btn btn-glass" id="open-about-btn" title="About this collection & Ihsa of the Names">
+            <span>📖</span>
+            <span>About Collection</span>
+          </button>
+
           <!-- Arabic Font Size Preference -->
           <div class="font-scale-group" title="Adjust Quranic Arabic Font Size">
             <button class="font-scale-btn" data-size="standard">Standard</button>
@@ -50,7 +56,7 @@
           </div>
 
           <!-- Progress Ring Widget -->
-          <div class="header-progress-widget" title="99 Names Memorization Progress">
+          <div class="header-progress-widget" title="99 Names Learning Progress">
             <div class="progress-ring-mini">
               <svg width="28" height="28" viewBox="0 0 36 36">
                 <path class="ring-bg" stroke-width="3.5" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
@@ -66,9 +72,9 @@
             <span>Flashcards</span>
           </button>
 
-          <button class="btn btn-glass" id="open-quiz-btn" title="Test your memorization">
+          <button class="btn btn-glass" id="open-quiz-btn" title="Test your knowledge">
             <span>🎯</span>
-            <span>Hifz Quiz</span>
+            <span>Names Quiz</span>
           </button>
 
           <!-- Theme Toggle -->
@@ -93,7 +99,7 @@
       <div class="section-heading-row">
         <div class="section-title-wrap">
           <h2>Call Upon Him By His Names</h2>
-          <p>Select your present state of heart to discover the Divine Names most beloved to invoke in your prayers.</p>
+          <p>Choose a need or feeling to explore Names of Allah connected to its Qur’anic meaning. Call upon Allah sincerely, take lawful action, and use the authentic supplications taught in revelation.</p>
         </div>
       </div>
       <div class="situational-grid" id="situational-chips">
@@ -112,10 +118,10 @@
 
         <div class="filter-select-wrap">
           <select id="filter-select" aria-label="Filter status">
-            <option value="all">All Names (Lafz al-Jalālah & 99 Names)</option>
+            <option value="all">Allah + Traditional List of 99</option>
             <option value="bookmarked">Bookmarked Only</option>
-            <option value="learned">Memorized Only</option>
-            <option value="unlearned">Unmemorized Only</option>
+            <option value="learned">Learned Only</option>
+            <option value="unlearned">Still Learning</option>
           </select>
         </div>
       </div>
@@ -128,8 +134,8 @@
 
     <!-- Results Meta Bar -->
     <div class="results-meta-bar">
-      <span id="results-count">Showing Lafz al-Jalālah & the 99 Divine Names (100 Total)</span>
-      <span>Tap any card to view classical commentary, linguistic gems & du'a</span>
+      <span id="results-count">Showing 99 Names</span>
+      <span>Tap any card to explore meaning in revelation, evidence & supplication</span>
     </div>
 
     <!-- 99 Names Grid -->
@@ -148,6 +154,52 @@
   <!-- ==========================================================================
        Modals & Dialogs
        ========================================================================== -->
+
+  <!-- 0. About This Collection Modal -->
+  <dialog id="about-collection-modal" closedby="any">
+    <button class="modal-close-x-btn" aria-label="Close dialog">✕</button>
+    <div class="about-modal-content">
+      <div class="about-header">
+        <h2>About This Collection</h2>
+        <p>Understanding the Hadith of the 99 Names & the Meaning of <em>Iḥṣāʾ</em></p>
+      </div>
+
+      <div class="about-section-block">
+        <h3><span>📖</span> The Prophetic Hadith</h3>
+        <p>The Qur’an and authentic Sunnah teach us Allah’s Beautiful Names and encourage us to learn and call upon Him through them. An authentic hadith gives a special virtue to performing <em>iḥṣāʾ</em> of ninety-nine Names:</p>
+        
+        <div class="about-hadith-box">
+          <span class="arabic-quote quranic-arabic">إِنَّ لِلَّهِ تِسْعَةً وَتِسْعِينَ اسْمًا، مِائَةً إِلَّا وَاحِدًا، مَنْ أَحْصَاهَا دَخَلَ الْجَنَّةَ</span>
+          <span class="trans-quote">"Allah has ninety-nine Names—one hundred minus one; whoever performs iḥṣāʾ of them will enter Paradise."</span>
+          <span class="ref-citation">Ṣaḥīḥ al-Bukhārī 7392 • Ṣaḥīḥ Muslim 2677a</span>
+        </div>
+
+        <p>However, the soundest versions of that hadith do not enumerate the Names. The familiar numbered list is a respected traditional compilation, but scholars have produced different lists drawn directly from the Qur’an and Sunnah. This guide follows a widely circulated traditional list while explicitly noting where a Name’s evidence or formulation requires further scholarly review.</p>
+      </div>
+
+      <div class="about-section-block">
+        <h3><span>🌱</span> What Does <em>Iḥṣāʾ</em> (أَحْصَاهَا) Mean?</h3>
+        <p>Classical scholars clarify that <em>iḥṣāʾ</em> is far greater than merely memorizing sounds or ticking checkboxes. It is a comprehensive spiritual journey that encompasses:</p>
+        <ul style="margin: 0.75rem 0 0 1.25rem; color: #CBD5E1; line-height: 1.8;">
+          <li><strong>Preserving & Learning:</strong> Knowing the Names and memorizing them with accurate pronunciation.</li>
+          <li><strong>Understanding (Fahm):</strong> Contemplating their meanings, linguistic roots, and what they reveal about Allah.</li>
+          <li><strong>Belief & Affirmation (I'tiqad):</strong> Believing deeply and reverently in every attribute without distortion or denial.</li>
+          <li><strong>Supplication (Du'a):</strong> Calling upon Allah through them in worship (du'a 'ibadah) and in asking for needs (du'a mas'alah).</li>
+          <li><strong>Character & Conduct (Sulūk):</strong> Allowing this sacred knowledge to shape your heart, humility, ethics, and daily life.</li>
+        </ul>
+      </div>
+
+      <div class="about-section-block">
+        <h3><span>⚖️</span> Evidence Status in this Guide</h3>
+        <p>To preserve academic and theological integrity, every entry in this guide clearly displays its evidence classification:</p>
+        <ul style="margin: 0.75rem 0 0 1.25rem; color: #CBD5E1; line-height: 1.8;">
+          <li><span class="evidence-status-pill quran" style="margin-right: 0.5rem;">Explicit in the Qur'an</span> Mentioned explicitly as a Name in the Noble Qur'an.</li>
+          <li><span class="evidence-status-pill sunnah" style="margin-right: 0.5rem;">Explicit in authentic Sunnah</span> Affirmed explicitly in sound Hadith narrations.</li>
+          <li><span class="evidence-status-pill review" style="margin-right: 0.5rem;">Traditional-list formulation</span> A widely circulated traditional-list form whose status as an established standalone nominal Name requires scholarly review.</li>
+        </ul>
+      </div>
+    </div>
+  </dialog>
 
   <!-- 1. Deep-Dive Name Modal -->
   <dialog id="name-detail-modal" aria-labelledby="modal-arabic-title" closedby="any">
@@ -173,7 +225,7 @@
     </div>
   </dialog>
 
-  <!-- 3. Situational Drawer Modal -->
+  <!-- 4. Situational Drawer Modal -->
   <dialog id="situational-drawer-modal" closedby="any">
     <button class="modal-close-x-btn" aria-label="Close dialog">✕</button>
     <div class="sit-drawer-content" id="situational-drawer-body">
@@ -193,11 +245,10 @@
           <p class="footer-ayah-trans">"And to Allah belong the most beautiful names, so invoke Him by them." (Surah Al-A'raf 7:180)</p>
         </div>
         <p class="footer-credits">
-          Explanations synthesizing classical theological scholarship & linguistic Quranic reflections.
-          Curated natural landscape photography from Unsplash.
+          Meanings in this guide are drawn from the Qur’an, authentic Sunnah and recognised Arabic scholarship. Brief reflections are provided for learning and personal application; they are not substitutes for tafsīr or qualified scholarly guidance. Where scholars differ about whether a formulation is an established standalone Name, the guide notes that difference.
         </p>
         <div class="footer-version-badge">
-          <span>v1.0.10 (updated 2026-09-17 00:04)</span>
+          <span>v1.1.0 (updated 2026-09-17 00:09)</span>
         </div>
       </div>
     </div>

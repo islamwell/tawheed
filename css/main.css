@@ -762,9 +762,11 @@ body.modal-open {
   border-color: var(--border-glass-gold);
 }
 
+.name-card.allah-intro-card,
 .name-card.supreme-card {
   border: 2px solid var(--accent-gold);
-  box-shadow: var(--shadow-md), 0 0 25px rgba(212, 175, 55, 0.3);
+  box-shadow: var(--shadow-md), 0 0 25px rgba(212, 175, 55, 0.35);
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(7, 11, 25, 0.9));
 }
 
 .name-card.is-learned {

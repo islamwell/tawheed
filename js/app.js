@@ -1,5 +1,5 @@
 // Main Application Controller
-import { NAMES_DATA, ALLAH_SUPREME, CATEGORIES } from './data/names.js';
+import { NAMES_DATA, ALLAH_INTRO, CATEGORIES } from './data/names.js';
 import { SITUATIONAL_THEMES } from './data/situational.js';
 import { Storage } from './storage.js';
 import { QuizManager } from './quiz.js';
@@ -7,6 +7,7 @@ import { QuizManager } from './quiz.js';
 class TawheedApp {
   constructor() {
     this.names = NAMES_DATA || [];
+    this.allahIntro = ALLAH_INTRO;
     this.filteredNames = [...this.names];
     this.currentCategory = 'All';
     this.currentFilter = 'all'; // all, bookmarked, learned, unlearned
@@ -15,6 +16,7 @@ class TawheedApp {
     this.currentFontSize = 'large'; // standard, large, xl
     this.currentTheme = 'midnight'; // midnight, emerald, pearl
 
+    // Quiz and Flashcards exclusively operate on the 99 Names
     this.quizManager = new QuizManager(this.names, () => this.updateLearnedProgress());
     this.quizCountdownInterval = null;
     this.quizAutoAdvanceTimeout = null;
@@ -105,7 +107,7 @@ class TawheedApp {
   initNameOfTheDay() {
     const today = new Date();
     const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
-    const dayName = this.names.length > 0 ? this.names[dayOfYear % this.names.length] : ALLAH_SUPREME;
+    const dayName = this.names.length > 0 ? this.names[dayOfYear % this.names.length] : this.allahIntro;
 
     const heroSection = document.getElementById('hero-name-day');
     if (!heroSection || !dayName) return;
@@ -123,17 +125,17 @@ class TawheedApp {
           </div>
           <div class="hero-details">
             <div class="hero-translit-row">
-              <span class="hero-number">${dayName.id === 0 ? '#0 • Lafz al-Jalālah' : '#' + dayName.id}</span>
+              <span class="hero-number">${dayName.id === 0 ? 'The Name Allah' : '#' + dayName.id}</span>
               <h2 class="hero-transliteration">${dayName.transliteration}</h2>
               <span class="hero-category-chip">${dayName.category}</span>
             </div>
             <p class="hero-meaning">${dayName.meaning}</p>
             <p class="hero-insight-snippet">
-              <strong>Spiritual Core:</strong> ${dayName.howToLive ? dayName.howToLive.slice(0, 160) : ''}...
+              <strong>Reflect and respond:</strong> ${dayName.heroSummary || dayName.response}
             </p>
             <div class="hero-actions">
               <button class="btn btn-primary open-deep-dive-btn" data-name-id="${dayName.id}">
-                <span>Deep Dive & Reflections</span>
+                <span>Explore the meaning</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
               </button>
               <button class="btn btn-glass bookmark-toggle-btn ${Storage.isBookmarked(dayName.id) ? 'active' : ''}" data-name-id="${dayName.id}" aria-label="Bookmark">
@@ -175,6 +177,13 @@ class TawheedApp {
     `).join('');
   }
 
+  // Helper to find a name by ID (supports 0 for Allah and 1-99)
+  getNameById(id) {
+    const numId = Number(id);
+    if (numId === 0) return this.allahIntro;
+    return this.names.find(n => n.id === numId);
+  }
+
   // Grid rendering
   renderGrid() {
     const grid = document.getElementById('names-grid');
@@ -182,12 +191,17 @@ class TawheedApp {
     const countBadge = document.getElementById('results-count');
     if (!grid) return;
 
-    // Apply filtering
+    // Apply filtering to the 99 names
     this.filteredNames = this.names.filter(item => {
       // Category filter
-      if (this.currentCategory !== 'All' && item.category !== this.currentCategory) {
+      if (this.currentCategory !== 'All' && this.currentCategory !== 'The Name Allah' && item.category !== this.currentCategory) {
         return false;
       }
+      // If user selected "The Name Allah", only show Allah intro card
+      if (this.currentCategory === 'The Name Allah') {
+        return false;
+      }
+
       // Status filter
       if (this.currentFilter === 'bookmarked' && !Storage.isBookmarked(item.id)) return false;
       if (this.currentFilter === 'learned' && !Storage.isLearned(item.id)) return false;
@@ -207,13 +221,39 @@ class TawheedApp {
       return true;
     });
 
-    if (countBadge) {
-      countBadge.textContent = this.filteredNames.length === 100 
-        ? 'Showing Lafz al-Jalālah & the 99 Divine Names (100 Total)'
-        : `Showing ${this.filteredNames.length} of 100 Divine Names`;
+    // Check if Allah intro card matches the search/filter
+    let showAllahCard = false;
+    if (this.currentCategory === 'All' || this.currentCategory === 'The Name Allah') {
+      if (this.currentFilter === 'all' || 
+          (this.currentFilter === 'bookmarked' && Storage.isBookmarked(0)) ||
+          (this.currentFilter === 'learned' && Storage.isLearned(0)) ||
+          (this.currentFilter === 'unlearned' && !Storage.isLearned(0))) {
+        if (!this.searchQuery) {
+          showAllahCard = true;
+        } else {
+          const q = this.searchQuery.toLowerCase().trim();
+          const matchesArabic = this.allahIntro.arabic && this.allahIntro.arabic.includes(q);
+          const matchesTranslit = this.allahIntro.transliteration && this.allahIntro.transliteration.toLowerCase().includes(q);
+          const matchesMeaning = this.allahIntro.meaning && this.allahIntro.meaning.toLowerCase().includes(q);
+          const matchesRoot = this.allahIntro.root && this.allahIntro.root.toLowerCase().includes(q);
+          const matchesTags = this.allahIntro.moodTags && this.allahIntro.moodTags.some(t => t.toLowerCase().includes(q));
+          showAllahCard = matchesArabic || matchesTranslit || matchesMeaning || matchesRoot || matchesTags;
+        }
+      }
     }
 
-    if (this.filteredNames.length === 0) {
+    // Update dynamic results counter
+    if (countBadge) {
+      if (this.currentCategory === 'The Name Allah') {
+        countBadge.textContent = 'Showing The Name Allah';
+      } else if (this.filteredNames.length === 99) {
+        countBadge.textContent = 'Showing Traditional List of 99 Names';
+      } else {
+        countBadge.textContent = `Showing ${this.filteredNames.length} of 99 Names`;
+      }
+    }
+
+    if (this.filteredNames.length === 0 && !showAllahCard) {
       grid.innerHTML = '';
       if (emptyState) emptyState.classList.remove('hidden');
       return;
@@ -221,22 +261,63 @@ class TawheedApp {
 
     if (emptyState) emptyState.classList.add('hidden');
 
-    grid.innerHTML = this.filteredNames.map(item => {
+    let html = '';
+
+    // Render Allah introductory card when applicable
+    if (showAllahCard) {
+      const isLearned = Storage.isLearned(0);
+      const isBookmarked = Storage.isBookmarked(0);
+      html += `
+        <article class="name-card allah-intro-card ${isLearned ? 'is-learned' : ''}" data-name-id="0" style="cursor: pointer;">
+          <div class="card-bg-image" style="background-image: url('${this.allahIntro.natureImage}');"></div>
+          <div class="card-glass-overlay"></div>
+          
+          <div class="card-top-bar">
+            <span class="name-badge-num">The Proper Name of Allah</span>
+            <div class="card-quick-actions">
+              <button class="icon-btn bookmark-card-btn ${isBookmarked ? 'active' : ''}" data-name-id="0" title="Bookmark" aria-label="Bookmark">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="${isBookmarked ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path></svg>
+              </button>
+              <button class="icon-btn learned-card-btn ${isLearned ? 'active' : ''}" data-name-id="0" title="Mark as learned" aria-label="Learned">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h3 class="card-arabic quranic-arabic">${this.allahIntro.arabic}</h3>
+            <h4 class="card-transliteration">${this.allahIntro.transliteration}</h4>
+            <p class="card-meaning">${this.allahIntro.meaning}</p>
+          </div>
+
+          <div class="card-footer">
+            <span class="card-root-badge">Root: ${this.allahIntro.root}</span>
+            <button class="card-deep-link open-deep-dive-btn" data-name-id="0">
+              <span>Explore</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"></path></svg>
+            </button>
+          </div>
+        </article>
+      `;
+    }
+
+    // Render 99 numbered cards
+    html += this.filteredNames.map(item => {
       const isLearned = Storage.isLearned(item.id);
       const isBookmarked = Storage.isBookmarked(item.id);
 
       return `
-        <article class="name-card ${item.isSupreme ? 'supreme-card' : ''} ${isLearned ? 'is-learned' : ''}" data-name-id="${item.id}" style="cursor: pointer;">
+        <article class="name-card ${isLearned ? 'is-learned' : ''}" data-name-id="${item.id}" style="cursor: pointer;">
           <div class="card-bg-image" style="background-image: url('${item.natureImage}');"></div>
           <div class="card-glass-overlay"></div>
           
           <div class="card-top-bar">
-            <span class="name-badge-num">${item.id === 0 ? '★ Lafz al-Jalālah' : '#' + item.id}</span>
+            <span class="name-badge-num">#${item.id}</span>
             <div class="card-quick-actions">
               <button class="icon-btn bookmark-card-btn ${isBookmarked ? 'active' : ''}" data-name-id="${item.id}" title="Bookmark" aria-label="Bookmark">
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="${isBookmarked ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path></svg>
               </button>
-              <button class="icon-btn learned-card-btn ${isLearned ? 'active' : ''}" data-name-id="${item.id}" title="Mark as memorized" aria-label="Learned">
+              <button class="icon-btn learned-card-btn ${isLearned ? 'active' : ''}" data-name-id="${item.id}" title="Mark as learned" aria-label="Learned">
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
               </button>
             </div>
@@ -251,19 +332,22 @@ class TawheedApp {
           <div class="card-footer">
             <span class="card-root-badge">Root: ${item.root}</span>
             <button class="card-deep-link open-deep-dive-btn" data-name-id="${item.id}">
-              <span>Explore Gems</span>
+              <span>Explore</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"></path></svg>
             </button>
           </div>
         </article>
       `;
     }).join('');
+
+    grid.innerHTML = html;
   }
 
-  // Overall Learned Progress Ring
+  // Overall Learned Progress Ring (based strictly on 99 Names)
   updateLearnedProgress() {
     const learnedList = Storage.getLearned();
-    const count = learnedList.length;
+    // Only count 1 to 99 in progress
+    const count = learnedList.filter(id => id >= 1 && id <= 99).length;
     const percent = Math.min(Math.round((count / 99) * 100), 100);
 
     const progressNumber = document.getElementById('learned-count-text');
@@ -272,7 +356,6 @@ class TawheedApp {
     if (progressNumber) progressNumber.textContent = `${count} / 99`;
 
     if (ringCircle) {
-      // The SVG path in index.html has a normalized length of 100
       ringCircle.style.strokeDasharray = '100, 100';
       const offset = 100 - percent;
       ringCircle.style.strokeDashoffset = offset;
@@ -281,7 +364,7 @@ class TawheedApp {
 
   // Open Deep-Dive Modal
   openModal(nameId) {
-    const nameObj = this.names.find(n => n.id === Number(nameId));
+    const nameObj = this.getNameById(nameId);
     if (!nameObj) return;
     this.activeName = nameObj;
 
@@ -314,6 +397,11 @@ class TawheedApp {
     const isBookmarked = Storage.isBookmarked(nameObj.id);
     const savedNote = Storage.getNote(nameObj.id);
 
+    // Evidence status pill class
+    let evidencePillClass = 'quran';
+    if (nameObj.evidenceStatus.includes('Sunnah')) evidencePillClass = 'sunnah';
+    else if (nameObj.evidenceStatus.includes('review')) evidencePillClass = 'review';
+
     container.innerHTML = `
       <div class="modal-hero-header" style="background-image: linear-gradient(to bottom, rgba(7, 11, 25, 0.4) 0%, rgba(7, 11, 25, 0.95) 100%), url('${nameObj.natureImage}');">
         <div class="modal-nav-bar">
@@ -321,7 +409,7 @@ class TawheedApp {
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"></path></svg>
             <span>Prev</span>
           </button>
-          <span class="modal-num-badge">${nameObj.id === 0 ? 'Lafz al-Jalālah (The Greatest Name)' : '#' + nameObj.id + ' of 99'}</span>
+          <span class="modal-num-badge">${nameObj.id === 0 ? 'The Name Allah' : '#' + nameObj.id + ' of 99'}</span>
           <button class="nav-arrow-btn modal-next-btn" title="Next Name (Arrow Right)" aria-label="Next">
             <span>Next</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"></path></svg>
@@ -335,6 +423,7 @@ class TawheedApp {
           <div class="modal-meta-pills">
             <span class="meta-pill">Root: ${nameObj.root}</span>
             <span class="meta-pill">${nameObj.category}</span>
+            <span class="evidence-status-pill ${evidencePillClass}">${nameObj.evidenceStatus}</span>
           </div>
         </div>
 
@@ -345,7 +434,7 @@ class TawheedApp {
           </button>
           <button class="modal-tool-btn learned-toggle-btn ${isLearned ? 'active' : ''}" data-name-id="${nameObj.id}">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            <span>${isLearned ? 'Memorized ✓' : 'Mark Memorized'}</span>
+            <span>${isLearned ? 'Learned ✓' : 'Mark Learned'}</span>
           </button>
           <button class="modal-tool-btn copy-quote-btn" data-name-id="${nameObj.id}">
             <span>📋 Copy Reflection Card</span>
@@ -357,19 +446,23 @@ class TawheedApp {
       <div class="modal-tabs-nav">
         <button class="tab-btn active" data-tab="tab-theology">
           <span class="tab-icon">📖</span>
-          <span>Theological Depth</span>
+          <span>Meaning in Revelation</span>
         </button>
         <button class="tab-btn" data-tab="tab-linguistic">
           <span class="tab-icon">💡</span>
-          <span>Linguistic Nuances</span>
+          <span>Language & Context</span>
         </button>
-        <button class="tab-btn" data-tab="tab-quran">
+        <button class="tab-btn" data-tab="tab-evidence">
           <span class="tab-icon">📜</span>
-          <span>Quranic Ayah</span>
+          <span>Evidence</span>
         </button>
-        <button class="tab-btn" data-tab="tab-living">
+        <button class="tab-btn" data-tab="tab-response">
+          <span class="tab-icon">🌱</span>
+          <span>Believer's Response</span>
+        </button>
+        <button class="tab-btn" data-tab="tab-dua">
           <span class="tab-icon">🤲</span>
-          <span>Living by this Name</span>
+          <span>Supplication</span>
         </button>
         <button class="tab-btn" data-tab="tab-journal">
           <span class="tab-icon">📝</span>
@@ -379,34 +472,34 @@ class TawheedApp {
 
       <!-- Tab Contents -->
       <div class="modal-tab-body">
-        <!-- Tab 1: Theological Depth -->
+        <!-- Tab 1: Meaning in Revelation -->
         <div class="tab-panel active" id="tab-theology">
           <div class="commentary-header">
             <div class="scholar-badge">
-              <div class="scholar-avatar-initial">TD</div>
+              <div class="scholar-avatar-initial">MR</div>
               <div>
-                <strong>Theological Depth</strong>
-                <span class="scholar-role">Classical Scholarly Synthesis & Divine Attributes</span>
+                <strong>Meaning in Revelation</strong>
+                <span class="scholar-role">What this Name teaches us about Allah</span>
               </div>
             </div>
           </div>
           <div class="commentary-text">
-            <p>${nameObj.yqExplanation}</p>
+            <p>${nameObj.revelationMeaning}</p>
           </div>
           <div class="scholarly-footer-callout">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
-            <span>Drawing from classical works including Imam Al-Ghazali's <em>Al-Maqsad Al-Asna</em> and Ibn Al-Qayyim's discourses on the Divine Names.</span>
+            <span>Drawn from classical theological treatises and authenticated tafsir literature.</span>
           </div>
         </div>
 
-        <!-- Tab 2: Linguistic Nuances -->
+        <!-- Tab 2: Language & Context -->
         <div class="tab-panel" id="tab-linguistic">
           <div class="commentary-header">
             <div class="scholar-badge nak-badge">
-              <div class="scholar-avatar-initial nak-avatar">LN</div>
+              <div class="scholar-avatar-initial nak-avatar">LC</div>
               <div>
-                <strong>Linguistic Nuance</strong>
-                <span class="scholar-role">Quranic Arabic Morphology & Heart-Centered Reflection</span>
+                <strong>Language and Qur’anic Context</strong>
+                <span class="scholar-role">Root Morphology & Semantic Nuance</span>
               </div>
             </div>
           </div>
@@ -415,33 +508,56 @@ class TawheedApp {
             <p class="linguistic-desc">${nameObj.rootMeaning}</p>
           </div>
           <div class="commentary-text">
-            <p>${nameObj.nakExplanation}</p>
+            <p>${nameObj.quranicReflection}</p>
           </div>
         </div>
 
-        <!-- Tab 3: Quranic Ayah -->
-        <div class="tab-panel" id="tab-quran">
+        <!-- Tab 3: Evidence -->
+        <div class="tab-panel" id="tab-evidence">
           <div class="ayah-display-card">
-            <span class="ayah-surah-tag">${nameObj.quranAyah ? nameObj.quranAyah.surah : ''}</span>
-            <p class="ayah-arabic quranic-arabic">${nameObj.quranAyah ? nameObj.quranAyah.arabic : ''}</p>
-            <p class="ayah-translation">"${nameObj.quranAyah ? nameObj.quranAyah.translation : ''}"</p>
+            <span class="ayah-surah-tag">${nameObj.evidence ? nameObj.evidence.reference : ''}</span>
+            <p class="ayah-arabic quranic-arabic">${nameObj.evidence ? nameObj.evidence.arabic : ''}</p>
+            <p class="ayah-translation">"${nameObj.evidence ? nameObj.evidence.translation : ''}"</p>
           </div>
+          ${nameObj.evidenceStatus.includes('review') ? `
+            <div class="evidence-note-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              <span><strong>Evidence Classification Note:</strong> This formulation appears in the widely circulated traditional list of ninety-nine names. While the meaning and attribute are affirmed in revelation, scholars have noted that its designation as an established standalone nominal Name requires scholarly review.</span>
+            </div>
+          ` : ''}
         </div>
 
-        <!-- Tab 4: Living by this Name & Du'as -->
-        <div class="tab-panel" id="tab-living">
+        <!-- Tab 4: How the Believer Responds -->
+        <div class="tab-panel" id="tab-response">
           <div class="living-card">
-            <h4 class="living-title">🌱 How to Embody this Name in Daily Life</h4>
-            <p class="living-desc">${nameObj.howToLive}</p>
-          </div>
-
-          <div class="dua-card">
-            <h4 class="dua-title">🤲 Supplication to Call Upon ${nameObj.transliteration}</h4>
-            <p class="dua-arabic quranic-arabic">${nameObj.dua}</p>
+            <h4 class="living-title">🌱 How the Believer Responds</h4>
+            <p class="living-desc">${nameObj.response}</p>
           </div>
         </div>
 
-        <!-- Tab 5: Reflection Journal -->
+        <!-- Tab 5: Supplications -->
+        <div class="tab-panel" id="tab-dua">
+          ${nameObj.authenticDua ? `
+            <div class="dua-card">
+              <span class="dua-type-badge authentic">Authentic Supplication</span>
+              <h4 class="dua-title">🤲 From Revelation & Sunnah</h4>
+              <p class="dua-arabic quranic-arabic">${nameObj.authenticDua.arabic}</p>
+              <p class="dua-trans-text">"${nameObj.authenticDua.translation}"</p>
+              <span class="dua-ref-text">Source: ${nameObj.authenticDua.reference}</span>
+            </div>
+          ` : ''}
+
+          ${nameObj.suggestedDua ? `
+            <div class="dua-card">
+              <span class="dua-type-badge suggested">Suggested Personal Du'a</span>
+              <h4 class="dua-title">🤲 Calling Upon Allah by ${nameObj.transliteration}</h4>
+              <p class="dua-arabic quranic-arabic">${nameObj.suggestedDua.arabic}</p>
+              <p class="dua-trans-text">"${nameObj.suggestedDua.translation}"</p>
+            </div>
+          ` : ''}
+        </div>
+
+        <!-- Tab 6: Reflection Journal -->
         <div class="tab-panel" id="tab-journal">
           <div class="journal-wrapper">
             <label for="user-reflection-input" class="journal-label">Your Personal Contemplation & Dua Journal</label>
@@ -492,28 +608,34 @@ class TawheedApp {
       });
     }
 
-    // Modal navigation next/prev
+    // Modal navigation next/prev across 99 names (or from 0 to 1)
     const prevBtn = container.querySelector('.modal-prev-btn');
     const nextBtn = container.querySelector('.modal-next-btn');
 
     if (prevBtn) {
       prevBtn.addEventListener('click', () => {
-        const currentIdx = this.names.findIndex(n => n.id === nameObj.id);
-        const prevIdx = (currentIdx - 1 + this.names.length) % this.names.length;
-        this.openModal(this.names[prevIdx].id);
+        if (nameObj.id === 0) {
+          this.openModal(99);
+        } else if (nameObj.id === 1) {
+          this.openModal(0);
+        } else {
+          this.openModal(nameObj.id - 1);
+        }
       });
     }
 
     if (nextBtn) {
       nextBtn.addEventListener('click', () => {
-        const currentIdx = this.names.findIndex(n => n.id === nameObj.id);
-        const nextIdx = (currentIdx + 1) % this.names.length;
-        this.openModal(this.names[nextIdx].id);
+        if (nameObj.id === 0) {
+          this.openModal(1);
+        } else if (nameObj.id === 99) {
+          this.openModal(0);
+        } else {
+          this.openModal(nameObj.id + 1);
+        }
       });
     }
   }
-
-
 
   // Flashcards UI
   openFlashcardsModal() {
@@ -566,7 +688,7 @@ class TawheedApp {
               <h3 class="fc-translit-back">${card.transliteration}</h3>
               <p class="fc-meaning-back">${card.meaning}</p>
               <div class="fc-root-box">Root: <strong>${card.root}</strong></div>
-              <p class="fc-gem-snippet">${card.yqExplanation.slice(0, 180)}...</p>
+              <p class="fc-gem-snippet">${card.heroSummary || card.revelationMeaning.slice(0, 180)}</p>
             </div>
             <span class="fc-tap-hint">Tap to flip back</span>
           </div>
@@ -579,7 +701,7 @@ class TawheedApp {
           <span>Previous</span>
         </button>
         <button class="btn btn-primary ${isLearned ? 'btn-learned-active' : ''}" id="fc-learned-btn">
-          <span>${isLearned ? '✓ Memorized' : 'Mark as Memorized'}</span>
+          <span>${isLearned ? '✓ Learned' : 'Mark as Learned'}</span>
         </button>
         <button class="btn btn-glass" id="fc-next-btn">
           <span>Next</span>
@@ -696,7 +818,6 @@ class TawheedApp {
     const result = this.quizManager.handleTimeout();
     if (!result) return;
 
-    // Highlight correct answer and lock buttons
     const optionBtns = container.querySelectorAll('.quiz-option-btn');
     optionBtns.forEach(b => {
       const bId = Number(b.dataset.optionId);
@@ -707,7 +828,6 @@ class TawheedApp {
       b.style.pointerEvents = 'none';
     });
 
-    // Update streak & timer visuals
     const streakEl = container.querySelector('.streak-badge');
     if (streakEl) streakEl.textContent = `🔥 ${result.streak}`;
 
@@ -742,7 +862,6 @@ class TawheedApp {
       });
     }
 
-    // Automatically advance to the next question
     this.quizAutoAdvanceTimeout = setTimeout(() => {
       this.renderNextQuizQuestion();
     }, 1500);
@@ -752,12 +871,7 @@ class TawheedApp {
     const container = document.getElementById('quiz-container');
     if (!container) return;
 
-    // Reset timer and scroll position for fresh question
-    this.stopQuizTimer();
-    container.scrollTop = 0;
-
     const q = this.quizManager.generateQuestion();
-    const stats = Storage.getQuizStats();
 
     container.innerHTML = `
       <div class="quiz-stats-header">
@@ -770,39 +884,34 @@ class TawheedApp {
           <span class="quiz-stat-value">⭐ ${this.quizManager.score}</span>
         </div>
         <div class="quiz-stat-item">
-          <span class="quiz-stat-label">Time</span>
+          <span class="quiz-stat-label">Timer</span>
           <span class="quiz-stat-value timer-badge" id="quiz-timer-sec">10s</span>
-        </div>
-        <div class="quiz-stat-item">
-          <span class="quiz-stat-label">Best Streak</span>
-          <span class="quiz-stat-value">🏆 ${stats.bestStreak || 0}</span>
         </div>
       </div>
 
-      <div class="quiz-timer-track" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10" aria-label="Question countdown">
-        <div class="quiz-timer-bar" id="quiz-timer-bar"></div>
+      <div class="quiz-timer-track">
+        <div class="quiz-timer-bar" id="quiz-timer-bar" style="width: 100%;"></div>
       </div>
 
       <div class="quiz-question-box">
-        <span class="quiz-q-num">Question ${this.quizManager.totalAnswered + 1}</span>
+        <span class="quiz-q-counter">Question ${this.quizManager.totalAnswered + 1}</span>
         <h3 class="quiz-q-title">${q.questionText}</h3>
-        ${q.isArabicToMeaning ? `
-          <div class="quiz-big-arabic quranic-arabic">${q.correctName.arabic}</div>
-        ` : ''}
+        ${q.isArabicToMeaning ? `<p class="quiz-big-arabic quranic-arabic">${q.correctName.arabic}</p>` : ''}
       </div>
 
       <div class="quiz-options-grid">
         ${q.options.map((opt, idx) => `
           <button class="quiz-option-btn" data-option-id="${opt.id}">
-            <span class="opt-letter">${String.fromCharCode(65 + idx)}</span>
-            <span class="opt-content">
-              ${q.isArabicToMeaning ? opt.meaning : `${opt.transliteration} <span class="opt-ar quranic-arabic">(${opt.arabic})</span>`}
+            <span class="quiz-opt-letter">${String.fromCharCode(65 + idx)}</span>
+            <span class="quiz-opt-label">
+              ${q.isArabicToMeaning ? opt.meaning : `${opt.transliteration} (${opt.arabic})`}
             </span>
           </button>
         `).join('')}
       </div>
 
       <div class="quiz-feedback-box hidden" id="quiz-feedback"></div>
+
       <div class="quiz-next-row hidden" id="quiz-next-row">
         <button class="btn btn-primary" id="quiz-continue-btn">
           <span>Next</span>
@@ -811,7 +920,6 @@ class TawheedApp {
       </div>
     `;
 
-    // Start the 10s countdown bar
     this.startQuizCountdown();
 
     const optionBtns = container.querySelectorAll('.quiz-option-btn');
@@ -824,7 +932,6 @@ class TawheedApp {
         const result = this.quizManager.submitAnswer(chosenId);
         if (!result) return;
 
-        // Highlight buttons and disable options
         optionBtns.forEach(b => {
           const bId = Number(b.dataset.optionId);
           if (bId === result.correctId) {
@@ -836,7 +943,6 @@ class TawheedApp {
           b.style.pointerEvents = 'none';
         });
 
-        // Update streak & score immediately in UI
         const streakEl = container.querySelector('.streak-badge');
         if (streakEl) streakEl.textContent = `🔥 ${result.streak}`;
         const scoreEl = container.querySelectorAll('.quiz-stat-value')[1];
@@ -850,7 +956,7 @@ class TawheedApp {
           if (result.isCorrect) {
             feedback.className = 'quiz-feedback-box success';
             feedback.innerHTML = `
-              <strong>✨ Excellent! Correct!</strong>
+              <strong>✨ Correct!</strong>
               <p>${result.correctName.transliteration} (${result.correctName.arabic}): ${result.correctName.meaning}.</p>
             `;
             if (result.streak > 1 && result.streak % 3 === 0) {
@@ -867,7 +973,6 @@ class TawheedApp {
 
         if (nextRow) {
           nextRow.classList.remove('hidden');
-          // Smoothly ensure Next button is scrolled into complete view
           requestAnimationFrame(() => {
             nextRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
           });
@@ -893,7 +998,6 @@ class TawheedApp {
       setTimeout(() => toast.classList.remove('show'), 3000);
     }
 
-    // Floating stardust burst
     const burstCount = 28;
     for (let i = 0; i < burstCount; i++) {
       const p = document.createElement('div');
@@ -910,22 +1014,26 @@ class TawheedApp {
 
   // Copy Quote Card
   copyQuoteCard(nameObj) {
+    const duaText = nameObj.authenticDua 
+      ? `🤲 Authentic Du'a: ${nameObj.authenticDua.arabic}\n"${nameObj.authenticDua.translation}" (${nameObj.authenticDua.reference})`
+      : (nameObj.suggestedDua ? `🤲 Suggested Du'a: ${nameObj.suggestedDua.arabic}\n"${nameObj.suggestedDua.translation}"` : '');
+
     const text = `✨ ${nameObj.transliteration} (${nameObj.arabic}) - ${nameObj.meaning}
 Category: ${nameObj.category} | Root: ${nameObj.root}
+Evidence Status: ${nameObj.evidenceStatus}
 
-📖 Quranic Ayah:
-"${nameObj.quranAyah ? nameObj.quranAyah.translation : ''}" (${nameObj.quranAyah ? nameObj.quranAyah.surah : ''})
+📜 Evidence:
+"${nameObj.evidence ? nameObj.evidence.translation : ''}" (${nameObj.evidence ? nameObj.evidence.reference : ''})
 
-🎙️ Classical Theological Insight:
-${nameObj.yqExplanation.slice(0, 200)}...
+📖 Meaning in Revelation:
+${nameObj.revelationMeaning}
 
-💡 Quranic Linguistic Gem:
-${nameObj.nakExplanation.slice(0, 200)}...
+🌱 How the Believer Responds:
+${nameObj.response}
 
-🤲 Dua:
-${nameObj.dua}
+${duaText}
 
-— Learned via Tawheed (Asma-ul-Husna Experience)`;
+— Learned via Tawheed (The Beautiful Names of Allah)`;
 
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(() => {
@@ -1030,12 +1138,22 @@ ${nameObj.dua}
       });
     }
 
-    // Top Navigation buttons: Flashcards, Quiz
+    // Top Navigation buttons: Flashcards, Quiz, About
     const openFlashcardBtn = document.getElementById('open-flashcards-btn');
     if (openFlashcardBtn) openFlashcardBtn.addEventListener('click', () => this.openFlashcardsModal());
 
     const openQuizBtn = document.getElementById('open-quiz-btn');
     if (openQuizBtn) openQuizBtn.addEventListener('click', () => this.openQuizModal());
+
+    const openAboutBtn = document.getElementById('open-about-btn');
+    if (openAboutBtn) openAboutBtn.addEventListener('click', () => {
+      const modal = document.getElementById('about-collection-modal');
+      if (modal) {
+        if (typeof modal.showModal === 'function') modal.showModal();
+        else modal.setAttribute('open', '');
+        document.body.classList.add('modal-open');
+      }
+    });
 
     // Delegated clicks for cards & buttons across the entire app
     document.addEventListener('click', (e) => {
@@ -1065,13 +1183,12 @@ ${nameObj.dua}
         return;
       }
 
-
       // Copy quote
       const copyBtn = e.target.closest('.copy-quote-btn');
       if (copyBtn) {
         e.stopPropagation();
         const id = Number(copyBtn.dataset.nameId);
-        const nameObj = this.names.find(n => n.id === id);
+        const nameObj = this.getNameById(id);
         if (nameObj) this.copyQuoteCard(nameObj);
         return;
       }
@@ -1130,7 +1247,12 @@ ${nameObj.dua}
 
   // Situational Drawer / Modal
   openSituationalDrawer(theme) {
-    const matchedNames = this.names.filter(n => theme.primaryNameIds.includes(n.id));
+    const matchedNames = [];
+    theme.primaryNameIds.forEach(id => {
+      const found = this.getNameById(id);
+      if (found) matchedNames.push(found);
+    });
+
     const drawer = document.getElementById('situational-drawer-modal');
     if (!drawer) return;
 
@@ -1146,11 +1268,11 @@ ${nameObj.dua}
         </div>
 
         <div class="sit-rec-box">
-          <strong>💡 Spiritual Remedy:</strong>
+          <strong>💡 Guidance & Sincere Reliance:</strong>
           <p>${theme.recommendation}</p>
         </div>
 
-        <h4 class="sit-section-title">Divine Names to Invoke in Your Du'a:</h4>
+        <h4 class="sit-section-title">Names of Allah Connected to this Need:</h4>
         <div class="sit-names-list">
           ${matchedNames.map(n => `
             <div class="sit-name-row">
@@ -1162,7 +1284,7 @@ ${nameObj.dua}
                 </div>
               </div>
               <div class="sit-row-btns">
-                <button class="btn btn-sm btn-primary open-deep-dive-btn" data-name-id="${n.id}">Learn More</button>
+                <button class="btn btn-sm btn-primary open-deep-dive-btn" data-name-id="${n.id}">Explore</button>
               </div>
             </div>
           `).join('')}

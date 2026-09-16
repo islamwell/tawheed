@@ -1,25 +1,32 @@
-// 99 Names of Allah + Lafz al-Jalālah (Allah) Dataset
-// Featuring Curated Classical Theological Depth & Quranic Linguistic Gems
-// Strictly Nature Photography (No Faces / No People) from Unsplash
+// The Beautiful Names of Allah (Asma-ul-Husna) Dataset
+// Grounded in the Qur'an, authentic Sunnah, and classical Arabic scholarship.
+// Curated strictly natural photography (no faces / no humans) from Unsplash.
 
-export const ALLAH_SUPREME = {
+export const ALLAH_INTRO = {
   "id": 0,
   "arabic": "اللَّٰه",
   "transliteration": "Allāh",
-  "meaning": "The One True God, Alone Worthy of All Worship and Devotion",
+  "meaning": "The proper name of the One true God—the only One worthy of worship.",
   "root": "أ-ل-ه (Alif-Lam-Ha)",
-  "rootMeaning": "Derived from 'al-Ilah' (the One worshipped with absolute devotion and humility) or 'walaha' (the One towards whom every soul turns in desperate adoration and awe).",
-  "category": "Lafz al-Jalālah (The All-Encompassing Name)",
-  "isSupreme": true,
-  "yqExplanation": "Theological analysis highlights that 'Allah' is the greatest name of God (Al-Ism al-A'zam) and Lafz al-Jalālah. Unlike generic words for gods in other languages, 'Allah' cannot be pluralized, feminized, or attributed to any idol. All other 99 Names are grammatical adjectives modifying 'Allah' (e.g., 'Allah Ar-Rahman', never 'Ar-Rahman Allah'). When you say 'Ya Allah', you invoke every divine majesty, mercy, wisdom, and power simultaneously.",
-  "nakExplanation": "Linguistic analysis describes the root 'walaha'—like a newborn yearning and turning instinctively toward its mother's embrace in moments of fear or hunger. Humanity has an innate, inescapable spiritual yearning that only finds quietude when oriented to Allah. 'Al-Ilah' merged into 'Allah' to represent the exclusive, unquestioned anchor of the human heart.",
-  "quranAyah": {
-    "arabic": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ",
-    "translation": "Allah! There is no deity except Him, the Ever-Living, the Sustainer of all existence.",
-    "surah": "Al-Baqarah 2:255"
+  "rootMeaning": "Scholars have discussed its precise linguistic origin. It gathers the meanings of worship, love, veneration, awe, and complete, humble devotion directed to Him alone.",
+  "category": "The Name Allah",
+  "evidenceStatus": "Explicit in the Qur'an",
+  "evidence": {
+    "arabic": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ۖ لَهُ الْأَسْمَاءُ الْحُسْنَىٰ",
+    "translation": "Allah—there is no god worthy of worship except Him. He has the Most Beautiful Names.",
+    "reference": "Surah Ta-Ha 20:8"
   },
-  "howToLive": "Make Allah the ultimate focal point of every intention, decision, and breath. In private moments of solitude, remember that He is the only true refuge where vulnerability is honored with unconditional mercy.",
-  "dua": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنَّكَ أَنْتَ اللَّهُ لَا إِلَٰهَ إِلَّا أَنْتَ الْأَحَدُ الصَّمَدُ (O Allah, I ask You by virtue of You being Allah, none has the right to be worshipped except You, the One, the Self-Sufficient).",
+  "revelationMeaning": "‘Allah’ is the proper name of the Lord of all creation. It expresses Tawhid—that none in the heavens or the earth possesses any share in His divinity, sovereignty, or right to unconditional obedience and love. All other Beautiful Names describe the sublime attributes and actions of Allah. Calling upon Him by this Name brings together every feeling of reverence, hope, fear, and reliance.",
+  "quranicReflection": "In the Qur'an, the Name 'Allah' appears thousands of times as the ultimate foundation of faith. The root denotes the One who is worshipped with utmost love and reverence, towards whom hearts instinctively turn in times of desperate need and profound gratitude. True peace enters the soul when it submits to Him entirely.",
+  "response": "Devote your heart, intentions, and worship exclusively to Allah. Rid your heart of hidden reliance upon creation, and turn to Him in ease and hardship with total sincerity and humble prayer.",
+  "heroSummary": "The proper name of the Lord of all creation, gathering all attributes of majesty, mercy, and absolute divinity.",
+  "authenticDua": {
+    "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنَّ لَكَ الْحَمْدَ لَا إِلَٰهَ إِلَّا أَنْتَ الْمَنَّانُ بَدِيعُ السَّمَاوَاتِ وَالْأَرْضِ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ يَا حَيُّ يَا قَيُّومُ",
+    "translation": "O Allah, I ask You by virtue of all praise belonging to You; there is no deity worthy of worship except You, the Bestower, Originator of the heavens and the earth, O Possessor of Majesty and Honor, O Ever-Living, O Self-Sustaining Upholder.",
+    "reference": "Sunan Abi Dawud 1495, Sahih"
+  },
+  "suggestedDua": null,
+  "natureImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80",
   "moodTags": [
     "peace",
     "purpose",
@@ -31,48 +38,33 @@ export const ALLAH_SUPREME = {
 
 export const NAMES_DATA = [
   {
-    "id": 0,
-    "arabic": "اللَّٰه",
-    "transliteration": "Allāh",
-    "meaning": "The One True God, Alone Worthy of All Worship and Devotion",
-    "root": "أ-ل-ه (Alif-Lam-Ha)",
-    "rootMeaning": "Derived from 'al-Ilah' (the One worshipped with absolute devotion and humility) or 'walaha' (the One towards whom every soul turns in desperate adoration and awe).",
-    "category": "Lafz al-Jalālah (The All-Encompassing Name)",
-    "isSupreme": true,
-    "yqExplanation": "Theological analysis highlights that 'Allah' is the greatest name of God (Al-Ism al-A'zam) and Lafz al-Jalālah. Unlike generic words for gods in other languages, 'Allah' cannot be pluralized, feminized, or attributed to any idol. All other 99 Names are grammatical adjectives modifying 'Allah' (e.g., 'Allah Ar-Rahman', never 'Ar-Rahman Allah'). When you say 'Ya Allah', you invoke every divine majesty, mercy, wisdom, and power simultaneously.",
-    "nakExplanation": "Linguistic analysis describes the root 'walaha'—like a newborn yearning and turning instinctively toward its mother's embrace in moments of fear or hunger. Humanity has an innate, inescapable spiritual yearning that only finds quietude when oriented to Allah. 'Al-Ilah' merged into 'Allah' to represent the exclusive, unquestioned anchor of the human heart.",
-    "quranAyah": {
-      "arabic": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ",
-      "translation": "Allah! There is no deity except Him, the Ever-Living, the Sustainer of all existence.",
-      "surah": "Al-Baqarah 2:255"
-    },
-    "howToLive": "Make Allah the ultimate focal point of every intention, decision, and breath. In private moments of solitude, remember that He is the only true refuge where vulnerability is honored with unconditional mercy.",
-    "dua": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنَّكَ أَنْتَ اللَّهُ لَا إِلَٰهَ إِلَّا أَنْتَ الْأَحَدُ الصَّمَدُ (O Allah, I ask You by virtue of You being Allah, none has the right to be worshipped except You, the One, the Self-Sufficient).",
-    "moodTags": [
-      "peace",
-      "purpose",
-      "gratitude",
-      "anxiety",
-      "hope"
-    ]
-  },
-  {
     "id": 1,
     "arabic": "الرَّحْمَٰنُ",
     "transliteration": "Ar-Raḥmān",
-    "meaning": "The Entirely Merciful, The Boundlessly Compassionate",
-    "root": "ر-ح-م (Ra-Ha-Meem)",
-    "rootMeaning": "From 'Rahim' (the maternal womb) — signifying tender, protective, all-enfolding nourishment before the creation even asks for it.",
+    "meaning": "The Universally and Abundantly Merciful",
+    "root": "ر-ح-م (Raa-Haa-Meem)",
+    "rootMeaning": "Derived from 'al-rahim' (the maternal womb), evoking instinctive tenderness, nourishment, encompassing shelter, and boundless benevolence bestowed before it is even asked for.",
     "category": "Mercy & Compassion",
-    "yqExplanation": "Classical commentary explains that Ar-Rahman follows the Arabic morphological scale of 'Fa'lan' (فَعْلَان), denoting an overwhelming, overflowing, boundless tsunami of mercy that encompasses every single creature in existence—believer and disbeliever, human, animal, and tree—right here in this dunya without exception.",
-    "nakExplanation": "Linguistic analysis draws attention to the contrast between 'Fa'lan' and 'Fa'eel'. 'Rahman' represents mercy that is extraordinarily intense, urgent, and immediately felt at this very instant. Just as a mother cradles her infant in an emergency, Allah's Rahmah wraps around you at your lowest point.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "الرَّحْمَٰنُ عَلَى الْعَرْشِ اسْتَوَىٰ",
       "translation": "The Most Merciful [who is] above the Throne established.",
-      "surah": "Taha 20:5"
+      "reference": "Surah Ta-Ha 20:5"
     },
-    "howToLive": "Never lose hope in divine kindness, no matter how heavy your sins feel. Radiate gentleness and unconditional compassion to all living things, especially those who cannot repay you.",
-    "dua": "يَا رَحْمَٰنُ ارْحَمْنِي بِرَحْمَتِكَ الْوَاسِعَةِ الَّتِي وَسِعَتْ كُلَّ شَيْءٍ (O Most Merciful, envelop me in Your vast mercy that embraces all things).",
+    "revelationMeaning": "Classical theological synthesis (Imam Al-Ghazali, Ibn Al-Qayyim, Ibn Kathir) establishes that Ar-Rahman is an exclusive divine name applicable to none other than Allah. It denotes the vast, all-embracing mercy that is an intrinsic attribute of the divine essence. This mercy extends unconditionally across the entire created universe in this worldly life—enfolding the believer and the disbeliever, humanity and the animal kingdom, sustaining life, providing nourishment, and maintaining the order of the cosmos.",
+    "quranicReflection": "Morphologically, Ar-Rahman is formed upon the Arabic measure of 'Fa‘lān' (فَعْلَان), which denotes fullness, intensity, and boundless abundance. In the Qur'an, Ar-Rahman frequently stands alongside sovereign majesty, such as His establishment over the Supreme Throne (20:5), teaching that the supreme governing principle of Allah's cosmic rule is all-encompassing mercy.",
+    "response": "Radiate compassion and gentle forbearance toward all living creatures. Shield the vulnerable, assist those in distress without seeking repayment, and remain anchored in hope, never despairing of Allah's vast grace.",
+    "heroSummary": "The Universally and Abundantly Merciful, whose tender and encompassing grace sustains every living creature across existence.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِرَحْمَتِكَ الَّتِي وَسِعَتْ كُلَّ شَيْءٍ أَنْ تَغْفِرَ لِي",
+      "translation": "O Allah, I ask You by Your mercy which encompasses all things, that You forgive me.",
+      "reference": "Sunan Ibn Majah 1753, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا رَحْمَٰنُ، ارْحَمْنِي بِرَحْمَتِكَ الْوَاسِعَةِ، وَأَصْلِحْ لِي شَأْنِي كُلَّهُ، وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ",
+      "translation": "O Universally Merciful, envelop me in Your vast mercy, rectify all my affairs, and do not leave me to myself for the blink of an eye."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "mercy",
       "anxiety",
@@ -85,379 +77,570 @@ export const NAMES_DATA = [
     "id": 2,
     "arabic": "الرَّحِيمُ",
     "transliteration": "Ar-Raḥīm",
-    "meaning": "The Especially Merciful, The Continuously Compassionate",
-    "root": "ر-ح-م (Ra-Ha-Meem)",
-    "rootMeaning": "Continuous, targeted, and everlasting mercy that endures through every trial into the eternal realm.",
+    "meaning": "The Constantly and Especially Merciful",
+    "root": "ر-ح-م (Raa-Haa-Meem)",
+    "rootMeaning": "Enduring, perpetual compassion and active mercy that accompanies, guides, and reaches its recipients with continuous care.",
     "category": "Mercy & Compassion",
-    "yqExplanation": "Classical analysis contrasts this with Ar-Rahman: while Ar-Rahman is general and experienced in this life by all, Ar-Rahim is on the scale of 'Fa'eel' (فَعِيل), which signifies permanent, enduring, continuous mercy reserved specially for the believers in this life and the hereafter.",
-    "nakExplanation": "Linguistic reflection highlights that while 'Rahman' is the dramatic, immediate rush of mercy, 'Rahim' is the slow, steady, lifelong accompaniment of guidance. Even when things feel difficult, His 'Rahim' attribute ensures the trial is secretly nurturing your eternal soul.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "وَكَانَ بِالْمُؤْمِنِينَ رَحِيمًا",
       "translation": "And ever is He, to the believers, Merciful.",
-      "surah": "Al-Ahzab 33:43"
+      "reference": "Surah Al-Ahzab 33:43"
     },
-    "howToLive": "Be consistent in your loyalty to your faith and relationships. Continuous small acts of kindness mirror the steadfast nature of Ar-Rahim.",
-    "dua": "يَا رَحِيمُ يَا رَحْمَٰنُ، تُبْ عَلَيَّ وَارْحَمْنِي إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ (O Especially Merciful, turn to me and grant me mercy, for You are the Accepter of Repentance, the Merciful).",
+    "revelationMeaning": "Classical authorities (such as Al-Khattabi, Ibn Kathir, and Al-Ghazali) explain that while Ar-Rahman refers to the expansive, essential mercy that encompasses all creation in the worldly life, Ar-Rahim designates the operative, permanent mercy specifically directed toward the believers. It manifests in divine guidance, spiritual protection during trials, tranquility within worship, and everlasting honor and felicity in the Hereafter.",
+    "quranicReflection": "Morphologically cast upon the weight of 'Fa‘īl' (فَعِيل), Ar-Rahim signifies constancy, permanence, and relational continuity. It frequently pairs with names of divine strength and forgiveness—such as Al-'Aziz Ar-Rahim and Al-Ghafur Ar-Rahim—reminding believers that divine might is exercised with gentle compassion, and forgiveness is sustained without end.",
+    "response": "Demonstrate steadfast loyalty, continuous patience, and recurring benevolence in your everyday relationships. Strive for consistency in small acts of kindness, reflecting the enduring nature of Ar-Rahim.",
+    "heroSummary": "The Constantly and Especially Merciful, whose enduring grace accompanies the believers through every trial into eternity.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِيرًا وَلَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ، فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي، إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ",
+      "translation": "O Allah, I have wronged myself greatly and none forgives sins except You, so grant me forgiveness from Yourself and have mercy upon me; indeed You are the Forgiving, the Merciful.",
+      "reference": "Sahih al-Bukhari 834, Sahih Muslim 2705"
+    },
+    "suggestedDua": {
+      "arabic": "يَا رَحِيمُ، ثَبِّتْ قَلْبِي عَلَى دِينِكَ، وَارْحَمْ ضَعْفِي، وَاجْعَلْنِي مِنْ عِبَادِكَ الْمَرْحُومِينَ فِي الدُّنْيَا وَالْآخِرَةِ",
+      "translation": "O Constantly Merciful, make my heart steadfast upon Your religion, have mercy on my weakness, and count me among Your recipients of mercy in this life and the next."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "mercy",
       "comfort",
       "hope",
-      "gratitude"
+      "gratitude",
+      "peace"
     ]
   },
   {
     "id": 3,
     "arabic": "الْمَلِكُ",
     "transliteration": "Al-Malik",
-    "meaning": "The King, The Supreme Sovereign Owner",
-    "root": "م-ل-ك (Meem-Lam-Kaaf)",
-    "rootMeaning": "Absolute authority, possession, rule, and freedom from any dependency.",
+    "meaning": "The King and Absolute Owner",
+    "root": "م-ل-ك (Meem-Laam-Kaaf)",
+    "rootMeaning": "Complete ownership (milk), legitimate sovereignty, supreme authority, execution of command, and total independence from all creation.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Classical commentary explains that Al-Malik possesses total sovereignty. Worldly kings rule over what they do not truly own, and owners possess what they cannot rule. Only Allah is simultaneously the King who commands and the Owner who possesses every atom.",
-    "nakExplanation": "Linguistic insight points out that recognizing Al-Malik liberates you from the tyranny of human bosses, oppressors, and societal pressure. When you bow to the true King of the Universe, your forehead never has to bow in servility to anyone else.",
-    "quranAyah": {
-      "arabic": "فَتَعَالَى اللَّهُ الْمَلِكُ الْحَقُّ",
-      "translation": "So high [above all] is Allah, the Sovereign, the Truth.",
-      "surah": "Taha 20:114"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "فَتَعَالَى اللَّهُ الْمَلِكُ الْحَقُّ ۖ لَا إِلَٰهَ إِلَّا هُوَ رَبُّ الْعَرْشِ الْكَرِيمِ",
+      "translation": "So high [above all] is Allah, the Sovereign, the Truth. There is no deity except Him, Lord of the Noble Throne.",
+      "reference": "Surah Al-Mu'minun 23:116"
     },
-    "howToLive": "Relinquish the illusion that you own your wealth, health, or status. Treat everything in your hands as a temporary royal loan entrusted by the Sovereign.",
-    "dua": "اللَّهُمَّ أَنْتَ الْمَلِكُ لَا إِلَٰهَ إِلَّا أَنْتَ، أَنْتَ رَبِّي وَأَنَا عَبْدُكَ (O Allah, You are the Sovereign; none has the right to be worshipped but You; You are my Lord and I am Your servant).",
+    "revelationMeaning": "Imam Al-Ghazali elucidates that the true King is He who has no need of any existing thing in His essence, attributes, or actions, while every existing thing is in utter dependence upon Him for its origin, survival, and governance. Worldly rulers govern subjects they do not truly own, and owners possess goods they cannot sovereignly command; Allah alone is simultaneously the absolute Owner and Sovereign Ruler over the entirety of existence.",
+    "quranicReflection": "The Qur'an emphasizes Al-Malik as the ultimate reality before whom all earthly titles evaporate on the Day of Judgment: 'To whom belongs all sovereignty this Day? To Allah, the One, the Prevailing' (40:16). Realizing His kingship dissolves servility to worldly tyrants and frees the human spirit from the fear of mortal power.",
+    "response": "Treat every possession, position, and gift in your hands as a temporary trust from the Sovereign. Free your heart from sycophancy and arrogance, recognizing that all true dominion belongs to Allah alone.",
+    "heroSummary": "The Sovereign King and Absolute Owner, to whom belongs complete dominion over the heavens, the earth, and the Day of Judgment.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ أَنْتَ الْمَلِكُ لَا إِلَٰهَ إِلَّا أَنْتَ، أَنْتَ رَبِّي وَأَنَا عَبْدُكَ",
+      "translation": "O Allah, You are the King, there is no deity except You. You are my Lord and I am Your servant.",
+      "reference": "Sahih Muslim 771"
+    },
+    "suggestedDua": {
+      "arabic": "يَا مَلِكُ، دَبِّرْ لِي فَإِنِّي لَا أُحْسِنُ التَّدْبِيرَ، وَاحْمِنِي بِحِمَاكَ، وَلَا تَكِلْنِي إِلَى أَحَدٍ سِوَاكَ",
+      "translation": "O Absolute King, manage my affairs for I cannot manage them myself, protect me with Your sanctuary, and do not leave me to anyone other than You."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "strength",
       "purpose",
       "stress",
-      "injustice"
+      "injustice",
+      "awe"
     ]
   },
   {
     "id": 4,
     "arabic": "الْقُدُّوسُ",
     "transliteration": "Al-Quddūs",
-    "meaning": "The Most Holy, The Purest, Free from Every Blemish",
-    "root": "ق-د-س (Qaf-Dal-Seen)",
-    "rootMeaning": "Purity, spotless sanctity, being completely untouched by deficiency, exhaustion, or imperfection.",
+    "meaning": "The Perfectly Pure, far above every deficiency",
+    "root": "ق-د-س (Qaaf-Daal-Seen)",
+    "rootMeaning": "Transcendent purity, immaculate sanctity, cleanliness, and being completely elevated above every flaw, stain, or imperfection.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Theological reflection emphasizes that Al-Quddus is not merely 'holy' in the western sense; He is infinitely elevated above any flaw, error, sleep, fatigue, or injustice. Even His decrees that we struggle to understand are born out of flawless perfection.",
-    "nakExplanation": "Linguistic reflection notes that Al-Quddus purifies those who draw near to Him. Just as you wash your hands before touching something pure, spending time contemplating Al-Quddus washes away the psychological grime and cynicism of worldly living.",
-    "quranAyah": {
-      "arabic": "الْمَلِكِ الْقُدُّوسِ الْعَزِيزِ الْحَكِيمِ",
-      "translation": "The Sovereign, the Pure, the Exalted in Might, the Wise.",
-      "surah": "Al-Jumu'ah 62:1"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "يُسَبِّحُ لِلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ الْمَلِكِ الْقُدُّوسِ الْعَزِيزِ الْحَكِيمِ",
+      "translation": "Whatever is in the heavens and whatever is on the earth is exalting Allah, the Sovereign, the Pure, the Exalted in Might, the Wise.",
+      "reference": "Surah Al-Jumu'ah 62:1"
     },
-    "howToLive": "Strive for moral and spiritual hygiene. Guard your eyes, speech, and consumption from toxicity, keeping your heart as a clean sanctuary for divine remembrance.",
-    "dua": "سُبُّوحٌ قُدُّوسٌ رَبُّ الْمَلَائِكَةِ وَالرُّوحِ (All-Glorious, All-Holy, Lord of the angels and the Spirit).",
+    "revelationMeaning": "Classical scholars (such as Al-Bayhaqi and Al-Ghazali) explain that Al-Quddus is the One who is exalted above every conceivable attribute of deficiency, sleep, fatigue, limitation, or injustice. Even His attributes that share names with human qualities (like knowledge, sight, or speech) are infinitely pristine, free from temporal constraints or human frailties. All of His decrees and actions are born of absolute, spotless perfection.",
+    "quranicReflection": "The intensive noun pattern Fu‘‘ūl (فُعُّول) indicates superlative and singular purity. In the Qur'an, the angels proclaim: 'We glorify You with praise and sanctify You' (2:30), showing that creation's highest spiritual station is to acknowledge the spotless holiness of the Creator.",
+    "response": "Strive for moral, spiritual, and physical purity. Guard your heart against malice and jealousy, cleanse your tongue from deceit, and maintain honest and wholesome conduct in all dealings.",
+    "heroSummary": "The Perfectly Pure, far elevated above every flaw, error, deficiency, or mortal comparison.",
+    "authenticDua": {
+      "arabic": "سُبُّوحٌ قُدُّوسٌ، رَبُّ الْمَلَائِكَةِ وَالرُّوحِ",
+      "translation": "All-Glorious, All-Holy, Lord of the angels and the Spirit.",
+      "reference": "Sahih Muslim 487"
+    },
+    "suggestedDua": {
+      "arabic": "يَا قُدُّوسُ، طَهِّرْ قَلْبِي مِنْ كُلِّ دَنَسٍ، وَنَقِّ سَرِيرَتِي مِنْ كُلِّ غِلِّ، وَاجْعَلْنِي مِنَ الْمُتَطَهِّرِينَ",
+      "translation": "O Perfectly Pure, purify my heart from every blemish, cleanse my conscience from every malice, and make me among those who keep themselves pure."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "peace",
       "spiritual",
       "guilt",
-      "purity"
+      "purity",
+      "awe"
     ]
   },
   {
     "id": 5,
     "arabic": "السَّلَامُ",
     "transliteration": "As-Salām",
-    "meaning": "The Source of Peace, The Flawless Haven of Tranquility",
-    "root": "س-ل-م (Seen-Lam-Meem)",
-    "rootMeaning": "Safety, soundness, intactness, being whole and tranquil without turbulence.",
+    "meaning": "The Flawless One; the Source of peace and safety",
+    "root": "س-ل-م (Seen-Laam-Meem)",
+    "rootMeaning": "Soundness, peace, wholeness, integrity, freedom from defects, and immunity from harm.",
     "category": "Mercy & Compassion",
-    "yqExplanation": "Classical scholars note that As-Salam is the One whose essence is free from all evil, whose actions are pure welfare, and whose greeting to the dwellers of Paradise is 'Salam'. If you seek true tranquility of the heart, it cannot be bought with pills or vacations; it can only be granted by As-Salam.",
-    "nakExplanation": "Quranic analysis emphasizes the profound psychological safety in As-Salam. In a chaotic world of panic, burnout, and emotional warfare, calling upon As-Salam drops an anchor of deep serenity straight into your chest.",
-    "quranAyah": {
-      "arabic": "السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ",
-      "translation": "The Source of Peace, the Believer, the Overseer...",
-      "surah": "Al-Hashr 59:23"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ",
+      "translation": "He is Allah, other than whom there is no deity, the Sovereign, the Pure, the Flawless Source of peace, the Granter of security, the Overseer...",
+      "reference": "Surah Al-Hashr 59:23"
     },
-    "howToLive": "Be an ambassador of peace. Ensure that family, coworkers, and neighbors are completely safe from the harm of your tongue and hand.",
-    "dua": "اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ، تَبَارَكْتَ ذَا الْجَلَالِ وَالْإِكْرَامِ (O Allah, You are Peace and from You comes peace. Blessed are You, Possessor of Majesty and Honor).",
+    "revelationMeaning": "As-Salam signifies that Allah's essence is sound and flawless, His attributes are immune from corruption, and His actions are purely wise and good. Concurrently, He is the sole Originator and Bestower of peace, tranquility, and safety to creation. Ultimate serenity of heart and deliverance from terror in the Hereafter come exclusively from Him.",
+    "quranicReflection": "In the Qur'an, 'Salam' is the greeting of the angels to the dwellers of the Garden (13:24), the divine word from the Lord of Mercy (36:58), and the name of Paradise itself—'Dar as-Salam' (the Abode of Peace, 6:127), emphasizing that peace is the eternal objective of divine guidance.",
+    "response": "Be an instrument of safety and peace in your community. Ensure that your family, neighbors, and colleagues are safe from the harm of your tongue and hand, and greet others with warmth and genuine goodwill.",
+    "heroSummary": "The Flawless One, untouched by defect or injustice, and the eternal wellspring of safety and peace.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ، تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ",
+      "translation": "O Allah, You are Peace and from You comes peace. Blessed are You, O Possessor of Majesty and Honor.",
+      "reference": "Sahih Muslim 591"
+    },
+    "suggestedDua": {
+      "arabic": "يَا سَلَامُ، سَلِّمْنِي مِنْ شُرُورِ نَفْسِي وَفِتَنِ الدُّنْيَا، وَانْشُرِ السَّكِينَةَ وَالْأَمْنَ فِي قَلْبِي وَبَيْتِي",
+      "translation": "O Source of Peace, protect me from the evils of my soul and the tribulations of the world, and spread tranquility and safety in my heart and home."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "peace",
       "anxiety",
       "stress",
-      "calm"
+      "calm",
+      "comfort"
     ]
   },
   {
     "id": 6,
     "arabic": "الْمُؤْمِنُ",
     "transliteration": "Al-Mu’min",
-    "meaning": "The Granter of Security, The Affirmative Guardian of Truth",
+    "meaning": "The Granter of security and Affirmer of truth",
     "root": "أ-م-ن (Alif-Meem-Noon)",
-    "rootMeaning": "Security from fear, trustworthiness, and affirming truth with unwavering integrity.",
+    "rootMeaning": "Safety from fear (Amn), trustworthiness and fidelity (Amanah), and attesting to the truth with absolute certitude (Tasdiq).",
     "category": "Protection & Trust",
-    "yqExplanation": "Theological analysis clarifies a dual theological beauty: Allah is Al-Mu'min because He affirms the truthfulness of His messengers through miraculous signs, and He is the One who guarantees safety (Amn) to the fearful soul who seeks shelter in Him.",
-    "nakExplanation": "Linguistic analysis unpacks the psychological relief of Aman (safety). Fear is the root of most human anxiety—fear of tomorrow, fear of poverty, fear of people. Al-Mu'min is the One who disarms every terror and promises that your faith will never be wasted.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "الَّذِي أَطْعَمَهُم مِّن جُوعٍ وَآمَنَهُم مِّنْ خَوْفٍ",
       "translation": "Who has fed them, [saving them] from hunger and made them safe, [saving them] from fear.",
-      "surah": "Quraysh 106:4"
+      "reference": "Surah Quraysh 106:4"
     },
-    "howToLive": "Be a person of trustworthy character whose word is unbreakable. Grant reassurance and emotional safety to anyone who feels vulnerable around you.",
-    "dua": "اللَّهُمَّ آمِنْ رَوْعَاتِي وَاسْتُرْ عَوْرَاتِي وَاحْفَظْنِي مِنْ بَيْنِ يَدَيَّ وَمِنْ خَلْفِي (O Allah, calm my fears, conceal my faults, and guard me from my front and behind).",
+    "revelationMeaning": "Classical scholars (such as Ibn Kathir, Al-Khattabi, and Ibn Jarir Al-Tabari) emphasize that Al-Mu'min cannot be translated simply as 'The Believer'. Rather, it encompasses two foundational divine acts: He affirms the truth of His prophets and righteous servants by providing clear miracles and honoring His promises, and He grants safety and psychological security to His creation, shielding the fearful from terror and injustice.",
+    "quranicReflection": "The Qur'an weaves faith (Iman) directly with safety (Amn): 'Those who have believed and not mixed their faith with injustice, those will have security, and they are rightly guided' (6:82). Trust in Al-Mu'min disarms anxiety and delivers the soul from existential dread.",
+    "response": "Be a trustworthy sanctuary for those around you. Keep your word with unwavering fidelity, never betray trusts, and provide emotional and physical safety to those in vulnerable circumstances.",
+    "heroSummary": "The Granter of security and Affirmer of truth, who dispels fear from the hearts and faithfully fulfills His promises.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ آمِنْ رَوْعَاتِي، وَاسْتُرْ عَوْرَاتِي، وَاحْفَظْنِي مِنْ بَيْنِ يَدَيَّ وَمِنْ خَلْفِي، وَعَنْ يَمِينِي وَعَنْ شِمَالِي",
+      "translation": "O Allah, calm my fears, conceal my faults, and guard me from my front, from behind me, from my right, and from my left.",
+      "reference": "Sunan Abi Dawud 5074, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا مُؤْمِنُ، آمِنْ خَوْفِي، وَثَبِّتْ فِي صَدْرِي الْإِيمَانَ، وَاجْعَلْنِي أَمِينًا صَادِقًا فِي سِرِّي وَعَلَانِيَتِي",
+      "translation": "O Granter of Security, soothe my fear, firmly establish faith in my heart, and make me trustworthy and truthful in secret and in public."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "anxiety",
       "fear",
       "protection",
-      "strength"
+      "strength",
+      "peace"
     ]
   },
   {
     "id": 7,
     "arabic": "الْمُهَيْمِنُ",
     "transliteration": "Al-Muhaymin",
-    "meaning": "The Preserver, The Vigilant Watchful Guardian",
-    "root": "ه-ي-م-ن (Ha-Ya-Meem-Noon)",
-    "rootMeaning": "Hovering protectively like a mother bird shielding her chicks under outstretched wings; vigilant watchful custody.",
+    "meaning": "The Watchful Guardian and Overseer",
+    "root": "ه-ي-م-ن (Haa-Yaa-Meem-Noon)",
+    "rootMeaning": "Vigilant preservation, protective guardianship, supreme oversight, and comprehensive custody over all affairs.",
     "category": "Protection & Trust",
-    "yqExplanation": "Classical commentary explains that Al-Muhaymin combines three dimensions: all-encompassing knowledge, absolute dominance, and tender protective preservation. He watches over your affairs not to catch you slipping, but to cradle and safeguard your soul.",
-    "nakExplanation": "Linguistic analysis highlights the Arabic imagery of a bird hovering lovingly over nestlings to shield them from predators and rain. You are never alone or exposed; Al-Muhaymin is actively maintaining the delicate balance of your life.",
-    "quranAyah": {
-      "arabic": "الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ",
-      "translation": "The Affirmer of Truth, the Guardian, the Exalted in Might...",
-      "surah": "Al-Hashr 59:23"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "وَأَنزَلْنَا إِلَيْكَ الْكِتَابَ بِالْحَقِّ مُصَدِّقًا لِّمَا بَيْنَ يَدَيْهِ مِنَ الْكِتَابِ وَمُهَيْمِنًا عَلَيْهِ",
+      "translation": "And We have revealed to you the Book in truth, confirming what was before it of Scripture and as a watchful guardian over it.",
+      "reference": "Surah Al-Ma'idah 5:48"
     },
-    "howToLive": "Live with a mindful awareness (Muraqabah) that you are under the caring gaze of Al-Muhaymin. Step up to protect and mentor those who depend on your guardianship.",
-    "dua": "يَا مُهَيْمِنُ احْفَظْنِي وَأَهْلِي وَإِيمَانِي مِنْ فِتَنِ الدُّنْيَا (O Watchful Guardian, protect me, my loved ones, and my faith from the trials of this world).",
+    "revelationMeaning": "Early authorities including Ibn Abbas, Al-Hasan Al-Basri, and classical exegetes define Al-Muhaymin through three interconnected attributes: comprehensive knowledge (Al-'Ilm), vigilant observation (Ash-Shahid), and absolute power of preservation (Al-Hafidh). He watches over every motion and stillness in creation, recording deeds with absolute precision and maintaining the existence of all created entities with supreme care.",
+    "quranicReflection": "In Surah Al-Ma'idah (5:48), the Qur'an itself is described as 'muhayminan 'alayhi'—acting as a criterion and vigilant preserver over earlier scriptures. When applied to Allah in Surah Al-Hashr (59:23), it underscores His total sovereignty and unwavering custody over the universe.",
+    "response": "Cultivate continuous mindfulness (Muraqabah), conscious that Allah observes every thought and action. Faithfully watch over and protect the responsibilities and dependents entrusted to your care.",
+    "heroSummary": "The Watchful Guardian and Overseer, whose comprehensive knowledge and custody preserve all of creation without omission.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ، أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي وَشَرِّ الشَّيْطَانِ وَشِرْكِهِ",
+      "translation": "O Allah, Knower of the unseen and seen, Originator of the heavens and earth, Lord and Sovereign of all things, I seek refuge in You from the evil of my own self and from the evil of Satan and his polytheism.",
+      "reference": "Sunan at-Tirmidhi 3392, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا مُهَيْمِنُ، احْفَظْنِي بِعَيْنِكَ الَّتِي لَا تَنَامُ، وَاكْلَأْنِي بِرِعَايَتِكَ، وَاحْمِ إِيمَانِي مِنْ كَيْدِ الْأَعْدَاءِ",
+      "translation": "O Watchful Guardian, protect me with Your eye that never sleeps, guard me with Your care, and shield my faith from the plots of adversaries."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "protection",
       "comfort",
       "fear",
-      "peace"
+      "peace",
+      "awe"
     ]
   },
   {
     "id": 8,
     "arabic": "الْعَزِيزُ",
     "transliteration": "Al-‘Azīz",
-    "meaning": "The All-Mighty, The Unconquerable, The Precious",
+    "meaning": "The Almighty and Unconquerable",
     "root": "ع-ز-ز (‘Ayn-Zay-Zay)",
-    "rootMeaning": "Honor, invincibility, rare preciousness, and power that can never be overpowered or depleted.",
+    "rootMeaning": "Invincibility, sovereign strength, unassailable power, rarity, and total supremacy over every adversary.",
     "category": "Power & Might",
-    "yqExplanation": "Classical commentary points out that 'Izzah' carries three shades: power of defeat (no one can overcome Him), power of self-sufficiency (no one can harm or benefit Him), and power of rarity (He is incomparably unique and precious). Pairings in the Quran almost always balance Al-Aziz with Al-Hakim or Ar-Rahim—His might is never reckless.",
-    "nakExplanation": "Linguistic reflection remarks on how people seek 'Izzah' (validation, prestige) from wealth, likes, and social status, only to end up humiliated. True honor is connected exclusively to Al-Aziz. When you attach your worth to Him, you become dignified beyond measure.",
-    "quranAyah": {
-      "arabic": "وَإِنَّ رَبَّكَ لَهُوَ الْعَزِيزُ الرَّحِيمُ",
-      "translation": "And indeed, your Lord—He is the Exalted in Might, the Merciful.",
-      "surah": "Ash-Shu'ara 26:9"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "وَهُوَ الْعَزِيزُ الْحَكِيمُ",
+      "translation": "And He is the Exalted in Might, the Wise.",
+      "reference": "Surah Ibrahim 14:4"
     },
-    "howToLive": "Stand firm on ethical principles even if unpopular. Never compromise your integrity for temporary flattery or worldly clout.",
-    "dua": "اللَّهُمَّ أَعِزَّنِي بِطَاعَتِكَ وَلَا تُذِلَّنِي بِمَعْصِيَتِكَ (O Allah, honor me through obedience to You, and do not humiliate me through disobedience).",
+    "revelationMeaning": "Classical scholars (such as Al-Khattabi and Ibn Al-Qayyim) delineate three core facets of 'Izzah: the might of insurmountable victory ('Izzat al-Qahr), meaning nothing can overcome Him; the might of self-sufficiency ('Izzat al-Imtina'), meaning nothing can harm or profit Him; and the might of incomparability ('Izzat al-Qadr), meaning He is uniquely exalted above all likeness. In divine revelation, His might is never cruel or arbitrary, being almost uniformly conjoined with wisdom (Al-Hakim) or mercy (Ar-Rahim).",
+    "quranicReflection": "Repeated dozens of times throughout the Qur'an as 'Al-'Aziz Al-Hakim' (e.g. 2:129, 3:6), emphasizing that divine power is continually governed by ultimate wisdom and justice. Power without wisdom leads to tyranny; with Allah, supreme might is the guarantor of moral balance.",
+    "response": "Derive your dignity and honor solely from your devotion to Allah, never compromising truth for worldly prestige or popularity. Stand courageously on the side of justice even when opposing powerful forces.",
+    "heroSummary": "The Almighty and Unconquerable, whose invincible majesty is perfectly coupled with boundless wisdom and mercy.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِعِزَّتِكَ لَا إِلَٰهَ إِلَّا أَنْتَ أَنْ تُضِلَّنِي، أَنْتَ الْحَيُّ الَّذِي لَا يَمُوتُ، وَالْجِنُّ وَالْإِنْسُ يَمُوتُونَ",
+      "translation": "O Allah, I seek refuge in Your might—there is no deity except You—lest You lead me astray. You are the Ever-Living who does not die, while jinns and humans die.",
+      "reference": "Sahih Muslim 2717"
+    },
+    "suggestedDua": {
+      "arabic": "يَا عَزِيزُ، أَعِزَّنِي بِطَاعَتِكَ، وَلَا تُذِلَّنِي بِمَعْصِيَتِكَ، وَثَبِّتْ أَقْدَامِي عَلَى الْحَقِّ",
+      "translation": "O Almighty, honor me through obedience to You, do not abase me through disobedience, and make my feet firm upon the truth."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1516912481808-3406841bd33c?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "strength",
       "injustice",
       "purpose",
-      "hope"
+      "hope",
+      "courage"
     ]
   },
   {
     "id": 9,
     "arabic": "الْجَبَّارُ",
     "transliteration": "Al-Jabbār",
-    "meaning": "The Restorer of the Broken, The Compeller of All Affairs",
+    "meaning": "The Supreme Compeller and Restorer",
     "root": "ج-ب-ر (Jeem-Baa-Raa)",
-    "rootMeaning": "Setting a fractured bone back into wholeness (Jabr), as well as majestic irresistible authority over creation.",
+    "rootMeaning": "Majestic compelling power and irresistible sovereignty (Jabr), paired with mending what is broken and setting affairs right.",
     "category": "Power & Might",
-    "yqExplanation": "Theological insight brings out the breathtaking duality of Al-Jabbar: for the tyrant, He is the Compeller who crushes arrogance; but for the broken-hearted, the widow, the orphan, and the traumatized, He is the Master Orthopedic Surgeon of the human heart who splints and heals every fracture.",
-    "nakExplanation": "Linguistic reflection explores the word 'Jabireh' (the medical cast on a broken arm). When life shatters your plans or breaks your spirit, take the shattered pieces to Al-Jabbar. He puts hearts back together stronger than they were before the break.",
-    "quranAyah": {
-      "arabic": "الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ",
-      "translation": "The Exalted in Might, the Compeller, the Superior...",
-      "surah": "Al-Hashr 59:23"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ",
+      "translation": "He is Allah, other than whom there is no deity, the Sovereign, the Pure, the Flawless Source of peace, the Granter of security, the Overseer, the Exalted in Might, the Supreme Compeller, the Superior...",
+      "reference": "Surah Al-Hashr 59:23"
     },
-    "howToLive": "Comfort those whose lives have been fractured. Be a source of encouragement, mending broken relationships and lifting crushed spirits.",
-    "dua": "اللَّهُمَّ اغْفِرْ لِي وَارْحَمْنِي وَاجْبُرْنِي وَاهْدِنِي وَارْزُقْنِي (O Allah, forgive me, have mercy on me, mend my brokenness, guide me, and provide for me).",
+    "revelationMeaning": "Classical theologians (such as Ibn Al-Qayyim, Ibn Jarir Al-Tabari, and Al-Khattabi) explain that Al-Jabbar commands two supreme meanings: primarily and predominantly, He is the Supreme Compeller whose will is irresistible across the universe, subjugating all arrogance and holding ultimate authority over all creation; and secondarily, He is the Restorer who mends the brokenhearted, rectifies the conditions of the humble, and enriches the destitute who turn to Him in sincere need.",
+    "quranicReflection": "In the Qur'an, when applied to human tyrants, 'Jabbar' carries strong censure (e.g. 'wa kulla jabbarin 'anid' - 14:15), denoting arrogant oppression. For Allah, however, Al-Jabbar represents rightful transcendent majesty and benevolent sovereignty—He who humbles tyrants and gently restores the broken spirits of the downtrodden.",
+    "response": "Strip your demeanor of pride, stubbornness, and heavy-handedness over others. When experiencing grief or heartbreak, present your brokenness to Al-Jabbar, trusting that He can mend and restore your soul.",
+    "heroSummary": "The Supreme Compeller and Restorer, whose sovereign will commands all existence and whose grace gently repairs the broken-hearted.",
+    "authenticDua": {
+      "arabic": "رَبِّ اغْفِرْ لِي، وَارْحَمْنِي، وَاجْبُرْنِي، وَارْفَعْنِي، وَارْزُقْنِي، وَاهْدِنِي",
+      "translation": "My Lord, forgive me, have mercy on me, mend my brokenness, elevate my station, provide for me, and guide me.",
+      "reference": "Sunan at-Tirmidhi 284, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا جَبَّارُ، اجْبُرْ كَسْرَ قَلْبِي، وَتَوَلَّ أَمْرِي بِحُسْنِ تَدْبِيرِكَ، وَاحْمِنِي مِنْ بَطْشِ كُلِّ جَبَّارٍ عَنِيدٍ",
+      "translation": "O Supreme Compeller and Restorer, mend the fracture of my heart, take charge of my affairs with Your gracious governance, and shield me from the tyranny of every stubborn oppressor."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "grief",
       "broken",
       "comfort",
       "healing",
-      "sadness"
+      "strength"
     ]
   },
   {
     "id": 10,
     "arabic": "الْمُتَكَبِّرُ",
     "transliteration": "Al-Mutakabbir",
-    "meaning": "The Supreme, The Rightfully Majestic and Transcendent",
+    "meaning": "The Possessor of all greatness",
     "root": "ك-ب-ر (Kaaf-Baa-Raa)",
-    "rootMeaning": "Grandeur, greatness, being infinitely above every petty fault and boasting creature.",
+    "rootMeaning": "Grandeur, supremacy, ultimate majesty, and being far above every attribute of deficiency or resemblance to creation.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Theological inquiry clarifies that when humans display 'Takabbur' (arrogance), it is grotesque because humans are made of dust. But for Allah, Al-Mutakabbir is a term of pure perfection—He alone possesses genuine greatness, and everything beside Him is small and dependent.",
-    "nakExplanation": "Linguistic insight shows how saying 'Allahu Akbar' in every prayer puts all worldly giants into perspective. When a tyrant or overwhelming obstacle towers over you, remember Al-Mutakabbir: whatever seems big in your life shrinks before Him.",
-    "quranAyah": {
-      "arabic": "سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
-      "translation": "Exalted is Allah above whatever they associate with Him.",
-      "surah": "Al-Hashr 59:23"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ",
+      "translation": "The Exalted in Might, the Compeller, the Possessor of all greatness. Exalted is Allah above whatever they associate with Him.",
+      "reference": "Surah Al-Hashr 59:23"
     },
-    "howToLive": "Purge arrogance and self-righteousness from your posture. Walk on earth with humility, knowing that real grandeur belongs solely to the Divine.",
-    "dua": "اللَّهُمَّ نَقِّ قَلْبِي مِنَ الْكِبْرِ وَالْعُجْبِ وَالرِّيَاءِ (O Allah, purify my heart from pride, conceit, and showing off).",
+    "revelationMeaning": "Classical scholars (such as Al-Ghazali and Al-Khattabi) explain that takabbur in human beings is an abhorrent fault, because human beings are finite, needy, and created from dust. In Allah, however, Al-Mutakabbir is an attribute of absolute truth and perfection: He alone possesses true greatness, sovereignty, and transcendence over every form of evil, defect, or partnership. Everything other than Him is diminutive and dependent.",
+    "quranicReflection": "The root k-b-r underpins the constant Muslim remembrance 'Allahu Akbar' (Allah is Greater). In Surah Al-Hashr, Al-Mutakabbir is immediately followed by 'Subhanallahi 'amma yushrikun' (Glory be to Allah above what they associate with Him), underscoring that His grandeur repudiates all polytheism and rival claims to authority.",
+    "response": "Uproot pride, condescension, and self-glorification from your spirit. Adopt an attitude of genuine modesty, acknowledging that every talent, blessing, and honor you possess is a gift from the Almighty.",
+    "heroSummary": "The Possessor of all greatness, who is rightfully elevated above all deficiency, partner, and pride of creation.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ أَنْتَ الْمَلِكُ لَا إِلَٰهَ إِلَّا أَنْتَ، سُبْحَانَكَ وَبِحَمْدِكَ، لَا أُحْصِي ثَنَاءً عَلَيْكَ",
+      "translation": "O Allah, You are the Sovereign, there is no deity except You; glorified are You and praised, I cannot enumerate Your praise.",
+      "reference": "Sahih Muslim 771"
+    },
+    "suggestedDua": {
+      "arabic": "يَا مُتَكَبِّرُ، نَقِّ نَفْسِي مِنَ الْكِبْرِ وَالْغُرُورِ، وَاجْعَلْنِي مُعَظِّمًا لِحُرُمَاتِكَ، خَاضِعًا لِجَلَالِكَ",
+      "translation": "O Possessor of all greatness, cleanse my soul from arrogance and conceit, and make me one who venerates Your sacred bounds and submits before Your majesty."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "humility",
       "perspective",
       "spiritual",
-      "peace"
+      "peace",
+      "awe"
     ]
   },
   {
     "id": 11,
     "arabic": "الْخَالِقُ",
     "transliteration": "Al-Khāliq",
-    "meaning": "The Creator, The Originator from Nothing",
-    "root": "خ-ل-ق (Khaa-Laam-Qaf)",
-    "rootMeaning": "Measuring, designing, and bringing something into existence out of absolute non-existence.",
+    "meaning": "The Creator",
+    "root": "خ-ل-ق (Khaa-Laam-Qaaf)",
+    "rootMeaning": "Determining proportions with exactitude (Taqdir), planning, and originating existence out of sheer nothingness.",
     "category": "Creation & Sustenance",
-    "yqExplanation": "Classical analysis distinguishes between the trio in Surah Al-Hashr (Al-Khaliq, Al-Bari', Al-Musawwir). Al-Khaliq is the One who conceives the blueprint, determines the precise measurements, and initiates existence where there was void.",
-    "nakExplanation": "Linguistic analysis highlights the deliberate engineering behind every creature. You were not an accident or an evolutionary coincidence; Al-Khaliq designed your personality, strengths, and life journey with intentional purpose.",
-    "quranAyah": {
-      "arabic": "هُوَ اللَّهُ الْخَالِقُ الْبَارِئُ الْمُصَوِّرُ",
-      "translation": "He is Allah, the Creator, the Inventor, the Fashioner.",
-      "surah": "Al-Hashr 59:24"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "اللَّهُ خَالِقُ كُلِّ شَيْءٍ ۖ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ وَكِيلٌ",
+      "translation": "Allah is the Creator of all things, and He is, over all things, Disposer of affairs.",
+      "reference": "Surah Az-Zumar 39:62"
     },
-    "howToLive": "Appreciate the breathtaking artistry in nature—from the veins of a leaf to distant nebulae. Cultivate creativity in your work to serve good causes.",
-    "dua": "يَا خَالِقَ الْكَوْنِ اخْلُقْ فِي قَلْبِي نُورًا وَفِي لِسَانِي نُورًا (O Creator of the cosmos, create light in my heart and light upon my tongue).",
+    "revelationMeaning": "Classical scholars (such as Imam Al-Ghazali and Ibn Kathir) define Al-Khaliq as the One who designs and measures the precise nature, span, and characteristics of all things before bringing them into existence from non-existence. Creation by Allah is characterized by deliberate measurement, purpose, and balance; no aspect of the cosmos is arbitrary or without divine intentionality.",
+    "quranicReflection": "The Qur'an repeatedly contrasts Al-Khaliq with powerless deities: 'Is then He who creates like one who creates not? Will you not then remember?' (16:17). The triad in Surah Al-Hashr (Al-Khaliq, Al-Bari', Al-Musawwir) outlines the complete divine process: measuring, initiating into reality, and conferring distinctive form.",
+    "response": "Reflect upon the marvelous design of nature and recognize your own life as an intentional creation of Allah. Live with focused purpose and cultivate beneficial creativity in service of good.",
+    "heroSummary": "The Creator, who designs, measures, and brings all things into existence from non-existence with flawless purpose.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ كَمَا حَسَّنْتَ خَلْقِي فَحَسِّنْ خُلُقِي",
+      "translation": "O Allah, just as You perfected my creation, so too perfect my character.",
+      "reference": "Musnad Ahmad 24392, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا خَالِقُ، اخْلُقْ فِي قَلْبِي نُورًا وَهُدًى، وَوَفِّقْنِي لِتَحْقِيقِ عِبَادَتِكَ عَلَى الْوَجْهِ الَّذِي يُرْضِيكَ",
+      "translation": "O Creator, create light and guidance within my heart, and grant me success to fulfill Your worship in a manner pleasing to You."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "gratitude",
       "purpose",
       "nature",
-      "wonder"
+      "wonder",
+      "awe"
     ]
   },
   {
     "id": 12,
     "arabic": "الْبَارِئُ",
     "transliteration": "Al-Bāri’",
-    "meaning": "The Originator, The Flawless Maker",
+    "meaning": "The Originator who brings creation into distinct existence",
     "root": "ب-ر-أ (Baa-Raa-Hamza)",
-    "rootMeaning": "Separating, liberating from defect, bringing matter into harmonious physical reality.",
+    "rootMeaning": "Disengaging, releasing, bringing forth from void into reality, and producing distinct entities free from discord or defect.",
     "category": "Creation & Sustenance",
-    "yqExplanation": "Classical commentary explains that while Al-Khaliq measures the concept, Al-Bari' executes the actual creation into physical substance without friction, flaw, or inconsistency.",
-    "nakExplanation": "Linguistic analysis discusses how Al-Bari' makes diverse systems harmonize seamlessly—the water cycle, the carbon balance, planetary orbits. Trust that He can harmonize the chaotic moving parts of your life as well.",
-    "quranAyah": {
-      "arabic": "فَتُوبُوا إِلَىٰ بَارِئِكُمْ فَاقْتُلُوا أَنفُسَكُمْ",
-      "translation": "...so repent to your Maker...",
-      "surah": "Al-Baqarah 2:54"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "هُوَ اللَّهُ الْخَالِقُ الْبَارِئُ الْمُصَوِّرُ ۖ لَهُ الْأَسْمَاءُ الْحُسْنَىٰ",
+      "translation": "He is Allah, the Creator, the Originator, the Giver of form; to Him belong the most beautiful names.",
+      "reference": "Surah Al-Hashr 59:24"
     },
-    "howToLive": "Strive for excellence (Ihsan) in your crafts. Deliver work that is coherent, well-executed, and free of sloppiness.",
-    "dua": "يَا بَارِئَ النُّفُوسِ بَرِّئْنِي مِنْ كُلِّ دَاءٍ وَحَسَدٍ وَسُوءٍ (O Maker of souls, free me from every disease, envy, and evil).",
+    "revelationMeaning": "Classical scholars (including Al-Khattabi and Al-Ghazali) explain the fine nuance of Al-Bari': while Al-Khaliq refers to the planning and proportional measurement of creation, Al-Bari' is the One who executes that plan into concrete, distinct existence, liberating physical realities from the realm of non-being in perfect harmony and freedom from defect.",
+    "quranicReflection": "In Surah Al-Baqarah (2:54), the Israelites are admonished: 'Fa-tūbū ilā bāri'ikum' (So repent to your Maker and Originator), invoking this name to remind them of the One who originated their existence in purity and to whom their allegiance is owed.",
+    "response": "Strive for excellence (Ihsan) in executing your work, ensuring that your endeavors are harmonious, coherent, and free from defect. Cleanse your intentions so that your actions manifest genuine integrity.",
+    "heroSummary": "The Originator who brings creation into distinct, harmonious existence, completely free from flaw or discord.",
+    "authenticDua": {
+      "arabic": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، عَدَدَ خَلْقِهِ، وَرِضَا نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ",
+      "translation": "Glory be to Allah and praise be to Him, according to the number of His creation, according to His pleasure, according to the weight of His Throne, and according to the ink of His words.",
+      "reference": "Sahih Muslim 2726"
+    },
+    "suggestedDua": {
+      "arabic": "يَا بَارِئُ، بَرِّئْنِي مِنْ كُلِّ عَارِضَةِ سُوءٍ، وَسَلِّمْ بَدَنِي وَرُوحِي مِنْ كُلِّ دَاءٍ وَفِتْنَةٍ",
+      "translation": "O Originator, clear me from every harmful affliction, and preserve my body and soul from every sickness and tribulation."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1476820865390-c52aeebb9891?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "peace",
       "healing",
-      "gratitude"
+      "gratitude",
+      "wonder",
+      "spiritual"
     ]
   },
   {
     "id": 13,
     "arabic": "الْمُصَوِّرُ",
     "transliteration": "Al-Muṣawwir",
-    "meaning": "The Fashioner of Forms, The Sculptor of Unique Beauty",
+    "meaning": "The Giver of every form",
     "root": "ص-و-ر (Saad-Waw-Raa)",
-    "rootMeaning": "Shaping, sculpting, painting unique features, colors, and distinctive forms.",
+    "rootMeaning": "Shaping, imparting distinctive form, contour, visual identity, and particular characteristics to an entity.",
     "category": "Creation & Sustenance",
-    "yqExplanation": "Classical commentary points out that out of over 100 billion humans who have ever walked the earth, no two fingerprints, iris patterns, or vocal timbres are identical. That infinite individualized craftsmanship is Al-Musawwir.",
-    "nakExplanation": "Linguistic reflection addresses modern body dysmorphia and self-doubt. When society tells you that you aren't attractive enough or tall enough, remember that Al-Musawwir personally sculpted you in the best of molds. Rejecting your design is doubting the Master Artist.",
-    "quranAyah": {
-      "arabic": "هُوَ الَّذِي يُصَوِّرُكُمْ فِي الْأَرْحَامِ كَيْفَ يَشَاءُ",
-      "translation": "It is He who forms you in the wombs however He wills.",
-      "surah": "Ali 'Imran 3:6"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "هُوَ الَّذِي يُصَوِّرُكُمْ فِي الْأَرْحَامِ كَيْفَ يَشَاءُ ۚ لَا إِلَٰهَ إِلَّا هُوَ الْعَزِيزُ الْحَكِيمُ",
+      "translation": "It is He who forms you in the wombs however He wills. There is no deity except Him, the Exalted in Might, the Wise.",
+      "reference": "Surah Ali 'Imran 3:6"
     },
-    "howToLive": "Embrace self-love grounded in gratitude. Praise the beauty of others without jealousy, seeing it as a reflection of Al-Musawwir's palette.",
-    "dua": "اللَّهُمَّ كَمَا حَسَّنْتَ خَلْقِي فَحَسِّنْ خُلُقِي (O Allah, just as You perfected my physical creation, so too perfect my character).",
+    "revelationMeaning": "Al-Musawwir completes the triad of creation by bestowing upon each created entity its specific shape, features, color, and unique individuality. Classical commentators highlight that out of countless billions of human beings, no two faces, voices, or fingerprints are identical—testifying to the boundless ingenuity and artistic perfection of Al-Musawwir.",
+    "quranicReflection": "The Qur'an declares: 'He created the heavens and earth in truth and formed you and perfected your forms' (64:3). The divine shaping of human beings in the womb (3:6) demonstrates intimate care and deliberate purpose behind every individual's appearance.",
+    "response": "Accept your natural physical form with deep contentment and gratitude, rejecting superficial worldly standards that breed self-doubt. Respect the diverse forms of others, and focus on adorning your inner character.",
+    "heroSummary": "The Giver of every form, who crafts every creature with unique distinction, flawless proportion, and wisdom.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ كَمَا حَسَّنْتَ خَلْقِي فَحَسِّنْ خُلُقِي",
+      "translation": "O Allah, just as You perfected my form, so too perfect my character.",
+      "reference": "Musnad Ahmad 24392, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا مُصَوِّرُ، صَوِّرْ قَلْبِي عَلَى الْهُدَى وَالتَّقْوَى، وَاجْعَلْ حَيَاتِي جَمِيلَةً بِطَاعَتِكَ",
+      "translation": "O Giver of every form, shape my heart upon guidance and piety, and make my life beautiful through obedience to You."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
-      "self-worth",
-      "healing",
       "gratitude",
-      "beauty"
+      "beauty",
+      "healing",
+      "wonder",
+      "purpose"
     ]
   },
   {
     "id": 14,
     "arabic": "الْغَفَّارُ",
     "transliteration": "Al-Ghaffār",
-    "meaning": "The Repeatedly Forgiving, The Continuous Veiler of Sins",
+    "meaning": "The One who repeatedly forgives",
     "root": "غ-ف-ر (Ghayn-Faa-Raa)",
-    "rootMeaning": "From 'Mighfar' (the protective chainmail helmet) — to shield, conceal, and protect from harmful repercussions.",
+    "rootMeaning": "Veiling, covering, shielding from harm (from mighfar, the warrior's protective helmet), and pardoning sins.",
     "category": "Forgiveness & Mercy",
-    "yqExplanation": "Classical analysis contrasts Al-Ghaffar with Al-Ghafur. Al-Ghaffar is on the intensive active scale: the One who forgives over and over again, no matter how many times you stumble and return. If you sin a thousand times and repent a thousand times, Al-Ghaffar meets each repentance with open forgiveness.",
-    "nakExplanation": "Linguistic analysis highlights the root meaning of covering: a 'Mighfar' protects the warrior's head and conceals his face from arrows. When you sin, Al-Ghaffar covers your shame in this life and protects you from the spiritual fallout.",
-    "quranAyah": {
-      "arabic": "وَإِنِّي لَغَفَّارٌ لِّمَن تَابَ وَآمَنَ وَعَمِلَ صَالِحًا",
-      "translation": "And indeed, I am the Perpetual Forgiver of whoever repents and believes and does righteousness.",
-      "surah": "Taha 20:82"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "وَإِنِّي لَغَفَّارٌ لِّمَن تَابَ وَآمَنَ وَعَمِلَ صَالِحًا ثُمَّ اهْتَدَىٰ",
+      "translation": "And indeed, I am the Perpetual Forgiver of whoever repents and believes and does righteousness and then remains guided.",
+      "reference": "Surah Ta-Ha 20:82"
     },
-    "howToLive": "Conceal the shortcomings of others. If someone slips up, do not broadcast their failure; wrap them in the grace of your forgiveness.",
-    "dua": "يَا غَفَّارُ اغْفِرْ لِي ذُنُوبِي كُلَّهَا، دِقَّهَا وَجِلَّهَا (O Perpetual Forgiver, forgive all my sins, the minor and the major).",
+    "revelationMeaning": "Formulated on the intensive measure of frequency, Al-Ghaffar is the One who forgives sins repeatedly, time after time. Classical scholars contrast Al-Ghaffar with Al-Ghafur: Al-Ghafur emphasizes the profound vastness and gravity of sins that Allah forgives, while Al-Ghaffar emphasizes the continuous recurrence of divine forgiveness whenever a servant returns in sincere repentance, regardless of how often they have previously stumbled.",
+    "quranicReflection": "The Qur'an frequently conjoins Al-Ghaffar with Al-'Aziz ('Al-'Aziz Al-Ghaffar' - e.g. 38:66, 39:5). This pairing demonstrates that Allah pardons not out of helplessness or inability to take retribution, but out of supreme, unshakeable sovereignty and honorable benevolence.",
+    "response": "Never succumb to despair over your repeated errors; hasten continually back to Allah with earnest repentance. Practice concealing the faults and indiscretions of others rather than exposing them.",
+    "heroSummary": "The One who repeatedly forgives, continually veiling the faults of His servants and welcoming their return.",
+    "authenticDua": {
+      "arabic": "رَبِّ اغْفِرْ لِي وَتُبْ عَلَيَّ، إِنَّكَ أَنْتَ التَّوَّابُ الْغَفُورُ",
+      "translation": "My Lord, forgive me and accept my repentance; indeed You are the Accepter of Repentance, the Forgiving.",
+      "reference": "Sunan Abi Dawud 1516, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا غَفَّارُ، اغْفِرْ لِي ذُنُوبِي مَا عَلِمْتُ مِنْهَا وَمَا لَمْ أَعْلَمْ، وَاسْتُرْ عُيُوبِي فِي الدُّنْيَا وَالْآخِرَةِ",
+      "translation": "O One who repeatedly forgives, forgive my sins that I know and those I know not, and veil my shortcomings in this life and the next."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "guilt",
       "forgiveness",
       "hope",
-      "repentance"
+      "repentance",
+      "peace"
     ]
   },
   {
     "id": 15,
     "arabic": "الْقَهَّارُ",
     "transliteration": "Al-Qahhār",
-    "meaning": "The Subduer, The Irresistible Victor over All",
-    "root": "ق-ه-ر (Qaf-Haa-Raa)",
-    "rootMeaning": "Conquering, dominating, holding absolute sway over every rebel and tyrant.",
+    "meaning": "The Irresistible Subduer",
+    "root": "ق-ه-ر (Qaaf-Haa-Raa)",
+    "rootMeaning": "Overpowering, subduing, prevailing over all opposition, and holding absolute dominance.",
     "category": "Power & Might",
-    "yqExplanation": "Classical commentary explains that no superpower, virus, emperor, or cosmic force can resist the decree of Al-Qahhar. Pharaoh, Nimrod, and modern oppressors all dissolve when His command descends.",
-    "nakExplanation": "Linguistic insight shows how Al-Qahhar gives deep relief to the oppressed. When the innocent suffer at the hands of ruthless tyrants, know that nobody escapes Al-Qahhar; their arrogance is merely on a short leash.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "قُلِ اللَّهُ خَالِقُ كُلِّ شَيْءٍ وَهُوَ الْوَاحِدُ الْقَهَّارُ",
-      "translation": "Say, 'Allah is the Creator of all things, and He is the One, the Prevailing.'",
-      "surah": "Ar-Ra'd 13:16"
+      "translation": "Say, 'Allah is the Creator of all things, and He is the One, the Prevailing Subduer.'",
+      "reference": "Surah Ar-Ra'd 13:16"
     },
-    "howToLive": "Subdue your own harmful base desires (Nafs). Let the thought of Al-Qahhar restrain your tongue before you wrong someone weaker than you.",
-    "dua": "يَا قَهَّارُ اقْهَرْ عَدُوَّنَا وَشَيْطَانَنَا وَانْصُرْنَا عَلَى أَنْفُسِنَا (O Irresistible Victor, subdue our spiritual adversaries and grant us victory over our base desires).",
+    "revelationMeaning": "Classical scholars (such as Al-Bayhaqi and Al-Ghazali) explain that Al-Qahhar is the One before whose majesty every creature is utterly humbled and subject. Celestial spheres, terrestrial forces, rebellious despots, and tiny microbes alike operate solely within the boundary of His decree. No entity can escape His sovereign grip or defy His ultimate will.",
+    "quranicReflection": "In the Qur'an, Al-Qahhar is consistently linked to Al-Wahid ('Al-Wahid Al-Qahhar' - e.g. 12:39, 14:48, 38:65, 39:4). This coupling proves that absolute oneness demands absolute subduing authority; a universe with multiple independent sovereigns could never maintain such perfect order.",
+    "response": "Subdue your personal ego and egotistical desires before they lead you into transgression. When witnessing worldly arrogance and oppression, maintain certainty that no tyrant is beyond the reach of divine justice.",
+    "heroSummary": "The Irresistible Subduer, before whose absolute sovereignty and divine will the entire cosmos yields in submission.",
+    "authenticDua": {
+      "arabic": "لَا إِلَٰهَ إِلَّا اللَّهُ الْوَاحِدُ الْقَهَّارُ، رَبُّ السَّمَاوَاتِ وَالْأَرْضِ وَمَا بَيْنَهُمَا الْعَزِيزُ الْغَفَّارُ",
+      "translation": "There is no deity except Allah, the One, the Irresistible Subduer, Lord of the heavens and the earth and whatever is between them, the Exalted in Might, the Perpetual Forgiver.",
+      "reference": "Sunan an-Nasa'i 10706, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا قَهَّارُ، اقْهَرْ كُلَّ مَا يَصُدُّنِي عَنْ طَاعَتِكَ، وَاحْمِ الْمُسْتَضْعَفِينَ مِنْ كَيْدِ الظَّالِمِينَ",
+      "translation": "O Irresistible Subduer, subdue whatever hinders me from Your obedience, and protect the vulnerable from the machinations of the oppressors."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "injustice",
       "strength",
       "oppression",
-      "hope"
+      "hope",
+      "awe"
     ]
   },
   {
     "id": 16,
     "arabic": "الْوَهَّابُ",
     "transliteration": "Al-Wahhāb",
-    "meaning": "The Constant Bestower of Unconditional Gifts",
+    "meaning": "The Constant Bestower of gifts",
     "root": "و-ه-ب (Waw-Haa-Baa)",
-    "rootMeaning": "Giving a 'Hiba' (a pure, unearned gift) expecting zero repayment, favor, or entitlement.",
+    "rootMeaning": "Giving freely (Hiba) out of pure bounty, without seeking any recompense, return, or prior claim.",
     "category": "Creation & Sustenance",
-    "yqExplanation": "Classical commentary points out that an ordinary giver expects thanks, exchange, or loyalty. Al-Wahhab gives simply out of pure generosity. The prophets always invoked Al-Wahhab when asking for miracles that seemed biologically impossible (like Zakariyya asking for a child in old age).",
-    "nakExplanation": "Linguistic reflection highlights that our life, sight, consciousness, and children were never earned or billed to us; they are pure 'Hiba' gifts from Al-Wahhab. When you ask Him, ask big—for He loves to shower gifts without restriction.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ الْوَهَّابُ",
-      "translation": "...grant us from Yourself mercy. Indeed, You are the Bestower.",
-      "surah": "Ali 'Imran 3:8"
+      "translation": "Our Lord, let not our hearts deviate after You have guided us and grant us from Yourself mercy. Indeed, You are the Bestower.",
+      "reference": "Surah Ali 'Imran 3:8"
     },
-    "howToLive": "Give gifts to loved ones and strangers without strings attached. Surprise people with unexpected kindness and generous tips.",
-    "dua": "رَبِّ هَبْ لِي حُكْمًا وَأَلْحِقْنِي بِالصَّالِحِينَ، وَهَبْ لِي مِنْ لَدُنْكَ رَحْمَةً (My Lord, grant me wisdom and join me with the righteous, and bestow upon me mercy from Yourself).",
+    "revelationMeaning": "Classical scholars (including Al-Khattabi and Al-Ghazali) highlight that a true gift (hibah) is one given without any expectation of compensation, gratitude, or return. Al-Wahhab bestows life, faith, intellect, and worldly sustenance continually upon creation out of His pure generosity and perfect wisdom, giving to whom He wills in accordance with what is best for them, not due to any entitlement on creation's part.",
+    "quranicReflection": "The Prophets of Allah frequently appealed to Al-Wahhab when asking for divine favors beyond normal material expectation: Zakariyya asked for a righteous heir (19:5), Sulayman asked for a kingdom unmatched by any (38:35), and the people of faith ask for steadfast guidance and mercy (3:8).",
+    "response": "Give generously to others without anticipating gratitude or reciprocal favors. Realize that all your faculties, provisions, and spiritual blessings are unearned gifts from Al-Wahhab to be deployed in doing good.",
+    "heroSummary": "The Constant Bestower of gifts, who showers blessings, guidance, and favors out of pure generosity and divine wisdom.",
+    "authenticDua": {
+      "arabic": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ الْوَهَّابُ",
+      "translation": "Our Lord, let not our hearts deviate after You have guided us and grant us from Yourself mercy. Indeed, You are the Bestower.",
+      "reference": "Surah Ali 'Imran 3:8"
+    },
+    "suggestedDua": {
+      "arabic": "يَا وَهَّابُ، هَبْ لِي قَلْبًا خَاشِعًا، وَعِلْمًا نَافِعًا، وَذُرِّيَّةً طَيِّبَةً، وَبَارِكْ لِي فِيمَا رَزَقْتَنِي",
+      "translation": "O Constant Bestower, grant me a humble heart, beneficial knowledge, righteous progeny, and bless whatever You have provided me."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "gratitude",
       "financial",
       "hope",
-      "need"
+      "need",
+      "peace"
     ]
   },
   {
     "id": 17,
     "arabic": "الرَّزَّاقُ",
     "transliteration": "Ar-Razzāq",
-    "meaning": "The Sustainer, The Endless Provider of Nourishment",
-    "root": "ر-ز-ق (Raa-Zay-Qaf)",
-    "rootMeaning": "Allotted nourishment, provisions, sustenance, and everything necessary for survival and flourishing.",
+    "meaning": "The Constant and Complete Provider",
+    "root": "ر-ز-ق (Raa-Zay-Qaaf)",
+    "rootMeaning": "Apportioning sustenance (Rizq), nourishment, livelihood, and everything essential for physical and spiritual existence.",
     "category": "Creation & Sustenance",
-    "yqExplanation": "Classical scholars note that 'Rizq' is not merely your bank balance; it includes intellect, health, righteous companions, peace of mind, and Quranic wisdom. Ar-Razzaq guarantees provision for every ant inside dark stones, so why panic about your career?",
-    "nakExplanation": "Quranic analysis emphasizes the grammatical scale of 'Fa''al' (فَعَّال), indicating continuous, tireless, active distribution of sustenance every fraction of a second. Your job is only a straw; Ar-Razzaq is the Ocean supplying it.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "إِنَّ اللَّهَ هُوَ الرَّزَّاقُ ذُو الْقُوَّةِ الْمَتِينُ",
-      "translation": "Indeed, it is Allah who is the Continual Provider, the firm possessor of strength.",
-      "surah": "Adh-Dhariyat 51:58"
+      "translation": "Indeed, it is Allah who is the Continual Provider, the possessor of power, the strong.",
+      "reference": "Surah Adh-Dhariyat 51:58"
     },
-    "howToLive": "Work with diligence and ethical honesty, but untether your heart from financial dread. Never compromise your values for a paycheck.",
-    "dua": "اللَّهُمَّ إِنِّي أَسْأَلُكَ رِزْقًا طَيِّبًا، وَعِلْمًا نَافِعًا، وَعَمَلًا مُتَقَبَّلًا (O Allah, I ask You for pure sustenance, beneficial knowledge, and accepted deeds).",
+    "revelationMeaning": "Classical theologians clarify that provision (Rizq) encompasses two foundational dimensions: bodily provision (food, clothing, health, shelter) and spiritual provision (knowledge, faith, character, wisdom). Ar-Razzaq guarantees the sustenance of every living creature on earth, yet distributes it with divine wisdom and balance—not as a sign of worldly favoritism or guaranteed prosperity, but as a purposeful trust and test.",
+    "quranicReflection": "The intensive pattern 'Fa‘‘āl' (فَعَّال) signifies unceasing, universal provision across all time and space. The Qur'an reassures: 'And there is no creature on earth but that upon Allah is its provision' (11:6), freeing the believer from agonizing anxiety over sustenance.",
+    "response": "Pursue your livelihood with ethical diligence, honesty, and hard work, but attach your reliance solely to the Provider rather than your employer or investments. Spend freely on the needy from what Allah has placed in your hands.",
+    "heroSummary": "The Constant and Complete Provider, sustaining bodies with food and souls with faith through His wisdom.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا",
+      "translation": "O Allah, I ask You for beneficial knowledge, wholesome provision, and accepted deeds.",
+      "reference": "Sunan Ibn Majah 925, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا رَزَّاقُ، ارْزُقْنِي رِزْقًا حَلَالًا بِلَا كَدٍّ، وَاسْتَجِبْ دُعَائِي بِلَا رَدٍّ، وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ",
+      "translation": "O Constant Provider, grant me wholesome provision without dishonor, answer my supplication without rejection, and enrich me through Your bounty so that I depend upon none beside You."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "financial",
       "stress",
@@ -470,19 +653,30 @@ export const NAMES_DATA = [
     "id": 18,
     "arabic": "الْفَتَّاحُ",
     "transliteration": "Al-Fattāḥ",
-    "meaning": "The Opener of All Doors, The Decisive Judge",
+    "meaning": "The Opener and Decisive Judge",
     "root": "ف-ت-ح (Faa-Taa-Haa)",
-    "rootMeaning": "Opening locked doors, unlocking wisdom, revealing truth, and providing definitive breakthroughs.",
+    "rootMeaning": "Unlocking what is closed, opening gates of mercy and insight, granting victory, and judging decisively between opposing parties.",
     "category": "Wisdom & Knowledge",
-    "yqExplanation": "Classical commentary explains that Al-Fattah opens two locks: the physical lock of closed avenues (a stalled job, closed borders, blocked marriages) and the spiritual lock of the heart and mind (clarifying complex dilemmas and lifting confusion).",
-    "nakExplanation": "Linguistic analysis discusses 'Fath' as a decisive victory after a painful blockade. When every worldly avenue is slammed in your face and you feel cornered, remember Al-Fattah holds the master key to realities you cannot even fathom.",
-    "quranAyah": {
-      "arabic": "مَّا يَفْتَحِ اللَّهُ لِلنَّاسِ مِن رَّحْمَةٍ فَلَا مُمْسِكَ لَهَا",
-      "translation": "Whatever Allah opens to people of mercy, none can withhold it.",
-      "surah": "Fatir 35:2"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "قُلْ يَجْمَعُ بَيْنَنَا رَبُّنَا ثُمَّ يَفْتَحُ بَيْنَنَا بِالْحَقِّ وَهُوَ الْفَتَّاحُ الْعَلِيمُ",
+      "translation": "Say, 'Our Lord will bring us together; then He will judge between us in truth. And He is the Knowing Judge.'",
+      "reference": "Surah Saba 34:26"
     },
-    "howToLive": "When feeling stuck, stop pounding on closed doors; raise your hands to the Opener. Be an opener of good doors and a closer of evil avenues for others.",
-    "dua": "اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ وَيَسِّرْ لِي أُمُورِي كُلَّهَا (O Allah, open for me the doors of Your mercy and ease all my affairs).",
+    "revelationMeaning": "Classical authorities (such as Ibn Kathir and Al-Khattabi) explain that Al-Fattah incorporates two vital realities: First, He is the Decisive Judge (Al-Hakim Al-Fattah) who arbitrates between truth and falsehood, removing ambiguity and rendering perfect justice between His servants. Second, He is the Opener who unlocks locked doors of mercy, understanding, sustenance, and spiritual breakthroughs when all worldly avenues seem exhausted.",
+    "quranicReflection": "In Surah Saba (34:26), Al-Fattah is paired with Al-'Alim ('Al-Fattah Al-'Alim'), showing that His judicial decisions and His opening of worldly blessings are guided by omniscient knowledge. In Surah Fatir (35:2), Allah affirms: 'Whatever Allah opens to people of mercy, none can withhold it.'",
+    "response": "When confronting perplexing dilemmas, interpersonal conflicts, or blocked paths, turn to Al-Fattah for clarity and righteous opening. Commit yourself to fairness and upright arbitration in all disagreements.",
+    "heroSummary": "The Opener and Decisive Judge, who unlocks closed paths of mercy and establishes truth with absolute justice.",
+    "authenticDua": {
+      "arabic": "رَبَّنَا افْتَحْ بَيْنَنَا وَبَيْنَ قَوْمِنَا بِالْحَقِّ وَأَنْتَ خَيْرُ الْفَاتِحِينَ",
+      "translation": "Our Lord, judge between us and our people in truth, and You are the best of those who give judgment.",
+      "reference": "Surah Al-A'raf 7:89"
+    },
+    "suggestedDua": {
+      "arabic": "يَا فَتَّاحُ، افْتَحْ لِي أَبْوَابَ الْخَيْرِ وَالرَّحْمَةِ، وَاقْضِ لِي حَاجَتِي، وَيَسِّرْ لِي كُلَّ عَسِيرٍ",
+      "translation": "O Opener and Decisive Judge, open for me the gates of goodness and mercy, fulfill my needs, and ease for me every difficulty."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "blocked",
       "decision",
@@ -495,67 +689,101 @@ export const NAMES_DATA = [
     "id": 19,
     "arabic": "الْعَلِيمُ",
     "transliteration": "Al-‘Alīm",
-    "meaning": "The All-Knowing, Omniscient of Every Secret",
-    "root": "ع-ل-م (‘Ayn-Lam-Meem)",
-    "rootMeaning": "Comprehensive, infallible, timeless knowledge encompassing past, present, future, and what never was.",
+    "meaning": "The All-Knowing",
+    "root": "ع-ل-م (‘Ayn-Laam-Meem)",
+    "rootMeaning": "Certain, exhaustive, flawless comprehension and awareness that encompasses all realities without beginning or end.",
     "category": "Wisdom & Knowledge",
-    "yqExplanation": "Classical commentary explains that Al-Alim knows not just the visible universe, but the exact count of fallen leaves on Earth tonight, the whispered sorrow in your throat that you couldn't articulate, and the unspoken tears of every soul.",
-    "nakExplanation": "Linguistic reflection explores the immense comfort of Al-Alim. When you are misunderstood, falsely accused, or carrying a secret wound that no human recognizes, it is enough that Al-Alim knows every shred of truth.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ",
       "translation": "And He is Knowing of all things.",
-      "surah": "Al-Baqarah 2:29"
+      "reference": "Surah Al-Baqarah 2:29"
     },
-    "howToLive": "Remember that your private life is fully seen by Al-Alim. Seek knowledge with humility and teach what you learn without vanity.",
-    "dua": "اللَّهُمَّ عَلِّمْنِي مَا يَنْفَعُنِي وَانْفَعْنِي بِمَا عَلَّمْتَنِي وَزِدْنِي عِلْمًا (O Allah, teach me what benefits me, benefit me by what You have taught me, and increase me in knowledge).",
+    "revelationMeaning": "Classical scholars explain that Al-'Alim possesses eternal, unacquired, and all-embracing knowledge. His awareness encompasses the visible and invisible, past, present, and future, the general principles and intimate minutiae. He knows the secret thoughts of the heart, the whispers of the soul, and what never was—how it would have been had it occurred. Nothing escapes His notice by an atom's weight.",
+    "quranicReflection": "One of the most frequently mentioned names in the Qur'an, paired with Al-Hakim (The Wise), As-Sami' (The All-Hearing), and Al-Qadir (The All-Powerful). This demonstrates that all divine actions, rulings, and prohibitions are rooted in complete and infallible wisdom.",
+    "response": "Live with conscious awareness that Allah witnesses your private conduct and secret thoughts. Pursue knowledge with genuine humility, and let your learning inspire ethical action rather than pride.",
+    "heroSummary": "The All-Knowing, whose infallible awareness encompasses every secret, whisper, and reality in the heavens and earth.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ بِعِلْمِكَ الْغَيْبَ وَقُدْرَتِكَ عَلَى الْخَلْقِ أَحْيِنِي مَا عَلِمْتَ الْحَيَاةَ خَيْرًا لِي، وَتَوَفَّنِي إِذَا عَلِمْتَ الْوَفَاةَ خَيْرًا لِي",
+      "translation": "O Allah, by Your knowledge of the unseen and Your power over creation, keep me alive as long as You know that life is good for me, and take my soul when You know that death is good for me.",
+      "reference": "Sunan an-Nasa'i 1305, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا عَلِيمُ، أَنْتَ تَعْلَمُ سِرِّي وَعَلَانِيَتِي فَاقْبَلْ مَعْذِرَتِي، وَتَعْلَمُ حَاجَتِي فَأَعْطِنِي سُؤْلِي",
+      "translation": "O All-Knowing, You know my secret and my manifest state so accept my excuse, and You know my need so grant me my petition."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
-      "lonely",
+      "wisdom",
       "confusion",
       "comfort",
-      "wisdom"
+      "lonely",
+      "spiritual"
     ]
   },
   {
     "id": 20,
     "arabic": "الْقَابِضُ",
     "transliteration": "Al-Qābiḍ",
-    "meaning": "The Withholder, The Restrainer, The Contractor",
-    "root": "ق-ب-ض (Qaf-Baa-Daad)",
-    "rootMeaning": "Contracting, withholding, drawing together with purposeful wisdom.",
+    "meaning": "The Withholder and Constrictor",
+    "root": "ق-ب-ض (Qaaf-Baa-Daad)",
+    "rootMeaning": "Grasping, withholding, constricting, holding back, and drawing together with divine wisdom and balance.",
     "category": "Power & Might",
-    "yqExplanation": "Classical scholars note that Al-Qabid is always paired in reflection with Al-Basit. When Allah withholds money, answers, or ease, it is not out of stinginess; it is out of divine calibration to protect your spiritual health from complacency.",
-    "nakExplanation": "Linguistic reflection uses the metaphor of the human heart: the heart must contract (Qabd) before it can expand (Bast) to pump life-giving blood. Spiritual contraction (gloom, quietness) prepares your soul to receive the upcoming expansion.",
-    "quranAyah": {
-      "arabic": "وَاللَّهُ يَقْبِضُ وَيَبْسُطُ وَإِلَيْهِ تُرْجَعُونَ",
-      "translation": "And it is Allah who withholds and grants abundance, and to Him you will be returned.",
-      "surah": "Al-Baqarah 2:245"
+    "evidenceStatus": "Explicit in authentic Sunnah",
+    "evidence": {
+      "arabic": "إِنَّ اللَّهَ هُوَ الْمُسَعِّرُ، الْقَابِضُ، الْبَاسِطُ، الرَّازِقُ",
+      "translation": "Indeed, Allah is the One who fixes prices, the Withholder, the Expander, the Provider.",
+      "reference": "Sunan Abi Dawud 3451, Jami' at-Tirmidhi 1314"
     },
-    "howToLive": "During seasons of restriction, practice patient contentment (Sabr). Recognize that what was withheld from you might have destroyed you had it been granted.",
-    "dua": "يَا قَابِضُ اقْبِضْ قُلُوبَنَا عَنْ مَعَاصِيكَ وَاشْرَحْ صُدُورَنَا لِطَاعَتِكَ (O Withholder, pull our hearts away from disobedience and expand our chests in obedience).",
+    "revelationMeaning": "Classical scholars (such as Al-Khattabi and Al-Ghazali) teach that Al-Qabid must be understood and mentioned alongside Al-Basit. Allah withholds material wealth, delays health, or constricts ease according to divine wisdom—not out of limitation or spite, but as a safeguard, test, or spiritual purification. In the heart, states of contraction (Qabd) humble the soul, turning the servant back to total reliance upon the Creator.",
+    "quranicReflection": "The verb form is affirmed in the Qur'an: 'And it is Allah who withholds and grants abundance, and to Him you will be returned' (Al-Baqarah 2:245). This pairing shows that contraction and expansion are alternating instruments of divine nurture.",
+    "response": "Practice patient fortitude (Sabr) during periods of scarcity, restriction, or inner tightness. Recognize that what Allah withholds from you may well be a hidden protection against harm or heedlessness.",
+    "heroSummary": "The Withholder and Constrictor, who measures and restrains ease or provision according to divine wisdom and protection.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ، وَلَا يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ",
+      "translation": "O Allah, none can withhold what You grant, none can grant what You withhold, and no fortune can benefit the fortunate against You.",
+      "reference": "Sahih al-Bukhari 844, Sahih Muslim 593"
+    },
+    "suggestedDua": {
+      "arabic": "يَا قَابِضُ، اقْبِضْ جَوَارِحِي عَنْ مَعَاصِيكَ، وَاكْفِنِي شَرَّ كُلِّ ذِي شَرٍّ، وَلَا تَحْرِمْنِي خَيْرَ مَا عِنْدَكَ بِشَرِّ مَا عِنْدِي",
+      "translation": "O Withholder, restrain my limbs from disobedience to You, shield me from the evil of every evil-doer, and do not deprive me of the good You possess because of the evil I possess."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "sadness",
       "stress",
       "financial",
-      "patience"
+      "patience",
+      "comfort"
     ]
   },
   {
     "id": 21,
     "arabic": "الْبَاسِطُ",
     "transliteration": "Al-Bāsiṭ",
-    "meaning": "The Expander, The Magnanimous Enlarger of Provision and Hearts",
+    "meaning": "The Expander and Giver of abundance",
     "root": "ب-س-ط (Baa-Seen-Taa)",
-    "rootMeaning": "Vividly used by the Bedouin for unrolling and spreading out a vast woven rug (bisāṭ), or an eagle spreading its wings wide to soar across the boundless desert horizon; it conveys effortless, generous unfolding, relief from constriction, and untrammeled expansiveness.",
+    "rootMeaning": "Spreading out, unrolling, expanding wide, releasing constriction, and granting generous abundance.",
     "category": "Creation & Sustenance",
-    "yqExplanation": "Classical theological commentary underscores that Al-Bāsiṭ is an intrinsically paired attribute, perpetually understood in sublime dynamic balance with Al-Qābiḍ. Imam Al-Ghazali highlights in 'Al-Maqsad Al-Asna' that Allah expands sustenance and breath, unfolding life across creation, yet regulates this surge with divine wisdom lest human beings transgress on earth through heedless luxury. When Allah acts as Al-Bāsiṭ, He dilates contracted chests, unlocks doors of inspiration that seemed permanently shuttered, and pours out spiritual light after seasons of spiritual drought.",
-    "nakExplanation": "Linguistic reflection points to the morphological resonance of 'bast' in the Qur'an—such as when Musa (AS) cries: 'Rabbi-shraḥ lī ṣadrī' (Lord, expand for me my chest), or in the dramatic declaration: 'Wallāhu yaqbiḍu wa yabsuṭ' (2:245). The verb 'yabsuṭ' evokes a hand unclenching, releasing an abundance that dispels suffocating tightness. Psychologically, every trial carries an internal squeeze; when the relief of Al-Bāsiṭ arrives, the soul feels the sudden, breathtaking arrival of fresh air after drowning in despair.",
-    "quranAyah": {
-      "arabic": "اللَّهُ يَبْسُطُ الرِّزْقَ لِمَن يَشَاءُ مِنْ عِبَادِهِ وَيَقْدِرُ لَهُ ۚ إِنَّ اللَّهَ بِكُلِّ شَيْءٍ عَلِيمٌ",
-      "translation": "Allah extends provision for whom He wills of His servants and restricts it for him. Indeed, Allah is Knower of all things.",
-      "surah": "Al-'Ankabut 29:62"
+    "evidenceStatus": "Explicit in authentic Sunnah",
+    "evidence": {
+      "arabic": "إِنَّ اللَّهَ هُوَ الْمُسَعِّرُ، الْقَابِضُ، الْبَاسِطُ، الرَّازِقُ",
+      "translation": "Indeed, Allah is the One who fixes prices, the Withholder, the Expander, the Provider.",
+      "reference": "Sunan Abi Dawud 3451, Jami' at-Tirmidhi 1314"
     },
-    "howToLive": "Be an agent of relief and broad-minded generosity in the lives of constricted people. Unclench your fist in charity, smile warmly to alleviate someone's tension, and never hoard wealth or knowledge when someone around you is suffocating.",
-    "dua": "اللَّهُمَّ ابْسُطْ عَلَيْنَا مِنْ بَرَكَاتِكَ وَرَحْمَتِكَ وَفَضْلِكَ وَرِزْقِكَ (O Allah, unfold and shower upon us of Your blessings, Your mercy, Your bounty, and Your provision).",
+    "revelationMeaning": "Classical scholars underscore that Al-Basit is intrinsically paired with Al-Qabid. Allah expands provision, breath, knowledge, and inner peace across creation according to His supreme wisdom. When Al-Basit grants ease, He dilates contracted chests, unlocks avenues of hope, and pours out spiritual light after seasons of hardship, ensuring humanity does not despair.",
+    "quranicReflection": "The verb 'yabsuṭ' appears prominently in the Qur'an: 'Allah extends provision for whom He wills of His servants and restricts it' (29:62). It captures the unfolding of divine bounty across horizons and the expansion of the chest with guidance (39:22).",
+    "response": "Be an agent of relief and broad-minded generosity for those experiencing constriction. Unclench your hand in charity, speak words of comfort to the overwhelmed, and show immense gratitude when experiencing seasons of expansion.",
+    "heroSummary": "The Expander and Giver of abundance, who opens hearts with tranquility and unfolds generous provision according to His wisdom.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ ابْسُطْ عَلَيْنَا مِنْ بَرَكَاتِكَ وَرَحْمَتِكَ وَفَضْلِكَ وَرِزْقِكَ",
+      "translation": "O Allah, unfold and shower upon us of Your blessings, Your mercy, Your bounty, and Your provision.",
+      "reference": "Al-Adab Al-Mufrad 699, Musnad Ahmad 15492, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا بَاسِطُ، ابْسُطْ لِي فِي رِزْقِي وَأَعْمَارِي فِي طَاعَتِكَ، وَاشْرَحْ صَدْرِي لِنُورِ الْإِيمَانِ وَالْيَقِينِ",
+      "translation": "O Expander, expand for me my provision and lifespan in obedience to You, and open my chest to the light of faith and certainty."
+    },
     "natureImage": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "wealth",
@@ -569,328 +797,459 @@ export const NAMES_DATA = [
     "id": 22,
     "arabic": "الْخَافِضُ",
     "transliteration": "Al-Khāfiḍ",
-    "meaning": "The Abaser, The Humbler of Tyrants and Arrogance",
+    "meaning": "The One who lowers",
     "root": "خ-ف-ض (Khaa-Faa-Daad)",
-    "rootMeaning": "Concretely used in ancient Arabic for lowering a branch heavy with fruit so it reaches the earth, or a bird dipping its wing low in tender humility or descent; in the context of power, it describes bringing down what was exalted, dismantling mountainous pride to ground level.",
+    "rootMeaning": "Lowering, abasing, bringing down what was exalted, reducing pride and elevation.",
     "category": "Justice & Truth",
-    "yqExplanation": "Theological analysis pairs Al-Khāfiḍ with Ar-Rāfi‘. Imam Al-Bayhaqi and classical scholars explain that Allah brings low the haughty, tyrannical pharaohs and empires who believed themselves invincible. This lowering is not malicious caprice, but the manifestation of absolute divine justice. Al-Khāfiḍ exposes the illusion of human supremacy, stripping away hollow crowns to reveal that genuine dignity belongs only to humble subservience to the Divine.",
-    "nakExplanation": "Linguistic contemplation examines Surah Al-Waqi'ah: 'Khāfiḍatun Rāfi‘ah' (Abasing [some] and exalting [others]). The active participle 'khāfiḍah' conveys an absolute, undeniable reality: in an instant, worldly status symbols, social hierarchies, and oppressive oligarchies are flattened. For an oppressed heart crying in secret under the weight of someone's cruelty, Al-Khāfiḍ provides immense solace—reassuring you that no arrogant oppressor can remain tall when the Creator wills their abasement.",
-    "quranAyah": {
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
       "arabic": "إِذَا وَقَعَتِ الْوَاقِعَةُ ۝ لَيْسَ لِوَقْعَتِهَا كَاذِبَةٌ ۝ خَافِضَةٌ رَّافِعَةٌ",
       "translation": "When the Inevitable Event occurs, there is no denying its occurrence. It will bring down [some] and elevate [others].",
-      "surah": "Al-Waqi'ah 56:1-3"
+      "reference": "Surah Al-Waqi'ah 56:1-3"
     },
-    "howToLive": "Voluntarily lower your ego before Allah lowers it by decree. When pride tempts you to look down on others, remember that standing on worldly pedestals only makes the eventual descent steeper.",
-    "dua": "اللَّهُمَّ لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ، وَلَا رَادَّ لِمَا خَفَضْتَ، وَلَا خَافِضَ لِمَا رَفَعْتَ (O Allah, none can withhold what You grant, none can grant what You withhold, none can repel what You bring down, and none can abase what You elevate).",
+    "revelationMeaning": "Included in the popular 99-name list transmitted in At-Tirmidhi, scholars of hadith note that Al-Khafid does not appear as an explicit nominal name in the Qur'an or authentic Sunnah, but is derived from divine actions. Theologically, it is understood paired with Ar-Rafi': Allah lowers unrepentant tyrants, dismantling arrogant empires and false claims to supremacy with perfect justice, showing that temporal grandeur is transient before divine equity.",
+    "quranicReflection": "The active participle appears in Surah Al-Waqi'ah (56:3): 'Khāfiḍatun rāfi‘ah' (Abasing some and exalting others). It describes the ultimate reality of the Day of Judgment, which overturns artificial earthly hierarchies and flattens worldly pride.",
+    "response": "Voluntarily humble your ego before Allah before decree lowers it. Treat others with gentleness, never assuming an air of superiority because of wealth, lineage, or social rank.",
+    "heroSummary": "The One who lowers the haughty and humbles arrogance through perfect equity and truth.",
+    "authenticDua": null,
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ، وَلَا رَادَّ لِمَا خَفَضْتَ، وَلَا خَافِضَ لِمَا رَفَعْتَ",
+      "translation": "O Allah, none can withhold what You give, none can give what You withhold, none can repel what You lower, and none can abase what You raise."
+    },
     "natureImage": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "humility",
       "injustice",
       "awe",
-      "strength"
+      "strength",
+      "justice"
     ]
   },
   {
     "id": 23,
     "arabic": "الرَّافِعُ",
     "transliteration": "Ar-Rāfi‘",
-    "meaning": "The Exalter, The Elevator of the Humble and Righteous",
+    "meaning": "The One who raises",
     "root": "ر-ف-ع (Raa-Faa-‘Ayn)",
-    "rootMeaning": "In bedrock Arabic usage, lifting an object physically high into the sky, hoisting a royal banner so it flutters above all heads, or elevating a ceiling; it denotes upward momentum, honor, moral and spiritual ascension.",
+    "rootMeaning": "Lifting high, elevating, raising in physical height, honor, spiritual station, and esteem.",
     "category": "Justice & Truth",
-    "yqExplanation": "Classical theological works demonstrate that Ar-Rāfi‘ elevates His righteous servants in station, both in this fleeting world and in the everlasting chambers of Paradise. When the world belittles an upright believer or strips them of material prestige, Ar-Rāfi‘ hoists their honor in the heavens and casts loving acceptance into the hearts of the pure. Ibn Al-Qayyim remarks that whoever humbles themselves for Allah's sake, Ar-Rāfi‘ inevitably hoists them above their own worldly expectations.",
-    "nakExplanation": "Linguistic analysis marvels at the phrase in Surah Ash-Sharh: 'Wa rafa‘nā laka dhikrak' (And We raised high your remembrance). A persecuted orphan in the dust of Makkah had his name eternally elevated alongside the Creator's. This root conveys that elevation by Allah is immune to gravity—no human conspiracy can demote what Ar-Rāfi‘ has hoisted. When you feel unrecognized, overlooked, or trampled, know that your quiet devotion is being raised straight to the highest heavenly registers.",
-    "quranAyah": {
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
       "arabic": "يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ",
       "translation": "Allah will raise those who have believed among you and those who were given knowledge, by degrees.",
-      "surah": "Al-Mujadila 58:11"
+      "reference": "Surah Al-Mujadila 58:11"
     },
-    "howToLive": "Elevate others through genuine encouragement, sound knowledge, and uplifting words. Seek elevation solely through sincerity and quiet virtue rather than the applause of fickle crowds.",
-    "dua": "اللَّهُمَّ اغْفِرْ لِي وَارْحَمْنِي وَعَافِنِي وَاهْدِنِي وَارْزُقْنِي وَارْفَعْنِي (O Allah, forgive me, have mercy on me, grant me well-being, guide me, provide for me, and elevate my station).",
+    "revelationMeaning": "Derived from traditional listings and paired theologically with Al-Khafid, Ar-Rafi' describes Allah elevating His righteous servants in honor, spiritual rank, and heavenly degree. This elevation is not measured by worldly fame or material wealth, but by faith, sincere knowledge, and piety. Ibn Al-Qayyim remarks that whoever humbles themselves purely for the sake of Allah, Allah elevates them beyond their own worldly expectations.",
+    "quranicReflection": "The Qur'an mentions Allah as 'Rafi' ud-darajat' (Exalted in rank - 40:15) and highlights how He elevated the Prophet's remembrance: 'Wa rafa'na laka dhikrak' (94:4). True ascension is spiritual and moral, culminating in the highest ranks of Paradise.",
+    "response": "Elevate those around you through encouragement, sound teaching, and uplifting companionship. Seek elevation through quiet devotion and humble character rather than demanding the praise of fickle crowds.",
+    "heroSummary": "The One who raises the humble and elevates the righteous in spiritual station, honor, and truth.",
+    "authenticDua": {
+      "arabic": "رَبِّ اغْفِرْ لِي، وَارْحَمْنِي، وَاجْبُرْنِي، وَارْفَعْنِي، وَارْزُقْنِي، وَاهْدِنِي",
+      "translation": "My Lord, forgive me, have mercy on me, mend my brokenness, elevate my station, provide for me, and guide me.",
+      "reference": "Sunan at-Tirmidhi 284, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا رَافِعُ، ارْفَعْ دَرَجَتِي فِي عِلِّيِّينَ، وَأَعْلِ شَأْنِي بِالْإِيمَانِ وَالْعِلْمِ النَّافِعِ، وَاجْعَلْنِي مُتَوَاضِعًا لِعَظَمَتِكَ",
+      "translation": "O One who raises, elevate my rank in the highest stations, exalt my standing through faith and beneficial knowledge, and keep me humble before Your majesty."
+    },
     "natureImage": "https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "hope",
       "purpose",
       "dignity",
-      "status"
+      "status",
+      "spiritual"
     ]
   },
   {
     "id": 24,
     "arabic": "الْمُعِزُّ",
     "transliteration": "Al-Mu‘izz",
-    "meaning": "The Bestower of True Dignity, Strength, and Invincibility",
-    "root": "ع-ز-ز (‘Ayn-Zaa-Zaa)",
-    "rootMeaning": "The ancient Bedouin spoke of 'ard ‘azāz'—firm, impenetrable ground that rainwater cannot erode, or something so rare, precious, and fiercely safeguarded that it cannot be conquered, breached, or overpowered.",
+    "meaning": "The Giver of honor",
+    "root": "ع-ز-ز (‘Ayn-Zay-Zay)",
+    "rootMeaning": "Bestowing honor, dignity, strength, fortitude, and invincibility ('Izzah).",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Theological discourse distinguishes worldly fame from authentic 'Izzah. Al-Mu‘izz endows believers with an internal fortitude that makes their souls unconquerable, even when physically captive or stripped of wealth. Classical commentators cite the reality that honor cannot be bargained from creations; to seek dignity through worldly power, compromise of values, or kissing the hands of tyrants yields only hollow disgrace. All dignity originates with Al-Mu‘izz, and He clothes with it those who prostrate exclusively to Him.",
-    "nakExplanation": "Linguistic insight examines the Quranic cadence: 'Man kāna yurīdu al-‘izzata fa lillāhi al-‘izzatu jamī‘ā' (Whoever desires honor—to Allah belongs all honor entirely, 35:10). The causative form 'Al-Mu‘izz' signifies the One who actively fortifies you from collapsing inward. When you attach your identity to Allah, your self-worth ceases to fluctuate with societal validation or social media approval; you become anchored in majestic resilience.",
-    "quranAyah": {
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
       "arabic": "قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَن تَشَاءُ وَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ وَتُعِزُّ مَن تَشَاءُ وَتُذِلُّ مَن تَشَاءُ",
       "translation": "Say, 'O Allah, Owner of Sovereignty, You give sovereignty to whom You will and You take sovereignty away from whom You will. You honor whom You will and You humble whom You will.'",
-      "surah": "Ali 'Imran 3:26"
+      "reference": "Surah Ali 'Imran 3:26"
     },
-    "howToLive": "Never compromise your spiritual principles for worldly acclaim or peer pressure. Treat others with deep respect so that you never inadvertently strip someone of their God-given human dignity.",
-    "dua": "اللَّهُمَّ أَعِزَّنِي بِطَاعَتِكَ، وَلَا تُذِلَّنِي بِمَعْصِيَتِكَ (O Allah, dignify and strengthen me through obedience to You, and do not abase me through disobedience to You).",
+    "revelationMeaning": "Transmitted in the traditional list of names, Al-Mu'izz reflects the active verb 'tu'izzu man tasha''. True honor ('Izzah) is not worldly fame, wealth, or applause; it is an internal spiritual fortitude and noble standing granted by Allah to those who obey Him. Seeking dignity through worldly power or compromise of principles yields only superficial and fleeting stature; authentic honor belongs to Allah, His Messenger, and the believers.",
+    "quranicReflection": "The Qur'an establishes: 'Whoever desires honor—to Allah belongs all honor entirely' (Fatir 35:10). When a believer's heart is anchored in Allah, their self-worth ceases to fluctuate with societal validation or public opinion.",
+    "response": "Uphold your religious and ethical principles with dignity and resolve. Refuse to seek status through unprincipled sycophancy, and treat others with deep respect so as never to compromise their human dignity.",
+    "heroSummary": "The Giver of true honor, who clothes sincere believers with inner dignity, moral fortitude, and lasting grace.",
+    "authenticDua": null,
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ أَعِزَّنِي بِطَاعَتِكَ، وَلَا تُذِلَّنِي بِمَعْصِيَتِكَ، وَاجْعَلْ عِزَّتِي بِكَ مُتَّصِلَةً لَا تَنْقَطِعُ",
+      "translation": "O Allah, grant me honor through obedience to You, do not abase me through disobedience, and let my dignity be anchored in You without end."
+    },
     "natureImage": "https://images.unsplash.com/photo-1516912481808-3406841bd33c?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "strength",
       "dignity",
       "honor",
-      "courage"
+      "courage",
+      "purpose"
     ]
   },
   {
     "id": 25,
     "arabic": "الْمُذِلُّ",
     "transliteration": "Al-Mudhill",
-    "meaning": "The Humiliator of Oppressors, The Abaser of Falsehood",
-    "root": "ذ-ل-ل (Dhal-Lam-Lam)",
-    "rootMeaning": "Originally used for taming an unruly camel until its neck softens and yields, or a path beaten smooth and trampled down beneath footsteps; it reflects subjugation, stripped resistance, and utter vulnerability.",
+    "meaning": "The One who brings humiliation with justice",
+    "root": "ذ-ل-ل (Dhaal-Laam-Laam)",
+    "rootMeaning": "Subjugation, abasement, stripping of pride, and exposure of weakness (Dhull).",
     "category": "Justice & Truth",
-    "yqExplanation": "Classical scholarship explains that Al-Mudhill is the ultimate answer to tyranny and insolence. Pharaoh proclaimed 'I am your Lord most high', yet Al-Mudhill dragged him into the depths of the Red Sea to perish, later casting his preserved corpse upon the sand as a spectacle of helplessness. For believers suffering under systemic injustice, Al-Mudhill is a pillar of psychological security: no tyrant can escape the cosmic court where their vanity will be turned into public ignominy.",
-    "nakExplanation": "Linguistic analysis points out that 'dhull' (disgrace) is the exact antithesis of '‘izzah' (dignity). When an individual rejects divine guidance and persecutes the innocent, Allah causes their arrogance to backfire. The Qur'an depicts how oppressors who strutted pompously will beg on the Day of Reckoning for a single sip of water or a tiny shield against humiliation. Al-Mudhill strips the facade off wickedness, proving that disconnected from the Divine, pride is sheer impotence.",
-    "quranAyah": {
-      "arabic": "أَلَمْ يَعْلَمُوا أَنَّهُ مَن يُحَادِدِ اللَّهَ وَرَسُولَهُ فَأَنَّ لَهُ نَارَ جَهَنَّمَ خَالِدًا فِيهَا ۚ ذَٰلِكَ الْخِزْيُ الْعَظِيمُ",
-      "translation": "Do they not know that whoever opposes Allah and His Messenger—that for him is the fire of Hell, wherein he will abide eternally? That is the supreme disgrace.",
-      "surah": "At-Tawbah 9:63"
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
+      "arabic": "قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَن تَشَاءُ وَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ وَتُعِزُّ مَن تَشَاءُ وَتُذِلُّ مَن تَشَاءُ",
+      "translation": "Say, 'O Allah, Owner of Sovereignty, You give sovereignty to whom You will and You take sovereignty away from whom You will. You honor whom You will and You humble whom You will.'",
+      "reference": "Surah Ali 'Imran 3:26"
     },
-    "howToLive": "Eradicate any trace of contempt or condescension from your heart. When you observe tyrants flexing their temporary power, refuse to be intimidated by their theatrical display, knowing their reckoning is certain.",
-    "dua": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الذِّلَّةِ وَالْمَسْكَنَةِ، وَأَعُوذُ بِكَ أَنْ أَظْلِمَ أَوْ أُظْلَمَ (O Allah, I seek refuge in You from abasement and destitution, and I seek refuge in You from oppressing or being oppressed).",
+    "revelationMeaning": "Derived from the traditional listing and paired with Al-Mu'izz, Al-Mudhill reflects the divine action 'tudhillu man tasha''. Classical scholarship explains that this name embodies divine justice: Allah humbles insolent oppressors and stubborn tyrants who persecute the innocent and oppose truth. It is never an act of arbitrary cruelty, but righteous retribution. Believers are instructed to seek refuge from humiliation and never pray maliciously for the petty humiliation of others.",
+    "quranicReflection": "The Qur'an affirms that those who persistently war against Allah and His Messenger will be cast into disgrace: 'Indeed, those who oppose Allah and His Messenger are among the most humiliated' (58:20). Tyrannical arrogance inevitably dissolves before cosmic justice.",
+    "response": "Purge all traces of condescension and malicious contempt from your heart. When you observe oppressors flexing temporary power, refuse to be intimidated, knowing their ultimate reckoning is certain.",
+    "heroSummary": "The One who brings humiliation with justice, stripping false pride and confronting tyranny with divine equity.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْفَقْرِ وَالْقِلَّةِ وَالذِّلَّةِ، وَأَعُوذُ بِكَ مِنْ أَنْ أَظْلِمَ أَوْ أُظْلَمَ",
+      "translation": "O Allah, I seek refuge in You from poverty, scarcity, and humiliation, and I seek refuge in You from oppressing or being oppressed.",
+      "reference": "Sunan Abi Dawud 1544, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ اعْصِمْنَا مِنْ مَوَاقِفِ الْخِزْيِ وَالذِّلَّةِ فِي الدُّنْيَا وَالْآخِرَةِ، وَلَا تَجْعَلْنَا فِتْنَةً لِلْقَوْمِ الظَّالِمِينَ",
+      "translation": "O Allah, protect us from situations of disgrace and humiliation in this life and the next, and make us not a trial for the wrong-doing people."
+    },
     "natureImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "oppression",
       "courage",
       "justice",
-      "fear"
+      "fear",
+      "humility"
     ]
   },
   {
     "id": 26,
     "arabic": "السَّمِيعُ",
-    "transliteration": "As-Samī‘",
-    "meaning": "The All-Hearing, The Attentive Listener to Every Breath and Tear",
+    "transliteration": "As-Samīʿ",
+    "meaning": "The All-Hearing",
     "root": "س-م-ع (Seen-Meem-Ayn)",
-    "rootMeaning": "Beyond mere auditory reception of acoustic vibrations, the root encompasses deep comprehension, attentive listening, and immediate compassionate response to a desperate plea.",
+    "rootMeaning": "Signifies hearing, listening, perceiving every sound, and answering sincere supplications.",
     "category": "Wisdom & Knowledge",
-    "yqExplanation": "Theological analysis notes that As-Samī‘ is on the intensive morphological scale of 'Fa‘īl', indicating perpetual, total, and all-encompassing hearing. As-Samī‘ hears the black ant crawling upon a smooth black boulder in the dead of a pitch-black night; He hears the distinct frequencies of billions of supplications simultaneously uttered in every tongue, dialect, and cadence across all creation, without one voice overlapping or confounding another. His hearing is an attribute of supreme majesty that is also intensely intimate.",
-    "nakExplanation": "Linguistic reflection illuminates the opening of Surah Al-Mujadila: 'Qad sami‘a Allāhu qawla allatī tujādiluka fī zawjihā' (Allah has already heard the speech of the woman pleading with you concerning her husband). Aisha (RA) remarked that she was in the adjoining room behind the curtain and could barely make out the woman's whispers, yet As-Samī‘ above the seven heavens heard the tremor of her broken heart. When loneliness grips your chest and nobody understands what you are enduring, As-Samī‘ is actively tuning into the silent frequencies of your pain.",
-    "quranAyah": {
-      "arabic": "لَيْسَ كَمِثْلِهِ شَيْءٌ ۖ وَهُوَ السَّمِيعُ الْبَصِيرُ",
-      "translation": "There is nothing like unto Him, and He is the All-Hearing, the All-Seeing.",
-      "surah": "Ash-Shura 42:11"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "وَهُوَ السَّمِيعُ الْبَصِيرُ",
+      "translation": "And He is the All-Hearing, the All-Seeing.",
+      "reference": "Surah Ash-Shura 42:11"
     },
-    "howToLive": "Cultivate conscious speech: speak only truth and kindness, knowing every syllable is recorded. Conversely, pour out your heart in secret du'a, liberated by the certainty that your whisper travels instantaneously to the Throne.",
-    "dua": "رَبَّنَا تَقَبَّلْ مِنَّا ۖ إِنَّكَ أَنتَ السَّمِيعُ الْعَلِيمُ (Our Lord, accept from us; indeed, You are the All-Hearing, the All-Knowing).",
+    "revelationMeaning": "As-Sami' is the One whose hearing encompasses all sounds in existence, whether spoken aloud or whispered in the deepest secrecy. No voice drowns out another, no multiplicity of languages causes Him confusion, and no plea escapes His attention. His hearing also carries the special dimension of responding to those who call upon Him with sincere hearts.",
+    "quranicReflection": "The Qur'an frequently pairs As-Sami' with Al-'Alim (The All-Knowing) and Al-Basir (The All-Seeing), showing that nothing escapes divine perception. When Ibrahim and Isma'il raised the foundations of the Ka'bah, they prayed: 'Our Lord, accept this from us. Indeed You are the All-Hearing, the All-Knowing' (Al-Baqarah 2:127), finding quiet assurance that their devotion was heard by their Lord.",
+    "response": "Guard your tongue against backbiting, falsehood, and harshness, knowing that every syllable is heard by Allah. Turn to Him in intimate prayer, completely assured that your quietest whispers of need and sorrow are fully heard.",
+    "heroSummary": "The All-Hearing who hears every sound across creation and answers every sincere prayer without confusion.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عِلْمٍ لَا يَنْفَعُ، وَمِنْ قَلْبٍ لَا يَخْشَعُ، وَمِنْ نَفْسٍ لَا تَشْبَعُ، وَمِنْ دَعْوَةٍ لَا يُسْتَجَابُ لَهَا",
+      "translation": "O Allah, I seek refuge in You from knowledge that does not benefit, from a heart that is not humble, from a soul that is never satisfied, and from a supplication that is not answered.",
+      "reference": "Sahih Muslim 2722"
+    },
+    "suggestedDua": {
+      "arabic": "يَا سَمِيعُ، اسْمَعْ دُعَائِي وَاسْتَجِبْ رَجَائِي وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ",
+      "translation": "O All-Hearing, hear my prayer, fulfill my hope, and do not leave me to myself for even the blink of an eye.",
+      "reference": "Suggested personal supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "prayer",
-      "comfort",
-      "lonely",
       "peace",
-      "hope"
+      "hope",
+      "comfort"
     ]
   },
   {
     "id": 27,
     "arabic": "الْبَصِيرُ",
     "transliteration": "Al-Baṣīr",
-    "meaning": "The All-Seeing, The Knower of Hidden Depths and Realities",
-    "root": "ب-ص-ر (Baa-Saad-Raa)",
-    "rootMeaning": "In ancient Arabic, 'baṣar' is the physical eye, but 'baṣīrah' is the piercing eye of the intellect and heart that perceives inner motives, nuances, and essences beneath superficial cloaks.",
+    "meaning": "The All-Seeing",
+    "root": "ب-ص-ر (Ba-Sad-Ra)",
+    "rootMeaning": "Signifies sight, visual observation, discerning outward and inward states, and perceiving all visible things.",
     "category": "Wisdom & Knowledge",
-    "yqExplanation": "Classical commentary underscores that Al-Baṣīr encompasses both the visual spectrum of outer forms and the metaphysical landscape of hearts. Ibn Kathir explains that nothing in the depths of the earth, the darkness of oceans, or the expanse of galaxies escapes His perpetual vision. Al-Baṣīr sees not merely our outward deeds, but the secret intentions, subtle struggles, and unspoken sacrifices that motived them. Even when human observers misjudge your character, Al-Baṣīr gazes with absolute clarity upon the sincerity within.",
-    "nakExplanation": "Linguistic contemplation highlights the pairing of Al-Baṣīr with human actions: 'Wallāhu bimā ta‘malūna baṣīr'. When someone is watching you, your awareness sharpens; when you internalize that the Supreme Designer sees the silent tear trickling down your cheek on an unmade bed, loneliness dissolves into sacred companionship. He sees the effort you exerted even when the result fell flat, validating your struggle when nobody else applauded.",
-    "quranAyah": {
-      "arabic": "إِنَّ اللَّهَ يَعْلَمُ غَيْبَ السَّمَاوَاتِ وَالْأَرْضِ ۚ وَاللَّهُ بَصِيرٌ بِمَا تَعْمَلُونَ",
-      "translation": "Indeed, Allah knows the unseen of the heavens and the earth. And Allah is Seeing of what you do.",
-      "surah": "Al-Hujurat 49:18"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "إِنَّ اللَّهَ بِمَا تَعْمَلُونَ بَصِيرٌ",
+      "translation": "Indeed, Allah is All-Seeing of what you do.",
+      "reference": "Surah Al-Baqarah 2:110"
     },
-    "howToLive": "Live at the level of Ihsan—worshipping Allah as though you see Him, knowing that even if you cannot see Him, He undeniably sees you. Let this awareness deter you from private sin and inspire you in private charity.",
-    "dua": "اللَّهُمَّ اجْعَلْ لِي فِي قَلْبِي نُورًا، وَفِي بَصَرِي نُورًا، وَفِي سَمْعِي نُورًا، يَا سَمِيعُ يَا بَصِيرُ (O Allah, place within my heart light, within my sight light, and within my hearing light, O All-Hearing, O All-Seeing).",
+    "revelationMeaning": "Al-Basir is the One whose sight encompasses all visible reality without limitation. Darkness does not obscure His vision, physical barriers do not impede it, and distance does not diminish it. Classical scholars emphasize that while His knowledge and sight are complementary, seeing is a distinct divine attribute: He sees every movement and stillness across all realms simultaneously.",
+    "quranicReflection": "The Qur'an frequently reminds believers that all human deeds are witnessed: 'And He is with you wherever you are. And Allah is Seeing of what you do' (Al-Hadid 57:4). This divine sight is a source of profound comfort for those who do good in secret, and a solemn reminder for anyone tempted by private wrongdoing.",
+    "response": "Cultivate Ihsan by worshipping Allah as though you see Him, knowing that even if you cannot see Him, He certainly sees you. Let His watchful sight deter you from private sins and bring solace when your sacrifices go unnoticed by people.",
+    "heroSummary": "The All-Seeing who observes every movement and stillness throughout the universe without veil or boundary.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ اجْعَلْ فِي قَلْبِي نُورًا، وَفِي بَصَرِي نُورًا، وَفِي سَمْعِي نُورًا، وَعَنْ يَمِينِي نُورًا، وَعَنْ يَسَارِي نُورًا، وَفَوْقِي نُورًا، وَتَحْتِي نُورًا، وَأَمَامِي نُورًا، وَخَلْفِي نُورًا، وَاجْعَلْ لِي نُورًا",
+      "translation": "O Allah, place light in my heart, light in my sight, light in my hearing, light on my right, light on my left, light above me, light below me, light before me, light behind me, and grant me light.",
+      "reference": "Sahih al-Bukhari 6316, Sahih Muslim 763"
+    },
+    "suggestedDua": {
+      "arabic": "يَا بَصِيرُ، يَا مَنْ يَرَى مَكَانِي وَيَعْلَمُ حَالِي، بَصِّرْنِي بِعُيُوبِ نَفْسِي وَارْزُقْنِي خَشْيَتَكَ فِي الْغَيْبِ وَالشَّهَادَةِ",
+      "translation": "O All-Seeing, O You who see where I am and know my condition, grant me insight into my own shortcomings and bless me with reverent awareness of You in secret and in public.",
+      "reference": "Suggested personal supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
-      "mindfulness",
-      "comfort",
-      "awe",
-      "clarity"
+      "purpose",
+      "peace",
+      "clarity",
+      "reflection"
     ]
   },
   {
     "id": 28,
     "arabic": "الْحَكَمُ",
     "transliteration": "Al-Ḥakam",
-    "meaning": "The Supreme Arbitrator, The Decisive and Infallible Judge",
-    "root": "ح-ك-م (Haa-Kaaf-Meem)",
-    "rootMeaning": "Originally derived from the metal bit placed in a horse's bridle ('ḥakamah') which restrains the animal from straying off course, bucking wild, or destroying itself; it conveys authoritative restraint against wrongdoing, precision, and resolute settlement.",
+    "meaning": "The Perfect Judge",
+    "root": "ح-ك-م (Ha-Kaaf-Meem)",
+    "rootMeaning": "Signifies judging, arbitrating, holding back from corruption, and issuing decisive, equitable verdicts.",
     "category": "Justice & Truth",
-    "yqExplanation": "Theological scholars emphasize the vital distinction between a judge ('Qāḍī') and Al-Ḥakam. A worldly judge can be bribed, misled by deceptive lawyers, or bounded by jurisdictional limits. Al-Ḥakam, however, is the Ultimate Arbiter whose rulings are uncontestable, universally binding, and inherently immune to bias or error. On the Day of Judgment, when all earthly legal systems have vanished, Al-Ḥakam will untangle every historic dispute, vindicate every wronged soul, and render sentences of absolute precision.",
-    "nakExplanation": "Linguistic depth notes that Al-Ḥakam is on the morphological scale denoting permanence and perfection of function. In Surah Al-An'am (6:114), the Prophet ﷺ asks: 'Afa-ghayra Allāhi abtaghī ḥakaman?' (Shall I seek other than Allah as a judge?). If you rely on human societal standards, cultural fads, or political courts for ultimate validation, you will live in perpetual disillusionment. True peace is attained when you submit your grievances and your moral compass entirely to the court of Al-Ḥakam.",
-    "quranAyah": {
-      "arabic": "أَفَغَيْرَ اللَّهِ أَبْتَغِي حَكَمًا وَهُوَ الَّذِي أَنزَلَ إِلَيْكُمُ الْكِتَابَ مُفَصَّلًا",
-      "translation": "Then is it other than Allah I should seek as judge while it is He who has revealed to you the Book explained in detail?",
-      "surah": "Al-An'am 6:114"
+    "evidenceStatus": "Explicit in authentic Sunnah",
+    "evidence": {
+      "arabic": "إِنَّ اللَّهَ هُوَ الْحَكَمُ، وَإِلَيْهِ الْحُكْمُ",
+      "translation": "Indeed, Allah is the Judge, and to Him belongs all judgment.",
+      "reference": "Sunan Abi Dawud 4955, Sahih"
     },
-    "howToLive": "Refuse to take unfair advantage of others, even when you can manipulate technicalities. Entrust unresolved grievances to Allah rather than burning out in bitter obsession with personal vengeance.",
-    "dua": "اللَّهُمَّ رَبَّ جَبْرَائِيلَ وَمِيكَائِيلَ وَإِسْرَافِيلَ، فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ، عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، أَنْتَ تَحْكُمُ بَيْنَ عِبَادِكَ فِيمَا كَانُوا فِيهِ يَخْتَلِفُونَ، اهْدِنِي لِمَا اخْتُلِفَ فِيهِ مِنَ الْحَقِّ بِإِذْنِكَ (O Allah, Lord of Gabriel, Michael, and Raphael, Creator of the heavens and the earth, Knower of the unseen and seen, You judge between Your servants in what they dispute; guide me to the truth in disputed matters by Your leave).",
-    "natureImage": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1200&q=80",
+    "revelationMeaning": "Al-Hakam is the Supreme Arbiter whose verdict cannot be repealed, overturned, or delayed. He arbitrates between His servants in this world through His revealed laws, and in the Hereafter with flawless equity. His judgments are never biased or unjust, perfectly harmonizing absolute justice with perfect wisdom.",
+    "quranicReflection": "The Qur'an emphasizes that true judgment belongs solely to Allah: 'Is it other than Allah I should seek as judge, when it is He who has sent down to you the Book explained in detail?' (Al-An'am 6:114). On the Day of Judgment, every dispute will be decisively resolved by His verdict, leaving no room for falsehood.",
+    "response": "Accept the decrees and guidance of Allah with a peaceful and submitted heart. Exercise fairness and integrity in your own judgments, whether in your household, workplace, or community, refusing to let emotion sway you from justice.",
+    "heroSummary": "The Perfect Judge whose decisions cannot be overturned and whose judgments are flawless and just.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ رَبَّ جَبْرَائِيلَ وَمِيكَائِيلَ وَإِسْرَافِيلَ، فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ، عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، أَنْتَ تَحْكُمُ بَيْنَ عِبَادِكَ فِيمَا كَانُوا فِيهِ يَخْتَلِفُونَ، اهْدِنِي لِمَا اخْتُلِفَ فِيهِ مِنَ الْحَقِّ بِإِذْنِكَ",
+      "translation": "O Allah, Lord of Jibril, Mika'il, and Israfil, Creator of the heavens and earth, Knower of the unseen and seen: You judge between Your servants concerning that wherein they differ. Guide me to the truth concerning that wherein they differed, by Your leave.",
+      "reference": "Sahih Muslim 770"
+    },
+    "suggestedDua": {
+      "arabic": "يَا حَكَمُ، اقْضِ لِي بِالْحَقِّ، وَاجْعَلْنِي مِنَ الْمُقْسِطِينَ، وَلَا تَجْعَلْنِي ظَالِمًا وَلَا مَظْلُومًا",
+      "translation": "O Perfect Judge, decree for me in truth, make me among the equitable, and let me neither be an oppressor nor among the oppressed.",
+      "reference": "Suggested personal supplication"
+    },
+    "natureImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
-      "justice",
-      "dispute",
-      "truth",
-      "peace"
+      "injustice",
+      "clarity",
+      "peace",
+      "truth"
     ]
   },
   {
     "id": 29,
     "arabic": "الْعَدْلُ",
-    "transliteration": "Al-‘Adl",
-    "meaning": "The Embodiment of Absolute Justice, The Perfectly Equitable",
-    "root": "ع-د-ل (‘Ayn-Dal-Lam)",
-    "rootMeaning": "Rooted in the physical concept of balancing two loads on opposite sides of a pack animal ('‘idlayn') so neither side tilts or collapses under lopsided strain; it signifies exact equilibrium, rectitude, and placing each matter in its rightful place.",
+    "transliteration": "Al-ʿAdl",
+    "meaning": "The Perfectly Just",
+    "root": "ع-د-ل (Ayn-Dal-Lam)",
+    "rootMeaning": "Signifies justice, equity, balance, straightening what is crooked, and acting with complete fairness.",
     "category": "Justice & Truth",
-    "yqExplanation": "Imam Al-Ghazali remarks that Al-‘Adl is not merely 'just', but justice personified. To understand His justice, one must observe the cosmic architecture: galaxies, planetary orbits, the atomic structure, and biological ecosystems all exist in razor-sharp mathematical poise. In human affairs, even when trials seem asymmetric, Al-‘Adl never wrongs a single soul by an atom's weight. Earthly inequality is temporary and tested, but the cosmic ledgers of Al-‘Adl will balance every tear, struggle, and penny with flawless exactitude.",
-    "nakExplanation": "Linguistic insight reflects on how the Qur'an uses '‘adl' alongside 'iḥsān' (excellence/generosity): 'Inna Allāha ya’muru bil-‘adli wal-iḥsān' (Indeed, Allah commands justice and grace, 16:90). While justice ensures nobody is shortchanged, Allah's overarching treatment of His servants is filtered through grace—He rewards good deeds tenfold or seven hundredfold, while penalizing sins only in exact proportion. His justice protects you, while His grace envelops you.",
-    "quranAyah": {
-      "arabic": "وَتَمَّتْ كَلِمَتُ رَبِّكَ صِدْقًا وَعَدْلًا ۚ لَّا مُبَدِّلَ لِكَلِمَاتِهِ ۚ وَهُوَ السَّمِيعُ الْعَلِيمُ",
-      "translation": "And the word of your Lord has been fulfilled in truth and in justice. None can alter His words, and He is the All-Hearing, the All-Knowing.",
-      "surah": "Al-An'am 6:115"
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
+      "arabic": "وَتَمَّتْ كَلِمَتُ رَبِّكَ صِدْقًا وَعَدْلًا ۚ لَّا مُبَدِّلَ لِكَلِمَاتِهِ",
+      "translation": "And the word of your Lord has been fulfilled in truth and in justice. None can alter His words.",
+      "reference": "Surah Al-An'am 6:115"
     },
-    "howToLive": "Establish equity in your personal domain: be just with your children, fair with your employees, and honest in your trade. Balance your time between duties to the Creator and obligations to creation.",
-    "dua": "اللَّهُمَّ إِنِّي أَسْأَلُكَ كَلِمَةَ الْحَقِّ فِي الْغَضَبِ وَالرِّضَا، وَأَسْأَلُكَ الْقَصْدَ فِي الْفَقْرِ وَالْغِنَى (O Allah, I ask You for the word of truth in moments of anger and contentment, and I ask You for balance and equity in poverty and wealth).",
-    "natureImage": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=80",
+    "revelationMeaning": "Al-'Adl describes Allah as the One who is perfectly just in all His decrees, laws, and actions. Classical scholars note that while this name is prominent in the traditional ninety-nine names list, scriptural texts establish 'justice' primarily as an essential divine attribute and characteristic of His Word. Injustice is impossible for Allah because everything belongs to Him, and He has forbidden injustice for Himself.",
+    "quranicReflection": "The Qur'an repeatedly affirms that Allah never wrongs anyone: 'Indeed, Allah does not do injustice, [even] as much as an atom\\'s weight' (An-Nisa 4:40). In a Hadith Qudsi, Allah says: 'O My servants, I have forbidden oppression for Myself and made it forbidden among you, so do not oppress one another' (Sahih Muslim 2577).",
+    "response": "Stand firmly against all forms of oppression, bias, and unfairness. Treat everyone with dignity and equity, honoring obligations and refusing to compromise on moral uprightness for personal convenience.",
+    "heroSummary": "The Perfectly Just who never wrongs any soul and whose actions and decrees embody flawless equity.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنِّي عَبْدُكَ، ابْنُ عَبْدِكَ، ابْنُ أَمَتِكَ، نَاصِيَتِي بِيَدِكَ، مَاضٍ فِيَّ حُكْمُكَ، عَدْلٌ فِيَّ قَضَاؤُكَ",
+      "translation": "O Allah, I am Your servant, son of Your servant, son of Your maidservant; my forelock is in Your hand, Your command over me is ever executed, and Your decree concerning me is just.",
+      "reference": "Musnad Ahmad 3712, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا عَدْلُ، أَنْصِفْنِي مِمَّنْ ظَلَمَنِي، وَطَهِّرْ قَلْبِي مِنَ الْبَغْيِ، وَاجْعَلْنِي أَعْدِلُ فِي الْغَضَبِ وَالرِّضَا",
+      "translation": "O Perfectly Just, grant me redress against whoever has wronged me, purify my heart from malice, and help me remain just in moments of anger and contentment.",
+      "reference": "Suggested personal supplication"
+    },
+    "natureImage": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
-      "justice",
-      "fairness",
+      "injustice",
       "peace",
-      "truth"
+      "truth",
+      "purpose"
     ]
   },
   {
     "id": 30,
     "arabic": "اللَّطِيفُ",
     "transliteration": "Al-Laṭīf",
-    "meaning": "The Ineffably Subtle, The Exquisitely Gentle and Caring",
-    "root": "ل-ط-ف (Lam-Taa-Faa)",
-    "rootMeaning": "Carries two breathtaking physical imagery dimensions: something so fine, delicate, and imperceptible that physical fingers cannot grasp it (like a gentle morning mist or a microscopic thread), and performing an act of extraordinary tenderness with such subtlety that the recipient is blessed without even sensing the effort.",
+    "meaning": "The Subtle and Gently Kind",
+    "root": "ل-ط-ف (Lam-Ta-Fa)",
+    "rootMeaning": "Combines two core meanings: knowledge of the finest, most subtle details, and gentle benevolence in delivering goodness.",
     "category": "Mercy & Compassion",
-    "yqExplanation": "Classical theological commentary unpacks the dual nature of Al-Laṭīf: His infinite knowledge of the most minuscule secrets beneath reality, combined with His gentle orchestration of decrees. When you suffer through heartbreak, loss, or apparent detour, Al-Laṭīf is weaving a tapestry of protection and elevation behind the visible curtain. You only comprehend His 'Luṭf' (subtle benevolence) years later, realizing that the door that slammed in your face was the greatest mercy of your entire journey.",
-    "nakExplanation": "Linguistic and thematic focus points to Yusuf (AS) at the grand culmination of his lifelong odyssey. After being thrown into a well by envious brothers, sold as a slave, falsely accused, and imprisoned for years in an underground dungeon, Yusuf does not praise power or wealth; he utters: 'Inna Rabbī laṭīfun limā yashā'' (Indeed, my Lord is Subtle in whatever He wills, 12:100). The word captures how Allah guides you through storms not with loud thunder, but through imperceptible breezes of providence.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "لَّا تُدْرِكُهُ الْأَبْصَارُ وَهُوَ يُدْرِكُ الْأَبْصَارَ ۖ وَهُوَ اللَّطِيفُ الْخَبِيرُ",
-      "translation": "Vision perceives Him not, but He perceives all vision; and He is the Subtle, the Acquainted.",
-      "surah": "Al-An'am 6:103"
+      "translation": "Vision perceives Him not, but He perceives [all] vision; and He is the Subtle, the Fully Aware.",
+      "reference": "Surah Al-An'am 6:103"
     },
-    "howToLive": "Cultivate delicacy and emotional sensitivity in your relationships. Speak softly, notice the subtle pain in people's eyes before they voice it, and deliver help with utmost gentleness and discretion.",
-    "dua": "اللَّهُمَّ يَا لَطِيفًا بِخَلْقِهِ، يَا عَلِيمًا بِخَلْقِهِ، يَا خَبِيرًا بِخَلْقِهِ، الْطُفْ بِنَا يَا لَطِيفُ يَا عَلِيمُ يَا خَبِيرُ (O Allah, O One who is Subtle with His creation, O Knower of His creation, O Aware of His creation, be gentle with us, O Subtle, O Knower, O Aware).",
+    "revelationMeaning": "Al-Latif brings together two sublime qualities: His knowledge perceives the most delicate, concealed realities that escape human senses, and His kindness reaches His servants through pathways so gentle and unexpected that they cannot perceive their arrival. He orchestrates relief through seemingly adverse circumstances, turning trials into spiritual elevation.",
+    "quranicReflection": "When Yusuf ('alayhis-salam) reunited with his family after years of betrayal, enslavement, and false imprisonment, he recognized this divine reality: 'Indeed, my Lord is Subtle in what He wills. Indeed, it is He who is the Knowing, the Wise' (Yusuf 12:100). Divine kindness was working quietly through every hardship.",
+    "response": "Trust in Allah's gentle guidance when facing circumstances you do not yet understand. Emulate gentleness in your own character, speaking softly and acting with empathy toward those who are struggling.",
+    "heroSummary": "The Subtle and Gently Kind who knows the finest details and bestows care through unseen, delicate pathways.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ زَوَالِ نِعْمَتِكَ، وَتَحَوُّلِ عَافِيَتِكَ، وَفُجَاءَةِ نِقْمَتِكَ، وَجَمِيعِ سَخَطِكَ",
+      "translation": "O Allah, I seek refuge in You from the withdrawal of Your blessing, the alteration of Your protection, the suddenness of Your retribution, and all of Your displeasure.",
+      "reference": "Sahih Muslim 2739"
+    },
+    "suggestedDua": {
+      "arabic": "يَا لَطِيفُ، الْطُفْ بِي فِي تَيْسِيرِ كُلِّ عَسِيرٍ، فَإِنَّ تَيْسِيرَ الْعَسِيرِ عَلَيْكَ يَسِيرٌ، وَأَسْأَلُكَ التَّيْسِيرَ وَالْمُعَافَاةَ فِي الدُّنْيَا وَالْآخِرَةِ",
+      "translation": "O Subtle and Gently Kind, treat me with Your gentleness in easing every difficulty, for easing difficulty is easy for You, and I ask You for ease and wellbeing in this life and the next.",
+      "reference": "Suggested personal supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "comfort",
+      "peace",
       "anxiety",
-      "subtle",
-      "relief",
-      "mercy"
+      "hope"
     ]
   },
   {
     "id": 31,
     "arabic": "الْخَبِيرُ",
     "transliteration": "Al-Khabīr",
-    "meaning": "The All-Aware of Inner Secrets, Motives, and Nuances",
-    "root": "خ-ب-ر (Khaa-Baa-Raa)",
-    "rootMeaning": "Bedouin imagery connects this root with an expert agriculturalist who tests soil ('khubrah') by digging deep beneath the surface crust to inspect hidden moisture, grain, and roots; it denotes intimate, investigative mastery that cuts through veneer to ascertain inner essence.",
+    "meaning": "The Fully Aware",
+    "root": "خ-ب-ر (Kha-Ba-Ra)",
+    "rootMeaning": "Signifies expert knowledge, intimate awareness of inner realities, and understanding the hidden consequences of all matters.",
     "category": "Wisdom & Knowledge",
-    "yqExplanation": "Theological scholars draw a classic distinction between Al-‘Alīm and Al-Khabīr. While Al-‘Alīm knows the comprehensive reality of all things, Al-Khabīr possesses penetrating, specialized knowledge of inner workings, subconscious motivations, hidden flaws, and the precise chemistry of every heart. You cannot mask your spiritual condition before Al-Khabīr with eloquent speech or outward religious pageantry; He knows the unspoken whisper, the secret intention, and the exact weight of your fatigue.",
-    "nakExplanation": "Linguistic analysis highlights how often Al-Khabīr is paired with Al-Ḥakīm or Al-Laṭīf in the Qur'an. In Surah Al-Mulk: 'Alā ya‘lamu man khalaqa wa huwa al-Laṭīfu al-Khabīr' (Does He not know who He created, while He is the Subtle, the Aware? 67:14). The rhetorical question provides profound psychological comfort: your Creator understands your wiring better than you do yourself. When therapy fails, friends misunderstand your tears, and you cannot articulate your grief, Al-Khabīr already knows every thread of your internal tangle.",
-    "quranAyah": {
-      "arabic": "أَلَا يَعْلَمُ مَنْ خَلَقَ وَهُوَ اللَّطِيفُ الْخَبِيرُ",
-      "translation": "Does He not know, who created? And He is the Subtle, the Aware.",
-      "surah": "Al-Mulk 67:14"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "وَهُوَ الْحَكِيمُ الْخَبِيرُ",
+      "translation": "And He is the All-Wise, the Fully Aware.",
+      "reference": "Surah Al-An'am 6:18"
     },
-    "howToLive": "Be brutally honest in your internal self-accounting (Muḥāsabah). Acknowledge your faults to Allah without defensive excuses, and seek competence and deep expertise rather than settling for superficial knowledge.",
-    "dua": "اللَّهُمَّ يَا عَالِمَ السِّرِّ وَأَخْفَى، يَا خَبِيرُ بِمَا فِي الصُّدُورِ، نَقِّ قُلُوبَنَا مِنَ النِّفَاقِ وَأَعْمَالَنَا مِنَ الرِّيَاءِ (O Allah, Knower of the secret and what is even more hidden, O Aware of what lies within the chests, purify our hearts from hypocrisy and our deeds from ostentation).",
+    "revelationMeaning": "Al-Khabir is the One whose knowledge penetrates the deepest interior of all matters. While 'Al-'Alim' denotes comprehensive knowledge, 'Al-Khabir' emphasizes thorough, expert awareness of concealed secrets, hidden intentions, and ultimate outcomes. Nothing remains a mystery to Him, whether hidden beneath the earth or locked within the human chest.",
+    "quranicReflection": "Luqman reminded his son of Allah's penetrating awareness: 'O my son, even if it should be the weight of a mustard seed inside solid stone or in the heavens or in the earth, Allah will bring it forth. Indeed, Allah is Subtle and Fully Aware' (Luqman 31:16). His awareness spans every realm and every moment.",
+    "response": "Purify your intentions and private thoughts, knowing that Al-Khabir is fully aware of your motives. Live with spiritual sincerity, seeking to please the One who knows your inner reality rather than seeking the fleeting praise of people.",
+    "heroSummary": "The Fully Aware who comprehends the innermost secrets and ultimate consequences of every matter.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا أَنْتَ، أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي، وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ",
+      "translation": "O Allah, Knower of the unseen and the seen, Originator of the heavens and earth, Lord and Sovereign of all things: I bear witness that there is no deity worthy of worship except You. I seek refuge in You from the evil of my soul and from the evil and idolatry of Satan.",
+      "reference": "Sunan Abi Dawud 5067, Jami' at-Tirmidhi 3392, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا خَبِيرُ، أَنْتَ تَعْلَمُ سِرِّي وَعَلَانِيَتِي، فَأَصْلِحْ مَا ظَهَرَ مِنِّي وَمَا بَطَنَ، وَلَا تَكِلْنِي إِلَى نَفْسِي",
+      "translation": "O Fully Aware, You know what is secret and open in me; rectify what is outward in me and what is inward, and do not leave me to myself.",
+      "reference": "Suggested personal supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1476820865390-c52aeebb9891?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
-      "wisdom",
+      "reflection",
       "clarity",
-      "truth",
-      "mindfulness"
+      "purpose",
+      "peace"
     ]
   },
   {
     "id": 32,
     "arabic": "الْحَلِيمُ",
     "transliteration": "Al-Ḥalīm",
-    "meaning": "The Most Forbearing, Serenely Patient, Never Hasty to Punish",
-    "root": "ح-ل-م (Haa-Lam-Meem)",
-    "rootMeaning": "Classical Arabic describes 'ḥilm' as a state of unshakable emotional composure, maturity, and serene self-restraint; it is holding back intense wrath despite possessing absolute capability to obliterate the offender instantly.",
+    "meaning": "The Perfectly Forbearing",
+    "root": "ح-ل-م (Ha-Lam-Meem)",
+    "rootMeaning": "Signifies forbearance, gentleness, emotional composure, and withholding punishment despite having complete power to inflict it.",
     "category": "Forgiveness & Mercy",
-    "yqExplanation": "Theological masters observe that Al-Ḥalīm is distinct from human patience. A human might restrain anger out of weakness, fear of retaliation, or lack of alternatives. Allah, however, possesses infinite cosmic might; yet as His creation openly curses Him, sins brazenly on His earth, and claims He has children, Al-Ḥalīm continues to send down rain, pump oxygen into their lungs, and grant them healthy offspring. His forbearance gives sinners endless windows of opportunity to return in repentance.",
-    "nakExplanation": "Linguistic nuance highlights the contrast between hasty human reaction and divine 'ḥilm'. Humans snap, lose temper, and retaliate over trivial insults. The Qur'an frequently concludes verses of moral failure by stating: 'Wallāhu Ghafūrun Ḥalīm' (And Allah is Forgiving and Forbearing, 2:225). This pairing whispers into the sinner's ear: your slip does not immediately trigger divine fury. He gives you breathing room, calm space, and another dawn to wipe the slate clean.",
-    "quranAyah": {
-      "arabic": "تُسَبِّحُ لَهُ السَّمَاوَاتُ السَّبْعُ وَالْأَرْضُ وَمَن فِيهِنَّ ۚ ... إِنَّهُ كَانَ حَلِيمًا غَفُورًا",
-      "translation": "The seven heavens and the earth and whatever is in them exalt Him... Indeed, He is ever Forbearing and Forgiving.",
-      "surah": "Al-Isra 17:44"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "وَاعْلَمُوا أَنَّ اللَّهَ غَفُورٌ حَلِيمٌ",
+      "translation": "And know that Allah is Forgiving and Forbearing.",
+      "reference": "Surah Al-Baqarah 2:235"
     },
-    "howToLive": "Master your anger. When someone provokes or insults you, pause, swallow your wrath, and offer grace instead of burning bridges. Emulate divine forbearance by giving people second chances.",
-    "dua": "لَا إِلَٰهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَا إِلَٰهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَا إِلَٰهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ (None has the right to be worshipped but Allah, the Tremendous, the Forbearing; none has the right to be worshipped but Allah, Lord of the Magnificent Throne; none has the right to be worshipped but Allah, Lord of the heavens and earth and Lord of the Noble Throne).",
-    "natureImage": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1200&q=80",
+    "revelationMeaning": "Al-Halim is the One who witnesses the disobedience and arrogance of His creation yet does not hasten retribution. He grants people time to reflect, sustains them despite their transgressions, and keeps the gate of repentance open. His forbearance stems not from incapacity or indifference, but from supreme majesty, grace, and deliberate wisdom.",
+    "quranicReflection": "The Qur'an notes that without divine forbearance, life on earth would not survive human wrongdoing: 'And if Allah were to punish people for what they have earned, He would not leave upon the earth any living creature, but He defers them for a specified term' (Fatir 35:45). His Hilm gives sinners the opportunity to turn back before it is too late.",
+    "response": "Cultivate forbearance and composure when wronged or provoked. Control your anger, extend second chances to others, and refrain from hasty retaliation, reflecting the qualities beloved to your Lord.",
+    "heroSummary": "The Perfectly Forbearing who does not hasten punishment despite having complete power over all things.",
+    "authenticDua": {
+      "arabic": "لَا إِلَٰهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَا إِلَٰهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَا إِلَٰهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ",
+      "translation": "There is no deity worthy of worship except Allah, the Magnificent, the Forbearing. There is no deity worthy of worship except Allah, Lord of the Mighty Throne. There is no deity worthy of worship except Allah, Lord of the heavens, Lord of the earth, and Lord of the Noble Throne.",
+      "reference": "Sahih al-Bukhari 6345, Sahih Muslim 2730 (The Supplication of Anguish)"
+    },
+    "suggestedDua": {
+      "arabic": "يَا حَلِيمُ، عَامِلْنَا بِحِلْمِكَ وَلَا تُعَامِلْنَا بِذُنُوبِنَا، وَارْزُقْنَا الْحِلْمَ عِنْدَ الْغَضَبِ وَالصَّفْحَ عِنْدَ الْمَقْدِرَةِ",
+      "translation": "O Perfectly Forbearing, treat us with Your forbearance and do not treat us according to our sins; grant us forbearance in anger and pardon when we have power.",
+      "reference": "Suggested personal supplication"
+    },
+    "natureImage": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
-      "patience",
-      "anger",
+      "peace",
+      "anxiety",
       "guilt",
-      "mercy",
       "comfort"
     ]
   },
   {
     "id": 33,
     "arabic": "الْعَظِيمُ",
-    "transliteration": "Al-‘Aẓīm",
-    "meaning": "The Supreme in Magnificence, The Tremendous Above All Conceiving",
-    "root": "ع-ظ-م (‘Ayn-Zaa-Meem)",
-    "rootMeaning": "Derived from '‘aẓm' (the strong, foundational bone that anchors the entire skeletal structure of a living body); it evolved linguistically to signify colossal grandeur, sheer unassailable weight, and overwhelming magnificence.",
+    "transliteration": "Al-ʿAẓīm",
+    "meaning": "The Incomparably Great",
+    "root": "ع-ظ-م (Ayn-Zha-Meem)",
+    "rootMeaning": "Signifies absolute greatness, magnificence, vast dignity, and supremacy that surpasses all comparison.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Classical theological discourse highlights that Al-‘Aẓīm represents majesty so boundless that human imagination cannot fathom its perimeter. In 'Al-Maqsad Al-Asna', Imam Al-Ghazali demonstrates that while human things are called 'great' relative to smaller things, Allah's greatness has no ceiling, no horizon, and no competitor. The physical universe, with its billions of galaxies stretching across tens of billions of light-years, is like a tiny ring cast into a vast desert compared to the Kursī (Footstool) of Allah, and the Kursī is dwarfed by the ‘Arsh (Throne). Reflecting on Al-‘Aẓīm dissolves human vanity into dust.",
-    "nakExplanation": "Linguistic insight focuses on why we repeat 'Subḥāna Rabbī al-‘Aẓīm' in rukū‘ (bowing). As your physical spine bends parallel to the ground and your head lowers, your posture literally embodies smallness before infinite Tremendousness. When anxiety about your bills, illness, or enemies threatens to crush you, invoking Al-‘Aẓīm shifts your perspective: your mountain of worry is nothing more than an atom in front of the Tremendous Creator.",
-    "quranAyah": {
-      "arabic": "وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ",
-      "translation": "His Kursī extends over the heavens and the earth, and their preservation tires Him not. And He is the Most High, the Tremendous.",
-      "surah": "Al-Baqarah 2:255"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+      "translation": "And He is the Most High, the Incomparably Great.",
+      "reference": "Surah Al-Baqarah 2:255"
     },
-    "howToLive": "Revere what Allah has sanctified—His book, His messengers, His prayers, and His creation. Shrink your ego down to size, refusing to be impressed by arrogant tyrants or shallow displays of wealth.",
-    "dua": "سُبْحَانَ رَبِّيَ الْعَظِيمِ وَبِحَمْدِهِ (Glory be to my Lord, the Tremendous, and praise be to Him).",
+    "revelationMeaning": "Al-'Azim is the One whose greatness transcends all human imagination and physical comparison. Created greatness—such as the vastness of oceans or the expanse of galaxies—is limited, dependent, and fleeting. Allah's greatness is infinite, self-sufficient, and complete in His essence, power, and sovereignty.",
+    "quranicReflection": "When the verse was revealed: 'So glorify the Name of your Lord, the Great' (Al-Waqi'ah 56:74), the Prophet ﷺ instructed believers to place it in their bowing (ruku'). In ruku', the believer physically bends low in submission, setting aside all worldly pride and proclaiming: 'Subhana Rabbiyal-'Azim' (Glory be to my Lord, the Incomparably Great).",
+    "response": "Bow before Allah in sincere inner and outer humility. Guard against pride and vanity, recognizing that before the majesty of Al-'Azim, all human titles and worldly possessions are completely humbled.",
+    "heroSummary": "The Incomparably Great before whose absolute majesty every created being bows in humility.",
+    "authenticDua": {
+      "arabic": "سُبْحَانَ رَبِّيَ الْعَظِيمِ",
+      "translation": "Glory be to my Lord, the Incomparably Great.",
+      "reference": "Sahih Muslim 772 (Recited in Ruku')"
+    },
+    "suggestedDua": {
+      "arabic": "يَا عَظِيمُ، أَنْتَ رَبِّي لَا شَرِيكَ لَكَ، عَظِّمْ حُرُمَاتِكَ فِي قَلْبِي، وَأَذْهِبْ عَنِّي الْكِبْرَ وَالْغُرُورَ",
+      "translation": "O Incomparably Great, You are my Lord without partner; magnify reverence for Your commands in my heart and remove from me arrogance and pride.",
+      "reference": "Suggested personal supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "awe",
       "humility",
-      "power",
-      "perspective"
+      "purpose",
+      "peace"
     ]
   },
   {
     "id": 34,
     "arabic": "الْغَفُورُ",
     "transliteration": "Al-Ghafūr",
-    "meaning": "The All-Forgiving, The Magnificent Veiler and Eraser of Gravity-Laden Sins",
-    "root": "غ-ف-ر (Ghayn-Faa-Raa)",
-    "rootMeaning": "Concretely linked to the 'mighfar'—the metal chainmail helmet worn by desert warriors that shields the head from lethal strikes while concealing unsightly wounds; it signifies shielding, protective covering, and total prevention of humiliating exposure.",
+    "meaning": "The Abundantly Forgiving",
+    "root": "غ-ف-ر (Ghayn-Fa-Ra)",
+    "rootMeaning": "Signifies covering, concealing, protecting, and shielding from the harmful consequences of sin.",
     "category": "Forgiveness & Mercy",
-    "yqExplanation": "Theological scholars masterfully delineate the shades of divine pardon between Al-Ghafūr and Al-Ghaffār. Al-Ghaffār (on the scale of 'Fa‘‘āl') denotes sheer repetitiveness—forgiving a servant who stumbles a thousand times. Al-Ghafūr (on the scale of 'Fa‘ūl'), however, denotes qualitative magnitude—He who pardons sins of catastrophic proportions. Even if your sins were to fill the horizon from earth to the clouds, Al-Ghafūr covers them, shields you from their karmic consequences, and treats you as though they never occurred.",
-    "nakExplanation": "Linguistic contemplation reflects upon how guilt paralyses the human psyche. When a person commits a terrible error, they are haunted by two terrors: the fear of divine punishment and the mortifying shame of public exposure. Al-Ghafūr cures both simultaneously. By 'maghfirah', He wraps a protective armor around your vulnerability, burying your past in the ocean of His grace so that even the recording angels' scrolls are cleansed of the stain.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "نَبِّئْ عِبَادِي أَنِّي أَنَا الْغَفُورُ الرَّحِيمُ",
       "translation": "Inform My servants that it is I who am the Forgiving, the Merciful.",
-      "surah": "Al-Hijr 15:49"
+      "reference": "Surah Al-Hijr 15:49"
     },
-    "howToLive": "Never despair of Allah's mercy, no matter how low you have fallen. Practice the noble art of 'satr'—covering the faults and mistakes of others rather than broadcasting them on social feeds or gossip circles.",
-    "dua": "اللَّهُمَّ إِنَّكَ عَفُوٌّ غَفُورٌ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي (O Allah, indeed You are Pardoning, Forgiving, You love to pardon, so pardon me).",
+    "revelationMeaning": "Al-Ghafur is the One who repeatedly covers the sins of His servants and shields them from the disgrace and punishment of their misdeeds in this world and the Hereafter. The root indicates covering and protection—just as a helmet shields the warrior's head. Classical scholars distinguish between maghfirah (shielding and forgiving) and 'afw (completely erasing the record of sin).",
+    "quranicReflection": "The Qur'an mentions Al-Ghafur over ninety times, constantly encouraging hope: 'Say, O My servants who have transgressed against themselves, do not despair of the mercy of Allah. Indeed, Allah forgives all sins. Indeed, it is He who is the Forgiving, the Merciful' (Az-Zumar 39:53).",
+    "response": "Never lose hope in divine forgiveness, no matter how burdened you feel by past mistakes. Conceal the private faults and mistakes of your fellow human beings, hoping that Allah will cover your sins on the Day of Judgment.",
+    "heroSummary": "The Abundantly Forgiving who covers the faults of His servants and protects them from the consequences of sin.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِيرًا، وَلَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ، فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ، وَارْحَمْنِي إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ",
+      "translation": "O Allah, I have wronged myself greatly, and none forgives sins except You. So grant me forgiveness from Yourself and have mercy on me; indeed, You are the Forgiving, the Merciful.",
+      "reference": "Sahih al-Bukhari 834, Sahih Muslim 2705"
+    },
+    "suggestedDua": {
+      "arabic": "يَا غَفُورُ، اغْفِرْ لِي ذَنْبِي كُلَّهُ، دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلَانِيَتَهُ وَسِرَّهُ",
+      "translation": "O Abundantly Forgiving, forgive all my sins: the small and the great, the first and the last, the open and the secret.",
+      "reference": "Suggested personal supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
-      "repentance",
+      "forgiveness",
       "guilt",
       "hope",
-      "relief",
       "mercy"
     ]
   },
@@ -898,50 +1257,71 @@ export const NAMES_DATA = [
     "id": 35,
     "arabic": "الشَّكُورُ",
     "transliteration": "Ash-Shakūr",
-    "meaning": "The Supremely Appreciative, The Multiplier of Modest Deeds into Boundless Reward",
-    "root": "ش-ك-ر (Sheen-Kaaf-Raa)",
-    "rootMeaning": "Used in desert culture for a sturdy she-camel ('dābbah shakūr') that thrives, produces abundant rich milk, and glistens with radiant health upon consuming only sparse handfuls of dry desert grass; it signifies yielding enormous, overflowing output from modest input.",
+    "meaning": "The Appreciative who rewards abundantly",
+    "root": "ش-ك-ر (Sheen-Kaaf-Ra)",
+    "rootMeaning": "Signifies recognizing goodness, multiplying reward, and returning abundant blessings in exchange for small efforts.",
     "category": "Mercy & Compassion",
-    "yqExplanation": "Classical scholars marvel at the paradox of Ash-Shakūr. Gratitude is normally an obligation a needy inferior owes to a benefactor. Yet Allah—who owns everything and needs nothing—calls Himself Ash-Shakūr! He gives you the life, the breath, and the ability to do good; then when you offer a tiny, imperfect, distracted deed, Ash-Shakūr thanks you for it, cherishes it, and multiplies its compensation beyond earthly comprehension. No sincere whisper or hidden tear is ever lost on Him.",
-    "nakExplanation": "Linguistic insight emphasizes the intensive form 'Fa‘ūl' in Ash-Shakūr. In Surah Fatir (35:34), the dwellers of Paradise exclaim: 'Al-ḥamdu lillāhi alladhī adh-haba ‘annā al-ḥazan, inna Rabbanā la-Ghafūrun Shakūr' (Praise be to Allah who has removed from us all sorrow; indeed, our Lord is Forgiving and Appreciative). This brings immense comfort to those suffering from burnout: the world exploits your labor and forgets your sacrifice the moment you stumble, but Ash-Shakūr remembers a thirsty dog watered by a sinner and enters them into Jannah because of it.",
-    "quranAyah": {
-      "arabic": "لِيُوَفِّيَهُمْ أُجُورَهُمْ وَيَزِيدَهُم مِّن فَضْلِهِ ۚ إِنَّهُ غَفُورٌ شَكُورٌ",
-      "translation": "That He may give them in full their rewards and increase for them of His bounty. Indeed, He is Forgiving and Appreciative.",
-      "surah": "Fatir 35:30"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "إِنَّ رَبَّنَا لَغَفُورٌ شَكُورٌ",
+      "translation": "Indeed, our Lord is Forgiving and Appreciative.",
+      "reference": "Surah Fatir 35:34"
     },
-    "howToLive": "Acknowledge and express sincere gratitude for the small favors people do for you daily. Cultivate the realization that even two minutes of quiet remembrance are treasured and multiplied by your Lord.",
-    "dua": "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ (O Allah, assist me in remembering You, expressing gratitude to You, and perfecting my worship of You).",
+    "revelationMeaning": "Ash-Shakur is the One who appreciates the modest and imperfect deeds of His servants, multiplying their reward exponentially and granting eternal Paradise in return for brief earthly effort. In theology, Allah's shukr does not mean human gratitude or indebtedness, but His generous acceptance, recognition, and abundant compensation for good deeds.",
+    "quranicReflection": "The Qur'an encourages sincere charity and worship through this divine quality: 'If you loan Allah a goodly loan, He will multiply it for you and forgive you. And Allah is Most Appreciative and Forbearing' (At-Taghabun 64:17). The righteous in Paradise will proclaim: 'Praise be to Allah, who has removed from us all sorrow. Indeed, our Lord is Forgiving and Appreciative' (Fatir 35:34).",
+    "response": "Never belittle any good deed, whether a smile, a kind word, or removing harm from the path. Always express gratitude to people who show kindness, as the Prophet ﷺ taught: 'Whoever does not thank people does not thank Allah' (Sunan Abi Dawud 4811).",
+    "heroSummary": "The Appreciative who accepts the smallest sincere deeds and multiplies their reward beyond measure.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ، وَشُكْرِكَ، وَحُسْنِ عِبَادَتِكَ",
+      "translation": "O Allah, help me to remember You, give thanks to You, and worship You in the best manner.",
+      "reference": "Sunan Abi Dawud 1522, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا شَكُورُ، تَقَبَّلْ مِنِّي يَسِيرَ عَمَلِي وَأَجْزِلْ لِي فِيهِ الثَّوَابَ، وَاجْعَلْنِي مِنْ عِبَادِكَ الشَّاكِرِينَ",
+      "translation": "O Appreciative, accept my modest deeds, multiply for me their reward, and make me among Your truly thankful servants.",
+      "reference": "Suggested personal supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "gratitude",
-      "burnout",
-      "reward",
       "hope",
-      "comfort"
+      "joy",
+      "purpose"
     ]
   },
   {
     "id": 36,
     "arabic": "الْعَلِيُّ",
-    "transliteration": "Al-‘Aliyy",
-    "meaning": "The Most High, The Sublimely Exalted Above All Imperfection",
-    "root": "ع-ل-و (‘Ayn-Lam-Waw)",
-    "rootMeaning": "High elevation, soaring loftiness, being physically and status-wise elevated far above reachable grasp, like a peak piercing through clouds untouched by dust and disturbance.",
+    "transliteration": "Al-ʿAliyy",
+    "meaning": "The Most High",
+    "root": "ع-ل-و (Ayn-Lam-Waw)",
+    "rootMeaning": "Signifies elevation, highness, supremacy, and transcendence above all created things.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Theological scholarship categorizes the loftiness ('‘Uluww') of Al-‘Aliyy into three dimensions: His loftiness of Essence (Dhat), His loftiness of Attributes (Sifat), and His loftiness of Dominance and Subjugation (Qahr). Nothing is above Him; no thought can encompass Him; no partner can rival Him. He is exalted above every anthropomorphic distortion, every defect, every weariness, and every limitation invented by human imaginations.",
-    "nakExplanation": "Linguistic analysis points out that the lowest posture of the human body—sujūd (prostration), with forehead pressed against the dirt—is paired with the declaration: 'Subḥāna Rabbī al-A‘lā' (Glory be to my Lord, the Most High). Morphologically, when you embrace your absolute lowliness, you make direct spiritual contact with the Most High. The higher your heart elevates Allah, the smaller worldly bullies and material anxieties become in your eyes.",
-    "quranAyah": {
-      "arabic": "فَالْحُكْمُ لِلَّهِ الْعَلِيِّ الْكَبِيرِ",
-      "translation": "So the judgment is with Allah, the Most High, the Grand.",
-      "surah": "Ghafir 40:12"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+      "translation": "And He is the Most High, the Most Great.",
+      "reference": "Surah Al-Baqarah 2:255"
     },
-    "howToLive": "Elevate your aspirations ('Himmah') beyond petty trivialities, drama, and material obsession. Prostrate your ego low so your spirit can be elevated by the Most High.",
-    "dua": "سُبْحَانَ رَبِّيَ الْأَعْلَى وَبِحَمْدِهِ (Glory be to my Lord, the Most High, and praise be to Him).",
+    "revelationMeaning": "Al-'Aliyy is the One who is supremely exalted in every dimension of highness: exalted in His essence above all creation, exalted in His invincible power and sovereignty such that none can resist Him, and exalted in His attributes far above any defect or peer. His highness is an attribute of absolute majesty, affirmed with reverence and clear theological dignity.",
+    "quranicReflection": "The Qur'an opens Surah Al-A'la with the command: 'Glorify the Name of your Lord, the Most High' (87:1). In obedience to this, the Prophet ﷺ established its recitation in sujud (prostration). In the lowest physical posture on earth, the believer's forehead touches the dust while declaring that Allah alone is Al-A'la, the Most High.",
+    "response": "Maintain a state of sincere humility before Allah. Free your heart from pride and arrogance toward others, remembering that whoever humbles themselves for Allah's sake, Allah raises them in honor and station.",
+    "heroSummary": "The Most High who is supremely exalted above all creation in essence, authority, and perfection.",
+    "authenticDua": {
+      "arabic": "سُبْحَانَ رَبِّيَ الْأَعْلَى",
+      "translation": "Glory be to my Lord, the Most High.",
+      "reference": "Sahih Muslim 772 (Recited in Sujud)"
+    },
+    "suggestedDua": {
+      "arabic": "يَا عَلِيُّ يَا أَعْلَى، ارْفَعْ مَقَامِي بِطَاعَتِكَ، وَأَعْلِ شَأْنِي فِي رِضَاكَ، وَأَعِذْنِي مِنْ ذُلِّ مَعْصِيَتِكَ",
+      "translation": "O Most High, raise my standing through obedience to You, elevate my state in what pleases You, and protect me from the humiliation of disobedience.",
+      "reference": "Suggested personal supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "awe",
-      "perspective",
       "humility",
+      "prayer",
       "peace"
     ]
   },
@@ -949,231 +1329,323 @@ export const NAMES_DATA = [
     "id": 37,
     "arabic": "الْكَبِيرُ",
     "transliteration": "Al-Kabīr",
-    "meaning": "The All-Great, The Incomparably Grand Before Whom Everything Shrinks",
-    "root": "ك-ب-ر (Kaaf-Baa-Raa)",
-    "rootMeaning": "Describes sheer seniority, vastness, maturity, and dimensional grandeur; in desert parlance, an elder or entity whose presence naturally commands reverent silence and dwarfs everything around it.",
+    "meaning": "The Most Great",
+    "root": "ك-ب-ر (Kaaf-Ba-Ra)",
+    "rootMeaning": "Signifies supreme greatness, immense majesty, and surpassing all estimation and limit.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Classical theological works illuminate why Muslims repeat 'Allāhu Akbar' (Allah is Greater) in the Adhan and during every transition of Salah. Al-Kabīr is greater than whatever problem you are facing, greater than the tyrant threatening you, greater than the disease diagnosed by doctors, and greater than your deepest grief. When you understand Al-Kabīr, worldly giants become insignificant shadows, empowering the believer with fearless moral conviction.",
-    "nakExplanation": "Linguistic nuance highlights the contrast between human attempts at greatness ('istikbār'—pretending to be big, arrogance) and intrinsic divine grandeur ('Kibriyā''). The Qur'an states: 'Wa lahu al-kibriyā’u fī as-samāwāti wal-arḍ' (And to Him belongs grandeur throughout the heavens and the earth, 45:37). True greatness cannot be claimed through cosmetics, money, or loud rhetoric; it belongs exclusively to Al-Kabīr.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "عَالِمُ الْغَيْبِ وَالشَّهَادَةِ الْكَبِيرُ الْمُتَعَالِ",
-      "translation": "Knower of the unseen and the witnessed, the Grand, the Exalted.",
-      "surah": "Ar-Ra'd 13:9"
+      "translation": "Knower of the unseen and the witnessed, the Most Great, the Supremely Exalted.",
+      "reference": "Surah Ar-Ra'd 13:9"
     },
-    "howToLive": "Proclaim 'Allāhu Akbar' with conscious heart and mind. Let this phrase shatter feelings of helplessness when faced with daunting tasks, and check yourself whenever pride whispers that you are superior to another human being.",
-    "dua": "اللَّهُ أَكْبَرُ كَبِيرًا، وَالْحَمْدُ لِلَّهِ كَثِيرًا، وَسُبْحَانَ اللَّهِ بُكْرَةً وَأَصِيلًا (Allah is the Greatest, supremely Great, and praise be to Allah abundantly, and glory be to Allah morning and evening).",
+    "revelationMeaning": "Al-Kabir is the One possessing absolute greatness in His essence, names, and attributes. Whatever created greatness exists in the cosmos—from mighty mountains to entire galaxies—is finite, created, and completely subordinate to Him. Before His boundless greatness, all created power is insignificant.",
+    "quranicReflection": "The recognition of Allah's greatness anchors every Muslim's day through the declaration 'Allahu Akbar' (Allah is Greater) in the adhan and throughout salat. The Qur'an confirms: 'That is because Allah is the Truth, and that what they call upon other than Him is falsehood, and that Allah is the Most High, the Most Great' (Al-Hajj 22:62).",
+    "response": "Let the greatness of Allah dwell continuously in your heart. Whenever challenges, fears, or oppressive powers seem formidable, remind yourself that Allah is greater than anything you face.",
+    "heroSummary": "The Most Great whose majesty surpasses all estimation and before whom all created grandeur is small.",
+    "authenticDua": {
+      "arabic": "اللَّهُ أَكْبَرُ كَبِيرًا، وَالْحَمْدُ لِلَّهِ كَثِيرًا، وَسُبْحَانَ اللَّهِ بُكْرَةً وَأَصِيلًا",
+      "translation": "Allah is the Greatest, supremely Great; abundant praise belongs to Allah; and glory be to Allah morning and evening.",
+      "reference": "Sahih Muslim 601"
+    },
+    "suggestedDua": {
+      "arabic": "يَا كَبِيرُ، أَنْتَ أَعْظَمُ وَأَكْبَرُ مِنْ كُلِّ شَيْءٍ، صَغِّرِ الدُّنْيَا فِي عَيْنِي وَعَظِّمْ مَخَافَتَكَ فِي قَلْبِي",
+      "translation": "O Most Great, You are greater than everything; make the worldly life small in my eyes and magnify reverent consciousness of You in my heart.",
+      "reference": "Suggested personal supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
-      "courage",
-      "humility",
+      "awe",
       "strength",
-      "awe"
+      "courage",
+      "peace"
     ]
   },
   {
     "id": 38,
     "arabic": "الْحَفِيظُ",
     "transliteration": "Al-Ḥafīẓ",
-    "meaning": "The Vigilant Preserver, The Infallible Guardian of Souls and Deeds",
-    "root": "ح-ف-ظ (Haa-Faa-Zaa)",
-    "rootMeaning": "Guarding something precious with vigilant care so it neither rots, decays, gets stolen, nor disappears; like an airtight chest guarding royal treasures or a diligent shepherd shielding vulnerable lambs from predators.",
+    "meaning": "The Preserver and Guardian",
+    "root": "ح-ف-ظ (Ha-Fa-Zha)",
+    "rootMeaning": "Signifies guarding, preserving from loss or ruin, watching over with constant vigilance, and recording every deed.",
     "category": "Protection & Trust",
-    "yqExplanation": "Theological commentary outlines two sweeping spheres of Al-Ḥafīẓ: physical preservation and spiritual recording. Physically, He preserves the celestial spheres in their orbits, prevents the atmosphere from bleeding into vacuum, and shields your delicate biological organs every second without your active conscious control. Spiritually, Al-Ḥafīẓ records every fleeting thought, word, and deed in an indelible record that no passage of millennia can blur or corrupt.",
-    "nakExplanation": "Linguistic contemplation reflects on the timeless counsel of the Prophet ﷺ to Ibn Abbas (RA): 'Iḥfaẓ Allāha yaḥfaẓka' (Guard Allah's commandments, and He will guard you). Notice the reciprocal linguistic beauty: when you guard your boundaries, your gaze, and your oaths for Allah's sake, Al-Ḥafīẓ activates a divine security detail around your life, your family, your mental peace, and your faith across every storm.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "إِنَّ رَبِّي عَلَىٰ كُلِّ شَيْءٍ حَفِيظٌ",
       "translation": "Indeed, my Lord is Guardian and Preserver over all things.",
-      "surah": "Hud 11:57"
+      "reference": "Surah Hud 11:57"
     },
-    "howToLive": "Safeguard your prayers, your tongue from backbiting, and your trusts from betrayal. Live with deep peace during travel or crisis, knowing you are under the impenetrable security of Al-Ḥafīẓ.",
-    "dua": "اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ، وَمِنْ خَلْفِي، وَعَنْ يَمِينِي، وَعَنْ شِمَالِي، وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي (O Allah, protect me from in front of me, from behind me, on my right, on my left, and from above me; and I seek refuge in Your greatness from being struck down from beneath me).",
+    "revelationMeaning": "Al-Hafiz is the One who preserves the cosmos in balanced order and watches over all creation. He records every deed, utterance, and thought of His servants without forgetting. For the believers, His preservation encompasses their faith, guidance, and spiritual destiny; though believers may endure worldly trials and physical loss, Allah preserves their reward and eternal outcome.",
+    "quranicReflection": "Prophet Hud declared with confidence when his tribe threatened him: 'Indeed, my Lord is Preserver over all things' (Hud 11:57). The Prophet Muhammad ﷺ taught the essential principle of divine preservation: 'Preserve Allah's commandments, and He will preserve you' (Jami' at-Tirmidhi 2516).",
+    "response": "Guard the boundaries established by Allah—guard your prayers, your senses, your promises, and your integrity. Entrust yourself and your family to His safeguarding care, knowing that what Allah preserves cannot be lost.",
+    "heroSummary": "The Preserver and Guardian who sustains all creation, records all deeds, and guards the believer's faith.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ، وَمِنْ خَلْفِي، وَعَنْ يَمِينِي، وَعَنْ شِمَالِي، وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي",
+      "translation": "O Allah, protect me from in front of me, from behind me, on my right, on my left, and from above me; and I seek refuge in Your greatness from being struck down from beneath me.",
+      "reference": "Sunan Abi Dawud 5074, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا حَفِيظُ، احْفَظْ عَلَيَّ دِينِي وَأَمَانَتِي وَخَوَاتِيمَ عَمَلِي، وَاحْفَظْنِي مِنْ شُرُورِ الْخَلْقِ أَجْمَعِينَ",
+      "translation": "O Preserver, preserve for me my faith, my trust, and the outcome of my deeds, and protect me from the evils of all creation.",
+      "reference": "Suggested personal supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "protection",
-      "travel",
-      "fear",
+      "trust",
       "anxiety",
-      "security"
+      "peace"
     ]
   },
   {
     "id": 39,
     "arabic": "الْمُقِيتُ",
     "transliteration": "Al-Muqīt",
-    "meaning": "The Sustainer of Vital Energy, The Nourisher and Controller of All Capacities",
-    "root": "ق-و-ت (Qaf-Waw-Taa)",
-    "rootMeaning": "Refers specifically to 'qūt'—the essential, life-sustaining nutrient that keeps a soul from starving and withering away; it combines the meaning of providing customized nourishment with possessing absolute power and vigilance over it.",
+    "meaning": "The Sustainer and Keeper of all things",
+    "root": "ق-و-ت (Qaf-Waw-Ta)",
+    "rootMeaning": "Signifies providing nourishment (qūt), sustaining, overseeing with power, and maintaining all living beings.",
     "category": "Creation & Sustenance",
-    "yqExplanation": "Classical scholars distinguish Al-Muqīt from Ar-Razzāq. While Ar-Razzāq provides vast, abundant provision in all its forms (wealth, rain, children, property), Al-Muqīt provides the exact calibrated dosage of physical and spiritual fuel needed to sustain vital life and purpose. He nourishes bodies with food and water, minds with intellect, and hearts with the nourishment of revelation and divine love. Furthermore, Al-Muqīt has total capability to oversee and maintain that life force.",
-    "nakExplanation": "Linguistic nuance reveals that 'qūt' is not excess feast; it is the vital core sustenance. In Surah An-Nisa (4:85): 'Wa kāna Allāhu ‘alā kulli shay’in muqītā' (And ever is Allah, over all things, a Sustainer). When chronic fatigue, burnout, or emotional depletion strikes, remember that your internal energy is governed by Al-Muqīt. You do not just need sleep and protein; your spirit thirsts for the divine nourishment that only Al-Muqīt injects into an exhausted soul.",
-    "quranAyah": {
-      "arabic": "مَّن يَشْفَعْ شَفَاعَةً حَسَنَةً يَكُن لَّهُ نَصِيبٌ مِّنْهَا ۖ ... وَكَانَ اللَّهُ عَلَىٰ كُلِّ شَيْءٍ مُّقِيتًا",
-      "translation": "Whoever intercedes for a good cause will have a share thereof... And ever is Allah, over all things, a Sustainer.",
-      "surah": "An-Nisa 4:85"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "وَكَانَ اللَّهُ عَلَىٰ كُلِّ شَيْءٍ مُّقِيتًا",
+      "translation": "And ever is Allah, over all things, a Keeper and Sustainer.",
+      "reference": "Surah An-Nisa 4:85"
     },
-    "howToLive": "Feed your soul with Quran and dhikr just as meticulously as you feed your physical body. Be a conduit of sustenance for others—feed the hungry, replenish someone's drained morale, and avoid gluttony.",
-    "dua": "اللَّهُمَّ رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ، وَارْزُقْنَا قُوتَ أَرْوَاحِنَا بِذِكْرِكَ يَا مُقِيتُ (O Allah, our Lord, grant us good in this world and good in the Hereafter and protect us from the punishment of the Fire; and nourish our souls with Your remembrance, O Sustainer).",
-    "natureImage": "https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&fit=crop&w=1200&q=80",
+    "revelationMeaning": "Al-Muqit is the One who creates physical and spiritual nourishment and delivers it to every creature according to its exact need. Classical scholars explain that Al-Muqit combines three core realities: The Provider of sustenance who nourishes bodies with food and hearts with faith, the Vigilant Overseer who maintains all life, and the Capable Ruler who holds complete power over all things.",
+    "quranicReflection": "The Qur'an describes how Allah prepared the earth and 'measured therein its sustenance' (Fussilat 41:10). In Surah An-Nisa (4:85), the Name concludes an injunction on moral responsibility, reminding us that Allah sustains creation while holding every soul accountable for its conduct.",
+    "response": "Recognize that every breath, meal, and moment of vitality is granted continuously by Al-Muqit. Rely upon Him for your needs, seek lawful earnings, and feed those who are hungry and vulnerable.",
+    "heroSummary": "The Sustainer and Keeper who provides nourishment to every creature and maintains all existence.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ رَبَّ السَّمَاوَاتِ وَرَبَّ الْأَرْضِ وَرَبَّ الْعَرْشِ الْعَظِيمِ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ، فَالِقَ الْحَبِّ وَالنَّوَىٰ، مُنْزِلَ التَّوْرَاةِ وَالْإِنْجِيلِ وَالْفُرْقَانِ، أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتِهِ",
+      "translation": "O Allah, Lord of the heavens, Lord of the earth, and Lord of the Magnificent Throne, our Lord and Lord of all things, Cleaver of the grain and seed, Revealer of the Torah, Gospel, and Criterion: I seek refuge in You from the evil of every creature whose forelock You hold.",
+      "reference": "Sahih Muslim 2713a"
+    },
+    "suggestedDua": {
+      "arabic": "يَا مُقِيتُ، قُتْ قُلُوبَنَا بِالْإِيمَانِ وَالْيَقِينِ، وَأَبْدَانَنَا بِالرِّزْقِ الْحَلَالِ الطَّيِّبِ، وَلَا تَجْعَلْ حَاجَتَنَا إِلَى أَحَدٍ سِوَاكَ",
+      "translation": "O Sustainer and Keeper, nourish our hearts with faith and certainty, and our bodies with wholesome, lawful provision, and leave us in need of none besides You.",
+      "reference": "Suggested personal supplication"
+    },
+    "natureImage": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
-      "energy",
-      "health",
-      "strength",
-      "burnout",
-      "comfort"
+      "sustenance",
+      "gratitude",
+      "trust",
+      "peace"
     ]
   },
   {
     "id": 40,
     "arabic": "الْحَسِيبُ",
     "transliteration": "Al-Ḥasīb",
-    "meaning": "The All-Sufficient Guardian, The Meticulous Reckoner of Deeds",
-    "root": "ح-س-ب (Haa-Seen-Baa)",
-    "rootMeaning": "Carries two profound intertwined streams: 'ḥasb' meaning sufficiency and total adequacy (as in 'Ḥasbī Allāh'—Allah is enough for me), and 'ḥisāb' meaning exact calculation, arithmetic accounting, and measuring without missing a fraction.",
+    "meaning": "The Sufficient One and Perfect Reckoner",
+    "root": "ح-س-ب (Ha-Seen-Ba)",
+    "rootMeaning": "Combines two essential dimensions: sufficiency (hasb) providing complete protection, and counting or taking to account (hisab).",
     "category": "Protection & Trust",
-    "yqExplanation": "Theological analysis illuminates the dual beauty of Al-Ḥasīb. In the realm of trust, He is all-sufficient: when every ally abandons you and you stand alone against overwhelming odds, Al-Ḥasīb suffices you completely—as Ibrahim (AS) proclaimed when cast into the furnace of fire: 'Ḥasbunā Allāh wa ni‘ma al-Wakīl'. In the realm of accountability, He is the Swift Reckoner who tallies every heartbeat, sacrifice, and injustice with quantum accuracy without needing pencil or time.",
-    "nakExplanation": "Linguistic insight captures the breathtaking emotional release in the phrase 'Ḥasbī Allāh'. When people spread rumors about you, when you are cheated in business, or when you feel deeply underappreciated for years of devotion, you do not have to drive yourself mad trying to prove your worth to creation. Al-Ḥasīb has your file; the calculations are intact, and His sufficiency shields you from needing anyone else's approval.",
-    "quranAyah": {
-      "arabic": "الَّذِينَ يُبَلِّغُونَ رِسَالَاتِ اللَّهِ وَيَخْشَوْنَهُ وَلَا يَخْشَوْنَ أَحَدًا إِلَّا اللَّهَ ۗ وَكَفَىٰ بِاللَّهِ حَسِيبًا",
-      "translation": "[Those] who convey the messages of Allah and fear Him and do not fear anyone but Allah. And sufficient is Allah as a Reckoner.",
-      "surah": "Al-Ahzab 33:39"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "وَكَفَىٰ بِاللَّهِ حَسِيبًا",
+      "translation": "And sufficient is Allah as a Reckoner.",
+      "reference": "Surah An-Nisa 4:6"
     },
-    "howToLive": "Hold yourself accountable before you are held to account. When anxiety about human betrayal strikes, anchor yourself in the conviction that Allah's companionship and sufficiency outweigh the world.",
-    "dua": "حَسْبِيَ اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ (Sufficient for me is Allah; there is no deity except Him. On Him I have relied, and He is the Lord of the Tremendous Throne).",
+    "revelationMeaning": "Al-Hasib gathers two vital meanings for the believer: He is the Sufficient One who satisfies the needs of those who trust in Him, protecting and supporting them through every difficulty; and He is the Perfect Reckoner who records all deeds, words, and intentions, calling all creation to an exact and equitable accounting on the Day of Judgment.",
+    "quranicReflection": "The Qur'an emphasizes both aspects: 'And whoever relies upon Allah—then He is sufficient for him' (At-Talaq 65:3), and 'Indeed, Allah is ever over all things a Reckoner' (An-Nisa 4:86). The faithful find safety in declaring: 'Hasbunallahu wa ni'mal-wakil' (Allah is sufficient for us, and He is the best Disposer of affairs).",
+    "response": "Rely completely upon Allah as your sufficiency in times of uncertainty. Hold yourself accountable for your deeds before you are held to account, repenting regularly for shortfalls.",
+    "heroSummary": "The Sufficient One who satisfies the needs of those who trust Him and the Perfect Reckoner of all deeds.",
+    "authenticDua": {
+      "arabic": "حَسْبِيَ اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ",
+      "translation": "Sufficient for me is Allah; there is no deity worthy of worship except Him. On Him I have relied, and He is the Lord of the Great Throne.",
+      "reference": "Surah At-Tawbah 9:129; Sunan Abi Dawud 5081, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا حَسِيبُ، كُنْ لِي حَسْبًا وَنَصِيرًا فِي كُلِّ شِدَّةٍ، وَحَاسِبْنِي حِسَابًا يَسِيرًا يَوْمَ نَلْقَاكَ",
+      "translation": "O Sufficient One and Perfect Reckoner, be my sufficiency and helper in every hardship, and grant me an easy accounting on the Day we meet You.",
+      "reference": "Suggested personal supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1516912481808-3406841bd33c?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "trust",
+      "accountability",
       "anxiety",
-      "security",
-      "justice",
-      "comfort"
+      "peace"
     ]
   },
   {
     "id": 41,
     "arabic": "الْجَلِيلُ",
     "transliteration": "Al-Jalīl",
-    "meaning": "The Sublimely Majestic, The Gloriously Magnificent",
+    "meaning": "The Majestic",
     "root": "ج-ل-ل (Jeem-Lam-Lam)",
-    "rootMeaning": "Vastness, immense greatness, elevation of status, and majesty that inspires profound awe and transcends all human comprehension.",
+    "rootMeaning": "Signifies majesty, vast dignity, profound awe, and sublimity that commands universal veneration.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Classical theological commentary, notably by Imam Al-Ghazali in 'Al-Maqsad Al-Asna', distinguishes Al-Jalīl from related divine names of magnitude: while Al-Kabīr pertains to the perfection of His divine essence (Dhāt), and Al-‘Aẓīm pertains to the immensity of His power and reach across all dimensions, Al-Jalīl denotes the complete perfection of His qualitative divine attributes (Ṣifāt). When the heart contemplates the infinite nobility, sovereignty, and purity of Allah's attributes, that perceived majesty is His Jalāl. It is the majestic beauty that inspires sacred reverence and leaves the intellect humbled in holy wonder.",
-    "nakExplanation": "Linguistic reflection draws attention to the root 'J-L-L' in classical Arabic, evoking an image of something so towering, resplendent, and noble that it commands absolute dignity and quiet solemnity without requiring any display of force. In the Qur'an, Allah pairs this concept with honor and generosity: 'Dhūl-Jalāli wal-Ikrām' (Possessor of Majesty and Honor). There is a delicate psychological comfort here: when the worldly powers, authorities, or intimidating figures of this life make you feel minuscule or insecure, remembering Al-Jalīl re-calibrates your reality. No mortal grandeur can compare to His sublime presence, giving the believer a serene sense of inner composure and dignity.",
-    "quranAyah": {
-      "arabic": "وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو الْجَلَالِ وَالْإِكْرَامِ",
-      "translation": "And there will remain the Countenance of your Lord, Owner of Majesty and Honor.",
-      "surah": "Ar-Rahman 55:27"
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
+      "arabic": "تَبَارَكَ اسْمُ رَبِّكَ ذِي الْجَلَالِ وَالْإِكْرَامِ",
+      "translation": "Blessed is the Name of your Lord, Possessor of Majesty and Honor.",
+      "reference": "Surah Ar-Rahman 55:78"
     },
-    "howToLive": "Carry yourself with moral nobility and quiet dignity, refusing to demean your soul with vulgar speech, pettiness, or cheap compromises. At the same time, approach Allah with reverent awe during prayer, never treating worship with casual carelessness.",
-    "dua": "اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ، تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ (O Allah, You are Peace and from You comes peace. Blessed are You, O Possessor of Majesty and Honor).",
-    "natureImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
+    "revelationMeaning": "While Al-Jalil appears in traditional listings of the ninety-nine names, classical scholars note that as a standalone name it is not explicitly mentioned in the Qur'an or authentic hadiths. Rather, the attribute of Jalal (Majesty) is scripturally established in the noble divine title 'Dhu-l-Jalali wal-Ikram' (Possessor of Majesty and Honor). It describes Allah's sublime greatness and holiness that inspire deep reverence and veneration in all hearts.",
+    "quranicReflection": "Surah Ar-Rahman declares: 'And there will remain the Face of your Lord, Possessor of Majesty and Honor' (55:27). The Prophet ﷺ encouraged the companions to persist in invoking Allah by this majesty: 'Adhere firmly to: O Possessor of Majesty and Honor (Ya Dhal-Jalali wal-Ikram)' (Jami' at-Tirmidhi 3525).",
+    "response": "Fill your heart with profound reverence for Allah's majesty. Show deep respect for His sacred symbols, commands, and prohibitions, balancing awe of His grandeur with love for His boundless grace.",
+    "heroSummary": "The Majestic who possesses supreme dignity and grandeur, to whom all veneration and honor belong.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ، تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ",
+      "translation": "O Allah, You are Peace and from You comes peace. Blessed are You, O Possessor of Majesty and Honor.",
+      "reference": "Sahih Muslim 591"
+    },
+    "suggestedDua": {
+      "arabic": "يَا ذَا الْجَلَالِ وَالْإِكْرَامِ، امْلَأْ قَلْبِي تَعْظِيمًا لَكَ وَمَحَبَّةً فِيكَ، وَلَا تَجْعَلْ فِي قَلْبِي هَيْبَةً لِأَحَدٍ سِوَاكَ",
+      "translation": "O Possessor of Majesty and Honor, fill my heart with veneration for You and love in You, and let there be no awe in my heart for anyone besides You.",
+      "reference": "Suggested personal supplication"
+    },
+    "natureImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "awe",
+      "reverence",
       "peace",
-      "purpose",
-      "strength"
+      "purpose"
     ]
   },
   {
     "id": 42,
     "arabic": "الْكَرِيمُ",
     "transliteration": "Al-Karīm",
-    "meaning": "The Most Generous, The Bountiful and Noble Benefactor",
-    "root": "ك-ر-م (Kaf-Ra-Meem)",
-    "rootMeaning": "Abundance, intrinsic nobility, giving freely without expectation of return, and bestowing honor upon the unworthy.",
+    "meaning": "The Most Generous and Noble",
+    "root": "ك-ر-م (Kaaf-Ra-Meem)",
+    "rootMeaning": "Signifies nobility, generous giving, magnanimity, honor, and bestowing favors freely without expectation of return.",
     "category": "Mercy & Compassion",
-    "yqExplanation": "Theological analysis notes that Al-Karīm is not merely an entity that dispenses gifts; He is the One who gives before being asked, pardons when He has full power to punish, fulfills every promise beyond expectations, and rejoices when His servants turn to Him in need. As classical scholars like Ibn Kathir elucidate, Allah's Karam is unconditional. Even when a servant falls short or turns away, Al-Karīm does not cut off their breath, sustenance, or the invitation to return. He dignifies humanity above all earthly creations, clothing mortal beings in the garment of honor.",
-    "nakExplanation": "Linguistic nuance highlights that the word 'Karam' in pre-Islamic and Quranic Arabic signifies intrinsic nobility and sheer surplus—like fertile soil that yields lush vineyards without stinginess. Surah Al-Infitar poses a heart-piercing emotional question: 'Mā gharraka bi-Rabbika al-Karīm?' (What has deceived you concerning your Generous Lord?). The ayah does not say 'your Vengeful Lord' or 'your Stern Lord'; it invokes 'Al-Karīm' because nothing shames a conscious human heart more than being unfaithful and cold to Someone who has been nothing but exquisitely generous, gentle, and magnanimous toward them.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "يَا أَيُّهَا الْإِنسَانُ مَا غَرَّكَ بِرَبِّكَ الْكَرِيمِ",
-      "translation": "O mankind, what has deceived you concerning your Generous Lord?",
-      "surah": "Al-Infitar 82:6"
+      "translation": "O mankind, what has deceived you concerning your Lord, the Generous?",
+      "reference": "Surah Al-Infitar 82:6"
     },
-    "howToLive": "Cultivate selfless generosity with your resources, time, and emotional forgiveness. Give without keeping score, overlook the slights of others graciously, and treat every human being with the inherent nobility that Al-Karīm has bestowed upon them.",
-    "dua": "اللَّهُمَّ إِنَّكَ عَفُوٌّ كَرِيمٌ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي (O Allah, You are Pardoning and Generous; You love to pardon, so pardon me).",
+    "revelationMeaning": "Al-Karim is the Most Generous whose giving is spontaneous, continuous, and limitless. He bestows bounties before being asked, overlooks offenses when He has the power to hold to account, and gives without reminding recipients of their indebtedness. His noble generosity encompasses all creatures, sustaining even those who deny Him.",
+    "quranicReflection": "Prophet Sulayman ('alayhis-salam) recognized that all favors are divine tests of character: 'This is from the favor of my Lord to test me whether I will be grateful or ungrateful... And whoever is ungrateful—then indeed, my Lord is Free of need and Generous' (An-Naml 27:40). True generosity belongs to the One who needs nothing from creation.",
+    "response": "Practice generosity in your wealth, time, and forgiveness. Do not let divine kindness make you complacent or negligent in worship; let it awaken deep gratitude and a desire to act nobly toward others.",
+    "heroSummary": "The Most Generous and Noble whose bounties flow freely and whose magnanimity embraces all creation.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنَّكَ عَفُوٌّ كَرِيمٌ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي",
+      "translation": "O Allah, You are Pardoning and Generous; You love to pardon, so pardon me.",
+      "reference": "Jami' at-Tirmidhi 3513, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا كَرِيمُ، أَفِضْ عَلَيَّ مِنْ جُودِكَ وَكَرَمِكَ، وَارْزُقْنِي قَلْبًا سَخِيًّا، وَلَا تَحْرِمْنِي خَيْرَ مَا عِنْدَكَ بِشَرِّ مَا عِنْدِي",
+      "translation": "O Most Generous, bestow upon me from Your boundless generosity, grant me a giving heart, and do not withhold the good You have because of the shortcomings in me.",
+      "reference": "Suggested personal supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
+      "generosity",
       "gratitude",
-      "guilt",
       "hope",
-      "comfort",
-      "mercy"
+      "comfort"
     ]
   },
   {
     "id": 43,
     "arabic": "الرَّقِيبُ",
     "transliteration": "Ar-Raqīb",
-    "meaning": "The Ever-Watchful, The Vigilant Guardian of Every Breath",
+    "meaning": "The Ever-Watchful",
     "root": "ر-ق-ب (Ra-Qaf-Ba)",
-    "rootMeaning": "Erect posture of an observant watcher, stretching the neck to keep constant lookout, guarding without missing a single detail.",
-    "category": "Wisdom & Knowledge",
-    "yqExplanation": "Classical commentary points out that Ar-Raqīb combines two supreme attributes: flawless, all-encompassing knowledge ('Ilm) and continuous, uninterrupted preservation (Ḥifẓ). Nothing escapes Him—not the unspoken yearning of the heart, nor the secretive whisper in darkness, nor the unseen motion of a cell. As Imam Al-Ghazali explains, Ar-Raqīb is not an intrusive warden seeking to penalize, but an omniscient guardian whose vigilant gaze oversees the cosmic harmony and guarantees that no act of patience, silent tear, or hidden righteousness is ever lost.",
-    "nakExplanation": "Linguistic analysis observes the vivid physiological imagery of 'Raqabah' (neck): it depicts a dedicated sentinel standing atop a watchtower, craning their neck intently so not a single movement goes unnoticed. While modern surveillance systems induce paranoia and fear, Quranic contemplation of Ar-Raqīb yields immense emotional sanctuary. When you are misunderstood by the entire world, falsely accused, or weeping alone behind closed doors where nobody understands your pain, Ar-Raqīb is watching with profound care and complete understanding.",
-    "quranAyah": {
+    "rootMeaning": "Signifies observing with vigilant care, guarding, taking note of every action, and watching attentively.",
+    "category": "Protection & Trust",
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "إِنَّ اللَّهَ كَانَ عَلَيْكُمْ رَقِيبًا",
-      "translation": "Indeed Allah is ever, over you, an Observer.",
-      "surah": "An-Nisa 4:1"
+      "translation": "Indeed, Allah is ever, over you, an Observer.",
+      "reference": "Surah An-Nisa 4:1"
     },
-    "howToLive": "Develop the spiritual station of Muraqabah (mindful divine awareness). Align your private life with your public persona, knowing that the One who watches you loves you and records every silent sacrifice you make for His sake.",
-    "dua": "اللَّهُمَّ اجْعَلْنِي أَخْشَاكَ كَأَنِّي أَرَاكَ، وَأَسْعِدْنِي بِتَقْوَاكَ (O Allah, make me mindful of You as though I see You, and bless me through reverence of You).",
+    "revelationMeaning": "Ar-Raqib is the One from whom no glance, thought, or movement is hidden. He maintains watchful oversight over all creation with perfect knowledge and care. Unlike human surveillance, Allah's watchfulness is rooted in His protective guardianship, inspiring serene mindfulness (muraqabah) and devotion rather than merely fear of retribution.",
+    "quranicReflection": "In Surah Al-Ma'idah, 'Isa ('alayhis-salam) proclaims: 'And I was a witness over them as long as I was among them; but when You took me up, You were the Observer over them, and You are, over all things, Witness' (5:117). Realizing that Ar-Raqib watches over you transforms worship into living Ihsan.",
+    "response": "Live with sincere awareness of Allah's presence in private and in public. Let the knowledge that Ar-Raqib sees you bring purity to your intentions, excellence to your work, and honesty to all your relationships.",
+    "heroSummary": "The Ever-Watchful who oversees all creation with vigilant care, inspiring sincerity and mindfulness.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ خَشْيَتَكَ فِي الْغَيْبِ وَالشَّهَادَةِ، وَأَسْأَلُكَ كَلِمَةَ الْحَقِّ فِي الرِّضَا وَالْغَضَبِ",
+      "translation": "O Allah, I ask You for reverent fear of You in secret and in public, and I ask You for the word of truth in moments of contentment and anger.",
+      "reference": "Sunan an-Nasa'i 1305, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا رَقِيبُ، اجْعَلْنِي مُسْتَحْضِرًا لِمُرَاقَبَتِكَ فِي سِرِّي وَعَلَانِيَتِي، وَطَهِّرْ سَرِيرَتِي حَتَّى تَكُونَ خَيْرًا مِنْ عَلَانِيَتِي",
+      "translation": "O Ever-Watchful, make me ever conscious of Your observation in my private and public life, and purify my inner self so that it is even purer than my outward actions.",
+      "reference": "Suggested personal supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
-      "anxiety",
-      "fear",
+      "mindfulness",
+      "sincerity",
       "peace",
-      "purpose",
-      "spiritual"
+      "reflection"
     ]
   },
   {
     "id": 44,
     "arabic": "الْمُجِيبُ",
     "transliteration": "Al-Mujīb",
-    "meaning": "The Responsive, The Granter of Prayers and Petitions",
+    "meaning": "The One who responds",
     "root": "ج-و-ب (Jeem-Waw-Ba)",
-    "rootMeaning": "Cutting through distance to provide an answer, responding immediately to a call, and turning darkness into resolution.",
+    "rootMeaning": "Signifies answering, responding, granting a request, and relieving distress when invoked.",
     "category": "Mercy & Compassion",
-    "yqExplanation": "Theological reflections emphasize that Al-Mujīb is He who never leaves a genuine supplication unanswered. As the Prophet Muhammad ﷺ taught, when a servant raises their hands in du'a, Allah is too noble and generous to return them empty. Divine response takes three beautiful forms: granting the specific request immediately, redirecting an impending calamity of equal weight away from the servant, or storing the petition as eternal treasures in the Hereafter. Thus, with Al-Mujīb, no prayer is ever discarded or unheard.",
-    "nakExplanation": "Linguistic nuance highlights the breathtaking Quranic proximity in Surah Hud: 'Inna Rabbī Qarībun Mujīb' (Indeed, my Lord is Near and Responsive). Note the word order: 'Qarīb' (near) precedes 'Mujīb' (responsive). In human affairs, someone may want to answer you but is located too far away, or someone is sitting right next to you but lacks the power or will to help. Allah establishes His immediate closeness first, assuring the fragile human heart that before the words even formulate on your tongue, your Creator is already intimate with your need and actively responding.",
-    "quranAyah": {
-      "arabic": "وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ ۖ أُجِيبُ دَعْوَةَ الدَّاعِ إِذَا دَعَانِ",
-      "translation": "And when My servants ask you concerning Me, indeed I am near. I respond to the invocation of the supplicant when he calls upon Me.",
-      "surah": "Al-Baqarah 2:186"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "إِنَّ رَبِّي قَرِيبٌ مُّجِيبٌ",
+      "translation": "Indeed, my Lord is Near and Responsive.",
+      "reference": "Surah Hud 11:61"
     },
-    "howToLive": "Never despair in du'a, even when answers seem delayed by the calendar of this world. Respond readily and compassionately to the cries, needs, and requests of people around you, becoming a conduit of mercy in their moments of desperation.",
-    "dua": "يَا مُجِيبَ دَعْوَةِ الْمُضْطَرِّينَ، أَجِبْ دُعَائِي وَفَرِّجْ هَمِّي وَاكْشِفْ كُرْبَتِي (O Responder to the call of the desperate, answer my prayer, relieve my distress, and dispel my grief).",
+    "revelationMeaning": "Al-Mujib answers the calls of those who pray and relieves the distress of the desperate. Classical scholars explain that divine response is governed by His wisdom and mercy: as the Prophet ﷺ taught, every sincere prayer is answered by granting what is asked, averting an equivalent harm, or storing reward for the Hereafter. His answer is certain, but delivered in the manner and timing that truly benefits the servant.",
+    "quranicReflection": "Prophet Salih ('alayhis-salam) urged his people: 'So seek forgiveness of Him and turn to Him in repentance. Indeed, my Lord is Near and Responsive' (Hud 11:61). Allah also affirms: 'And when My servants ask you concerning Me, indeed I am near. I respond to the invocation of the supplicant when he calls upon Me' (Al-Baqarah 2:186).",
+    "response": "Never grow weary of praying, nor claim that your prayers are ignored. Supplicate with certainty and patience, trusting that Al-Mujib hears your call and provides what is truly best for your worldly and eternal life.",
+    "heroSummary": "The One who responds to every sincere call with perfect wisdom, mercy, and timely relief.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+      "translation": "Our Lord, grant us in this world that which is good and in the Hereafter that which is good, and protect us from the punishment of the Fire.",
+      "reference": "Surah Al-Baqarah 2:201; Sahih al-Bukhari 4522"
+    },
+    "suggestedDua": {
+      "arabic": "يَا مُجِيبَ دَعْوَةِ الْمُضْطَرِّينَ، اسْتَجِبْ دُعَائِي، وَاقْضِ حَاجَتِي، وَاخْتَرْ لِي مَا هُوَ خَيْرٌ لِي فِي دِينِي وَدُنْيَايَ وَآخِرَتِي",
+      "translation": "O Responder to the call of the desperate, answer my prayer, fulfill my need, and choose for me what is best for my faith, my life, and my Hereafter.",
+      "reference": "Suggested personal supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
+      "prayer",
       "hope",
-      "anxiety",
       "comfort",
-      "gratitude",
-      "spiritual"
+      "trust"
     ]
   },
   {
     "id": 45,
     "arabic": "الْوَاسِعُ",
-    "transliteration": "Al-Wāsi‘",
-    "meaning": "The All-Encompassing, The Vast and Boundless",
-    "root": "و-س-ع (Waw-Seen-‘Ayn)",
-    "rootMeaning": "Expansiveness, capacity without limit, freedom from any constriction, and boundless abundance in every dimension.",
+    "transliteration": "Al-Wāsiʿ",
+    "meaning": "The Vast and All-Encompassing",
+    "root": "و-س-ع (Waw-Seen-Ayn)",
+    "rootMeaning": "Signifies vastness, capacity, all-embracing breadth, abundance, and freedom from any limitation or restriction.",
     "category": "Wisdom & Knowledge",
-    "yqExplanation": "Classical commentary notes that Al-Wāsi‘ denotes limitless expanse across all divine realms: His mercy encompasses all sins, His knowledge encompasses all secrets, His provision encompasses all living organisms, and His forgiveness transcends the cumulative errors of the cosmos. When human beings feel trapped in claustrophobic circumstances—crushed by financial constraints, emotional burnout, or relational dead-ends—Al-Wāsi‘ is the divine guarantor that reality is infinitely wider than the narrow prison of our immediate worries.",
-    "nakExplanation": "Linguistic reflection unpacks the Arabic concept of 'Sa'ah'—the opposite of 'Dīq' (suffocation, tightness in the chest). Throughout the Qur'an, Allah frequently pairs Al-Wāsi‘ with 'Al-‘Alīm' (The All-Knowing): 'Wallāhu Wāsi‘un ‘Alīm'. When Allah commands an act of charity, selflessness, or moral restraint, Satan immediately threatens human beings with poverty and constriction. Allah counters this psychological chokehold by reminding us that He is Al-Wāsi‘—infinitely resourceful—and He knows the exact hidden pathways through which relief and abundance will flow to you.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "وَلِلَّهِ الْمَشْرِقُ وَالْمَغْرِبُ ۚ فَأَيْنَمَا تُوَلُّوا فَثَمَّ وَجْهُ اللَّهِ ۚ إِنَّ اللَّهَ وَاسِعٌ عَلِيمٌ",
-      "translation": "And to Allah belongs the east and the west. So wherever you [might] turn, there is the Countenance of Allah. Indeed, Allah is All-Encompassing and Knowing.",
-      "surah": "Al-Baqarah 2:115"
+      "translation": "And to Allah belongs the east and the west. So wherever you turn, there is the Face of Allah. Indeed, Allah is All-Encompassing and Knowing.",
+      "reference": "Surah Al-Baqarah 2:115"
     },
-    "howToLive": "Cultivate expansive generosity of mind and heart. Do not harbor narrow grudges, rigid prejudices, or stinginess with your resources. When you feel suffocated by worldly trials, expand your perspective into the boundless horizons of Allah's mercy.",
-    "dua": "اللَّهُمَّ يَا وَاسِعَ الْمَغْفِرَةِ اغْفِرْ لِي، وَيَا وَاسِعَ الْفَضْلِ وَسِّعْ عَلَيَّ فِي رِزْقِي وَعِلْمِي وَصَدْرِي (O All-Encompassing in forgiveness, forgive me; and O Vast in bounty, expand for me my provision, my knowledge, and my chest).",
-    "natureImage": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=80",
+    "revelationMeaning": "Al-Wasi' is the Vast whose attributes and bounties encompass all of creation. Classical theologians clarify that His vastness does not denote spatial dispersion, but absolute, boundless sufficiency: His knowledge embraces every atom, His mercy encompasses all things, His forgiveness covers every sincere penitent, and His treasures are never exhausted.",
+    "quranicReflection": "The Qur'an frequently pairs Al-Wasi' with Al-'Alim (The Knowing): 'Allah is All-Encompassing and Knowing' (Al-Baqarah 2:261). The angels praise Him saying: 'Our Lord, You have encompassed all things in mercy and knowledge' (Ghafir 40:7). Whenever life feels tight and overwhelming, Al-Wasi' reminds the believer of the vastness of divine grace.",
+    "response": "Do not despair or restrict Allah's mercy in your thoughts. Expand your own generosity, forbearance, and compassion toward others, knowing that what is with Allah never diminishes.",
+    "heroSummary": "The Vast and All-Encompassing whose mercy, knowledge, and bounties embrace all creation.",
+    "authenticDua": {
+      "arabic": "رَبَّنَا وَسِعْتَ كُلَّ شَيْءٍ رَّحْمَةً وَعِلْمًا فَاغْفِرْ لِلَّذِينَ تَابُوا وَاتَّبَعُوا سَبِيلَكَ وَقِهِمْ عَذَابَ الْجَحِيمِ",
+      "translation": "Our Lord, You have encompassed all things in mercy and knowledge, so forgive those who have repented and followed Your way and protect them from the punishment of Hellfire.",
+      "reference": "Surah Ghafir 40:7"
+    },
+    "suggestedDua": {
+      "arabic": "يَا وَاسِعَ الْفَضْلِ وَالْمَغْفِرَةِ، أَوْسِعْ عَلَيَّ فِي رِزْقِي، وَاشْرَحْ لِي صَدْرِي، وَاشْمَلْنِي بِرَحْمَتِكَ الَّتِي وَسِعَتْ كُلَّ شَيْءٍ",
+      "translation": "O Vast in favor and forgiveness, expand for me my provision, open my chest with tranquility, and encompass me with Your mercy that embraces all things.",
+      "reference": "Suggested personal supplication"
+    },
+    "natureImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "peace",
+      "mercy",
       "hope",
-      "comfort",
-      "anxiety",
       "gratitude"
     ]
   },
@@ -1181,351 +1653,487 @@ export const NAMES_DATA = [
     "id": 46,
     "arabic": "الْحَكِيمُ",
     "transliteration": "Al-Ḥakīm",
-    "meaning": "The All-Wise, The Flawless in Purpose and Decree",
-    "root": "ح-ك-م (Ha-Kaf-Meem)",
-    "rootMeaning": "Restraining from flaw or rashness, setting things in their rightful and exact places, and ruling with absolute justice.",
+    "meaning": "The All-Wise",
+    "root": "ح-ك-م (Ha-Kaaf-Meem)",
+    "rootMeaning": "Signifies wisdom (hikmah)—placing everything in its proper place with complete knowledge, purpose, and discernment.",
     "category": "Wisdom & Knowledge",
-    "yqExplanation": "Theological analysis observes that Al-Ḥakīm unites two foundational concepts: 'Ḥukm' (absolute sovereign judgment and legislation) and 'Ḥikmah' (infinite wisdom, placing every single entity, decree, and timing precisely where it belongs). As Ibn Al-Qayyim writes, Allah does not create anything out of frivolous sport, nor does He decree any hardship without an underlying purpose of sublime goodness. Even when human sight perceives a bitter tragedy, the overarching plan of Al-Ḥakīm weaves mercy and eternal elevation through the tapestry of temporal sorrow.",
-    "nakExplanation": "Linguistic nuance highlights the fascinating root connection between 'Ḥikmah' (wisdom) and 'Ḥakama' (the bridle or bit placed in a horse's mouth to prevent it from galloping wildly into danger). Divine wisdom is that which restrains reality from chaos and protects the believer from harm that they cannot foresee. When life does not give you what you desperately begged for, it is not deprivation; it is the protective bridle of Al-Ḥakīm saving you from a cliff you could not see. Resting in His wisdom transforms bitter disappointment into profound tranquil trust.",
-    "quranAyah": {
-      "arabic": "وَهُوَ الْقَاهِرُ فَوْقَ عِبَادِهِ ۚ وَهُوَ الْحَكِيمُ الْخَبِيرُ",
-      "translation": "And He is the subjugator over His servants. And He is the Wise, the All-Aware.",
-      "surah": "Al-An'am 6:18"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "وَهُوَ الْعَزِيزُ الْحَكِيمُ",
+      "translation": "And He is the Exalted in Might, the All-Wise.",
+      "reference": "Surah Ibrahim 14:4"
     },
-    "howToLive": "Accept divine decrees with peaceful surrender (Riḍā), recognizing your limited vantage point. In your personal life, practice thoughtful restraint: speak with discretion, weigh long-term consequences, and never act out of uncontrolled emotion.",
-    "dua": "اللَّهُمَّ يَا حَكِيمُ، آتِنِي حِكْمَةً تُنِيرُ بَصِيرَتِي، وَاخْتَرْ لِي فَإِنِّي لَا أُحْسِنُ الِاخْتِيَارَ (O All-Wise, grant me wisdom that illuminates my insight, and choose for me, for indeed I do not manage choices well).",
+    "revelationMeaning": "Al-Hakim is the One whose actions and decrees are governed by consummate wisdom. Nothing He creates is futile, and nothing He commands or prohibits is arbitrary. Classical scholars stress that while we recognize the general beauty of divine wisdom, we should avoid inventing speculative personal reasons for specific trials that befall individuals, trusting instead in Allah's overarching perfection.",
+    "quranicReflection": "The Qur'an frequently pairs Al-Hakim with Al-'Aziz (The Almighty). This shows that Allah's absolute power is never used haphazardly; it is always executed with flawless wisdom, and His wisdom is supported by invincible might to carry out whatever He decrees.",
+    "response": "Submit with peaceful trust to Allah's decree when circumstances diverge from your plans. Strive to embody wisdom in your daily speech and decisions, acting with sound judgment and consulting Allah through Salat al-Istikharah.",
+    "heroSummary": "The All-Wise who places everything in its rightful place with flawless purpose and precision.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ، وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ، وَأَسْأَلُكَ مِنْ فَضْلِكَ الْعَظِيمِ، فَإِنَّكَ تَقْدِرُ وَلَا أَقْدِرُ، وَتَعْلَمُ وَلَا أَعْلَمُ، وَأَنْتَ عَلَّامُ الْغُيُوبِ",
+      "translation": "O Allah, I seek Your counsel by Your knowledge, I seek capability by Your power, and I ask of Your great favor. For You have power and I do not, You know and I do not, and You are the Knower of all unseen things.",
+      "reference": "Sahih al-Bukhari 1166 (Du'a al-Istikharah)"
+    },
+    "suggestedDua": {
+      "arabic": "يَا حَكِيمُ، ارْزُقْنِي الْحِكْمَةَ فِي الْقَوْلِ وَالْعَمَلِ، وَارْضِنِي بِقَضَائِكَ، وَاهْدِنِي لِأَحْسَنِ الْأُمُورِ",
+      "translation": "O All-Wise, grant me wisdom in words and deeds, make me content with Your decree, and guide me to the best course in all my affairs.",
+      "reference": "Suggested personal supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
+      "wisdom",
+      "clarity",
       "peace",
-      "purpose",
-      "anxiety",
-      "strength",
-      "calm"
+      "purpose"
     ]
   },
   {
     "id": 47,
     "arabic": "الْوَدُودُ",
     "transliteration": "Al-Wadūd",
-    "meaning": "The Most Affectionate, The Loving and Endearing Cherisher",
+    "meaning": "The Loving",
     "root": "و-د-د (Waw-Dal-Dal)",
-    "rootMeaning": "Pure, active affection that manifests in gentle gifts, warmth, fond attention, and tangible expressions of love.",
+    "rootMeaning": "Signifies pure love, affectionate kindness, tender care, and active goodwill toward the beloved.",
     "category": "Mercy & Compassion",
-    "yqExplanation": "Classical scholars establish a stunning theological difference between 'Ḥubb' (love) and 'Wudd' (affection). 'Ḥubb' is an inner emotion harbored in the depths of the heart, whereas 'Wudd' is love that actively flows outward through tangible kindness, tender care, and endearing gestures. Allah is not merely loving; He is Al-Wadūd—He displays His love through the warm sunlight, the soothing rain, the companionship of loved ones, and the quiet comfort He whispers into a broken heart. He loves His righteous servants and actively causes the inhabitants of the heavens and earth to love them.",
-    "nakExplanation": "Linguistic analysis explores the morphological weight of the pattern 'Fa‘ūl' (فَعُول), which signifies continuous, overwhelming, and dynamic abundance. In Surah Al-Buruj, immediately after describing the terrifying torment of tyrants, Allah proclaims: 'Wa Huwal-Ghafūr ul-Wadūd' (And He is the Forgiving, the Most Affectionate). When a human being forgives a wrong, they often remain distant, cold, and suspicious. But when Allah forgives, He embraces the penitent soul with renewed affection (Wudd), restoring the relationship as though the fracture had never existed.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "وَاسْتَغْفِرُوا رَبَّكُمْ ثُمَّ تُوبُوا إِلَيْهِ ۚ إِنَّ رَبِّي رَحِيمٌ وَدُودٌ",
-      "translation": "And ask forgiveness of your Lord and turn unto Him in repentance. Indeed, my Lord is Merciful and Affectionate.",
-      "surah": "Hud 11:90"
+      "translation": "And seek forgiveness of your Lord and turn to Him in repentance. Indeed, my Lord is Merciful and Loving.",
+      "reference": "Surah Hud 11:90"
     },
-    "howToLive": "Manifest your love for others through tangible warmth, comforting words, and selfless acts of service. When mending relationships, do not merely tolerate people—restore genuine warmth and tenderness toward them.",
-    "dua": "اللَّهُمَّ إِنِّي أَسْأَلُكَ حُبَّكَ، وَحُبَّ مَنْ يُحِبُّكَ، وَحُبَّ عَمَلٍ يُقَرِّبُنِي إِلَىٰ حُبِّكَ (O Allah, I ask You for Your love, the love of those who love You, and the love of any deed that brings me closer to Your love).",
+    "revelationMeaning": "Al-Wadud is the Loving who bestows affectionate care and bounties upon His creation, and who specially loves His righteous, repentant servants. Classical scholars explain that divine love is not passive sentimentality without standards; it is paired with purity, righteousness, and the call to repentance. Allah loves those who turn to Him sincerely and purify their hearts.",
+    "quranicReflection": "In Surah Al-Buruj, Allah pairs Al-Wadud with His majesty: 'And He is the Forgiving, the Loving, Possessor of the Glorious Throne' (85:14-15). The Prophet ﷺ taught that when Allah loves a servant, He announces it to the angels in heaven, and acceptance is placed for that servant on earth (Sahih al-Bukhari 3209).",
+    "response": "Strive to earn Allah's love by following the Sunnah of the Prophet ﷺ: 'Say, if you should love Allah, then follow me; Allah will love you and forgive you your sins' (Ali 'Imran 3:31). Radiate sincere kindness and compassion to your family and community.",
+    "heroSummary": "The Loving who bestows affectionate kindness upon creation and draws near to those who turn to Him.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ حُبَّكَ، وَحُبَّ مَنْ يُحِبُّكَ، وَحُبَّ عَمَلٍ يُقَرِّبُنِي إِلَىٰ حُبِّكَ",
+      "translation": "O Allah, I ask You for Your love, the love of those who love You, and the love of every deed that brings me closer to Your love.",
+      "reference": "Jami' at-Tirmidhi 3490, Hasan"
+    },
+    "suggestedDua": {
+      "arabic": "يَا وَدُودُ، امْلَأْ قَلْبِي بِمَحَبَّتِكَ، وَاجْعَلْنِي مُحِبًّا لَكَ وَمَحْبُوبًا عِنْدَكَ، وَأَلِّفْ بَيْنَ قُلُوبِنَا عَلَى الْخَيْرِ",
+      "translation": "O Loving, fill my heart with love for You, make me one who loves You and is beloved to You, and unite our hearts upon goodness.",
+      "reference": "Suggested personal supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1476820865390-c52aeebb9891?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "love",
       "comfort",
       "hope",
-      "peace",
-      "gratitude"
+      "peace"
     ]
   },
   {
     "id": 48,
     "arabic": "الْمَجِيدُ",
     "transliteration": "Al-Majīd",
-    "meaning": "The All-Glorious, The Sublime in Honor and Grandeur",
+    "meaning": "The Glorious and Full of Honor",
     "root": "م-ج-د (Meem-Jeem-Dal)",
-    "rootMeaning": "Abundance of honor, magnificent nobility, vast high standing, and limitless splendor that commands absolute reverence.",
+    "rootMeaning": "Signifies glory, immense honor, vast nobility, magnificence, and widespread abundance of goodness.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Theological analysis observes that Al-Majīd uniquely unites two transcendent qualities: absolute glory and prestige (Majd) alongside unrestrained, expansive generosity (Karam). A ruler among humans might possess prestige but be stingy and cold; another might be generous but lack dignity and authority. Allah alone is Al-Majīd—infinitely sovereign, regal, and exalted above every imperfection, yet showering His creation with unending bounties and inviting humble mortal souls into intimacy with Him.",
-    "nakExplanation": "Linguistic reflection notes that the root 'M-J-D' originally described horses grazing freely upon expansive, rich, fertile pastures ('Amjada al-faras'), signifying overwhelming surplus and flourishing excellence. In the Tashahhud of our daily prayers, we conclude our connection to the Prophet Ibrahim and Prophet Muhammad ﷺ with: 'Innaka Ḥamīdun Majīd'. Every time you end your prayer, you anchor yourself in the realization that Allah's glory is not an aloof, inaccessible grandeur; it is a radiant, sheltering glory that dignifies everyone who bows before it.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "رَحْمَتُ اللَّهِ وَبَرَكَاتُهُ عَلَيْكُمْ أَهْلَ الْبَيْتِ ۚ إِنَّهُ حَمِيدٌ مَّجِيدٌ",
       "translation": "May the mercy of Allah and His blessings be upon you, people of the house. Indeed, He is Praiseworthy and Glorious.",
-      "surah": "Hud 11:73"
+      "reference": "Surah Hud 11:73"
     },
-    "howToLive": "Aspire to noble, high ambitions that transcend petty worldly rivalries. Guard your moral reputation with pristine integrity, and use whatever prestige or influence you achieve to uplift and honor those who are vulnerable.",
-    "dua": "اللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، إِنَّكَ حَمِيدٌ مَجِيدٌ (O Allah, send peace and blessings upon Muhammad and the family of Muhammad; indeed, You are Praiseworthy and Glorious).",
+    "revelationMeaning": "Al-Majid is the One who possesses supreme majesty, pristine honor, and boundless nobility. His glory is evident in the perfection of His attributes, the grandeur of His dominion, and the abundance of His favors upon creation. Every attribute of nobility belongs rightfully to Him, far elevated above created titles or worldly imagery.",
+    "quranicReflection": "The Qur'an mentions this Name in Surah Hud and Surah Al-Buruj (85:15). In every prayer, Muslims recite in the Tashahhud (Salawat Ibrahimiya): 'Indeed, You are Praiseworthy and Glorious' (Innaka Hamidun Majid), combining praise for His favors with exaltation of His supreme majesty.",
+    "response": "Recite the words of Allah and remember Him with deep reverence. Let the contemplation of His glory elevate your ambitions above petty quarrels, guiding you toward noble character and righteous conduct.",
+    "heroSummary": "The Glorious and Full of Honor whose nobility and magnificent sovereignty encompass all reality.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ",
+      "translation": "O Allah, send blessings upon Muhammad and upon the family of Muhammad, as You sent blessings upon Ibrahim and upon the family of Ibrahim. Indeed, You are Praiseworthy and Glorious.",
+      "reference": "Sahih al-Bukhari 3370, Sahih Muslim 406"
+    },
+    "suggestedDua": {
+      "arabic": "يَا مَجِيدُ، لَكَ الْمَجْدُ وَالْكِبْرِيَاءُ وَالْعِزُّ وَالثَّنَاءُ، شَرِّفْنِي بِطَاعَتِكَ، وَأَعِزَّنِي بِتَقْوَاكَ",
+      "translation": "O Glorious, to You belongs all glory, greatness, might, and praise; honor me through obedience to You and strengthen me through consciousness of You.",
+      "reference": "Suggested personal supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "awe",
-      "spiritual",
-      "purpose",
-      "strength"
+      "reverence",
+      "gratitude",
+      "peace"
     ]
   },
   {
     "id": 49,
     "arabic": "الْبَاعِثُ",
-    "transliteration": "Al-Bā‘ith",
-    "meaning": "The Resurrector, The Awakener of Dormant Souls",
-    "root": "ب-ع-ث (Ba-‘Ayn-Tha)",
-    "rootMeaning": "Sending forth with purpose, rousing from deep slumber, breathing vitality into lifeless dust, and deploying messengers.",
-    "category": "Creation & Sustenance",
-    "yqExplanation": "Classical commentary notes that Al-Bā‘ith manifests on multiple profound theological levels: He is the One who raises the dead from their decomposed graves on the Day of Resurrection to establish supreme accountability and justice; He is the One who sent forth the noble prophets to awaken sleeping societies from ignorance; and He is the One who revives dead spiritual hearts with the radiant light of faith. With Al-Bā‘ith, no ending is final, and no death is irreversible.",
-    "nakExplanation": "Linguistic analysis focuses on the active participle 'Al-Bā‘ith'—a dynamic force that stirs life where there was only stillness and decay. Notice how the Qur'an repeatedly compares the physical resurrection of human bones to the reviving of barren, brittle earth after rainfall: the dead seed underneath the frozen soil appears finished, yet when water descends, it quivers and sprouts. This holds tremendous psychological comfort: when your heart feels deadened by grief, spiritual burnout, or prolonged depression, Al-Bā‘ith can breathe vibrant life and hope back into your chest in a single instant.",
-    "quranAyah": {
+    "transliteration": "Al-Bāʿith",
+    "meaning": "The One who raises the dead",
+    "root": "ب-ع-ث (Ba-Ayn-Tha)",
+    "rootMeaning": "Signifies sending forth, dispatching messengers, awakening, stirring, and resurrecting the dead from their graves.",
+    "category": "Power & Might",
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
       "arabic": "وَأَنَّ السَّاعَةَ آتِيَةٌ لَّا رَيْبَ فِيهَا وَأَنَّ اللَّهَ يَبْعَثُ مَن فِي الْقُبُورِ",
-      "translation": "And [that they may know] that the Hour is coming, there is no doubt about it, and that Allah will resurrect those in the graves.",
-      "surah": "Al-Hajj 22:7"
+      "translation": "And that the Hour is coming—no doubt about it—and that Allah will resurrect those who are in the graves.",
+      "reference": "Surah Al-Hajj 22:7"
     },
-    "howToLive": "Live with acute awareness of the ultimate awakening on the Day of Resurrection, preparing deeds that will bring you joy when resurrected. Be an agent of revival in your community—revive forgotten sunnahs, rekindle hope in discouraged hearts, and awaken minds through knowledge.",
-    "dua": "الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ (All praise is due to Allah who gave us life after having caused us to die, and unto Him is the resurrection).",
+    "revelationMeaning": "Al-Ba'ith is the One who will resurrect all humanity from their graves on the Day of Judgment to stand before their Lord. While included in traditional enumerations of the ninety-nine names, classical scholars note that it is established in the Qur'an as an essential divine action ('Allah will resurrect those in the graves') rather than a standalone Qur'anic name. Resurrection is its primary meaning, while reviving hearts through faith is a secondary reflection.",
+    "quranicReflection": "The bodily resurrection of creation is a central pillar of Islamic faith, affirmed throughout the Qur'an: 'Say, He will give them life who produced them the first time; and He is, of all creation, Knowing' (Ya-Sin 36:79). Just as rain revives dead earth, Allah will bring forth the dead for reckoning.",
+    "response": "Live with conscious preparation for the Day of Resurrection. Let the reality of standing before your Lord motivate you to perform good deeds, seek repentance, and fulfill the rights of others before that Day arrives.",
+    "heroSummary": "The One who raises the dead from their graves on the Day of Resurrection to stand before their Lord.",
+    "authenticDua": {
+      "arabic": "الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ",
+      "translation": "All praise is due to Allah who gave us life after He caused us to die, and to Him is the resurrection.",
+      "reference": "Sahih al-Bukhari 6312 (Waking up supplication)"
+    },
+    "suggestedDua": {
+      "arabic": "يَا بَاعِثُ، يَا مَنْ يَبْعَثُ مَنْ فِي الْقُبُورِ، ابْعَثْنِي يَوْمَ الْقِيَامَةِ آمِنًا مُطْمَئِنًّا مَعَ الَّذِينَ لَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ",
+      "translation": "O You who raise the dead, O You who will resurrect those in the graves: raise me on the Day of Resurrection in safety and peace with those who shall have no fear nor shall they grieve.",
+      "reference": "Suggested personal supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "hope",
-      "spiritual",
       "purpose",
-      "awe"
+      "awe",
+      "accountability"
     ]
   },
   {
     "id": 50,
     "arabic": "الشَّهِيدُ",
     "transliteration": "Ash-Shahīd",
-    "meaning": "The All-Witnessing, The Ultimate Testifier to All Truth",
+    "meaning": "The All-Witnessing",
     "root": "ش-ه-د (Sheen-Ha-Dal)",
-    "rootMeaning": "Presence with direct observation, witnessing with certainty without any barrier, and testifying with absolute truth.",
-    "category": "Wisdom & Knowledge",
-    "yqExplanation": "Theological distinctions clarify that while Al-‘Alīm refers to Allah's absolute knowledge of all things in the abstract, and Al-Khabīr refers to His knowledge of the hidden, microscopic inner realities, Ash-Shahīd signifies His direct, unmediated presence witnessing all apparent phenomena as they unfold. Nothing in the heavens or earth can occur behind His back. He is the ultimate witness between the oppressed and the oppressor, and on the Day of Judgment, His testimony alone establishes indisputable justice.",
-    "nakExplanation": "Linguistic nuance unpacks the comfort of 'Shahadah' as active, present validation. In human life, the deepest pain often comes not merely from suffering, but from suffering in complete invisibility—crying through sleepless nights where no friend notices, or enduring silent abuse where there are no cameras or witnesses. Ash-Shahīd tells you: You were never alone, and your struggle was never unseen. The Creator of the universe was directly present, witnessing every teardrop that soaked your pillow, preserving your endurance as sacred testimony.",
-    "quranAyah": {
-      "arabic": "قُلْ أَيُّ شَيْءٍ أَكْبَرُ شَهَادَةً ۖ قُلِ اللَّهُ ۖ شَهِيدٌ بَيْنِي وَبَيْنَكُمْ",
-      "translation": "Say, 'What thing is greatest in testimony?' Say, 'Allah is witness between me and you.'",
-      "surah": "Al-An'am 6:19"
+    "rootMeaning": "Signifies witnessing, being present, observing directly, testifying, and having firsthand knowledge of all things.",
+    "category": "Justice & Truth",
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "إِنَّ اللَّهَ عَلَىٰ كُلِّ شَيْءٍ شَهِيدٌ",
+      "translation": "Indeed, Allah is, over all things, Witness.",
+      "reference": "Surah Al-Hajj 22:17"
     },
-    "howToLive": "Cultivate uncompromising truthfulness in speech and transactions. Stand up as a witness for justice even when it goes against your personal self-interest, knowing that Ash-Shahīd observes every motive of your soul.",
-    "dua": "اللَّهُمَّ رَبَّ السَّمَاوَاتِ وَالْأَرْضِ، عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، أَنْتَ الشَّهِيدُ عَلَىٰ كُلِّ شَيْءٍ، فَاهْدِنِي لِمَا اخْتُلِفَ فِيهِ مِنَ الْحَقِّ (O Allah, Lord of the heavens and earth, Knower of the unseen and seen, You are Witness over all things, so guide me to the truth in matters where there is dispute).",
+    "revelationMeaning": "Ash-Shahid is the One who witnesses everything in existence—nothing is hidden, absent, or secret from His sight and knowledge. Classical scholars explain that while 'Al-'Alim' describes comprehensive knowledge, 'Ash-Shahid' specifically highlights direct witnessing of events as they occur. Ash-Shahid signifies that Allah directly witnesses all things with complete knowledge, sight, and hearing, such that not a single deed or atom across creation is absent from His observation.",
+    "quranicReflection": "In Surah Al-Ma'idah, 'Isa ('alayhis-salam) says: 'And I was a witness over them as long as I was among them; but when You took me up, You were the Observer over them, and You are, over all things, Witness' (5:117). Allah also asks: 'Is it not sufficient concerning your Lord that He is, over all things, a Witness?' (Fussilat 41:53).",
+    "response": "Stand as an honest witness for truth in all your dealings, even when it is difficult. Remember that Ash-Shahid witnesses your private deeds and thoughts, inspiring sincere devotion and upright character.",
+    "heroSummary": "The All-Witnessing from whose direct observation and knowledge not a single deed or atom is absent.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ، أَنْتَ قَيِّمُ السَّمَاوَاتِ وَالْأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ، أَنْتَ نُورُ السَّمَاوَاتِ وَالْأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ، أَنْتَ الْحَقُّ، وَوَعْدُكَ الْحَقُّ، وَلِقَاؤُكَ حَقٌّ، وَقَوْلُكَ حَقٌّ",
+      "translation": "O Allah, our Lord, to You belongs all praise. You are the Sustainer of the heavens and the earth and all within them. To You belongs all praise; You are the Light of the heavens and the earth and all within them. To You belongs all praise; You are the Truth, Your promise is true, meeting You is true, and Your word is true.",
+      "reference": "Sahih al-Bukhari 1120, Sahih Muslim 769"
+    },
+    "suggestedDua": {
+      "arabic": "يَا شَهِيدُ، يَا مَنْ لَا يَغِيبُ عَنْهُ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ، اشْهَدْ لِي بِالْإِيمَانِ، وَاجْعَلْنِي شَاهِدًا بِالْقِسْطِ قَائِمًا بِالْحَقِّ",
+      "translation": "O All-Witnessing, O You from whom nothing in the earth or heavens is hidden: bear witness to my faith, and make me a witness in equity, standing firm for truth.",
+      "reference": "Suggested personal supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
+      "truth",
+      "mindfulness",
       "justice",
-      "comfort",
-      "anxiety",
-      "purpose",
-      "spiritual"
+      "peace"
     ]
   },
   {
     "id": 51,
     "arabic": "الْحَقُّ",
     "transliteration": "Al-Ḥaqq",
-    "meaning": "The Absolute Truth, The Ever-Enduring Reality",
+    "meaning": "The Absolute Truth and Reality",
     "root": "ح-ق-ق (Ha-Qaf-Qaf)",
-    "rootMeaning": "Unshakable reality, certainty that cannot be revoked, conformity to eternal truth, and permanent existence without decay.",
+    "rootMeaning": "Signifies established reality that cannot be denied or revoked, absolute certainty, perfection in conformity to fact, and permanent existence without beginning or decay.",
     "category": "Justice & Truth",
-    "yqExplanation": "Classical scholars explain that Al-Ḥaqq is the One whose existence is necessary, permanent, and inherently real. Everything other than Allah is contingent—it was once nothing, and it will eventually vanish. Allah alone is the unchanging, absolute anchor of all being. Furthermore, His speech is Haqq, His promises are Haqq, His meeting is Haqq, and the Day of Judgment is Haqq. In a mortal world constructed out of shifting illusions and fleeting distractions, Al-Ḥaqq is the bedrock of cosmic truth.",
-    "nakExplanation": "Linguistic reflection illuminates the psychological liberation embedded in the word 'Ḥaqq'. Falsehood (Bāṭil) is described in the Qur'an as foam floating upon churning water—it makes noise, looks voluminous, but quickly evaporates into nothingness. The systems, lies, and vanity of the world often feel overwhelming and unyielding, but they are hollow. When you align your life, your identity, and your heart with Al-Ḥaqq, you step out of the fog of existential confusion and plant your feet upon rock that can never crumble.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "فَتَعَالَى اللَّهُ الْمَلِكُ الْحَقُّ ۖ لَا إِلَٰهَ إِلَّا هُوَ رَبُّ الْعَرْشِ الْكَرِيمِ",
       "translation": "So exalted is Allah, the Sovereign, the Truth; there is no deity except Him, Lord of the Noble Throne.",
-      "surah": "Al-Mu'minun 23:116"
+      "reference": "Surah Al-Mu'minun 23:116"
     },
-    "howToLive": "Be a person of unwavering intellectual and moral integrity. Speak the truth even when difficult, strip away self-deception and vanity from your ego, and devote your finite life to eternal realities rather than chasing transient illusions.",
-    "dua": "اللَّهُمَّ أَنْتَ الْحَقُّ، وَوَعْدُكَ الْحَقُّ، وَقَوْلُكَ الْحَقُّ، وَلِقَاؤُكَ حَقٌّ، وَالْجَنَّةُ حَقٌّ، وَالنَّارُ حَقٌّ (O Allah, You are the Truth, Your promise is true, Your word is true, the meeting with You is true, Paradise is true, and the Fire is true).",
+    "revelationMeaning": "Al-Ḥaqq is the One whose divine existence is necessary, self-subsistent, and eternal. Everything other than Him was preceded by nonexistence and is destined for perishability; Allah alone is the unchanging, absolute anchor of all reality. Classical theological authorities explain that His essence is true, His attributes are true, His speech is true, His promise is true, His judgment is true, and the final meeting with Him is an inescapable truth. In an earthly realm fraught with illusions, subjective desires, and transient falsehoods, Al-Ḥaqq is the bedrock upon which all existence, morality, and justice rest.",
+    "quranicReflection": "In the Qur'an, truth is contrasted directly with falsehood (batil). Falsehood is depicted as floating froth that swells upon turbulent waters, only to dissipate into nothingness, while truth remains firmly rooted in the earth. Surah Yunus declares: 'So that is Allah, your Lord, the Truth; and what can be beyond truth except error?' When a soul anchors its identity in Al-Ḥaqq, the deceptive allure of worldly prestige dissolves, replaced by tranquil intellectual clarity and spiritual certitude.",
+    "response": "Align your internal principles and external actions with absolute truth. Speak the truth even when it is socially inconvenient or personally costly, abandon self-deception and vanity, and measure your life by eternal standards rather than the fleeting validations of creation.",
+    "heroSummary": "The Absolute Reality whose essence, words, promises, and judgment are immutable truth.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ لَكَ الْحَمْدُ، أَنْتَ الْحَقُّ، وَوَعْدُكَ الْحَقُّ، وَقَوْلُكَ الْحَقُّ، وَلِقَاؤُكَ حَقٌّ، وَالْجَنَّةُ حَقٌّ، وَالنَّارُ حَقٌّ، وَالنَّبِيُّونَ حَقٌّ، وَمُحَمَّدٌ حَقٌّ، وَالسَّاعَةُ حَقٌّ",
+      "translation": "O Allah, to You belongs all praise. You are the Truth, Your promise is true, Your word is true, Your meeting is true, Paradise is true, the Fire is true, the Prophets are true, Muhammad is true, and the Hour is true.",
+      "reference": "Sahih al-Bukhari 1120, Sahih Muslim 769"
+    },
+    "suggestedDua": null,
     "natureImage": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "purpose",
       "peace",
       "strength",
-      "justice"
+      "justice",
+      "certitude"
     ]
   },
   {
     "id": 52,
     "arabic": "الْوَكِيلُ",
     "transliteration": "Al-Wakīl",
-    "meaning": "The Ultimate Trustee, The Supreme Disposer of Affairs",
+    "meaning": "The Perfect Trustee and Disposer of affairs",
     "root": "و-ك-ل (Waw-Kaf-Lam)",
-    "rootMeaning": "Entrusting one's affairs entirely, relying upon an utterly competent advocate who manages everything with supreme fidelity.",
+    "rootMeaning": "Denotes entrusting one's entire affairs to another with complete confidence in their comprehensive knowledge, power, and fidelity; relying upon a guardian who manages everything with supreme competence.",
     "category": "Protection & Trust",
-    "yqExplanation": "Theological analysis underscores that Al-Wakīl is not a passive caretaker, but the supreme divine agent who assumes complete stewardship of whoever relies upon Him with sincerity. Tawakul does not mean abandoning practical means; it means tying your camel with meticulous discipline while your heart remains entirely detached from the rope and anchored in Al-Wakīl. As Ibn Kathir notes, when the believers were surrounded by overwhelming military forces and told to surrender, their response was solely: 'Ḥasbunallāhu wa ni‘mal-Wakīl' (Allah is sufficient for us, and He is the best Disposer of affairs).",
-    "nakExplanation": "Linguistic nuance highlights the legal and personal relationship behind a 'Wakīl'—an advocate whom you authorize to represent you because they possess knowledge, authority, and eloquence far beyond your own capabilities. Once you sign over power of attorney to an elite advocate, your anxiety ceases; you sleep peacefully knowing your case is in master hands. Calling upon Al-Wakīl is the spiritual equivalent of handing over the tangled, agonizing mess of your life into the care of the Lord of the worlds, letting go of the crippling need to micromanage what you cannot control.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "الَّذِينَ قَالَ لَهُمُ النَّاسُ إِنَّ النَّاسَ قَدْ جَمَعُوا لَكُمْ فَاخْشَوْهُمْ فَزَادَهُمْ إِيمَانًا وَقَالُوا حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ",
       "translation": "Those to whom people said, 'Indeed, the people have gathered against you, so fear them.' But it [merely] increased them in faith, and they said, 'Sufficient for us is Allah, and [He is] the best Disposer of affairs.'",
-      "surah": "Ali 'Imran 3:173"
+      "reference": "Surah Ali 'Imran 3:173"
     },
-    "howToLive": "Exhaust your ethical efforts in your duties, health, and work, but completely surrender the outcome to Al-Wakīl. Free yourself from the chronic exhaustion of overthinking tomorrow's unknowns, and honor the trusts (Amānāt) people place in your hands.",
-    "dua": "حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ، عَلَى اللَّهِ تَوَكَّلْنَا (Allah is sufficient for us, and He is the best Disposer of affairs; upon Allah alone we place our trust).",
+    "revelationMeaning": "Al-Wakīl is the supreme guardian and trustee who assumes complete stewardship over the affairs of creation. Classical theological discourse emphasizes that true reliance (tawakkul) upon Al-Wakīl requires actively taking all prescribed, lawful worldly means while keeping the heart entirely detached from those means and anchored solely in Allah. Tawakkul is neither fatalism nor negligence; it is tying the camel with utmost diligence while knowing that safety and success reside only with the Lord of the worlds. When a servant hands their vulnerability to Al-Wakīl, they are supported by a Trustee whose resources never deplete and whose guardianship never sleeps.",
+    "quranicReflection": "The Qur'an records that when the Prophet Ibrahim was cast into the raging fire, and when the Prophet Muhammad ﷺ and his companions faced overwhelming armies at Hamra' al-Asad, their singular declaration was: 'Hasbunallahu wa ni'mal-Wakil' (Allah is sufficient for us, and He is the best Disposer of affairs). In both instances, worldly causation was superseded by divine intervention. Calling upon Al-Wakīl liberates the human heart from the paralyzing anxiety of trying to control outcomes that lie entirely beyond mortal reach.",
+    "response": "Work with excellence, fulfill your moral duties, and take lawful steps toward your goals, but surrender the final outcome entirely to Al-Wakīl. Relinquish obsessive worry about tomorrow, and fulfill the trusts (amanat) that others have placed in your hands.",
+    "heroSummary": "The all-competent Trustee who manages the affairs of those who place their full reliance in Him.",
+    "authenticDua": {
+      "arabic": "حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ",
+      "translation": "Allah is sufficient for us, and He is the best Disposer of affairs.",
+      "reference": "Sahih al-Bukhari 4563"
+    },
+    "suggestedDua": {
+      "arabic": "يَا وَكِيلُ، عَلَيْكَ تَوَكَّلْتُ وَإِلَيْكَ أَنَبْتُ، فَاكْفِنِي مَا أَهَمَّنِي وَتَوَلَّ أَمْرِي كُلَّهُ",
+      "translation": "O Perfect Trustee, upon You alone I rely and to You I turn; suffice me in whatever distresses me and take charge of all my affairs."
+    },
     "natureImage": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "anxiety",
       "peace",
       "fear",
       "strength",
-      "comfort"
+      "comfort",
+      "trust"
     ]
   },
   {
     "id": 53,
     "arabic": "الْقَوِيُّ",
     "transliteration": "Al-Qawiyy",
-    "meaning": "The All-Powerful, The Possessor of Inexhaustible Strength",
+    "meaning": "The All-Strong",
     "root": "ق-و-ي (Qaf-Waw-Ya)",
-    "rootMeaning": "Intrinsic power, boundless vigor, energy that never wanes, and total dominance that can never be subdued.",
+    "rootMeaning": "Signifies intrinsic strength, absolute capability, unassailable vigor, and total dominance that cannot be overcome, weakened, or subdued.",
     "category": "Power & Might",
-    "yqExplanation": "Classical scholars point out that Al-Qawiyy represents divine power in its purest, inexhaustible essence. Human power is borrowed, fragile, and dependent upon food, oxygen, sleep, and political alliances. Allah's Quwwah is self-existent and limitless. In theological pairings, Al-Qawiyy is frequently coupled with 'Al-‘Azīz' (The Noble, Invincible in Might): 'Inna Allāha Qawiyyun ‘Azīz'. His power is never tyrannical, erratic, or clumsy; it is the flawless, resolute strength that upholds the cosmic orbits and ensures justice prevails over all earthly oppression.",
-    "nakExplanation": "Linguistic reflection notes the intense morphological rhythm of 'Al-Qawiyy'. In human psychology, weakness generates deep dread—we fear bodily illness, economic collapse, and violent oppressors. When the Qur'an mentions Al-Qawiyy in contexts where arrogant tyrants like Pharaoh or ‘Ad believed their fortresses made them invincible, Allah exposes their fragility with breathtaking ease. Leaning on Al-Qawiyy infuses the weary believer with spiritual resilience: no matter how powerless you feel in the face of daunting odds, your connection is tied to the Source of all strength.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "اللَّهُ لَطِيفٌ بِعِبَادِهِ يَرْزُقُ مَن يَشَاءُ ۖ وَهُوَ الْقَوِيُّ الْعَزِيزُ",
       "translation": "Allah is subtle with His servants; He gives provision to whom He wills. And He is the Powerful, the Exalted in Might.",
-      "surah": "Ash-Shura 42:19"
+      "reference": "Surah Ash-Shura 42:19"
     },
-    "howToLive": "Never use your physical, social, or financial power to bully or oppress someone weaker than you. Draw spiritual fortitude from Al-Qawiyy when confronting injustice or standing firm on your values in hostile environments.",
-    "dua": "يَا قَوِيُّ يَا مَتِينُ، اكْفِنِي شَرَّ الظَّالِمِينَ، وَقَوِّ ضَعْفِي فِي رِضَاكَ (O All-Powerful, O Unbreakable, protect me from the evil of oppressors, and strengthen my weakness in pursuit of Your pleasure).",
+    "revelationMeaning": "Al-Qawiyy describes Allah's inherent, boundless, and undiminished strength. Classical scholarship carefully distinguishes this divine attribute from any philosophical notion of an impersonal cosmic force or blind energy. Allah is the living, knowing, willing Sovereign whose strength is personal, deliberate, and exercised in complete harmony with His wisdom and justice. Human strength is borrowed, fragile, and bound to decay; Allah's strength is self-existent, effortless, and eternally immune to fatigue, resistance, or exhaustion.",
+    "quranicReflection": "In the Qur'an, Al-Qawiyy is frequently coupled with Al-‘Azīz (The Exalted in Might): 'Inna Allaha Qawiyyun ‘Aziz'. This pairing demonstrates that His strength is always accompanied by unassailable dignity and moral perfection, never degenerating into raw tyranny or erratic destruction. When despots throughout history boasted of their military empires, the Qur'an reminds humanity that their perceived strength was fragile and fleeting before the absolute strength of their Creator.",
+    "response": "Acknowledge your fundamental mortal weakness and draw spiritual fortitude from Al-Qawiyy. Never use your physical, social, or financial advantage to intimidate or oppress those weaker than you, and stand firm on ethical principles knowing that the ultimate Source of strength supports righteousness.",
+    "heroSummary": "The Possessor of intrinsic, absolute strength whose might is never diminished by exertion or opposition.",
+    "authenticDua": {
+      "arabic": "أَعُوذُ بِعِزَّةِ اللَّهِ وَقُدْرَتِهِ مِنْ شَرِّ مَا أَجِدُ وَأُحَاذِرُ",
+      "translation": "I seek refuge in the might of Allah and His power from the evil of what I experience and fear.",
+      "reference": "Sahih Muslim 2202"
+    },
+    "suggestedDua": {
+      "arabic": "يَا قَوِيُّ يَا عَزِيزُ، قَوِّ ضَعْفِي فِي رِضَاكَ، وَانْصُرْنِي عَلَى مَنْ ظَلَمَنِي",
+      "translation": "O All-Strong, O Exalted in Might, strengthen my weakness in pursuit of Your pleasure, and grant me victory over whoever oppresses me."
+    },
     "natureImage": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "strength",
       "fear",
       "injustice",
-      "awe"
+      "awe",
+      "courage"
     ]
   },
   {
     "id": 54,
     "arabic": "الْمَتِينُ",
     "transliteration": "Al-Matīn",
-    "meaning": "The Steadfast, The Unshakeable and Unyielding in Might",
+    "meaning": "The Firm and Perfect in Strength",
     "root": "م-ت-ن (Meem-Ta-Noon)",
-    "rootMeaning": "Firmness, solid stability, density that cannot be cracked, and endurance that never experiences fatigue or strain.",
+    "rootMeaning": "Signifies extreme firmness, solid stability, endurance without strain, and perfection in strength that admits no fluctuation, cracking, or fatigue.",
     "category": "Power & Might",
-    "yqExplanation": "Theological distinctions between Al-Qawiyy and Al-Matīn reveal profound beauty: while Al-Qawiyy pertains to the sheer capacity and magnitude of power, Al-Matīn signifies the extreme firmness, stability, and endurance of that power. As Imam Al-Bayhaqi clarifies, no exertion drains Allah, no resistance tires Him, and no passage of time erodes His resolve. Even the mightiest human structures crack under tension and fatigue; Al-Matīn is utterly immune to strain, remaining eternally immovable and resolute.",
-    "nakExplanation": "Linguistic nuance highlights the classical imagery of 'Matn'—the sturdy, muscular ridge along an animal's spine, or an elevated highland of solid stone that cannot be breached. In Surah Adh-Dhariyat, Allah reveals: 'Inna Allāha Huwar-Razzāqu Dhul-Quwwati al-Matīn' (Indeed, it is Allah who is the Continual Provider, the Possessor of power, the Steadfast). By joining His provision with 'Al-Matīn', Allah reassures your anxious heart: His capacity to provide for you will never fracture, run out of supply, or collapse under economic depression.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "إِنَّ اللَّهَ هُوَ الرَّزَّاقُ ذُو الْقُوَّةِ الْمَتِينُ",
-      "translation": "Indeed, it is Allah who is the [continual] Provider, the firm possessor of strength.",
-      "surah": "Adh-Dhariyat 51:58"
+      "translation": "Indeed, it is Allah who is the [continual] Provider, the Possessor of strength, the Firm.",
+      "reference": "Surah Adh-Dhariyat 51:58"
     },
-    "howToLive": "Build steadfast resilience (Istiqāmah) in your faith and character. Do not be like a reed shaken by every cultural wind or trending opinion; anchor your principles in timeless divine guidance with unyielding integrity.",
-    "dua": "اللَّهُمَّ يَا ذَا الْقُوَّةِ الْمَتِينِ، ثَبِّتْ قَلْبِي عَلَىٰ دِينِكَ، وَأَعِنِّي عَلَىٰ حَمْلِ أَمَانَتِي (O Possessor of unshakeable might, make my heart steadfast upon Your religion, and assist me in bearing my responsibilities).",
+    "revelationMeaning": "Al-Matīn denotes the consummation of firmness and stability in divine strength. While Al-Qawiyy signifies the sheer magnitude of power, Al-Matīn emphasizes that this power is utterly immune to difficulty, strain, or erosion over time. Classical theologians clarify that no exertion drains Him, no resistance tires Him, and no passage of ages alters His resolve. Unlike created structures that weaken under pressure, Allah's power remains eternally solid and resolute, completely transcending physical analogies.",
+    "quranicReflection": "In Surah Adh-Dhariyat, Allah couples His continual provision with His attribute of firm strength: 'Indeed, Allah is the Provider, Possessor of strength, the Firm.' This revelation brings deep reassurance to the human heart: the treasury of your Sustainer will never suffer a shortage, nor will His capacity to uphold your life fracture under economic strain or worldly instability.",
+    "response": "Cultivate steadfastness (istiqamah) in your spiritual and moral character. Stand firmly upon divine guidance without compromising your values when cultural pressures shift, and remain an unshakeable pillar of support for your family and community in times of crisis.",
+    "heroSummary": "The Consummately Firm whose unyielding strength knows neither exhaustion nor decline.",
+    "authenticDua": null,
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ يَا ذَا الْقُوَّةِ الْمَتِينِ، ثَبِّتْ قَلْبِي عَلَى دِينِكَ، وَأَعِنِّي عَلَى أَدَاءِ أَمَانَتِي بِعَزْمٍ وَصَبْرٍ",
+      "translation": "O Allah, O Possessor of firm strength, make my heart steadfast upon Your religion, and aid me in fulfilling my trust with resolve and patience."
+    },
     "natureImage": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "strength",
       "peace",
       "fear",
-      "purpose"
+      "purpose",
+      "steadfastness"
     ]
   },
   {
     "id": 55,
     "arabic": "الْوَلِيُّ",
     "transliteration": "Al-Waliyy",
-    "meaning": "The Protecting Friend, The Loving Guardian and Ally",
+    "meaning": "The Protecting Ally",
     "root": "و-ل-ي (Waw-Lam-Ya)",
-    "rootMeaning": "Nearness, uninterrupted closeness, protective companionship, taking someone under one's loving wing.",
+    "rootMeaning": "Signifies uninterrupted closeness, nearness, loving companionship, protective guardianship, and continuous support without distance.",
     "category": "Protection & Trust",
-    "yqExplanation": "Classical commentary notes that 'Wilāyah' encompasses two interconnected realities: supreme authority (custodianship) combined with intimate affection and alliance. Allah is the general Waliyy of all creation through maintenance and governance, but He is the special, intimate Waliyy of the believers—pulling them out of layers of darkness into radiant light. When Allah becomes your Waliyy, you have an ally whose protection cannot be breached and whose loyalty to His humble servant never wavers.",
-    "nakExplanation": "Linguistic analysis observes the root meaning of two things lying side-by-side with zero gap or barrier between them ('Yalīhi'). In a world where people feel profoundly lonely, abandoned by friends, or isolated in their moral struggles, Al-Waliyy promises the ultimate nearness. In Surah Ash-Shura, Allah mentions that He sends down beneficial rain after people have despaired, and then immediately says: 'Wa Huwal-Waliyyul-Ḥamīd' (And He is the Protecting Friend, the Praiseworthy). Just when you think all hope is lost, your Divine Ally steps in with relief.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "اللَّهُ وَلِيُّ الَّذِينَ آمَنُوا يُخْرِجُهُم مِّنَ الظُّلُمَاتِ إِلَى النُّورِ",
-      "translation": "Allah is the ally of those who believe. He brings them out from darknesses into the light.",
-      "surah": "Al-Baqarah 2:257"
+      "translation": "Allah is the protecting ally of those who believe. He brings them out from darknesses into the light.",
+      "reference": "Surah Al-Baqarah 2:257"
     },
-    "howToLive": "Be a loyal, trustworthy friend and advocate to those around you, standing by them in their darkest moments. Make Allah your primary confidant, sharing your deepest secrets and fears with Him in intimate conversation.",
-    "dua": "أَنْتَ وَلِيِّي فِي الدُّنْيَا وَالْآخِرَةِ ۖ تَوَفَّنِي مُسْلِمًا وَأَلْحِقْنِي بِالصَّالِحِينَ (You are my protector in this world and in the Hereafter. Cause me to die a Muslim and join me with the righteous).",
+    "revelationMeaning": "Al-Waliyy is the intimate, loving Patron and Guardian of the believers. Classical theological analysis carefully distinguishes Al-Waliyy from Al-Wālī (الوالي, The Governor and Ruler of all creation). While Al-Wālī denotes universal administrative governance and sovereignty over every creature, Al-Waliyy carries deep connotations of specialized love, active assistance, nearness, and moral alliance reserved for the faithful. He guides His servants through spiritual confusions, shields them from hidden harms, and brings them out from the darkness of doubt and sin into the radiant light of guidance.",
+    "quranicReflection": "Surah Ash-Shura pairs Al-Waliyy with Al-Hamid after describing how rain descends upon parched land: 'And He is the One who sends down the rain after they have despaired and spreads His mercy. And He is the Protecting Ally, the Praiseworthy.' Just when human hopes are exhausted, Al-Waliyy steps in with relief. Recognizing Allah as your Protecting Ally transforms feelings of loneliness into an enduring sense of divine companionship.",
+    "response": "Make Allah your primary confidant and refuge, turning to Him in private supplication before seeking validation from people. In turn, become a loyal ally to the righteous, standing by those who are oppressed and extending compassion to those in need.",
+    "heroSummary": "The intimate Guardian and Ally who guides the believers from layers of darkness into light.",
+    "authenticDua": {
+      "arabic": "أَنْتَ وَلِيِّي فِي الدُّنْيَا وَالْآخِرَةِ ۖ تَوَفَّنِي مُسْلِمًا وَأَلْحِقْنِي بِالصَّالِحِينَ",
+      "translation": "You are my protecting ally in this world and the Hereafter. Cause me to die a Muslim and join me with the righteous.",
+      "reference": "Surah Yusuf 12:101"
+    },
+    "suggestedDua": {
+      "arabic": "يَا وَلِيَّ الْمُؤْمِنِينَ، تَوَلَّنِي بِحِفْظِكَ وَرِعَايَتِكَ، وَأَخْرِجْنِي مِنْ كُلِّ ضِيقٍ إِلَى سِعَةِ رَحْمَتِكَ",
+      "translation": "O Protecting Ally of the believers, take charge of me through Your guardianship and care, and bring me out of every constriction into the expanse of Your mercy."
+    },
     "natureImage": "https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "comfort",
       "peace",
       "hope",
       "love",
-      "protection"
+      "protection",
+      "loneliness"
     ]
   },
   {
     "id": 56,
     "arabic": "الْحَمِيدُ",
     "transliteration": "Al-Ḥamīd",
-    "meaning": "The Inherently Praiseworthy, The Magnificently Lauded",
+    "meaning": "The One worthy of all praise",
     "root": "ح-م-د (Ha-Meem-Dal)",
-    "rootMeaning": "Praise rendered with deep love, reverence, and gratitude for intrinsic perfection and boundless benevolence.",
+    "rootMeaning": "Signifies praise offered with profound love, veneration, and gratitude for intrinsic perfection, noble attributes, and boundless benevolence.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Theological scholars, including Imam Al-Ghazali, clarify the crucial distinction between 'Al-Ḥamīd' and 'Al-Maḥmūd'. 'Al-Maḥmūd' is someone who is actively praised by others—meaning if people stop praising them, the praise ceases. 'Al-Ḥamīd', however, follows the intensive scale of 'Fa‘īl', signifying One who is inherently, unconditionally praiseworthy in His essence, whether a single creation praises Him or not. Even if every atom in the cosmos remained silent, Allah's intrinsic majesty, wisdom, and benevolence make Him infinitely worthy of all praise.",
-    "nakExplanation": "Linguistic nuance distinguishes 'Ḥamd' from 'Madḥ' (superficial flattery) and 'Shukr' (gratitude in response to a favor). 'Madḥ' can be given to someone you do not love or for things they did not choose (like physical height). 'Shukr' is only given after you receive a gift. But 'Ḥamd' is praise born out of profound adoration for who the person is, combined with thanks for what they have done. Calling Allah Al-Ḥamīd means recognizing that every breath, heartbeat, and trial is filled with an underlying perfection that evokes heartfelt praise.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "يَا أَيُّهَا النَّاسُ أَنتُمُ الْفُقَرَاءُ إِلَى اللَّهِ ۖ وَاللَّهُ هُوَ الْغَنِيُّ الْحَمِيدُ",
       "translation": "O mankind, you are those in need of Allah, while Allah is the Free of need, the Praiseworthy.",
-      "surah": "Fatir 35:15"
+      "reference": "Surah Fatir 35:15"
     },
-    "howToLive": "Transform your daily vocabulary into one of genuine gratitude and praise. In times of ease, say Alhamdulillah with joy; in times of hardship, say Alhamdulillah with trust, knowing that Al-Ḥamīd never decrees anything void of wisdom.",
-    "dua": "اللَّهُمَّ لَكَ الْحَمْدُ كُلُّهُ، وَلَكَ الْمُلْكُ كُلُّهُ، بِيَدِكَ الْخَيْرُ كُلُّهُ، وَإِلَيْكَ يُرْجَعُ الْأَمْرُ كُلُّهُ (O Allah, to You belongs all praise, to You belongs all dominion, in Your hand is all good, and to You all affairs return).",
+    "revelationMeaning": "Al-Ḥamīd is the One who is inherently, unconditionally praiseworthy in His essence and across all circumstances. Classical theologians highlight the vital grammatical distinction between Al-Maḥmūd (one who is praised by someone else) and Al-Ḥamīd (One who possesses intrinsic, infinite praiseworthiness). If every created being were to cease praising Him, His praiseworthiness would not decrease by an atom. Even when decrees seem difficult to mortal perception, His actions are rooted in flawless wisdom and justice, rendering Him universally deserving of total praise in ease and hardship alike.",
+    "quranicReflection": "In the Qur'an, Al-Ḥamīd is frequently paired with Al-Ghaniyy (The Free of Need): 'Wallahu Huwal-Ghaniyyul-Hamid'. This pairing clarifies that Allah does not command creation to praise Him out of any divine deficiency or need for acclaim; rather, praising Him is an act of spiritual nourishment and elevation for the human soul. Every cycle of the universe, from the orbit of galaxies to the beating of an insect's heart, reflects an order worthy of profound praise.",
+    "response": "Fill your tongue and heart with genuine praise in all circumstances. Say 'Alhamdulillah' with joy when blessings abound, and say 'Alhamdulillah' with patience when trials occur, trusting that the decrees of Al-Ḥamīd are never devoid of underlying wisdom.",
+    "heroSummary": "The One whose intrinsic perfection and boundless benevolence make Him worthy of all praise in every circumstance.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+      "translation": "O Allah, send prayers upon Muhammad and upon the family of Muhammad, as You sent prayers upon Ibrahim and upon the family of Ibrahim; indeed, You are Praiseworthy, Full of Glory.",
+      "reference": "Sahih al-Bukhari 3370, Sahih Muslim 406"
+    },
+    "suggestedDua": {
+      "arabic": "يَا حَمِيدُ، لَكَ الْحَمْدُ كَمَا يَنْبَغِي لِجَلَالِ وَجْهِكَ وَلِعَظِيمِ سُلْطَانِكَ",
+      "translation": "O One worthy of all praise, to You belongs all praise as befits the majesty of Your Countenance and the greatness of Your authority."
+    },
     "natureImage": "https://images.unsplash.com/photo-1516912481808-3406841bd33c?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "gratitude",
       "peace",
       "spiritual",
-      "hope"
+      "hope",
+      "contentment"
     ]
   },
   {
     "id": 57,
     "arabic": "الْمُحْصِي",
     "transliteration": "Al-Muḥṣī",
-    "meaning": "The Accurately Numbering, The Master Counter of Every Atom",
+    "meaning": "The One who perfectly counts all things",
     "root": "ح-ص-ي (Ha-Sad-Ya)",
-    "rootMeaning": "Pebbles used for exact tallying, accounting with microscopic precision, leaving nothing out.",
+    "rootMeaning": "Signifies counting with exhaustive precision, computing down to the single particle, and encompassing every detail without omitting or forgetting anything.",
     "category": "Wisdom & Knowledge",
-    "yqExplanation": "Classical commentary notes that Al-Muḥṣī is the One whose omniscience is so flawless and exhaustive that the vast infinitudes of creation are counted and cataloged without the slightest error or estimation. He knows the exact count of raindrops falling across every mountain, the number of leaves shedding in autumn, every pulse of a living heart, and every second of patient restraint His servants endure. On the Day of Judgment, every deed—down to the weight of a mustard seed—is brought forward with immaculate accuracy.",
-    "nakExplanation": "Linguistic analysis explores the ancient root 'Ḥaṣā' (small pebbles). Before modern numeracy and accounting spreadsheets, Arab traders used smooth stones to tally transactions precisely so not a single coin was missed. The Qur'an uses this vivid imagery to deliver immense moral comfort and awe: 'Laqad aḥṣāhum wa ‘addahum ‘addā' (He has enumerated them and counted them a [full] counting). In life, you may pour your heart into helping someone and your efforts are completely forgotten or dismissed. Al-Muḥṣī reassures you: not a single ounce of your sacrifice, silent patience, or good deed has been lost from the divine ledger.",
-    "quranAyah": {
-      "arabic": "لِّيَعْلَمَ أَن قَدْ أَبْلَغُوا رِسَالَاتِ رَبِّهِمْ وَأَحَاطَ بِمَا لَدَيْهِمْ وَأَحْصَىٰ كُلَّ شَيْءٍ عَدَدًا",
-      "translation": "That He may know that they have conveyed the messages of their Lord; and He has encompassed whatever is with them and has enumerated all things in number.",
-      "surah": "Al-Jinn 72:28"
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
+      "arabic": "وَأَحَاطَ بِمَا لَدَيْهِمْ وَأَحْصَىٰ كُلَّ شَيْءٍ عَدَدًا",
+      "translation": "And He has encompassed whatever is with them and has enumerated all things in number.",
+      "reference": "Surah Al-Jinn 72:28"
     },
-    "howToLive": "Be conscientious of the moments and hours of your life. Do not underestimate small good deeds, nor minimize small sins; hold yourself accountable before you are held accountable by Al-Muḥṣī.",
-    "dua": "اللَّهُمَّ حَاسِبْنِي حِسَابًا يَسِيرًا، وَاغْفِرْ لِي مَا أَحْصَيْتَهُ عَلَيَّ مِمَّا نَسِيتُهُ (O Allah, grant me an easy accounting, and forgive me for what You have recorded against me which I have forgotten).",
-    "natureImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
+    "revelationMeaning": "Al-Muḥṣī describes the divine perfection of encompassing, counting, and recording all things with absolute precision. While the verbal and descriptive forms appear repeatedly in the Qur'an—such as 'He has enumerated all things in number' and 'We have enumerated all things in a clear register'—the standalone nominal form Al-Muḥṣī is transmitted in the traditional compilation of the 99 names found in Sunan at-Tirmidhi. Scholarly review observes that while Allah's active attribute of exhaustive accounting is unequivocally established across the Qur'an, its deduction as a standalone nominal name represents a traditional listing.",
+    "quranicReflection": "The Qur'an frequently brings comfort and awe through the concept of divine enumeration: 'He has enumerated them and counted them a [full] counting' (Maryam 19:94), and 'Allah kept account of it, while they forgot it' (Al-Mujadila 58:6). In human life, countless sacrifices, silent tears, and quiet acts of charity go unnoticed or are swiftly forgotten by society. The reality of Allah's perfect counting assures the believer that not an atom's weight of sincerity is ever erased from the divine ledger.",
+    "response": "Cultivate moral mindfulness and accountability in your daily conduct. Treat every small good deed as valuable and every minor misdeed with caution, knowing that nothing escapes the divine inventory, and regularly hold your soul to account before the final Day of Accounting.",
+    "heroSummary": "The One whose exhaustive knowledge counts and preserves every deed and atom without omission.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ حَاسِبْنِي حِسَابًا يَسِيرًا",
+      "translation": "O Allah, grant me an easy accounting.",
+      "reference": "Musnad Ahmad 24215, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا مَنْ أَحْصَىٰ كُلَّ شَيْءٍ عَدَدًا، اغْفِرْ لِي مَا أَحْصَيْتَهُ عَلَيَّ مِنْ ذُنُوبِي وَمَا نَسِيتُهُ، وَتَقَبَّلْ يَسِيرَ عَمَلِي",
+      "translation": "O One who has enumerated all things in number, forgive me for what You have recorded against me of my sins which I have forgotten, and accept my modest deeds."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
-      "spiritual",
+      "accountability",
       "justice",
       "awe",
-      "purpose"
+      "purpose",
+      "mindfulness"
     ]
   },
   {
     "id": 58,
     "arabic": "الْمُبْدِئُ",
     "transliteration": "Al-Mubdi’",
-    "meaning": "The Originator, The Initiator of Creation from Nothingness",
+    "meaning": "The One who begins creation",
     "root": "ب-د-أ (Ba-Dal-Alif)",
-    "rootMeaning": "Beginning, originating without precedent, initiating something novel and fresh from pure non-existence.",
+    "rootMeaning": "Signifies initiating, beginning something novel without a preexisting pattern, and originating existence out of pure nothingness.",
     "category": "Creation & Sustenance",
-    "yqExplanation": "Theological analysis observes that Al-Mubdi’ is the One who initiated the cosmos and brought forth all forms of life without any preexisting blueprint, model, or raw material. Human beings can only 'invent' by rearranging existing atoms and recombining elements that Allah already provided. Allah alone is the absolute Initiator who said 'Be' (Kun) and the tapestry of time, space, and consciousness burst into existence. His capacity to originate life proves His effortless mastery over reality.",
-    "nakExplanation": "Linguistic nuance highlights the freshness and vitality of 'Bad'a'. In the Qur'an, Allah pairs Al-Mubdi' with Al-Mu‘īd: 'Innahū Huwa Yubdi'u wa Yu‘īd' (Indeed, it is He who originates [creation] and repeats). The emotional resonance for the human heart is profound: whenever you feel that your life has reached a dead end, that your mistakes have permanently broken your future, or that you have failed beyond recovery, remember Al-Mubdi'. The One who originated your very soul from nothingness has the absolute power to initiate a brand-new, luminous chapter in your life at any moment.",
-    "quranAyah": {
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
       "arabic": "إِنَّهُ هُوَ يُبْدِئُ وَيُعِيدُ",
       "translation": "Indeed, it is He who originates [creation] and repeats.",
-      "surah": "Al-Buruj 85:13"
+      "reference": "Surah Al-Buruj 85:13"
     },
-    "howToLive": "Embrace fresh beginnings with hope and positive resolve. Never let past sins or setbacks convince you that you cannot start over; renew your intentions and take the initiative in pioneering acts of good for your community.",
-    "dua": "اللَّهُمَّ يَا مُبْدِئَ الْخَلْقِ، ابْدَأْ فِي حَيَاتِي خَيْرًا وَبَرَكَةً، وَفَتِّحْ لِي أَبْوَابَ رَحْمَتِكَ (O Initiator of creation, initiate goodness and blessing in my life, and open for me the doors of Your mercy).",
-    "natureImage": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80",
+    "revelationMeaning": "Al-Mubdi’ is the One who initiated the entire universe and brought all life into being from nonexistence without any preexisting prototype or raw material. The Qur'an establishes this attribute in active verbal form, frequently pairing it with recreation: 'Indeed, He originates and repeats.' Scholarly review notes that Al-Mubdi’ as a standalone nominal name is drawn from the traditional listing in Sunan at-Tirmidhi. Theologically, it is best studied in tandem with its complementary attribute Al-Mu'id (The Restorer), together declaring Allah's absolute mastery over both the genesis and resurrection of existence.",
+    "quranicReflection": "Reflecting upon the initiation of creation shatters human despair. The One who initiated the vast cosmic tapestry, breathed life into the first soul, and brought order out of void holds the effortless power to initiate new beginnings in your personal life. When doors close, resources deplete, or circumstances appear hopeless, remembering the Originator reminds the heart that renewal is always within divine reach.",
+    "response": "Approach every day with fresh spiritual initiative and hope. Do not let past errors deter you from turning a new leaf in repentance, and take the initiative to pioneer good deeds, beneficial knowledge, and constructive projects for your community.",
+    "heroSummary": "The Initiator who originated the cosmos from nothingness without model or precedent.",
+    "authenticDua": null,
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ يَا مَنْ يُبْدِئُ الْخَلْقَ ثُمَّ يُعِيدُهُ، ابْدَأْ فِي حَيَاتِي خَيْرًا وَفَتْحًا، وَوَفِّقْنِي لِكُلِّ عَمَلٍ يُرْضِيكَ",
+      "translation": "O Allah, O One who originates creation and then repeats it, initiate in my life goodness and opening, and grant me success in every deed that pleases You."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "hope",
       "purpose",
       "spiritual",
-      "comfort"
+      "comfort",
+      "renewal"
     ]
   },
   {
     "id": 59,
     "arabic": "الْمُعِيدُ",
     "transliteration": "Al-Mu‘īd",
-    "meaning": "The Restorer, The Re-Creator who Reconstitutes All Life",
+    "meaning": "The One who restores creation",
     "root": "ع-و-د (‘Ayn-Waw-Dal)",
-    "rootMeaning": "Returning, restoring to a previous state, repeating a cycle, and bringing back what has dissipated.",
+    "rootMeaning": "Signifies returning, repeating, reconstituting to a prior state, and bringing back what has dissipated or perished.",
     "category": "Creation & Sustenance",
-    "yqExplanation": "Classical scholars emphasize that Al-Mu‘īd is logically and theologically inseparable from Al-Mubdi’. The disbelievers mocked the concept of physical resurrection, asking how dry, scattered bones could ever be gathered and restored. The Quranic response is devastatingly simple: The One who initiated creation from absolute non-existence can restore it with even greater ease. Al-Mu‘īd guarantees that death is merely a transition, not an annihilation, and that every soul will return to its Maker for complete justice.",
-    "nakExplanation": "Linguistic reflection focuses on the beauty of '‘Awd' (restoration, return). We see this divine cycle every year in the seasons: the trees shed their leaves, the soil hardens into frozen stillness, and nature appears dead. Then Al-Mu‘īd brings back the blossoms, the green foliage, and vibrant birdsong. On an intimate psychological level, when grief has stripped your life bare, when your health is shattered, or when you have lost what you loved most, Al-Mu‘īd is the Restorer who can bring back joy, serenity, and spiritual light into your soul.",
-    "quranAyah": {
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
       "arabic": "قُلْ سِيرُوا فِي الْأَرْضِ فَانظُرُوا كَيْفَ بَدَأَ الْخَلْقَ ۚ ثُمَّ اللَّهُ يُنشِئُ النَّشْأَةَ الْآخِرَةَ ۚ إِنَّ اللَّهَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
       "translation": "Say, 'Travel through the land and observe how He began creation. Then Allah will produce the final creation. Indeed, Allah is over all things competent.'",
-      "surah": "Al-'Ankabut 29:20"
+      "reference": "Surah Al-'Ankabut 29:20"
     },
-    "howToLive": "Continuously return to Allah through sincere repentance (Tawbah). No matter how many times you stumble or stray off the path, remember that Al-Mu‘īd welcomes every returning heart with boundless forgiveness.",
-    "dua": "يَا مُعِيدَ مَا أَفْنَاهُ إِذَا بَرَزَ الْخَلَائِقُ لِدَعْوَتِهِ، أَعِدْ لِقَلْبِي طُمَأْنِينَتَهُ وَأَصْلِحْ لِي شَأْنِي كُلَّهُ (O Restorer of what has passed when creation emerges at His call, restore tranquility to my heart and rectify all my affairs).",
+    "revelationMeaning": "Al-Mu‘īd describes the divine power of restoring and reconstituting creation for physical resurrection and final judgment. As with Al-Mubdi’, scholarly review clarifies that Al-Mu‘īd as a standalone nominal name is derived from traditional 99-names listings, while its active verbal reality is explicitly confirmed in numerous Qur'anic verses (such as 'As We began the first creation, We will repeat it' [Al-Anbiya 21:104]). The primary theological focus of this attribute is the physical bodily resurrection: the One who created humanity from nothingness will restore every disintegrated atom and resurrect every soul with absolute ease.",
+    "quranicReflection": "The Qur'an frequently draws an analogy between physical resurrection and the natural revival of the earth: parched, barren soil lies dormant until rainfall descends, causing vibrant vegetation to emerge anew. If Allah continually restores life to dead earth before our eyes, restoring human life on the Day of Resurrection is equally effortless for Him. Contemplating Al-Mu‘īd establishes certainty in accountability and anchors the believer's perspective in eternity.",
+    "response": "Live with acute awareness of the reality of resurrection and divine reckoning. Consistently return to Allah through sincere repentance (tawbah) whenever you falter, trusting that He can restore purity to a stained heart and tranquility to a fractured spirit.",
+    "heroSummary": "The Restorer who reconstitutes creation and resurrects every soul for the final Day of Reckoning.",
+    "authenticDua": null,
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ يَا مَنْ يُعِيدُ الْخَلْقَ بَعْدَ فَنَائِهِ، أَعِدْ لِقَلْبِي صَلَاحَهُ وَثَبَاتَهُ، وَاجْعَلْ مَعَادِي إِلَى جَنَّاتِ النَّعِيمِ",
+      "translation": "O Allah, O One who restores creation after its passing, restore to my heart its rectitude and steadfastness, and make my ultimate return to the Gardens of Delight."
+    },
     "natureImage": "https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
+      "resurrection",
       "hope",
       "comfort",
       "spiritual",
@@ -1536,97 +2144,136 @@ export const NAMES_DATA = [
     "id": 60,
     "arabic": "الْمُحْيِي",
     "transliteration": "Al-Muḥyī",
-    "meaning": "The Giver of Life, The Reviver of Hearts and Existence",
+    "meaning": "The Giver of life",
     "root": "ح-ي-ي (Ha-Ya-Ya)",
-    "rootMeaning": "Life, animation, vitality, flourishing growth, and freedom from death, barrenness, or decay.",
+    "rootMeaning": "Signifies imparting life, biological animation, flourishing growth, vitality, and awakening from lifelessness or dormancy.",
     "category": "Creation & Sustenance",
-    "yqExplanation": "Theological analysis highlights that Al-Muḥyī bestows two distinct tiers of life: physical life (bestowing vitality upon embryonic flesh, animating creatures, and reviving deceased bodies on the Day of Resurrection) and spiritual life (illuminating darkened intellects and awakening dead hearts through the revelation of the Qur'an). Physical life sustains the body for a few transient years in this world, but the spiritual life granted by Al-Muḥyī elevates the human soul into eternal beatitude in the Presence of the Divine.",
-    "nakExplanation": "Linguistic nuance unpacks the profound Quranic connection between life ('Ḥayāh') and revelation ('Rūḥ'). Allah describes the Qur'an as a 'Rūḥ' (spirit/soul) breathed into human existence: just as a physical body without a soul is a decomposing corpse, a human life without divine connection is spiritually deceased, wandering aimlessly. When you feel emotionally empty, numb to prayer, or crushed by existential despair, Al-Muḥyī is the One who can pour rain upon your parched inner soil and cause vibrant faith, sweetness, and vitality to flourish anew.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "فَانظُرْ إِلَىٰ آثَارِ رَحْمَتِ اللَّهِ كَيْفَ يُحْيِي الْأَرْضَ بَعْدَ مَوْتِهَا ۚ إِنَّ ذَٰلِكَ لَمُحْيِي الْمَوْتَىٰ ۖ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
-      "translation": "So observe the effects of the mercy of Allah - how He gives life to the earth after its lifelessness. Indeed, that [same one] will give life to the dead, and He is over all things competent.",
-      "surah": "Ar-Rum 30:50"
+      "translation": "So observe the effects of the mercy of Allah - how He gives life to the earth after its lifelessness. Indeed, that [same One] will give life to the dead, and He is over all things competent.",
+      "reference": "Surah Ar-Rum 30:50"
     },
-    "howToLive": "Be a source of life and nourishment to your environment: bring kindness to dead relationships, uplift despairing spirits with sincere encouragement, and revive your own heart through daily immersion in the living words of the Qur'an.",
-    "dua": "يَا حَيُّ يَا قَيُّومُ، يَا مُحْيِيَ الْقُلُوبِ، أَحْيِ قَلْبِي بِنُورِ هِدَايَتِكَ كَمَا أَحْيَيْتَ الْأَرْضَ بِمَطَرِ رَحْمَتِكَ (O Ever-Living, O Sustainer, O Giver of life to hearts, revive my heart with the light of Your guidance just as You revive the earth with the rain of Your mercy).",
+    "revelationMeaning": "Al-Muḥyī is the Giver of life who animates inanimate matter and decrees vitality for all living beings. In the Qur'an, this attribute is revealed with direct emphasis on physical resurrection: 'Indeed, that One will surely give life to the dead' (Surah Fussilat 41:39 and Surah Ar-Rum 30:50). He forms the embryo in the womb, breathes the spirit into flesh, and preserves bodily functions until the appointed term. Secondarily, classical commentary highlights spiritual revitalization: just as He enlivens dead soil with rain, He enlivens dead hearts through divine revelation, awakening them from heedlessness into faith.",
+    "quranicReflection": "Surah Fussilat points humanity to observable natural signs: 'And of His signs is that you see the earth stilled, but when We send down upon it rain, it quivers and grows. Indeed, He who gives it life is giving life to the dead.' This visible biological revival is divine proof of the coming resurrection. For the weary believer, it carries deep comfort: the Lord who enlivens barren deserts can instantly revitalize a heart parched by grief or guilt.",
+    "response": "Honor the gift of life by spending your health and vitality in lawful, beneficial pursuits. Revive deadened spiritual habits through consistent prayer and Qur'anic recitation, and bring positive encouragement and warmth to those around you who feel emotionally drained.",
+    "heroSummary": "The Bestower of vitality who grants physical life and will resurrect the dead on the Last Day.",
+    "authenticDua": {
+      "arabic": "الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ",
+      "translation": "All praise is for Allah who gave us life after having caused us to die, and unto Him is the resurrection.",
+      "reference": "Sahih al-Bukhari 6312, Sahih Muslim 2711"
+    },
+    "suggestedDua": {
+      "arabic": "يَا مُحْيِي الْمَوْتَى، أَحْيِ قَلْبِي بِنُورِ مَعْرِفَتِكَ وَطَاعَتِكَ، وَلَا تَحْرِمْنِي خَيْرَ مَا عِنْدَكَ",
+      "translation": "O Giver of life to the dead, revive my heart with the light of knowing You and obeying You, and do not deprive me of the good that is with You."
+    },
     "natureImage": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
+      "life",
+      "vitality",
       "hope",
       "spiritual",
       "peace",
-      "comfort",
-      "gratitude"
+      "comfort"
     ]
   },
   {
     "id": 61,
     "arabic": "الْمُمِيتُ",
     "transliteration": "Al-Mumīt",
-    "meaning": "The Bringer of Death, The Absolute Decreer of Mortality and Transition",
+    "meaning": "The One who causes death",
     "root": "م-و-ت (Meem-Waw-Ta)",
-    "rootMeaning": "Signifies the stillness, departure of the vital breath (ruh), cessation of kinetic biological sensation, and the divine transition of the soul from the transient realm of action to the eternal realm of retribution.",
+    "rootMeaning": "Signifies causing biological death, the departure of the soul from the body, the cessation of kinetic sensations, and the ending of the worldly term.",
     "category": "Power & Might",
-    "yqExplanation": "Classical theological commentary pairs Al-Mumīt intimately with Al-Muḥyī. Imam Al-Ghazali underscores in 'Al-Maqsad Al-Asna' that death is not absolute annihilation (fana' kulli), but rather the severe and necessary severing of the soul from physical instrumentation, transferring it to the Barzakh. Only the Sovereign Creator of life holds the prerogative to dismantle biological architecture. Divine wisdom dictates death as an indispensable equalizer: without Al-Mumīt, tyranny would be immortalized, generational renewal would cease, and the yearning to meet the Beloved would have no culmination.",
-    "nakExplanation": "Linguistic reflection examines the Quranic juxtaposition in Surah Al-Mulk: 'He who created death and life to test which of you is best in deed' (خَلَقَ الْمَوْتَ وَالْحَيَاةَ). Death is mentioned before life because the profound realization of finite time alone awakens urgency in human consciousness. The active causative form 'Muf'il' indicates an intentional, measured taking of life at an unalterable microsecond. This transforms death from an arbitrary tragedy into an exact, purposeful decree from which anxiety dissipates into surrendered preparation.",
-    "quranAyah": {
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
       "arabic": "وَهُوَ الَّذِي يُحْيِي وَيُمِيتُ وَلَهُ اخْتِلَافُ اللَّيْلِ وَالنَّهَارِ ۚ أَفَلَا تَعْقِلُونَ",
       "translation": "And it is He who gives life and causes death, and to Him belongs the alternation of the night and the day. Will you not then reason?",
-      "surah": "Al-Mu'minun 23:80"
+      "reference": "Surah Al-Mu'minun 23:80"
     },
-    "howToLive": "Consciously demystify mortality by letting the brevity of this life purify your priorities. Slay your arrogant ego (nafs), bury grudges before your body is buried, and treat every sunset as a gentle reminder to settle debts and purify intentions.",
-    "dua": "اللَّهُمَّ يَا مُمِيتُ، أَمِتْ قُلُوبَنَا عَنْ حُبِّ مَا لَا يُرْضِيكَ، وَتَوَفَّنَا مُسْلِمِينَ وَأَلْحِقْنَا بِالصَّالِحِينَ (O Allah, O Al-Mumīt, cause our hearts to die to the love of whatever displeases You, and cause us to die in full submission and join us with the righteous).",
+    "revelationMeaning": "Al-Mumīt describes Allah's absolute sovereign decree over mortality. Classical scholarship underscores that death is not a mere natural accident or benign transition; it is a profound, serious decree created by Allah as an inescapable reality and test: 'He who created death and life to test which of you is best in deed' (Al-Mulk 67:2). Scholarly review notes that while the active verbal description of causing death ('yuhyi wa yumit') is universally established in the Qur'an, the nominal name Al-Mumīt is derived from traditional 99-names listings. He alone determines the exact moment when the soul departs, establishing mortality as the decisive boundary between the realm of deeds and the realm of recompense.",
+    "quranicReflection": "The Qur'an emphasizes the unalterable timing of death: 'Every soul shall taste death' (Ali 'Imran 3:185), and 'When their term comes, they cannot put it back an hour nor put it forward' (Al-A'raf 7:34). Recognizing that death is exclusively in the hands of the Almighty strips worldly tyrants of their capacity to instill fear: none can hasten or delay your appointed departure by a fraction of a second without divine permission.",
+    "response": "Maintain an active consciousness of the brevity and seriousness of this worldly life. Use the remembrance of death to strip away petty grudges, purify your intentions, settle debts, and prioritize the eternal deeds that will benefit your soul beyond the grave.",
+    "heroSummary": "The Sole Decreer of mortality who determines the end of every worldly lifespan.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ بِاسْمِكَ أَمُوتُ وَأَحْيَا",
+      "translation": "O Allah, in Your Name I die and I live.",
+      "reference": "Sahih al-Bukhari 6312"
+    },
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ يَا مَنْ بِيَدِهِ الْمَوْتُ وَالْحَيَاةُ، اجْعَلْ خَيْرَ أَعْمَارِنَا أَوَاخِرَهَا، وَخَيْرَ أَعْمَالِنَا خَوَاتِيمَهَا، وَخَيْرَ أَيَّامِنَا يَوْمَ نَلْقَاكَ",
+      "translation": "O Allah, O One in whose hand is death and life, make the best of our lives their end, the best of our deeds their conclusions, and the best of our days the Day we meet You."
+    },
     "natureImage": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "mortality",
       "reflection",
       "focus",
       "priorities",
-      "detachment"
+      "sobriety"
     ]
   },
   {
     "id": 62,
     "arabic": "الْحَيُّ",
     "transliteration": "Al-Ḥayy",
-    "meaning": "The Ever-Living, The Eternal Fountainhead of Absolute Life",
+    "meaning": "The Ever-Living",
     "root": "ح-ي-ي (Ha-Ya-Ya)",
-    "rootMeaning": "Denotes vibrant vitality, self-sufficient perpetual animation, growth, fecundity, and absolute purity free from any touch of slumber, decline, sickness, or decay.",
+    "rootMeaning": "Signifies perfect, eternal life devoid of origination, interruption, slumber, fatigue, sickness, or demise.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Classical theology emphasizes that Al-Ḥayy constitutes one half of the Greatest Name of Allah (Al-Ism al-A'zam). Ibn Al-Qayyim remarks that Al-Ḥayy encompasses all divine attributes of perfection, for an entity cannot possess omniscience, omnipotence, hearing, or sight unless it possesses quintessential, unconditioned Life. Human life is borrowed, punctuated by infancy, decrepitude, and sleep—which is minor death. Allah’s Life has no beginning (azali), no conclusion (abadi), and requires no food, oxygen, or biological vessel to sustain its glorious continuity.",
-    "nakExplanation": "Linguistic nuance highlights the morphological weight of 'Fa'l' (فَعْل) in Al-Ḥayy, denoting inherent, unoriginated permanence. The Qur'an comforts exhausted believers in Surah Al-Furqan: 'And put your trust in the Ever-Living One who does not die' (وَتَوَكَّلْ عَلَى الْحَيِّ الَّذِي لَا يَمُوتُ). When human anchors break, when mentors pass away, and when personal stamina falters, the human heart finds solace knowing that its ultimate Patron never tires, never fades, and remains universally awake to every quiet cry.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ",
-      "translation": "Allah—there is no deity except Him, the Ever-Living, the Sustainer of all existence. Neither drowsiness overtakes Him nor sleep.",
-      "surah": "Al-Baqarah 2:255"
+      "translation": "Allah—there is no deity except Him, the Ever-Living, the Self-Sustaining Upholder of all existence. Neither drowsiness overtakes Him nor sleep.",
+      "reference": "Surah Al-Baqarah 2:255"
     },
-    "howToLive": "Anchor your emotional dependence entirely upon the One who never dies. Revitalize deadened moments in your day with sincere remembrance (dhikr), and breathe spiritual vibrancy into your family and community through continuous service and unwavering hope.",
-    "dua": "يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ، أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلَا تَكِلْنِي إِلَىٰ نَفْسِي طَرْفَةَ عَيْنٍ (O Ever-Living, O Sustainer, in Your mercy I seek relief; rectify for me all of my affairs and do not leave me to myself even for the blink of an eye).",
+    "revelationMeaning": "Al-Ḥayy is the Ever-Living whose life is quintessential, eternal, and absolute. Classical orthodox theology emphasizes that His life is unlike created life in every respect: it is neither biological nor dependent upon air, sustenance, or blood, nor was it preceded by nonexistence or threatened by decay. It is self-subsisting and complete, serving as the necessary foundation for all His attributes of omniscience, omnipotence, hearing, and sight. Allah's life is uncreated, transcendent, and eternal perfection.",
+    "quranicReflection": "Surah Al-Furqan provides the foundational anchor for human reliance: 'And rely upon the Ever-Living who does not die, and exalt [Allah] with His praise.' All created pillars inevitably crumble—leaders pass away, loved ones depart, and personal physical vigor wanes. When the heart attaches its hopes to creation, it inherits grief; but when it anchors upon Al-Ḥayy, its support is immutable and eternal.",
+    "response": "Detach your ultimate emotional and existential dependence from mortals who are destined to die, and anchor your heart in the Ever-Living Lord. Let the reality of His eternal wakefulness inspire you to maintain constant remembrance and sincerity in your private and public devotion.",
+    "heroSummary": "The Ever-Living whose existence is uncreated, eternal, and immune to slumber or death.",
+    "authenticDua": {
+      "arabic": "يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ، أَصْلِحْ لِي شَأْنِي كُلَّهُ، وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ",
+      "translation": "O Ever-Living, O Self-Sustaining Upholder, in Your mercy I seek relief; rectify for me all of my affairs and do not leave me to myself even for the blink of an eye.",
+      "reference": "Sunan an-Nasa'i in Al-Kubra 10330, Al-Hakim 1/545, Hasan-Sahih"
+    },
+    "suggestedDua": null,
     "natureImage": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "life",
       "vitality",
       "constancy",
       "hope",
-      "exhaustion"
+      "exhaustion",
+      "eternity"
     ]
   },
   {
     "id": 63,
     "arabic": "الْقَيُّومُ",
     "transliteration": "Al-Qayyūm",
-    "meaning": "The Self-Subsisting Sustainer, The Eternal Pillar Upholding All Creation",
+    "meaning": "The Self-Sustaining Upholder of all creation",
     "root": "ق-و-م (Qaf-Waw-Meem)",
-    "rootMeaning": "Carries the vivid imagery of standing firm without leaning, total self-sufficiency, unwavering uprightness, and vigilant guardianship over the affairs of others.",
+    "rootMeaning": "Signifies standing firm independently, being completely self-sufficient, and actively sustaining, maintaining, and overseeing the existence of everything else.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Theological discourse highlights that Al-Qayyūm represents intensive Form IV hyperbole (Fay'ūl), signifying two interrelated perfections: 'Al-Qā'im bi-nafsihi' (He who stands completely independent of all creation) and 'Al-Muqīm li-ghayrihi' (He without whose continuous upholding every atom in the heavens and earth would collapse into nothingness). Classical scholars point out that while human leaders collapse under the burden of administration, Al-Qayyūm regulates galactic orbits and subatomic trajectories simultaneously without the slightest exertion or fatigue.",
-    "nakExplanation": "Linguistic reflection illuminates the immense psychological comfort of this Name in times of overwhelming burnout. Human beings constantly lean: we lean on salaries, health, spouses, and societal structures, and when these crutches crack, anxiety consumes us. Yet the Qur'an assures us that the heavens and earth remain stable because Al-Qayyūm actively holds them (إِنَّ اللَّهَ يُمْسِكُ السَّمَاوَاتِ وَالْأَرْضَ أَن تَزُولَا). If He sustains the expanding cosmos without sleep, He will effortlessly hold together your fraying life.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "وَعَنَتِ الْوُجُوهُ لِلْحَيِّ الْقَيُّومِ ۖ وَقَدْ خَابَ مَنْ حَمَلَ ظُلْمًا",
       "translation": "And all faces shall be humbled before the Ever-Living, the Sustainer of all existence. And he will have failed who carries a burden of injustice.",
-      "surah": "Taha 20:111"
+      "reference": "Surah Taha 20:111"
     },
-    "howToLive": "Relinquish the illusion of micromanaging what is beyond your control. Fulfill your responsibilities uprightly (istiqamah), be a dependable pillar of support for those in distress, and entrust the final outcome of all your strivings to the One who never slumbers.",
-    "dua": "يَا حَيُّ يَا قَيُّومُ، لَا إِلَٰهَ إِلَّا أَنْتَ، سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ، فَاكْفِنِي مَا أَهَمَّنِي وَأَقِمْ لِي دِينِي وَدُنْيَايَ (O Ever-Living, O Sustainer, none has the right to be worshipped except You; glory be to You, truly I have been of the wrongdoers. Suffice me in what distresses me and uprightly sustain my faith and worldly affairs).",
+    "revelationMeaning": "Al-Qayyūm unites two great theological realities: 'Al-Qā'im bi-nafsihi' (He who is completely independent of all creation in His essence and sustenance) and 'Al-Muqīm li-ghayrihi' (He upon whom every atom in the heavens and the earth depends every second for its continued existence). Creation is utterly needy of Him, while He is in need of nothing. Had He withheld His sustaining power for the blink of an eye, the entire cosmic architecture would instantly collapse into oblivion. He upholds planetary orbits, atomic cohesion, and the breath of living souls without experiencing the slightest strain, exertion, or fatigue.",
+    "quranicReflection": "Surah Fatir affirms: 'Indeed, Allah holds the heavens and the earth, lest they cease. And if they should cease, no one could hold them after Him.' In moments of burnout, when personal responsibilities feel crushing and the weight of managing life becomes overwhelming, invoking Al-Qayyūm provides profound solace: the One who effortlessly sustains the galaxies is more than capable of sustaining your affairs.",
+    "response": "Surrender the exhausting illusion that you must control and sustain everything through your own power alone. Fulfill your daily responsibilities with diligent care, but entrust the preservation of your family, health, and future to the Self-Sustaining Upholder who never sleeps.",
+    "heroSummary": "The Self-Subsisting Sustainer upon whom all existence depends, while He depends upon nothing.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنَّ لَكَ الْحَمْدَ لَا إِلَٰهَ إِلَّا أَنْتَ الْمَنَّانُ بَدِيعُ السَّمَاوَاتِ وَالْأَرْضِ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ يَا حَيُّ يَا قَيُّومُ",
+      "translation": "O Allah, I ask You by virtue of all praise belonging to You; there is no deity worthy of worship except You, the Bestower, Originator of the heavens and the earth, O Possessor of Majesty and Honor, O Ever-Living, O Self-Sustaining Upholder.",
+      "reference": "Sunan Abi Dawud 1495, Jami` at-Tirmidhi 3544, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا حَيُّ يَا قَيُّومُ، أَصْلِحْ لِي شَأْنِي كُلَّهُ، وَأَقِمْ أَمْرِي عَلَى طَاعَتِكَ، وَلَا تَكِلْنِي إِلَى أَحَدٍ سِوَاكَ",
+      "translation": "O Ever-Living, O Self-Sustaining Upholder, rectify all of my affairs, establish my state upon Your obedience, and do not leave me to anyone besides You."
+    },
     "natureImage": "https://images.unsplash.com/photo-1476820865390-c52aeebb9891?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "burnout",
@@ -1640,45 +2287,65 @@ export const NAMES_DATA = [
     "id": 64,
     "arabic": "الْوَاجِدُ",
     "transliteration": "Al-Wājid",
-    "meaning": "The All-Finding, The Resourceful Possessor Who Never Lacks",
+    "meaning": "The One who lacks nothing",
     "root": "و-ج-د (Waw-Jim-Dal)",
-    "rootMeaning": "Evokes the realization of finding what was sought, absolute opulence devoid of scarcity, inner completeness, and encountering reality without impediment.",
-    "category": "Creation & Sustenance",
-    "yqExplanation": "Classical commentary notes that Al-Wājid is the One whose treasure troves are infinite; He never searches desperately, nor does anything elude His grasp or escape His inventory. In theological contrast with human finders—who only find after an experience of loss, ignorance, or deprivation—Allah is Al-Wājid whose sovereignty suffers no deficit. Everything He wills into existence is immediately accessible to His decree. To know Al-Wājid is to realize that nothing good is ever permanently lost in the economy of divine grace.",
-    "nakExplanation": "Linguistic reflection links the root to the poignant emotional address in Surah Ad-Duha: 'Did He not find you an orphan and shelter you? And He found you seeking and guided you? And He found you in need and made you self-sufficient?' (وَوَجَدَكَ عَائِلًا فَأَغْنَىٰ). The active participle 'Wājid' carries an intimate sense of divine discovery and immediate enrichment. When you feel empty, overlooked, or discarded by society, Al-Wājid already knows where you are, encompasses your hidden pain, and possesses every resource necessary to replenish your spirit.",
-    "quranAyah": {
-      "arabic": "وَوَجَدَكَ ضَالًّا فَهَدَىٰ ۝ وَوَجَدَكَ عَائِلًا فَأَغْنَىٰ",
-      "translation": "And He found you lost and guided you, and He found you in need and made you self-sufficient.",
-      "surah": "Ad-Duha 93:7-8"
+    "rootMeaning": "Signifies absolute self-sufficiency, possessing all richness, lacking no perfection or necessity, and being untouched by poverty, deprivation, or scarcity.",
+    "category": "Majesty & Sovereignty",
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
+      "arabic": "يَا أَيُّهَا النَّاسُ أَنتُمُ الْفُقَرَاءُ إِلَى اللَّهِ ۖ وَاللَّهُ هُوَ الْغَنِيُّ الْحَمِيدُ",
+      "translation": "O mankind, you are those in need of Allah, while Allah is the Free of need, the Praiseworthy.",
+      "reference": "Surah Fatir 35:15"
     },
-    "howToLive": "Combat the scarcity mindset by acknowledging that your sustenance and worth are determined by the Rich Finder of all things, not worldly gatekeepers. Cultivate generosity from whatever little you hold, confident that giving from His surplus never diminishes your share.",
-    "dua": "اللَّهُمَّ يَا وَاجِدُ، يَا مَنْ لَا يَفْتَقِرُ إِلَىٰ شَيْءٍ، أَغْنِنِي بِحَلَالِكَ عَنْ حَرَامِكَ، وَبِفَضْلِكَ عَمَّنْ سِوَاكَ (O Allah, O Al-Wājid, O One who is in need of nothing, enrich me with what is lawful so that I may be free from what is unlawful, and by Your bounty make me independent of all besides You).",
+    "revelationMeaning": "Al-Wājid describes the One whose wealth, perfection, and resources are absolute and boundless, experiencing neither deficiency nor loss. He does not need to search for anything, nor does anything escape His reach or diminish His treasures. Scholarly review emphasizes an important evidence caution: the specific noun Al-Wājid is recorded in traditional 99-names lists (such as Sunan at-Tirmidhi), but does not appear as an explicit divine name in the text of the Qur'an or in the rigorously authenticated Sahih collections. Its theological meaning corresponds to the established Qur'anic name Al-Ghaniyy (The Free of all Need), who lacks nothing and whose dominion is perpetually complete.",
+    "quranicReflection": "In a sacred hadith recorded in Sahih Muslim, Allah states: 'O My servants, if the first of you and the last of you, the human of you and the jinn of you, were to gather in one place and ask of Me, and I were to give each person their request, that would not decrease what I possess any more than a needle decreases the sea when dipped into it.' Contemplating this boundless completeness dispels scarcity mindsets and inspires generous reliance upon the Lord.",
+    "response": "Turn to Allah with full confidence in your supplications, knowing that His treasures are never depleted. Free yourself from the fear of material scarcity, and share generously with those in need, assured that giving for His sake never diminishes true wealth.",
+    "heroSummary": "The All-Wealthy who possesses all perfection and lacks nothing in His eternal treasuries.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ، وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ",
+      "translation": "O Allah, suffice me with what is lawful against what is unlawful, and by Your bounty make me independent of all besides You.",
+      "reference": "Jami` at-Tirmidhi 3563, Hasan"
+    },
+    "suggestedDua": {
+      "arabic": "يَا غَنِيُّ يَا حَمِيدُ، يَا مَنْ لَا تَنْقُصُ خَزَائِنُهُ وَلَا يَفْتَقِرُ إِلَى شَيْءٍ، أَفِضْ عَلَيَّ مِنْ سَعَةِ فَضْلِكَ وَرِزْقِكَ",
+      "translation": "O Free of need, O Praiseworthy, O One whose treasures never decrease and who lacks nothing, pour over me from the abundance of Your grace and sustenance."
+    },
     "natureImage": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "sufficiency",
       "contentment",
       "abundance",
-      "loneliness",
-      "provision"
+      "provision",
+      "gratitude"
     ]
   },
   {
     "id": 65,
     "arabic": "الْمَاجِدُ",
     "transliteration": "Al-Mājid",
-    "meaning": "The Noble, The Splendidly Glorious in Magnificence and Munificence",
+    "meaning": "The Noble and Abundant in glory",
     "root": "م-ج-د (Meem-Jim-Dal)",
-    "rootMeaning": "Denotes wide, overflowing generosity paired with exalted dignity, towering splendor, pure nobility, and unmatched chivalry of character.",
+    "rootMeaning": "Signifies expansive glory, towering nobility, overwhelming generosity, exalted honor, and magnanimity.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Theological analysis distinguishes Al-Mājid from related attributes of grandeur: Majd in classical Arabic signifies an abundance of nobility combined with limitless giving. An earthly ruler might be majestic yet stingy, or generous yet lacking majesty; Al-Mājid represents the sublime synthesis of absolute imperial transcendence and boundless, gracious philanthropy. Classical scholars note that calling upon Al-Mājid inspires profound veneration, assuring the worshipper that asking from Him honors the seeker because His dignity rejoices in bestowing favors.",
-    "nakExplanation": "Linguistic insight observes that 'Majd' reflects a glory that shines forth effortlessly, like sunlight illuminating a majestic mountain range. The Qur'an ties this root to divine gifts that exceed human expectation, as in the greeting of angels to the household of Ibrahim: 'May the mercy of Allah and His blessings be upon you, people of the house. Indeed, He is Praiseworthy and Glorious' (إِنَّهُ حَمِيدٌ مَّجِيدٌ). The soul experiencing humiliation in this dunya recovers its spiritual poise by remembering that our Creator is Al-Mājid, who bestows honor and noble purpose upon whoever turns to Him.",
-    "quranAyah": {
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
       "arabic": "قَالُوا أَتَعْجَبِينَ مِنْ أَمْرِ اللَّهِ ۖ رَحْمَتُ اللَّهِ وَبَرَكَاتُهُ عَلَيْكُمْ أَهْلَ الْبَيْتِ ۚ إِنَّهُ حَمِيدٌ مَجِيدٌ",
       "translation": "They said, 'Do you wonder at the decree of Allah? May the mercy of Allah and His blessings be upon you, people of the house. Indeed, He is Praiseworthy and Glorious.'",
-      "surah": "Hud 11:73"
+      "reference": "Surah Hud 11:73"
     },
-    "howToLive": "Elevate your personal conduct with noble character ('uluww al-himmah). Treat people with grace rather than petty score-keeping, overlook offenses with majestic magnanimity, and protect the dignity of those who are vulnerable.",
-    "dua": "اللَّهُمَّ يَا مَاجِدُ يَا حَمِيدُ، لَكَ الْحَمْدُ كُلُّهُ وَلَكَ الْمَجْدُ كُلُّهُ، فَاجْعَلْ لِي نُورًا فِي قَلْبِي وَرِفْعَةً فِي دِينِي وَشَرَفًا فِي طَاعَتِكَ (O Allah, O Al-Mājid, O Al-Ḥamīd, to You belongs all praise and to You belongs all glory; grant light in my heart, elevation in my faith, and honor in Your obedience).",
+    "revelationMeaning": "Al-Mājid expresses towering majesty combined with abundant, overflowing generosity. Classical scholarship draws a crucial textual and morphological distinction: Al-Mājid (الماجد, active participle form) is transmitted in traditional listings such as that of Sunan at-Tirmidhi and requires scholarly review as a standalone name; whereas Al-Majīd (المجيد, intensive fa'īl form) is explicitly affirmed in multiple Qur'anic verses (Surah Hud 11:73 and Surah Al-Buruj 85:15) as well as the authentic tashahhud prayers of the Sunnah. Both words stem from the same root 'M-J-D', denoting One whose majesty is resplendent and whose gifts are magnanimous beyond human measure.",
+    "quranicReflection": "In Surah Hud, angels greet the household of Ibrahim with this divine reality: 'May the mercy of Allah and His blessings be upon you, people of the house. Indeed, He is Praiseworthy and Glorious.' Majd reflects a glory that bestows honor rather than intimidating into despair. When a believer feels humbled or diminished by worldly hardship, remembering His glory elevates the spirit with sacred dignity and noble purpose.",
+    "response": "Elevate your personal conduct with moral nobility and high aspiration ('uluww al-himmah). Treat others with magnanimity rather than petty score-keeping, forgive offenses graciously, and guard your dignity against vulgarity and compromise.",
+    "heroSummary": "The Nobly Exalted whose glory is vast and whose generosity is magnanimous.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+      "translation": "O Allah, send prayers upon Muhammad and upon the family of Muhammad, as You sent prayers upon Ibrahim and upon the family of Ibrahim; indeed, You are Praiseworthy, Full of Glory.",
+      "reference": "Sahih al-Bukhari 3370, Sahih Muslim 406"
+    },
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ يَا ذَا الْمَجْدِ وَالْكَرَمِ، عَظِّمْ فِي قَلْبِي مَحَبَّتَكَ، وَارْفَعْ قَدْرِي فِي طَاعَتِكَ، وَأَجِرْنِي مِنْ خِزْيِ الدُّنْيَا وَعَذَابِ الْآخِرَةِ",
+      "translation": "O Allah, O Possessor of glory and nobility, magnify Your love within my heart, elevate my status in Your obedience, and protect me from the disgrace of this world and the punishment of the Hereafter."
+    },
     "natureImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "honor",
@@ -1692,150 +2359,204 @@ export const NAMES_DATA = [
     "id": 66,
     "arabic": "الْوَاحِدُ",
     "transliteration": "Al-Wāḥid",
-    "meaning": "The Indivisible One, The Unique Originator without Equal or Counterpart",
+    "meaning": "The One without partner",
     "root": "و-ح-د (Waw-Ha-Dal)",
-    "rootMeaning": "Signifies singular indivisibility, the starting numerical baseline of all existence, wholeness, and the complete absence of any peer, partner, or rival in entity and governance.",
+    "rootMeaning": "Signifies solitary oneness, indivisibility, the primary baseline of existence, and the total absence of any peer, rival, or associate in essence, attributes, and actions.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Classical commentary distinguishes between Al-Wāḥid and Al-Aḥad with acute precision. Al-Wāḥid signifies numerical oneness—that there is only One true Divine Being, utterly negating dualism, polytheistic pantheons, or trinitarian divisions. In philosophical theology, Al-Wāḥid establishes the unity of universal law: one universe, governed by one coherent cosmic will, leaving no room for conflict among rival deities. His oneness guarantees peace, order, and ecological balance across the entire cosmos.",
-    "nakExplanation": "Linguistic reflection draws out the contrast in Surah Yusuf: 'Are separate lords better, or Allah, the One, the Subduer?' (أَأَرْبَابٌ مُّتَفَرِّقُونَ خَيْرٌ أَمِ اللَّهُ الْوَاحِدُ الْقَهَّارُ). The human mind fractures under poly-devotion—trying to please multiple bosses, social expectations, algorithms, and peers creates perpetual anxiety. Al-Wāḥid unifies the psyche. When your focus collapses from a thousand distracting idols down to the Single Originator, fractured stress instantly transforms into laser-sharp inner peace.",
-    "quranAyah": {
-      "arabic": "يَا صَاحِبَيِ السِّجْنِ أَأَرْبَابٌ مُتَفَرِّقُونَ خَيْرٌ أَمِ اللَّهُ الْوَاحِدُ الْقَهَّارُ",
-      "translation": "O [my] two companions of prison, are separate lords better or Allah, the One, the Prevailing?",
-      "surah": "Yusuf 12:39"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "وَإِلَٰهُكُمْ إِلَٰهٌ وَاحِدٌ ۖ لَّا إِلَٰهَ إِلَّا هُوَ الرَّحْمَٰنُ الرَّحِيمُ",
+      "translation": "And your god is one God. There is no deity [worthy of worship] except Him, the Entirely Merciful, the Especially Merciful.",
+      "reference": "Surah Al-Baqarah 2:163"
     },
-    "howToLive": "Integrate your intentions into a singular focus (Ikhlas). Refuse to lead a double life where worldly validation competes with divine pleasure; align your public words with your private thoughts under the singular gaze of Al-Wāḥid.",
-    "dua": "اللَّهُمَّ يَا وَاحِدُ يَا قَهَّارُ، وَحِّدْ قَلْبِي عَلَى طَاعَتِكَ، وَلَا تَجْعَلْ لِأَحَدٍ سِوَاكَ فِي قَلْبِي نَصِيبًا (O Allah, O Al-Wāḥid, O Al-Qahhār, unify my heart upon Your obedience, and do not let anyone beside You have any share in my devotion).",
+    "revelationMeaning": "Al-Wāḥid establishes the absolute unity of Allah in His Lordship (Rububiyyah) and His exclusive right to all worship (Uluhiyyah). He has no associate, equal, or competitor in creating, governing, or sustaining existence. Classical theologians explain that Al-Wāḥid negates numerical plurality and cosmic polytheism: the flawless, unified coherence of physical laws throughout the cosmos testifies that it is governed by a Single Sovereign Will. There is no second deity to contest His decree or share in His kingdom.",
+    "quranicReflection": "Surah Yusuf presents the powerful psychological liberation of Tawhid: 'O my two companions of prison, are separate, competing lords better, or Allah, the One, the Prevailing?' Serving multiple competing human masters, societal trends, or inner desires scatters the mind into perpetual anxiety. Worshipping Al-Wāḥid unifies the human heart, anchoring all devotion, hope, and purpose in the Single Creator who alone controls destiny.",
+    "response": "Unify your intentions into singular sincerity (ikhlas) for Allah alone. Refuse to let social validation, popular opinions, or worldly anxieties compete with divine obedience, and maintain an undivided focus on what pleases your Lord.",
+    "heroSummary": "The Indivisible One who has no partner, associate, or equal in Lordship or worship.",
+    "authenticDua": {
+      "arabic": "لَا إِلَٰهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَا إِلَٰهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَا إِلَٰهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ",
+      "translation": "There is no deity worthy of worship except Allah, the Magnificent, the Forbearing. There is no deity worthy of worship except Allah, Lord of the Magnificent Throne. There is no deity worthy of worship except Allah, Lord of the heavens, Lord of the earth, and Lord of the Noble Throne.",
+      "reference": "Sahih al-Bukhari 6346, Sahih Muslim 2730"
+    },
+    "suggestedDua": {
+      "arabic": "يَا وَاحِدُ يَا قَهَّارُ، وَحِّدْ هَمِّي فِيمَا يُرْضِيكَ، وَنَقِّ قَلْبِي مِنَ الشِّرْكِ وَالرِّيَاءِ وَالتَّعَلُّقِ بِسِوَاكَ",
+      "translation": "O One, O Prevailing, unify my concern in that which pleases You, and cleanse my heart from association, ostentation, and attachment to all besides You."
+    },
     "natureImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "tawheed",
       "focus",
       "clarity",
       "peace",
-      "purpose"
+      "purpose",
+      "liberation"
     ]
   },
   {
     "id": 67,
     "arabic": "الْأَحَدُ",
     "transliteration": "Al-Aḥad",
-    "meaning": "The Solitary Absolute, The Matchless One who is Entirely Unique",
+    "meaning": "The Uniquely One",
     "root": "أ-ح-د (Alif-Ha-Dal)",
-    "rootMeaning": "Signifies irreducible indivisibility and absolute uniqueness: an entity that has no constituent parts, no lineage, no offspring, and cannot even theoretically accept a second.",
+    "rootMeaning": "Signifies singular incommensurability, absolute uniqueness, irreducible indivisibility, having no parts, lineage, or equivalent.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Theological scholars like Ibn Kathir explain that while 'Al-Wāḥid' denies the existence of a partner beside Him, 'Al-Aḥad' goes further to deny any internal composition, multiplicity of parts, or conceptual likeness. You can say 'a single man' (rajulun wahid), but you cannot say 'rajulun ahad' in positive Arabic grammar unless denoting the Absolute. Surah Al-Ikhlas begins with 'Qul Huwa Allahu Ahad' to declare that Allah is completely sui generis—incomparable in His Essence, unapproachable in His transcendence, and devoid of any genealogical ancestor or descendant.",
-    "nakExplanation": "Linguistic and historical analysis recalls Bilal ibn Rabah whispering 'Aḥad, Aḥad' under the crushing boulder in the burning sands of Makkah. Why did Bilal choose this specific Name? Because 'Aḥad' is the ultimate proclamation of dignity and emancipation. In the face of tyrannical masters claiming ownership over his flesh, Bilal realized that only the Matchless One commands total allegiance. The moment you realize your Creator is Al-Aḥad, every worldly oppressor shrinks into harmless insignificance.",
-    "quranAyah": {
-      "arabic": "قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ",
-      "translation": "Say, 'He is Allah, [who is] One, Allah, the Eternal Refuge.'",
-      "surah": "Al-Ikhlas 112:1-2"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ",
+      "translation": "Say, 'He is Allah, [who is] One, Allah, the Eternal Refuge. He neither begets nor is born, nor is there to Him any equivalent.'",
+      "reference": "Surah Al-Ikhlas 112:1-4"
     },
-    "howToLive": "Stand tall against social conformity and the fear of created beings. When standing up for justice or practicing your faith in isolation, take comfort that being in the minority is honorable when you stand aligned with the Solitary Absolute.",
-    "dua": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنَّكَ أَنْتَ اللَّهُ الْأَحَدُ الصَّمَدُ، الَّذِي لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ، أَنْ تَغْفِرَ لِي ذُنُوبِي إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ (O Allah, I ask You by virtue of You being Allah, the One, the Eternal Refuge, who neither begets nor is born, nor is there to Him any equivalent, that You forgive my sins, indeed You are the Forgiving, the Merciful).",
-    "natureImage": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
+    "revelationMeaning": "Al-Aḥad signifies unique, incomparable oneness. Classical linguistic and theological treatises explain the profound distinction between Al-Wāḥid and Al-Aḥad: while Al-Wāḥid negates partners alongside Him, Al-Aḥad negates any internal composition, multiplicity of elements, or resemblance to creation. He is completely singular in His essence, attributes, and majesty. Surah Al-Ikhlas defines this uniqueness: He is neither fathered nor does He father, and nothing in existence can even theoretically match or resemble Him. He is transcendent beyond all mortal categories and anthropomorphic comparisons.",
+    "quranicReflection": "Surah Al-Ikhlas constitutes one third of the Qur'an because it is pure distillation of divine reality. When early believers like Bilal endured torture under scorching stones, the cry that sustained their resolve was 'Ahad, Ahad!' (The Uniquely One!). In the face of oppressive systems demanding compromise, knowing that your Creator is Al-Aḥad gives the human spirit unbreakable integrity and courage.",
+    "response": "Root your worldview firmly in pure Tawhid. Do not elevate any human being, ideology, or worldly ambition to an ultimate status that belongs only to the Incomparable One, and stand firmly with truth even when you find yourself standing entirely alone.",
+    "heroSummary": "The Matchlessly Unique One who has no equivalent, partner, or component parts.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنِّي أَشْهَدُ أَنَّكَ أَنْتَ اللَّهُ لَا إِلَٰهَ إِلَّا أَنْتَ الْأَحَدُ الصَّمَدُ الَّذِي لَمْ يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
+      "translation": "O Allah, I ask You by virtue of my bearing witness that You are Allah, there is no deity worthy of worship except You, the One, the Eternal Refuge, who neither begets nor is born, nor is there to Him any equivalent.",
+      "reference": "Sunan Abi Dawud 1493, Jami` at-Tirmidhi 3475, Sahih"
+    },
+    "suggestedDua": null,
+    "natureImage": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "tawheed",
       "courage",
       "devotion",
       "peace",
-      "liberation"
+      "liberation",
+      "certitude"
     ]
   },
   {
     "id": 68,
     "arabic": "الصَّمَدُ",
     "transliteration": "Aṣ-Ṣamad",
-    "meaning": "The Eternal Refuge, The Impervious Rock to Whom All Beseechingly Turn",
+    "meaning": "The Eternal Refuge upon whom all depend",
     "root": "ص-م-د (Sad-Meem-Dal)",
-    "rootMeaning": "Carries rich classical Arabic imagery: the massive, impenetrable, solid rock upon which waves crash harmlessly; the paramount chieftain sought in every national crisis; and that which has no hollow cavity, needing no food, drink, or replenishment.",
+    "rootMeaning": "Signifies the supreme Lord to whom all creation turns in every need and crisis, solid without cavity or hollow deficiency, requiring neither food nor drink, and self-sufficiently impervious to all vulnerability.",
     "category": "Protection & Trust",
-    "yqExplanation": "Classical lexicographers and exegetes enumerate multiple interrelated dimensions of Aṣ-Ṣamad. Ibn Abbas stated: 'He is the Master whose mastery is consummate, the Noble whose nobility is complete, the Forebearing whose patience is absolute.' It denotes both ontological density (He has no hollow interior, no hunger, no vulnerability) and teleological destination (every single creature instinctively directs its pleas toward Him). Human beings run to banks, doctors, and lawyers, only to find hollow promises; Aṣ-Ṣamad is the sole shelter that never buckles under the weight of universal necessity.",
-    "nakExplanation": "Linguistic reflection examines the definitive article 'Al' in 'Allāhu Aṣ-Ṣamad' in Surah Al-Ikhlas. It signifies exclusivity: He alone is THE ultimate rock of reliance. While every entity in creation is fundamentally hollow (jawf)—hungry for calories, thirsty for affection, needy of sleep, anxious about tomorrow—Allah is completely solid, invulnerable, and sovereignly complete. Pouring your burdens onto Aṣ-Ṣamad does not deplete His treasury by an atom.",
-    "quranAyah": {
-      "arabic": "اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ",
-      "translation": "Allah, the Eternal Refuge. He neither begets nor is born.",
-      "surah": "Al-Ikhlas 112:2-3"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "اللَّهُ الصَّمَدُ",
+      "translation": "Allah, the Eternal Refuge.",
+      "reference": "Surah Al-Ikhlas 112:2"
     },
-    "howToLive": "Make Allah your first resort rather than your desperate final backup plan. Cultivate inner emotional resilience by rooting your self-worth in His acceptance rather than fickle social validation, and become a steadfast refuge of patience for your family during storms.",
-    "dua": "اللَّهُمَّ يَا صَمَدُ، يَا مَنْ تَقْصِدُهُ الْخَلَائِقُ فِي حَوَائِجِهَا، لَا تَكِلْنِي إِلَى أَحَدٍ مِنْ خَلْقِكَ، وَاكْفِنِي بِفَضْلِكَ كُلَّ هَمٍّ وَحَاجَةٍ (O Allah, O Aṣ-Ṣamad, O One to whom all creation turns in its needs, do not leave me to any of Your creation, and by Your grace suffice me in every worry and need).",
-    "natureImage": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1200&q=80",
+    "revelationMeaning": "Aṣ-Ṣamad is the consummate Lord upon whom all creation depends for every necessity, while He is completely independent of all things. Classical lexicographers and exegetes define Aṣ-Ṣamad through two foundational dimensions: first, the Master of absolute sovereignty and perfection toward whom all hearts turn in supplication (as-Sayyid alladhi tusmadu ilayhi al-hawa'ij); second, the Self-Existent Lord who has no cavity, requires no sustenance, neither begets nor is born, and is untouched by decay or exhaustion. Do not reduce Aṣ-Ṣamad merely to 'self-sufficient'; it represents the supreme, impenetrable Refuge to whom all needy beings instinctively flee.",
+    "quranicReflection": "In Surah Al-Ikhlas, the definite article in 'Allahu As-Samad' denotes exclusivity: He alone is the ultimate, unfailing sanctuary. Every entity in creation is hollow and fragile—hungry for nourishment, dependent on oxygen, and vulnerable to loss. When life's crises hit, human refuges crumble under pressure. Aṣ-Ṣamad is the sole shelter that never buckles under the weight of universal need.",
+    "response": "Make Allah your first and ultimate resort in every trial, rather than treating Him as an afterthought when human options fail. Free yourself from reliance upon vulnerable mortals, and strive to be a dependable, patient source of comfort for others in their moments of vulnerability.",
+    "heroSummary": "The consummate, impenetrable Refuge to whom all of creation turns in every need.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنِّي أَشْهَدُ أَنَّكَ أَنْتَ اللَّهُ لَا إِلَٰهَ إِلَّا أَنْتَ الْأَحَدُ الصَّمَدُ الَّذِي لَمْ يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
+      "translation": "O Allah, I ask You by virtue of my bearing witness that You are Allah, there is no deity worthy of worship except You, the One, the Eternal Refuge, who neither begets nor is born, nor is there to Him any equivalent.",
+      "reference": "Sunan Abi Dawud 1493, Jami` at-Tirmidhi 3475, Sahih"
+    },
+    "suggestedDua": {
+      "arabic": "يَا صَمَدُ، يَا مَنْ تَقْصِدُهُ الْخَلَائِقُ فِي حَوَائِجِهَا، اقْضِ حَاجَتِي، وَاكْفِنِي مَا أَهَمَّنِي، وَلَا تَكِلْنِي إِلَى أَحَدٍ مِنْ خَلْقِكَ",
+      "translation": "O Eternal Refuge, O One to whom all creation turns in its needs, fulfill my need, suffice me in whatever concerns me, and do not leave me to any of Your creation."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "refuge",
-      "independence",
+      "reliance",
       "resilience",
       "crisis",
-      "trust"
+      "trust",
+      "peace"
     ]
   },
   {
     "id": 69,
     "arabic": "الْقَادِرُ",
     "transliteration": "Al-Qādir",
-    "meaning": "The All-Able, The Master Possessor of Precise Capacity and Power",
+    "meaning": "The Fully Capable",
     "root": "ق-د-ر (Qaf-Dal-Ra)",
-    "rootMeaning": "Signifies calculated capacity, precise measurement, exact calibration, supreme capability, and decreeing with absolute mathematical perfection.",
+    "rootMeaning": "Signifies possessing complete capability, executing divine decrees with precise measure, exact calibration, and total mastery without impediment.",
     "category": "Power & Might",
-    "yqExplanation": "Theological commentary notes that Al-Qādir is the One who possesses capability (qudrah) such that if He wills a thing, He executes it, and if He does not will it, He refrains. The active participle form indicates that His capacity is fully conscious, deliberate, and bounded by infinite wisdom. In the classical debate regarding divine power, scholars point out that Al-Qādir creates according to a planned measure (qadar). Unlike raw chaotic force, the power of Al-Qādir is infinitely precise, placing every electron and orbit at its exact functional equilibrium.",
-    "nakExplanation": "Linguistic analysis points to Surah Al-Qiyamah: 'Does man think that We will not assemble his bones? Yes. [We are] Able (Qādirīn) to reconstruct even his fingertips' (أَيَحْسَبُ الْإِنسَانُ أَلَّن نَّجْمَعَ عِظَامَهُ ۝ بَلَىٰ قَادِرِينَ عَلَىٰ أَن نُّسَوِّيَ بَنَانَهُ). The Qur'an uses Al-Qādir not to intimidate, but to stun human cognition with micro-detail. The God who reconstructs the microscopic ridges of human fingerprints after centuries of decomposition has zero difficulty rearranging the fractured pieces of your life, career, or heart.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "أَوَلَيْسَ الَّذِي خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ بِقَادِرٍ عَلَىٰ أَن يَخْلُقَ مِثْلَهُم ۚ بَلَىٰ وَهُوَ الْخَلَّاقُ الْعَلِيمُ",
-      "translation": "Is not He who created the heavens and the earth able to create the like of them? Yes, [it is so]; and He is the Knowing Creator.",
-      "surah": "Ya-Sin 36:81"
+      "translation": "Is not He who created the heavens and the earth capable of creating the like of them? Yes, [it is so]; and He is the Knowing Creator.",
+      "reference": "Surah Ya-Sin 36:81"
     },
-    "howToLive": "Never despair over situations that appear logically hopeless to human reasoning. Match ambitious goals with diligent effort, while accepting that the divine measurement (qadar) of when and how your prayers manifest is superior to your own impatient timeline.",
-    "dua": "اللَّهُمَّ يَا قَادِرُ عَلَىٰ كُلِّ شَيْءٍ، اقْدِرْ لِيَ الْخَيْرَ حَيْثُ كَانَ ثُمَّ رَضِّنِي بِهِ، وَاصْرِفْ عَنِّي السُّوءَ وَالْعَجْزَ وَالْهَمَّ (O Allah, O Al-Qādir over all things, decree for me good wherever it may be and make me content with it, and turn away from me evil, helplessness, and grief).",
-    "natureImage": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
+    "revelationMeaning": "Al-Qādir is the One who possesses full, unrestricted capacity to bring into existence whatever He wills and withhold whatever He wills. Classical theology approaches this attribute without abstract, speculative philosophical jargon: Allah's power encompasses all possibilities; whatever He decrees occurs exactly as He determined, and whatever He does not will can never come to be. Nothing in the heavens or on earth can incapacitate Him or escape His power. His capability is united with perfect wisdom, measuring every event in the cosmos to its exact, optimal balance.",
+    "quranicReflection": "Surah Al-Qiyamah challenges mortal skepticism regarding resurrection: 'Does man think that We will not assemble his bones? Yes, [We are] able (Qādirīn) even to proportion his fingertips' (75:3-4). The Qur'an directs contemplation to the exquisite micro-detail of creation: the Lord who flawlessly reconstructs microscopic ridges of fingerprints after decomposition possesses effortless capability to reconstruct your life, heal your pain, and fulfill what human minds consider impossible.",
+    "response": "Never surrender to hopelessness in situations that seem insurmountable by human calculations. Combine your best lawful efforts with complete trust in the Fully Capable Lord, and cultivate humility knowing that your own talents are a gift from His capability.",
+    "heroSummary": "The Fully Capable whose power effortlessly encompasses all that He wills without hindrance.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ، وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ، وَأَسْأَلُكَ مِنْ فَضْلِكَ الْعَظِيمِ، فَإِنَّكَ تَقْدِرُ وَلَا أَقْدِرُ، وَتَعْلَمُ وَلَا أَعْلَمُ، وَأَنْتَ عَلَّامُ الْغُيُوبِ",
+      "translation": "O Allah, I seek Your guidance through Your knowledge, and I seek ability through Your power, and I ask You of Your immense bounty; for You are capable and I am not capable, and You know and I do not know, and You are the Knower of the unseen.",
+      "reference": "Sahih al-Bukhari 1162"
+    },
+    "suggestedDua": null,
+    "natureImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "capability",
       "strength",
       "hope",
       "destiny",
-      "empowerment"
+      "empowerment",
+      "awe"
     ]
   },
   {
     "id": 70,
     "arabic": "الْمُقْتَدِرُ",
     "transliteration": "Al-Muqtadir",
-    "meaning": "The All-Determining Sovereign, The Manifestor of Irresistible Execution",
+    "meaning": "The Perfectly Powerful",
     "root": "ق-د-ر (Qaf-Dal-Ra)",
-    "rootMeaning": "Morphological expansion onto the intensive reflexive form (Iftial), indicating profound, dynamic, and inexorable implementation of total power.",
+    "rootMeaning": "Signifies the dynamic, intensive implementation of absolute power; prevailing with overwhelming mastery against which no force can resist.",
     "category": "Power & Might",
-    "yqExplanation": "Classical scholarship highlights the theological distinction between Al-Qādir and Al-Muqtadir. While Al-Qādir designates the inherent attribute of boundless capacity, Al-Muqtadir denotes that capacity fully engaged in dynamic, unstoppable cosmic execution. In the Qur'an, Al-Muqtadir frequently appears in contexts where oppressive empires—like Pharaoh or Thamud—believed they had engineered unbreakable security systems. The irresistible hand of Al-Muqtadir overturned their arrogance overnight, demonstrating that human dominance is a hollow theater before His sovereign momentum.",
-    "nakExplanation": "Linguistic depth uncovers the morphological beauty of Form VIII ('Muqtadir'). In Arabic linguistics, an addition in letter structure ('ziyadat al-mabna') signals an addition in meaning ('ziyadat al-ma'na'). The insertion of the 'ta' reflects power in full motion—decisive, overcoming all obstacles, and effortless. Yet in Surah Al-Qamar, the ultimate destination of the pious is described as: 'In a seat of honor in the presence of an Omnipotent King (Malikin Muqtadir).' The overwhelming power that crushes tyrants is the exact same power that gently escorts the broken believer into eternal honor.",
-    "quranAyah": {
-      "arabic": "إِنَّ الْمُتَّقِينَ فِي جَنَّاتٍ وَنَهَرٍ ۝ فِي مَقْعَدِ صِدْقٍ عِندَ مَلِيكٍ مُّقْتَدِرٍ",
-      "translation": "Indeed, the righteous will be among gardens and rivers, in a seat of honor in the presence of an Omnipotent King.",
-      "surah": "Al-Qamar 54:54-55"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "فَأَخَذْنَاهُمْ أَخْذَ عَزِيزٍ مُّقْتَدِرٍ",
+      "translation": "So We seized them with the seizure of One Exalted in Might and Perfectly Powerful.",
+      "reference": "Surah Al-Qamar 54:42"
     },
-    "howToLive": "Never be intimidated by worldly institutions of power, wealth, or arrogance. Humble yourself when blessings increase, knowing that the same Sovereign who raised you can level mountains, and find unshakeable courage when standing for righteousness against heavy odds.",
-    "dua": "اللَّهُمَّ يَا مُقْتَدِرُ، يَا مَنْ لَا يُعْجِزُهُ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ، أَصْلِحْ لِي شَأْنِي وَانْصُرْنِي عَلَىٰ هَوَايَ وَشَيْطَانِي (O Allah, O Al-Muqtadir, O One whom nothing can incapacitate in the earth or the heavens, rectify my affairs and grant me victory over my base desires and my devil).",
-    "natureImage": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80",
+    "revelationMeaning": "Al-Muqtadir represents the consummate, active manifestation of divine power. Classical Arabic morphology indicates that the expanded reflexive form (Iftial) denotes enhanced intensity and inexorable execution: while Al-Qādir describes the inherent capability of power, Al-Muqtadir signifies that power actively dominant and prevailing across the cosmos. In the Qur'an, Al-Muqtadir often appears when despotic empires—such as Pharaoh and ancient tyrants—believed their physical power made them invincible; Al-Muqtadir dismantled their tyranny decisively, proving that all mortal authority is fragile before His sovereign momentum.",
+    "quranicReflection": "In Surah Al-Qamar, after describing the downfall of oppressive nations, Allah portrays the ultimate reward of the pious: 'Indeed, the righteous will be among gardens and rivers, in a seat of honor in the presence of an Omnipotent Sovereign (Malīkin Muqtadir).' The very same absolute power that subdues tyrants is the power that protects and honors the humble believer, guaranteeing that justice and truth will have the final word.",
+    "response": "Remain humble in moments of worldly success and unyielding in moments of adversity. Never be intimidated by arrogant institutions or oppressive forces, knowing that their dominance is transient before Al-Muqtadir, and rely upon Him when facing formidable obstacles.",
+    "heroSummary": "The Irresistibly Powerful whose prevailing decree decisively executes His will over all creation.",
+    "authenticDua": null,
+    "suggestedDua": {
+      "arabic": "يَا عَزِيزُ يَا مُقْتَدِرُ، يَا مَنْ لَا يُعْجِزُهُ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ، انْصُرْنِي عَلَى مَنْ ظَلَمَنِي، وَأَصْلِحْ لِي شَأْنِي كُلَّهُ",
+      "translation": "O Exalted in Might, O Perfectly Powerful, O One whom nothing can incapacitate in the earth or the heavens, aid me against whoever wrongs me, and rectify all of my affairs."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "sovereignty",
       "justice",
-      "miracles",
       "courage",
-      "destiny"
+      "destiny",
+      "awe"
     ]
   },
   {
     "id": 71,
     "arabic": "الْمُقَدِّمُ",
     "transliteration": "Al-Muqaddim",
-    "meaning": "The Expediter, The One Who Advances and Elevates According to Divine Wisdom",
+    "meaning": "The One who brings forward",
     "root": "ق-د-م (Qaf-Dal-Meem)",
-    "rootMeaning": "Signifies bringing forward, placing in the front, granting priority, stepping out ahead of others, and preceding in rank, time, or spatial elevation.",
+    "rootMeaning": "Signifies bringing forward, placing in the front, granting priority, giving precedence in time, status, or rank, and advancing according to precise wisdom.",
     "category": "Wisdom & Knowledge",
-    "yqExplanation": "Theological treatises explain that Al-Muqaddim and Al-Mu’akhkhir are complementary paired names (al-Asma' al-Mutaqabilah) that must be understood together to appreciate divine balance. Al-Muqaddim advances whatever He wills in chronological timing, spiritual ranking, and worldly influence. He granted the Prophets precedence over all creation, elevated Abu Bakr within the Ummah, and brought dawn ahead of noon. Crucially, divine advancement is rooted in absolute justice: He elevates a servant not out of nepotism, but through divine grace and wisdom, testing who will remain humble in victory.",
-    "nakExplanation": "Linguistic reflection examines the causative intensive Form II ('Fa''ala' / 'Taqdeem'). It implies purposeful positioning. Sometimes in your life, you find yourself thrust to the front lines of responsibility, leadership, or unexpected early opportunity. It did not happen due to your raw charisma; Al-Muqaddim pushed you forward. Recognizing this dissolves pride: you realize that leadership is a sacred trust (amanah), and that being moved to the front means you are held to an infinitely higher standard of accountability.",
-    "quranAyah": {
-      "arabic": "يُنَبَّأُ الْإِنسَانُ يَوْمَئِذٍ بِمَا قَدَّمَ وَأَخَّرَ",
-      "translation": "Man will be informed that Day of what he put forward and what he kept back.",
-      "surah": "Al-Qiyamah 75:13"
+    "evidenceStatus": "Explicit in authentic Sunnah",
+    "evidence": {
+      "arabic": "أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ، لَا إِلَٰهَ إِلَّا أَنْتَ",
+      "translation": "You are the One who brings forward and You are the One who places later; there is no deity worthy of worship except You.",
+      "reference": "Sahih al-Bukhari 1120, Sahih Muslim 771"
     },
-    "howToLive": "Prioritize what Allah prioritizes: advance the prayer over casual distractions, advance the rights of parents over secondary pursuits, and advance justice over personal convenience. When granted leadership or precedence, lead with profound humility and servant-hearted ethics.",
-    "dua": "اللَّهُمَّ أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ، لَا إِلَٰهَ إِلَّا أَنْتَ، قَدِّمْنِي فِي مَيَادِينِ رِضَاكَ وَطَاعَتِكَ، وَلَا تُؤَخِّرْنِي مَعَ الْغَافِلِينَ (O Allah, You are Al-Muqaddim and You are Al-Mu'akhkhir, none has the right to be worshipped except You; advance me in the arenas of Your good pleasure and obedience, and do not hold me back among the heedless).",
-    "natureImage": "https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&fit=crop&w=1200&q=80",
+    "revelationMeaning": "Al-Muqaddim is the One who advances, brings forward, and grants precedence to whatever He wills in accordance with His absolute wisdom and justice. Classical scholars instruct that Al-Muqaddim must be understood and taught together with its complementary counterpart, Al-Mu'akhkhir (The One who places later). Allah advances certain creations in time (such as dawn before day, or prophets before their nations), in spiritual status (such as the Prophets over humanity, and the righteous over the heedless), and in worldly opportunity. His advancement is neither random nor arbitrary; it is an act of divine decree testing who will act with gratitude, humility, and steadfastness.",
+    "quranicReflection": "In the authentic Tahajjud supplication, the Prophet ﷺ invoked Allah: 'You are the One who brings forward and You are the One who places later; there is no god but You.' Recognizing Al-Muqaddim teaches the soul that if you find yourself advanced in knowledge, wealth, or responsibility, it is not purely your cleverness, but a divine trust (amanah) bestowed by Al-Muqaddim, demanding deeper humility and accountability.",
+    "response": "Prioritize in your life what Allah has prioritized: put the obligatory prayers before casual entertainment, give precedence to the rights of parents and family, and advance ethical duty over convenience. If Allah places you in a position of leadership, lead with servant-hearted humility.",
+    "heroSummary": "The One who grants precedence and brings forward all things according to divine wisdom.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ، أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ، لَا إِلَٰهَ إِلَّا أَنْتَ",
+      "translation": "O Allah, forgive me what I have sent forward and what I have delayed, what I have concealed and what I have proclaimed; You are the One who brings forward and You are the One who places later, there is no deity worthy of worship except You.",
+      "reference": "Sahih al-Bukhari 1120, Sahih Muslim 771"
+    },
+    "suggestedDua": {
+      "arabic": "يَا مُقَدِّمُ، قَدِّمْنِي فِي مَيَادِينِ رِضَاكَ وَطَاعَتِكَ، وَاجْعَلْنِي مِنَ السَّابِقِينَ إِلَى كُلِّ خَيْرٍ",
+      "translation": "O One who brings forward, advance me in the arenas of Your pleasure and obedience, and make me among the foremost in every good deed."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "timing",
       "leadership",
@@ -1848,103 +2569,137 @@ export const NAMES_DATA = [
     "id": 72,
     "arabic": "الْمُؤَخِّرُ",
     "transliteration": "Al-Mu’akhkhir",
-    "meaning": "The Delayer, The One Who Postpones and Holds Back with Merciful Precision",
+    "meaning": "The One who places later",
     "root": "أ-خ-ر (Alif-Kha-Ra)",
-    "rootMeaning": "Denotes deferring, placing behind, pushing back in schedule, granting respite, and postponing events until their optimal, pre-ordained appointment.",
+    "rootMeaning": "Signifies placing behind, delaying, deferring in appointment or ranking, granting respite, and postponing until an appointed decree.",
     "category": "Wisdom & Knowledge",
-    "yqExplanation": "Classical scholars reflect that Al-Mu’akhkhir reveals mercy concealed inside apparent denial. When Allah postpones an answered prayer, delays a promotion, or holds back marriage or wealth, it is not deprivation (hirman); it is targeted protection (himayah) or necessary spiritual conditioning. Had you been granted your wish prematurely, it might have destroyed your faith or character. Furthermore, Al-Mu’akhkhir extends respite even to arrogant tyrants, postponing retribution until a day when eyes will stare in horror, leaving ample space for repentance before justice descends.",
-    "nakExplanation": "Linguistic insight looks at the psychological turmoil of perceived setbacks. In a modern culture addicted to instant gratification, waiting feels like failure. But Quranic morphology indicates that 'Ta'kheer' is active management: Al-Mu’akhkhir intentionally pulls back the bowstring. The further back an arrow is drawn, the further and faster it flies when released. When Allah delays your timeline, He is strengthening your emotional muscle and recalibrating your heart so that when the blessing finally arrives, you possess the spiritual maturity to preserve it.",
-    "quranAyah": {
-      "arabic": "وَلَا تَحْسَبَنَّ اللَّهَ غَافِلًا عَمَّا يَعْمَلُ الظَّالِمُونَ ۚ إِنَّمَا يُؤَخِّرُهُمْ لِيَوْمٍ تَشْخَصُ فِيهِ الْأَبْصَارُ",
-      "translation": "And never think that Allah is unaware of what the wrongdoers do. He only delays them for a Day when eyes will stare [in horror].",
-      "surah": "Ibrahim 14:42"
+    "evidenceStatus": "Explicit in authentic Sunnah",
+    "evidence": {
+      "arabic": "أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ، لَا إِلَٰهَ إِلَّا أَنْتَ",
+      "translation": "You are the One who brings forward and You are the One who places later; there is no deity worthy of worship except You.",
+      "reference": "Sahih al-Bukhari 1120, Sahih Muslim 771"
     },
-    "howToLive": "Make peace with divine delays. When your heartfelt plans are put on pause, replace bitterness with quiet trust, thanking Allah for shielding you from unseen perils. Hold yourself back from hasty reactions and impulsive sins through deliberate self-restraint.",
-    "dua": "اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ، أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ، وَأَنْتَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ (O Allah, forgive me for what I have advanced and what I have delayed, what I have kept secret and what I have declared; You are Al-Muqaddim and You are Al-Mu'akhkhir, and You are over all things Omnipotent).",
-    "natureImage": "https://images.unsplash.com/photo-1516912481808-3406841bd33c?auto=format&fit=crop&w=1200&q=80",
+    "revelationMeaning": "Al-Mu’akhkhir is the One who postpones, defers, and holds back whatever He wills according to His supreme wisdom. He must be taught in conjunction with Al-Muqaddim. Classical theology avoids simplistic assurances that every delay is an immediate worldly benefit for oneself; rather, divine deferral operates according to comprehensive wisdom: Allah postpones retribution for the unjust to allow respite or to maximize accountability on the Day of Judgment ('He only delays them for a Day when eyes will stare in horror' [Ibrahim 14:42]), delays answered supplications to test patience and elevate rank, and holds back worldly outcomes until their decreed time.",
+    "quranicReflection": "Surah Ibrahim warns against mistaking divine delay for divine neglect: 'And never think that Allah is unaware of what the wrongdoers do. He only delays them for a Day when eyes will stare [in horror].' Divine timing is purposeful. When relief or retribution seems delayed in human eyes, Al-Mu’akhkhir is orchestrating events with absolute justice, testing human resolve and ensuring every deed meets its precise reckoning.",
+    "response": "Accept divine delays with patient resolve and spiritual dignity. Do not succumb to bitterness when your plans are postponed; instead, use periods of waiting to refine your character, examine your shortcomings, and avoid impulsive actions by exercising deliberate self-restraint.",
+    "heroSummary": "The One who postpones and holds back events according to supreme wisdom and justice.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ، وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ، لَا إِلَٰهَ إِلَّا أَنْتَ",
+      "translation": "O Allah, forgive me what I have sent forward and what I have delayed, what I have concealed and what I have proclaimed, and what You know better than me; You are the One who brings forward and You are the One who places later, there is no deity worthy of worship except You.",
+      "reference": "Sahih al-Bukhari 1120, Sahih Muslim 771"
+    },
+    "suggestedDua": {
+      "arabic": "يَا مُؤَخِّرُ، أَعُوذُ بِكَ أَنْ أَتَأَخَّرَ عَنْ طَاعَتِكَ، وَارْزُقْنِي الصَّبْرَ وَالرِّضَا عِنْدَ تَأَخُّرِ مَطَالِبِي",
+      "translation": "O One who places later, I seek refuge in You from falling behind in Your obedience, and grant me patience and contentment when what I seek is delayed."
+    },
+    "natureImage": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "delays",
       "trust",
       "patience",
       "contentment",
-      "resignation"
+      "wisdom"
     ]
   },
   {
     "id": 73,
     "arabic": "الْأَوَّلُ",
     "transliteration": "Al-Awwal",
-    "meaning": "The First, The Unoriginated Beginning Before Whom Was Nothing",
+    "meaning": "The First—nothing is before Him",
     "root": "أ-و-ل (Alif-Waw-Lam)",
-    "rootMeaning": "Signifies returning to the primary source, primordial origin, priority in existence, and the initial point from which all manifestations flow.",
+    "rootMeaning": "Signifies being prior to all, returning to the primordial source, having preeminence in existence, and preceding all entities without initiation or beginning.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Classical commentary points out that the Prophet ﷺ explicitly defined this Name in authentic supplication: 'O Allah, You are Al-Awwal, and there was nothing before You' (اللَّهُمَّ أَنْتَ الْأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ). Theological philosophy grapples perpetually with the dilemma of infinite regress—what initiated the universe? Al-Awwal resolves this: Allah is the Uncaused Cause, the Necessary Existent (Wajib al-Wujud) whose existence is eternal without initiation. He was when there was no time, no space, no quantum field, and no cosmic void.",
-    "nakExplanation": "Linguistic nuance connects Al-Awwal to the concept of psychological initiation. Everything you experience began somewhere, but Allah is the First behind every first. Before you took your first breath, He loved you and decreed your sustenance. Before you decided to turn back to Him in repentance, He had already decreed guidance in your chest. When you say 'Bismillah' before any deed, you consciously bow to Al-Awwal, recognizing that your effort is merely responding to His prior grace.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْبَاطِنُ ۖ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ",
       "translation": "He is the First and the Last, the Ascendant and the Intimate, and He is, of all things, Knowing.",
-      "surah": "Al-Hadid 57:3"
+      "reference": "Surah Al-Hadid 57:3"
     },
-    "howToLive": "Give Allah first place in every sphere of life: dedicate the first moments of your morning to Him, offer Him the first portion of your financial increase, and consult His moral guidance before making any career or life transition.",
-    "dua": "اللَّهُمَّ أَنْتَ الْأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، اجْعَلْ رِضَاكَ أَوَّلَ هَمِّي، وَمَحَبَّتَكَ أَعْظَمَ رَجَائِي، وَبَارِكْ لِي فِي مُبْتَدَإِ أَمْرِي وَمُنْتَهَاهُ (O Allah, You are Al-Awwal and there is nothing before You; make Your pleasure my primary concern, Your love my greatest hope, and bless the beginning and end of all my affairs).",
-    "natureImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
+    "revelationMeaning": "Al-Awwal is the First whose existence has no beginning. The Prophet ﷺ provided the definitive theological interpretation of this Name in his authentic supplication recorded in Sahih Muslim 2713a: 'O Allah, You are the First, and there is nothing before You' (اللَّهُمَّ أَنْتَ الأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ). Classical scholarship notes that this attribute resolves all metaphysical questions of existence: Allah is the eternal Unoriginated Creator who existed before space, time, matter, and the cosmic void were brought into being. All existence originates from His decree, while He was never preceded by nonexistence.",
+    "quranicReflection": "Surah Al-Hadid gathers the four comprehensive names: Al-Awwal, Al-Akhir, Az-Zahir, and Al-Batin. These four names completely encompass all dimensions of existence: temporal and spatial, manifest and hidden. Contemplating Al-Awwal instills profound humility: before you took your first breath, before your parents met, and before the mountains were placed, Allah's knowledge and care were already in effect. Every good that reaches you began with His unprompted grace.",
+    "response": "Give Allah precedence in every domain of your life. Dedicate the first moments of your day to His remembrance, consult His guidance before undertaking major decisions, and acknowledge that every capability you possess originated from His initial bounty.",
+    "heroSummary": "The Eternal First who existed before all creation and before whom there is nothing.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ أَنْتَ الْأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الْآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ الْبَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الْفَقْرِ",
+      "translation": "O Allah, You are the First, there is nothing before You; and You are the Last, there is nothing after You; and You are the Most High, there is nothing above You; and You are the Intimate, there is nothing closer than You. Settle our debt and enrich us against poverty.",
+      "reference": "Sahih Muslim 2713a"
+    },
+    "suggestedDua": null,
+    "natureImage": "https://images.unsplash.com/photo-1507499739999-097706ad8914?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "origins",
       "purpose",
       "eternity",
       "gratitude",
-      "grounding"
+      "grounding",
+      "awe"
     ]
   },
   {
     "id": 74,
     "arabic": "الْآخِرُ",
     "transliteration": "Al-Ākhir",
-    "meaning": "The Last, The Eternal Survivor After Whom There is Nothing",
+    "meaning": "The Last—nothing is after Him",
     "root": "أ-خ-ر (Alif-Kha-Ra)",
-    "rootMeaning": "Signifies the ultimate conclusion, the perpetual horizon that remains when everything transient perishes, and the final resting destination of all journeys.",
+    "rootMeaning": "Signifies being the ultimate conclusion, enduring perpetually after all transient creation passes away, and remaining as the final destination of all journeys.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "The Prophet ﷺ articulated the theological boundary of this Name: 'And You are Al-Ākhir, and there is nothing after You' (وَأَنْتَ الْآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ). Classical scholars such as Ibn Al-Qayyim explain that everything in the cosmos is stamped with the seal of fana' (extinction)—empires collapse, stars burn out their hydrogen fuel, mountains turn into fine dust, and every mortal breathing being tastes death. When the trumpet sounds and all created existence dissolves into silence, Al-Ākhir will proclaim: 'To whom belongs sovereignty this Day? To Allah, the One, the Prevailing!' (لِّمَنِ الْمُلْكُ الْيَوْمَ ۖ لِلَّهِ الْوَاحِدِ الْقَهَّارِ).",
-    "nakExplanation": "Linguistic reflection highlights the immense comfort for a weary traveler. In Surah Al-Hadid, pairing Al-Awwal with Al-Ākhir establishes total psychological enclosure. You originated from Him (Al-Awwal), and your ultimate destination is back to Him (Al-Ākhir). All worldly separations—losing loved ones, leaving homes, passing away from youth into old age—are painful because we treat temporary stations as permanent. Remembering Al-Ākhir whispers to the soul: this heartbreak is not the end of the book, merely a fleeting chapter on your way home.",
-    "quranAyah": {
-      "arabic": "كُلُّ مَنْ عَلَيْهَا فَانٍ ۝ وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو الْجَلَالِ وَالْإِكْرَامِ",
-      "translation": "Everyone upon the earth will perish, and there will remain the Face of your Lord, Owner of Majesty and Honor.",
-      "surah": "Ar-Rahman 55:26-27"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْبَاطِنُ ۖ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ",
+      "translation": "He is the First and the Last, the Ascendant and the Intimate, and He is, of all things, Knowing.",
+      "reference": "Surah Al-Hadid 57:3"
     },
-    "howToLive": "Invest your finite energy into that which outlives this worldly runway. Let every legacy you build—charity, knowledge, raised children, or acts of justice—be oriented toward the eternal ledger of Al-Ākhir rather than temporary applause.",
-    "dua": "اللَّهُمَّ أَنْتَ الْآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، أَحْسِنْ عَاقِبَتَنَا فِي الْأُمُورِ كُلِّهَا، وَأَجِرْنَا مِنْ خِزْيِ الدُّنْيَا وَعَذَابِ الْآخِرَةِ (O Allah, You are Al-Ākhir and there is nothing after You; make the outcome of all our affairs good, and save us from the disgrace of this world and the punishment of the Hereafter).",
-    "natureImage": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80",
+    "revelationMeaning": "Al-Ākhir is the Ever-Enduring who remains after all created existence ceases. The Prophet ﷺ explicitly defined this Name in Sahih Muslim 2713a: 'And You are the Last, and there is nothing after You' (وَأَنْتَ الآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ). Classical theology establishes that while all creation is subject to termination and extinction (fana'), Allah's existence has no end. When the cosmos folds and every soul tastes death, Al-Ākhir remains in His unshared majesty, proclaiming: 'To whom belongs the kingdom today? To Allah, the One, the Prevailing!'",
+    "quranicReflection": "Surah Ar-Rahman declares: 'Everyone upon the earth will perish, and there will remain the Countenance of your Lord, Owner of Majesty and Honor.' Pairing Al-Awwal with Al-Ākhir creates complete spiritual security for the human heart: you came from Him (Al-Awwal) and your ultimate return is to Him (Al-Ākhir). Temporal separations and worldly losses become bearable when you realize that all mortal endings are merely gateways to the eternal presence of Al-Ākhir.",
+    "response": "Invest your finite time and energy into deeds that endure beyond your mortal lifespan. Let your aspirations be directed toward the eternal ledger of the Hereafter, and cultivate tranquility knowing that earthly griefs and worldly systems will all eventually pass away.",
+    "heroSummary": "The Ever-Enduring Last who remains after all creation perishes and after whom there is nothing.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ أَنْتَ الْأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الْآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ الْبَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الْفَقْرِ",
+      "translation": "O Allah, You are the First, there is nothing before You; and You are the Last, there is nothing after You; and You are the Most High, there is nothing above You; and You are the Intimate, there is nothing closer than You. Settle our debt and enrich us against poverty.",
+      "reference": "Sahih Muslim 2713a"
+    },
+    "suggestedDua": null,
+    "natureImage": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "eternity",
       "legacy",
       "future",
       "hope",
-      "peace"
+      "peace",
+      "reflection"
     ]
   },
   {
     "id": 75,
     "arabic": "الظَّاهِرُ",
     "transliteration": "Aẓ-Ẓāhir",
-    "meaning": "The Manifest, The Ascendant Whose Glories and Signs Are Luminously Clear",
+    "meaning": "The Most High—nothing is above Him",
     "root": "ظ-ه-ر (Zha-Ha-Ra)",
-    "rootMeaning": "Signifies becoming distinctly visible, ascending above with overwhelming clarity, being on the exterior, and victorious dominance that cannot be concealed.",
-    "category": "Wisdom & Knowledge",
-    "yqExplanation": "The prophetic supplication elucidates: 'And You are Aẓ-Ẓāhir, and there is nothing above You' (وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ). Theologically, Aẓ-Ẓāhir signifies both His supreme ontological elevation above the Throne ('uluww) and the undeniable, radiant clarity of His existence. While His Essence cannot be perceived directly by human retinas in this world, His presence is the most conspicuous reality in the cosmos: every beating heart, orbital trajectory, intricate DNA sequence, and blooming flower is an unmistakable signature of His design.",
-    "nakExplanation": "Linguistic reflection examines the paradox of human blindness. How can someone look at the vast expanse of the cosmos and doubt its Maker? Classical scholars noted: 'He is concealed only because of the sheer intensity of His manifestation' (Khafiya li-shiddati zhuhurihi), just as looking directly into the sun blinds the human eye not because the sun lacks light, but because our vision is too fragile. Aẓ-Ẓāhir surrounds you with billions of cosmic clues: open your eyes, pause the noise, and His fingerprints become undeniable in every breeze.",
-    "quranAyah": {
-      "arabic": "سَنُرِيهِمْ آيَاتِنَا فِي الْآفَاقِ وَفِي أَنفُسِهِمْ حَتَّىٰ يَتَبَيَّنَ لَهُمْ أَنَّهُ الْحَقُّ",
-      "translation": "We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.",
-      "surah": "Fussilat 41:53"
+    "rootMeaning": "Signifies ascending above, highness, dominance, being manifest in greatness and triumph, and having absolute supremacy over all.",
+    "category": "Majesty & Sovereignty",
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْبَاطِنُ ۖ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ",
+      "translation": "He is the First and the Last, the Ascendant and the Intimate, and He is, of all things, Knowing.",
+      "reference": "Surah Al-Hadid 57:3"
     },
-    "howToLive": "Engage the world with active, contemplative mindfulness (tafakkur). See the divine craft behind everyday wonders—in rain, dawn, and biological resilience—and let your personal integrity be manifest and transparent in all business and family conduct.",
-    "dua": "اللَّهُمَّ يَا ظَاهِرُ يَا مَنْ عَلَا فَقَهَرَ، وَيَا مَنْ بَطَنَ فَخَبَرَ، أَظْهِرِ الْحَقَّ فِي قُلُوبِنَا وَعَلَىٰ أَلْسِنَتِنَا، وَانْصُرْنَا بِعِزَّتِكَ يَا عَزِيزُ (O Allah, O Aẓ-Ẓāhir, O One who ascended and conquered, and O One who is intimate and fully aware, manifest the truth in our hearts and on our tongues, and grant us victory by Your might, O Mighty One).",
-    "natureImage": "https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22?auto=format&fit=crop&w=1200&q=80",
+    "revelationMeaning": "Aẓ-Ẓāhir is the Most High above whom there is nothing. The Prophet ﷺ explicitly defined this sublime Name in Sahih Muslim 2713a: 'And You are the Most High, and there is nothing above You' (وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ). Strict orthodox guidelines caution against mistranslating Aẓ-Ẓāhir as meaning physically visible to human eyes or incarnate through nature. Rather, as clarified by the Prophet's ﷺ definitive words, Aẓ-Ẓāhir denotes His supreme transcendence and elevation ('uluww) above all creation in His essence, majesty, and dominance. Concurrently, His signs, wisdom, and cosmic sovereignty are luminously manifest across every horizon, leaving no room for rational doubt regarding His reality.",
+    "quranicReflection": "Surah Fussilat states: 'We will show them Our signs in the horizons and within themselves until it becomes clear to them that it is the truth.' While Allah cannot be seen with physical eyes in this worldly life, His supreme elevation and dominant authority are established over all things. When a soul reflects upon the vastness of the heavens and the intricate balance of the universe, it bows before the supreme elevation of Aẓ-Ẓāhir.",
+    "response": "Approach the Lord with deep reverence and humility, recognizing His supreme elevation above all creation. Elevate your character by rising above base desires and petty disputes, and let the signs of His majesty in the cosmos inspire continuous contemplation and worship.",
+    "heroSummary": "The Most High who transcends all creation and above whom there is nothing.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ أَنْتَ الْأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الْآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ الْبَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الْفَقْرِ",
+      "translation": "O Allah, You are the First, there is nothing before You; and You are the Last, there is nothing after You; and You are the Most High, there is nothing above You; and You are the Intimate, there is nothing closer than You. Settle our debt and enrich us against poverty.",
+      "reference": "Sahih Muslim 2713a"
+    },
+    "suggestedDua": null,
+    "natureImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
+      "transcendence",
+      "elevation",
       "clarity",
-      "reflection",
-      "signs",
       "awe",
+      "reverence",
       "truth"
     ]
   },
@@ -1952,363 +2707,465 @@ export const NAMES_DATA = [
     "id": 76,
     "arabic": "الْبَاطِنُ",
     "transliteration": "Al-Bāṭin",
-    "meaning": "The Inwardly Intimate, The Knower of Hidden Mysteries and Veiled Realities",
+    "meaning": "The Innermost and Most Near—nothing is beyond Him",
     "root": "ب-ط-ن (Ba-Ta-Nun)",
-    "rootMeaning": "Signifies the hidden interior, the unseen womb, penetrative closeness beneath outward surfaces, and absolute intimacy beyond sensory detection.",
+    "rootMeaning": "Signifies the hidden interior, penetrative closeness beneath outward surfaces, and absolute intimacy beyond sensory detection.",
     "category": "Wisdom & Knowledge",
-    "yqExplanation": "The Prophet ﷺ explained: 'And You are Al-Bāṭin, and there is nothing closer than You' (وَأَنْتَ الْبَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ). Theological analysis notes that while Aẓ-Ẓāhir represents transcendence and universal manifestation, Al-Bāṭin represents divine immanence through total, unfettered omniscience and proximity. No physical veil, darkness, or microscopic barrier impedes His awareness. He encompasses the innermost whispers of the subconscious mind before they even crystallize into spoken thought, remaining intimately near to every fragile soul without physically merging into creation.",
-    "nakExplanation": "Linguistic and psychological depth shines through this Name when navigating internal loneliness. Human beings frequently feel misunderstood: we struggle to articulate our deepest fears, traumas, and unspoken grief to spouses, parents, or therapists. Words fail us. But Al-Bāṭin resides closer to you than your jugular vein (أَقْرَبُ إِلَيْهِ مِنْ حَبْلِ الْوَرِيدِ). You do not need polished grammar, eloquent poetry, or loud speeches when conversing with Him; a silent teardrop in the dark of night is an entire, transparent manuscript to Al-Bāṭin.",
-    "quranAyah": {
-      "arabic": "وَأَسِرُّوا قَوْلَكُمْ أَوِ اجْهَرُوا بِهِ ۖ إِنَّهُ عَلِيمٌ بِذَاتِ الصُّدُورِ ۝ أَلَا يَعْلَمُ مَنْ خَلَقَ وَهُوَ اللَّطِيفُ الْخَبِيرُ",
-      "translation": "And conceal your speech or publicize it; indeed, He is Knowing of that within the breasts. Does He not know who He created, while He is the Subtle, the Acquainted?",
-      "surah": "Al-Mulk 67:13-14"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْبَاطِنُ ۖ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ",
+      "translation": "He is the First and the Last, the Manifest and the Innermost, and He is Knowing of all things.",
+      "reference": "Surah Al-Hadid 57:3"
     },
-    "howToLive": "Prioritize the secret state of your heart over external impressions. Guard your private moments with the same reverence as public prayers, and rest in peaceful assurance that your silent struggles, suppressed tears, and unrecognized good deeds are fully seen by Al-Bāṭin.",
-    "dua": "اللَّهُمَّ يَا بَاطِنُ، يَا عَالِمًا بِالسِّرِّ وَأَخْفَىٰ، طَهِّرْ سَرِيرَتِي، وَاجْعَلْ بَاطِنِي خَيْرًا مِنْ ظَاهِرِي، وَاجْعَلْ ظَاهِرِي صَالِحًا (O Allah, O Al-Bāṭin, O Knower of secrets and what is even more hidden, purify my inner self, and make my inward reality better than my outward appearance, and make my outward actions righteous).",
+    "revelationMeaning": "The Prophet ﷺ authoritatively explained this Name in an authentic supplication: 'And You are Al-Batin, and there is nothing beyond You' (Sahih Muslim 2713a). Rather than speculative mysticism or pantheistic concepts of divine containment, the Name affirms Allah's complete awareness of every inward reality and hidden mystery. He knows the secret thoughts of the soul and the innermost movements of creation without physically merging into it.",
+    "quranicReflection": "Surah Al-Hadid couples Al-Zahir (the Outward/Manifest) with Al-Batin (the Innermost/Hidden). While His signs are manifestly evident across the cosmos, His divine essence remains beyond physical sight, yet His knowledge encompasses the innermost layers of every atom and breast: 'Does He not know who He created, while He is the Subtle, the Acquainted?' (Surah Al-Mulk 67:14).",
+    "response": "Purify your inner intentions, thoughts, and private devotions with the same care you give your public deeds, knowing that Al-Batin sees what no human eye can detect. Turn to Him in silent prayer, confident that your unspoken feelings are fully known to Him.",
+    "heroSummary": "The Innermost and Most Near whose infinite knowledge encompasses every hidden reality, without physical merger into creation.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ أَنْتَ الْأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الْآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ الْبَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ وَأَغْنِنَا مِنَ الْفَقْرِ",
+      "translation": "O Allah, You are the First and there is nothing before You; You are the Last and there is nothing after You; You are the Manifest and there is nothing above You; and You are the Innermost and there is nothing beyond You. Settle our debts and enrich us from poverty.",
+      "reference": "Sahih Muslim 2713a"
+    },
+    "suggestedDua": null,
     "natureImage": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "secrets",
       "soul",
       "loneliness",
-      "intuition",
-      "comfort"
+      "comfort",
+      "peace"
     ]
   },
   {
     "id": 77,
     "arabic": "الْوَالِي",
     "transliteration": "Al-Wālī",
-    "meaning": "The Supreme Governor, The Protective Master Managing Universal Affairs",
+    "meaning": "The Governor of all affairs",
     "root": "و-ل-ي (Waw-Lam-Ya)",
-    "rootMeaning": "Evokes proximity without gap, continuous caring custody, legal guardianship, undisputed governance, and holding the reins of authority.",
+    "rootMeaning": "Denotes proximity, contiguous authority, governance, administration, and holding charge over a domain.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Classical commentary draws a profound theological distinction between Al-Walī (الْوَلِيُّ - The Loving Guardian) and Al-Wālī (الْوَالِي - The Supreme Governor). While Al-Walī emphasizes protective care, friendship, and intimate loyalty to the believers, Al-Wālī designates total, unshared jurisdictional authority over the entire cosmos and all socio-political events. As Imam Al-Ghazali clarifies, Al-Wālī is the One who governs creation, issues decrees, executes governance, and defends what He manages. Nothing transpires in any empire, parliament, or climate system except under His supreme gubernatorial warrant.",
-    "nakExplanation": "Linguistic analysis points to Surah Ar-Ra'd: 'And when Allah intends for a people ill, there is no repelling it. And there is not for them besides Him any patron (Wāl)' (وَمَا لَهُم مِّن دُونِهِ مِن وَالٍ). The active participle 'Wālī' implies an active, ceaseless administrator who handles logistics, protection, and destiny. When watching distressing geopolitical news or systemic injustices across the globe, the heart can easily fall into hopeless cynicism. Remembering Al-Wālī reassures us that the ultimate steering wheel of world history is held by wisdom, not human chaos.",
-    "quranAyah": {
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
       "arabic": "وَإِذَا أَرَادَ اللَّهُ بِقَوْمٍ سُوءًا فَلَا مَرَدَّ لَهُ ۚ وَمَا لَهُم مِّن دُونِهِ مِن وَالٍ",
-      "translation": "And when Allah intends for a people ill, there is no repelling it. And there is not for them besides Him any patron.",
-      "surah": "Ar-Ra'd 13:11"
+      "translation": "And when Allah intends for a people ill, there is no repelling it. And there is not for them besides Him any patron or governor.",
+      "reference": "Surah Ar-Ra'd 13:11"
     },
-    "howToLive": "Honor any trust of leadership or guardianship you hold over family, employees, or projects with conscientious fairness. Avoid despair over turbulent current events, remaining an active agent of moral reform while trusting the Master Governor of all outcomes.",
-    "dua": "اللَّهُمَّ يَا وَالِيَ الْأُمُورِ، وَيَا مُدَبِّرَ كُلِّ أَمْرٍ، تَوَلَّ أَمْرَنَا بِحُسْنِ تَدْبِيرِكَ، وَاحْفَظْنَا بِعَيْنِ رِعَايَتِكَ، وَلَا تَكِلْنَا إِلَى أَنْفُسِنَا (O Allah, O Al-Wālī, Governor of all affairs, O Director of every matter, take charge of our affairs with Your exquisite orchestration, protect us with the eye of Your care, and do not leave us to ourselves).",
+    "revelationMeaning": "This Name must be carefully distinguished from Al-Waliyy (الْوَلِيُّ - The Loving Guardian and Ally). While Al-Waliyy emphasizes protective care, friendship, and intimate loyalty toward the believers, Al-Wālī (الْوَالِي) designates the supreme administrator, governor, and manager of all cosmic and worldly affairs. As a standalone divine Name, it is listed in the traditional compilation of Al-Tirmidhi and Ibn Majah, while appearing in the Qur'an in indefinite negative construct ('min wālin'). Scholarly review highlights that Allah alone governs every realm, decreeing outcomes that no earthly authority can overturn.",
+    "quranicReflection": "In Surah Ar-Ra'd, the verse reminds humanity that when the divine decree unfolds, none can shield a people against Allah's will. Worldly rulers and administrative bodies operate solely within granted limits; the supreme governor orchestrating every cause, effect, and circumstance is Allah alone.",
+    "response": "Fulfill every administrative and personal trust under your care with justice and integrity. When global events and sociopolitical changes appear turbulent, anchor your heart in the conviction that the ultimate governance of the universe rests with Allah.",
+    "heroSummary": "The Supreme Governor who directs, manages, and executes the affairs of all creation with undisputed authority.",
+    "authenticDua": null,
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ يَا وَالِيَ كُلِّ أَمْرٍ، تَوَلَّ أُمُورَنَا بِحُسْنِ تَدْبِيرِكَ، وَأَصْلِحْ لَنَا شَأْنَنَا كُلَّهُ، وَلَا تَكِلْنَا إِلَى أَنْفُسِنَا طَرْفَةَ عَيْنٍ",
+      "translation": "O Allah, O Governor of every affair, take charge of our matters with Your exquisite management, rectify all our affairs, and do not leave us to ourselves for the blink of an eye.",
+      "reference": "Traditional reverent supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "governance",
       "leadership",
       "protection",
-      "world affairs",
-      "reassurance"
+      "reassurance",
+      "peace"
     ]
   },
   {
     "id": 78,
     "arabic": "الْمُتَعَالِي",
     "transliteration": "Al-Muta‘ālī",
-    "meaning": "The Supremely Exalted, Incomparably Transcendent Above All Flaws",
+    "meaning": "The Supremely Exalted",
     "root": "ع-ل-و (Ayn-Lam-Waw)",
-    "rootMeaning": "Signifies ascending to peak heights, surpassing all horizons, absolute elevation, and being far above any deficiency, partner, or human projection.",
+    "rootMeaning": "Signifies ascending to supreme heights, surpassing every horizon, and being elevated far above any imperfection, partner, or deficiency.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Theological scholars emphasize that Al-Muta‘ālī is an intensive Form VI reflexive elaboration of Al-‘Alī. While Al-‘Alī denotes His foundational loftiness, Al-Muta‘ālī highlights that His exaltedness is actively above any limit imaginable by human reason, imagination, or philosophical speculation. Imam Ibn Kathir comments that He is transcendent above the slander of disbelievers, above having a spouse, child, equal, or competitor, and exalted above any fatigue or vulnerability. His majesty is completely impervious to the sins or doubts of creation.",
-    "nakExplanation": "Linguistic reflection pairs Al-Muta‘ālī with Al-Kabīr in Surah Ar-Ra'd: 'Knower of the unseen and the witnessed, the Grand, the Exalted' (عَالِمُ الْغَيْبِ وَالشَّهَادَةِ الْكَبِيرُ الْمُتَعَالِ). Notice how this Name directly comforts the soul experiencing bullying, condescension, or humiliation in society. Arrogant people frequently attempt to 'talk down' to you from imaginary pedestals of wealth or pedigree. Al-Muta‘ālī instantly flattens their pretension: only Allah is authentically Exalted, and whoever humbles themselves for Him will be elevated by His grace.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "عَالِمُ الْغَيْبِ وَالشَّهَادَةِ الْكَبِيرُ الْمُتَعَالِ",
-      "translation": "Knower of the unseen and the witnessed, the Grand, the Exalted.",
-      "surah": "Ar-Ra'd 13:9"
+      "translation": "Knower of the unseen and the witnessed, the Grand, the Supremely Exalted.",
+      "reference": "Surah Ar-Ra'd 13:9"
     },
-    "howToLive": "Purge your heart of vanity, arrogance, and the urge to belittle others. Stand up with quiet dignity in the presence of haughty oppressors, and continually purify your theological understanding by keeping Allah above any unworthy or anthropomorphic concept.",
-    "dua": "اللَّهُمَّ يَا مُتَعَالِي عَنْ كُلِّ نَقْصٍ وَعَيْبٍ، تَبَارَكْتَ وَتَعَالَيْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ، ارْفَعْ دَرَجَتِي فِي الْمَهْدِيِّينَ، وَأَعِذْنِي مِنْ كِبْرِ النَّفْسِ (O Allah, O Al-Muta‘ālī above every flaw and deficiency, blessed and exalted are You, Owner of Majesty and Honor; raise my station among the rightly guided, and protect me from the arrogance of the soul).",
+    "revelationMeaning": "Al-Muta'ali is an intensive Form VI construction of Al-'Ali, denoting that Allah is supremely exalted in His essence, attributes, and sovereignty above all creation. This loftiness means He is elevated above every defect, flaw, rival, or unworthy comparison. Careful theological distinction is maintained: avoiding claims that He is 'above all conception' in a manner suggesting believers cannot know Him meaningfully. Rather, His attributes are real, perfect, and affirmed as revealed, while transcending any human likeness or limitation.",
+    "quranicReflection": "Coupled with Al-Kabir (The Grand) in Surah Ar-Ra'd, Al-Muta'ali shatters the arrogance of created beings. Whatever status or elevation creatures attain in worldly rank, Allah is infinitely above them in power, honor, and majesty.",
+    "response": "Rid your heart of pride, arrogance, and the urge to belittle others. Stand with quiet dignity before haughty creation, and bow before the Supremely Exalted with genuine humility and reverence.",
+    "heroSummary": "The Supremely Exalted above every flaw, rival, and imperfection, whose majesty transcends all created limits.",
+    "authenticDua": null,
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ يَا مُتَعَالِي عَنْ كُلِّ نَقْصٍ وَشَبِيهٍ، تَبَارَكْتَ وَتَعَالَيْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ، ارْفَعْ دَرَجَتَنَا، وَطَهِّرْ قُلُوبَنَا مِنَ الْكِبْرِ",
+      "translation": "O Allah, O Supremely Exalted above every flaw and likeness, blessed and exalted are You, Possessor of Majesty and Honor; raise our station, and purify our hearts from arrogance.",
+      "reference": "Traditional reverent supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
-      "transcendence",
-      "reverence",
+      "majesty",
       "humility",
       "awe",
-      "elevation"
+      "elevation",
+      "reverence"
     ]
   },
   {
     "id": 79,
     "arabic": "الْبَرُّ",
     "transliteration": "Al-Barr",
-    "meaning": "The Source of Boundless Goodness, The Vastly Benevolent and Gentle",
+    "meaning": "The Perfectly Kind and Generous Benefactor",
     "root": "ب-ر-ر (Ba-Ra-Ra)",
-    "rootMeaning": "Evokes the expansive, open land (barr) as opposed to the restrictive sea, signifying boundless, overflowing devotion, filial piety, loyalty, and affectionate kindness.",
+    "rootMeaning": "Signifies vast expansive land (barr), from which birr is derived, denoting boundless goodness, beneficence, filial devotion, truthfulness, and generous kindness.",
     "category": "Mercy & Compassion",
-    "yqExplanation": "Classical commentators link the attribute Al-Barr to absolute goodness and expansive beneficence. In Arabic, 'Birr' is the umbrella term for all righteousness, filial tenderness, and loyalty. Ibn Al-Qayyim remarks that Allah is Al-Barr because His goodness encompasses every living creature: He bestows gifts before we ask, pardons countless mistakes, rewards a single good deed tenfold or seven-hundredfold, and counts an evil intention not acted upon as a complete good deed. His benevolence never runs dry, regardless of human ingratitude.",
-    "nakExplanation": "Linguistic and emotional resonance is captured in Surah At-Tur, where the people of Paradise sit together joyfully reminiscing about their earthly struggles: 'Indeed, we used to invoke Him before. Indeed, it is He who is the Beneficent, the Merciful' (إِنَّهُ هُوَ الْبَرُّ الرَّحِيمُ). The word 'Barr' tastes like warm, expansive security. When you go through bitter days feeling battered by the world, remember that your Lord is not cruel or harsh; His underlying design for your soul is pure, overflowing Birr (goodness and tender care).",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "إِنَّا كُنَّا مِن قَبْلُ نَدْعُوهُ ۖ إِنَّهُ هُوَ الْبَرُّ الرَّحِيمُ",
-      "translation": "Indeed, we used to call upon Him before. Indeed, it is He who is the Beneficent, the Merciful.",
-      "surah": "At-Tur 52:28"
+      "translation": "Indeed, we used to call upon Him before. Indeed, it is He who is the Benefactor, the Merciful.",
+      "reference": "Surah At-Tur 52:28"
     },
-    "howToLive": "Radiate Birr in your immediate relationships: shower your parents with tender service, treat neighbors and strangers with unprovoked generosity, and maintain a generous, soft heart even when others respond with coldness.",
-    "dua": "اللَّهُمَّ يَا بَرُّ يَا رَحِيمُ، يَا مَنْ عَمَّ بِرُّهُ جَمِيعَ خَلْقِهِ، أَفِضْ عَلَيَّ مِنْ سَعَةِ بِرِّكَ وَإِحْسَانِكَ، وَاجْعَلْنِي بَارًّا بِوَالِدَيَّ مُحْسِنًا إِلَى عِبَادِكَ (O Allah, O Al-Barr, O Merciful, O One whose goodness encompasses all of His creation, bestow upon me from the abundance of Your benevolence and excellence, and make me dutiful to my parents and benevolent toward Your servants).",
+    "revelationMeaning": "Al-Barr denotes the One whose kindness and generosity toward His servants are boundless, pure, and perpetual. His beneficence encompasses all created beings: He bestows gifts before they ask, forgives countless shortcomings, multiplies the reward of the smallest good deed, and treats His servants with unmatched gentleness and honor.",
+    "quranicReflection": "In Surah At-Tur, the dwellers of Paradise reflect upon their earthly journey, recognizing that their salvation was entirely due to the enduring goodness and mercy of Al-Barr. Even in the midst of trials, the underlying reality of Allah's decree for the believer is expansive kindness and ultimate wellbeing.",
+    "response": "Embody birr in your life by treating your parents with tender devotion, extending generosity to neighbors and the needy, and meeting harshness with patience and dignified kindness.",
+    "heroSummary": "The Perfectly Kind and Generous Benefactor whose boundless goodness and tender care encompass His servants.",
+    "authenticDua": null,
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ يَا بَرُّ يَا رَحِيمُ، يَا وَاسِعَ الْإِحْسَانِ، أَفِضْ عَلَيْنَا مِنْ بِرِّكَ وَلُطْفِكَ، وَاجْعَلْنَا بَارِّينَ بِوَالِدَيْنَا مُحْسِنِينَ إِلَى عِبَادِكَ",
+      "translation": "O Allah, O Perfectly Kind Benefactor, O Merciful, O Vast in beneficence, pour over us from Your goodness and gentleness, and make us dutiful to our parents and benevolent toward Your servants.",
+      "reference": "Traditional reverent supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1476820865390-c52aeebb9891?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "kindness",
       "blessings",
-      "joy",
       "gratitude",
-      "gentleness"
+      "gentleness",
+      "joy"
     ]
   },
   {
     "id": 80,
     "arabic": "التَّوَّابُ",
     "transliteration": "At-Tawwāb",
-    "meaning": "The Ever-Pardoning, The Relentless Welcomer Who Inspires and Accepts Repentance",
+    "meaning": "The One who repeatedly accepts repentance",
     "root": "ت-و-ب (Ta-Waw-Ba)",
-    "rootMeaning": "Signifies turning back, returning from wandering, repeatedly welcoming the fugitive back home, and restoring intimacy after estrangement.",
+    "rootMeaning": "Signifies turning back, returning from error, and repeatedly welcoming the returning servant with pardon.",
     "category": "Forgiveness & Mercy",
-    "yqExplanation": "Classical theologians emphasize the profound twofold meaning of At-Tawwāb on the intensive fa''āl (فَعَّال) scale. First, He turns toward His servant with divine enablement (tawfeeq), softening their hardened heart and inspiring them to seek forgiveness. Second, when the servant stumbles back and whispers 'Astaghfirullah', He turns toward them again with unconditional acceptance, completely erasing the transgression. The intensive form indicates that even if you break your repentance a hundred times and return on the hundred-and-first with genuine remorse, At-Tawwāb opens His arms with joy, never tiring of your return.",
-    "nakExplanation": "Linguistic insight reveals the breathtaking emotional warmth in Surah At-Tawbah: 'Then He turned to them so that they could repent' (ثُمَّ تَابَ عَلَيْهِمْ لِيَتُوبُوا). Notice the divine sequence: Allah turned FIRST, granting the spiritual breath and inner discomfort that enabled the sinner to turn back. Repentance is not a solo human triumph; it is a divine rescue mission. The famous hadith reminds us that Allah rejoices more over the repentance of His servant than a traveler who lost his camel, food, and water in a deadly desert and then woke up to find it standing right beside him.",
-    "quranAyah": {
-      "arabic": "أَلَمْ يَعْلَمُوا أَنَّ اللَّهَ هُوَ يَقْبَلُ التَّوْبَةَ عَنْ عِبَادِهِ وَيَأْخُذُ الصَّدَقَاتِ وَأَنَّ اللَّهَ هُوَ التَّوَّابُ الرَّحِيمُ",
-      "translation": "Do they not know that it is Allah who accepts repentance from His servants and receives charities and that it is Allah who is the Accepter of Repentance, the Merciful?",
-      "surah": "At-Tawbah 9:104"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "فَتَلَقَّىٰ آدَمُ مِن رَّبِّهِ كَلِمَاتٍ فَتَابَ عَلَيْهِ ۚ إِنَّهُ هُوَ التَّوَّابُ الرَّحِيمُ",
+      "translation": "Then Adam received from his Lord words, and He accepted his repentance. Indeed, He is the One who repeatedly accepts repentance, the Merciful.",
+      "reference": "Surah Al-Baqarah 2:37"
     },
-    "howToLive": "Never let shame or past relapses keep you away from Allah. Normalize swift, daily repentance (Tawbah) after small slip-ups, and mirror At-Tawwāb by extending sincere pardons to those who have wronged you without holding lifelong grudges.",
-    "dua": "اللَّهُمَّ أَنْتَ التَّوَّابُ الرَّحِيمُ، تُبْ عَلَيَّ تَوْبَةً نَصُوحًا لَا أَنْكُثُهَا أَبَدًا، وَطَهِّرْ قَلْبِي مِنَ الذُّنُوبِ وَالْخَطَايَا كَمَا يُنَقَّى الثَّوْبُ الْأَبْيَضُ مِنَ الدَّنَسِ (O Allah, You are At-Tawwāb, the Merciful; accept my repentance with a sincere, permanent turning that I never break, and purify my heart from sins and errors just as a white garment is cleansed of stains).",
+    "revelationMeaning": "The intensive pattern Fa'‘āl denotes that Allah repeatedly accepts repentance no matter how often the servant stumbles and returns. Critically, Allah's tawbah upon the servant is twofold: first, He enables, inspires, and softens the servant's heart to turn back to Him (tawfīq li-t-tawbah), and second, when the servant repents, He accepts the repentance and wipes away the sin.",
+    "quranicReflection": "In Surah At-Tawbah (9:118), Allah describes the three companions who remained behind: 'Then He turned to them so that they might repent.' The turning of Allah precedes and facilitates the turning of the human heart, assuring the sinner that repentance is always greeted with divine embrace rather than rejection.",
+    "response": "Never allow despair or past relapses to keep you from returning to Allah. Turn back to Him immediately after any error, and emulate this divine attribute by readily accepting apologies and forgiving those who seek your pardon.",
+    "heroSummary": "The One who inspires the sinner to turn back and repeatedly accepts repentance with boundless mercy.",
+    "authenticDua": {
+      "arabic": "رَبِّ اغْفِرْ لِي وَتُبْ عَلَيَّ، إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ",
+      "translation": "My Lord, forgive me and accept my repentance; indeed, You are the One who repeatedly accepts repentance, the Merciful.",
+      "reference": "Sunan Abi Dawud 1516, Jami` at-Tirmidhi 3434 (Sahih)"
+    },
+    "suggestedDua": null,
     "natureImage": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "repentance",
-      "second chances",
       "forgiveness",
       "hope",
-      "peace"
+      "peace",
+      "second chances"
     ]
   },
   {
     "id": 81,
     "arabic": "الْمُنْتَقِمُ",
     "transliteration": "Al-Muntaqim",
-    "meaning": "The Retributor, The Vindicator of the Oppressed",
+    "meaning": "The Just Retributor",
     "root": "ن-ق-م (Nun-Qaf-Meem)",
-    "rootMeaning": "Signifies reaching a threshold of severe dislike and indignation against sustained transgression, culminating in deliberate, decisive reckoning and retribution after all warnings and avenues of repentance have been willfully exhausted.",
+    "rootMeaning": "Signifies imposing righteous reckoning and decisive retribution upon persistent wrongdoing after clear proof and warning.",
     "category": "Justice & Truth",
-    "yqExplanation": "Classical theological commentary notes that in the Qur'an, this attribute is frequently mentioned in verbal construct rather than an isolated nominal form (such as 'Inna minal-mujrimina muntaqimun' — 'Indeed, from the criminals We will take retribution'). Scholars like Imam Al-Ghazali and Ibn Al-Qayyim observe that vengeance in human psychology is rooted in personal hurt, bruised ego, or a cathartic desire to vent fury; however, with Allah, Al-Muntaqim is sublime divine vindication completely free from emotion, impulse, or spite. It is the ultimate guarantee of cosmic moral equilibrium: tyrants who evade worldly human courts and oppress the weak will never escape the absolute, inescapable retribution of the Divine.",
-    "nakExplanation": "Linguistic reflection draws attention to how the root 'naqama' is constructed in the Qur'an: 'Wa ma naqamu minhum illa an yu'minu billah' ('And they resented them only because they believed in Allah'). The form 'ifti'al' (muntaqim) denotes a focused, decisive justice that unfolds when the measure of injustice overflows. For a believer enduring relentless oppression, gaslighting, or helplessness under a cruel tyrant, this Name serves as deep psychological solace. It reassures the fragile heart that tears shed in the dark are not forgotten; accountability is an unshakeable promise, and the scales will be balanced with breathtaking precision.",
-    "quranAyah": {
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
       "arabic": "فَانْتَقَمْنَا مِنَ الَّذِينَ أَجْرَمُوا ۖ وَكَانَ حَقًّا عَلَيْنَا نَصْرُ الْمُؤْمِنِينَ",
       "translation": "So We took retribution from those who committed crimes, and it was an incumbent duty upon Us to help the believers.",
-      "surah": "Ar-Rum 30:47"
+      "reference": "Surah Ar-Rum 30:47"
     },
-    "howToLive": "Never abuse power over anyone under your authority, whether a spouse, child, employee, or animal, lest you face the retribution of Al-Muntaqim. When wronged, do not allow toxic hatred to consume your soul; surrender the ultimate reckoning to Allah while standing bravely for justice without crossing into tyranny yourself.",
-    "dua": "اللَّهُمَّ يَا مُنْتَقِمُ، انْتَقِمْ لَنَا مِمَّنْ ظَلَمَنَا، وَانْصُرْنَا عَلَى مَنْ عَادَانَا، وَلَا تَجْعَلْ مُصِيبَتَنَا فِي دِينِنَا (O Allah, O Retributor, avenge us against those who wrong us, grant us victory over those who show us enmity, and do not make our affliction in our religion).",
+    "revelationMeaning": "In the Qur'an, retribution (intiqām) is consistently mentioned in verbal or construct forms (such as 'Inna minal-mujrimīna muntaqimūn' in Surah As-Sajdah 32:22, or 'Dhū Intiqām' in Surah Ali 'Imran 3:4), rather than as an isolated standalone nominal Name. It is included in the traditional 99 Name list, requiring scholarly review regarding its standalone usage. Divine retribution is rooted in absolute justice against unrepentant oppressors and tyrants, completely devoid of personal malice, impulsive anger, or emotional venting. It must never be reduced to a tool for personal grudges or private vengeance.",
+    "quranicReflection": "Surah As-Sajdah and Surah Ar-Rum show that divine retribution operates to champion the oppressed and break the reign of injustice. When worldly tyrants believe their power makes them unaccountable, the promise of divine retribution ensures that moral balance will be decisively established.",
+    "response": "Never abuse authority over any person or creature, mindful of Allah's just reckoning. When wronged, pursue justice through lawful means and leave ultimate retribution to Allah, guarding your heart from toxic hatred and vindictiveness.",
+    "heroSummary": "The Just Retributor who decisively holds unrepentant oppressors to account, guaranteeing absolute moral justice.",
+    "authenticDua": null,
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ يَا عَادِلُ يَا حَكِيمُ، انْصُرِ الْمَظْلُومِينَ، وَاقْصِمِ الظَّالِمِينَ، وَلَا تَجْعَلْنَا مِنَ الظَّالِمِينَ وَلَا مِنَ الْمُعْتَدِينَ",
+      "translation": "O Allah, O Just, O Wise, grant victory to the oppressed, break the power of tyrants, and do not make us among the oppressors nor among the transgressors.",
+      "reference": "Traditional reverent supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
-      "injustice",
-      "abuse",
       "justice",
+      "injustice",
       "oppression",
-      "patience"
+      "patience",
+      "trials"
     ]
   },
   {
     "id": 82,
     "arabic": "الْعَفُوُّ",
     "transliteration": "Al-‘Afuww",
-    "meaning": "The Supreme Pardoner, The Effacer of Sins",
+    "meaning": "The One who pardons and erases sin",
     "root": "ع-ف-و (Ayn-Fa-Waw)",
-    "rootMeaning": "Derived from the imagery of the fierce desert wind blowing over footprints in the sand until every indent is completely leveled and wiped clean, leaving no trace behind; it also denotes surplus, natural ease, and giving unreservedly without withholding.",
+    "rootMeaning": "Signifies effacing, wiping away completely like the desert wind leveling tracks in sand, as well as granting surplus freely.",
     "category": "Forgiveness & Mercy",
-    "yqExplanation": "Classical scholarship meticulously distinguishes between Al-Ghafur (The Forgiver) and Al-'Afuww (The Supreme Pardoner). Al-Ghafur stems from 'ghafr' (to conceal, shield, or helmet); He covers your sin from disgrace in front of creation and shields you from its immediate punishment, yet the record of that sin may still exist on the ledger. Al-'Afuww, however, goes infinitely deeper: it denotes absolute effacement, total obliteration, and cosmic erasing of the sin from the book of deeds and even from the memory of the recording angels. On the Day of Judgment, when Al-'Afuww pardons, the sin is not merely dismissed—it is as though it was never committed.",
-    "nakExplanation": "Linguistic reflection illuminates the intense psychological weight of guilt. When a person commits an offense, even if excused by another, the residual shame and emotional awkwardness often linger like an indelible stain. But with Al-'Afuww on the morphological weight of 'Fa'ool' (فَعُول)—denoting sheer abundance, perpetual readiness, and an intrinsic delight in pardoning—Allah does not hold a quiet grudge against you. When the Prophet ﷺ was asked by Aisha (RA) what to pray on the pinnacle of spiritual nights, Laylatul Qadr, he did not teach her to ask for paradise or relief from hellfire first, but rather: 'You love to pardon, so pardon me.' It removes the baggage of the past so your soul can breathe freely.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "فَأُولَٰئِكَ عَسَى اللَّهُ أَن يَعْفُوَ عَنْهُمْ ۚ وَكَانَ اللَّهُ عَفُوًّا غَفُورًا",
       "translation": "For those there is hope that Allah will pardon them, and Allah is ever Pardoning and Forgiving.",
-      "surah": "An-Nisa 4:99"
+      "reference": "Surah An-Nisa 4:99"
     },
-    "howToLive": "Cultivate the nobility of 'Afw in your interpersonal relationships: do not merely say 'I forgive you' while harboring resentment or bringing up old mistakes during future arguments. Wipe the slate truly clean for others, just as you desperately desire Al-'Afuww to wipe yours.",
-    "dua": "اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي (O Allah, You are indeed Pardoning and You love to pardon, so pardon me).",
+    "revelationMeaning": "Al-'Afuww goes beyond concealing a fault (maghfirah); it signifies complete obliteration and erasure of the sin so that no trace, record, or residue remains. On the morphological scale Fa'ūl, it expresses perpetual and abundant pardoning. Allah loves to pardon and bestows this gift without grudge or hesitation.",
+    "quranicReflection": "Frequently paired in the Qur'an with Al-Ghafur, Al-'Afuww reassures the believer that repentance does not leave a permanent stain. When Allah pardons, the ledger is wiped clean, freeing the human conscience from debilitating guilt and granting a fresh spiritual beginning.",
+    "response": "Practice genuine pardon in your dealings: overlook offenses, drop resentment, and choose not to bring up past mistakes against those who have hurt you, seeking the pristine pardon of Al-'Afuww for yourself.",
+    "heroSummary": "The Supreme Pardoner who completely erases sins and obliterates their traces from the record with abundant grace.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي",
+      "translation": "O Allah, You are indeed Pardoning and You love to pardon, so pardon me.",
+      "reference": "Sunan Ibn Majah 3850, Jami` at-Tirmidhi 3513 (Sahih)"
+    },
+    "suggestedDua": null,
     "natureImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "forgiveness",
-      "fresh start",
-      "guilt",
       "repentance",
-      "peace"
+      "guilt",
+      "peace",
+      "fresh start"
     ]
   },
   {
     "id": 83,
-    "arabic": "الرَّءُوفُ",
+    "arabic": "الرَّؤُوفُ",
     "transliteration": "Ar-Ra’ūf",
-    "meaning": "The Tenderly Affectionate, The Exquisitely Gentle",
+    "meaning": "The Profoundly Kind and Compassionate",
     "root": "ر-أ-ف (Ra-Alif-Fa)",
-    "rootMeaning": "Conveys an intensive, delicate gentleness and protective empathy aimed specifically at averting harm, easing vulnerability, and shielding from distress before it ever arrives.",
+    "rootMeaning": "Denotes exquisite, delicate tenderness, deep compassion, and protective sympathy that acts to avert harm and ease hardship.",
     "category": "Mercy & Compassion",
-    "yqExplanation": "Classical masters like Imam Al-Ghazali and Ibn Kathir explain that Ra'fah is the most refined, delicate, and intimate manifestation of Rahmah (mercy). While general mercy can sometimes involve an uncomfortable process for an ultimate greater benefit (like a loving surgeon cutting open a patient to excise a disease, or a father disciplining a son), Ra'fah is pure, tender gentleness where the action itself is completely free of any harshness or pain. When paired in the Qur'an with Ar-Rahim ('Inna Rabbakum la-Ra'ufun Rahim'), Ra'fah represents the proactive shield that keeps immense hardship from breaking you, while Rahmah ensures your growth.",
-    "nakExplanation": "Linguistic nuance reveals that the root 'ra-a-fa' describes the tenderness a mother feels when she sees her fragile, sickly infant trembling in the cold—she wraps a blanket around the child not out of obligation, but out of pure, tender sensitivity. Allah's Ra'fah is seen in the very concessions of Islamic law: shortening prayers while traveling, fasting exemptions for the sick, and gentle guidance when we are overwhelmed. When your heart feels bruised, fragile, or exhausted by life's unrelenting demands, Ar-Ra'uf wraps around your wounded spirit like a warm, sheltering cloak.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "وَكَانَ اللَّهُ رَءُوفًا بِالْعِبَادِ",
       "translation": "And Allah is full of kindness and tender compassion to His servants.",
-      "surah": "Al-Baqarah 2:207"
+      "reference": "Surah Al-Baqarah 2:207"
     },
-    "howToLive": "Soften your tongue and temper your interactions with extreme gentleness. Pay sensitive attention to the unvoiced pain of those around you—elders, dependents, and children—and spare them unnecessary hardship before they even need to ask.",
-    "dua": "اللَّهُمَّ يَا رَءُوفُ، ارْأَفْ بِي فِي جَمِيعِ أَحْوَالِي، وَعَطِّفْ عَلَيَّ قُلُوبَ عِبَادِكَ الصَّالِحِينَ (O Allah, O Tenderly Compassionate, show exquisite gentleness to me in all my states, and incline towards me the hearts of Your righteous servants).",
+    "revelationMeaning": "Ra'fah is recognized as the most tender, delicate, and focused manifestation of mercy (rahmah). While general mercy may at times involve stern measures for ultimate benefit, ra'fah is pure gentleness that shields the fragile soul from pain and eases burdens before they become overwhelming. Allah's ra'fah is manifested in religious dispensations for travelers and the sick, and in His constant care for the vulnerable.",
+    "quranicReflection": "In Surah Al-Hadid (57:9) and elsewhere, Allah pairs Ar-Ra'uf with Ar-Rahim. Ar-Ra'uf reflects the delicate gentleness that comforts the weary and reassures the believer that Allah does not burden any soul beyond its capacity.",
+    "response": "Treat those around you with gentle empathy, particularly children, elders, and those experiencing distress. Strive to alleviate difficulties for others before they even need to ask.",
+    "heroSummary": "The Profoundly Kind and Compassionate whose delicate tenderness averts harm and cradles the weary soul.",
+    "authenticDua": null,
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ يَا رَؤُوفُ، ارْأَفْ بِنَا فِي جَمِيعِ أُمُورِنَا، وَاصْرِفْ عَنَّا السُّوءَ وَالْمَكْرُوهَ، وَامْلَأْ قُلُوبَنَا رَأْفَةً وَرَحْمَةً",
+      "translation": "O Allah, O Profoundly Kind, show tenderness to us in all our affairs, turn away from us harm and misfortune, and fill our hearts with compassion and mercy.",
+      "reference": "Traditional reverent supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "gentleness",
       "tender",
+      "comfort",
       "sorrow",
-      "exhaustion",
-      "comfort"
+      "exhaustion"
     ]
   },
   {
     "id": 84,
     "arabic": "مَالِكُ الْمُلْكِ",
     "transliteration": "Mālik-ul-Mulk",
-    "meaning": "The Sovereign Owner of Absolute Dominion",
+    "meaning": "The Owner of all dominion",
     "root": "م-ل-ك (Meem-Lam-Kaf)",
-    "rootMeaning": "Signifies possessing complete, unrestricted mastery, ownership, and undisputed authority to govern, dispose, bestow, or withdraw dominion across the entire cosmic realm.",
+    "rootMeaning": "Signifies total ownership, complete sovereign control, and unrestricted authority to govern and dispose of possessions.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Theological discourse highlights the magnificent compound majesty of this title. While 'Al-Malik' means the King and 'Al-Malik' means the Owner, 'Malik-ul-Mulk' means the Sovereign who owns sovereignty itself. Earthly kings rule over citizens but do not own their souls, bodies, or land; earthly property owners own land but possess no divine mandate to govern or decree life and death. Allah is the sole entity who holds both total ownership (Milk) and total legislative sovereignty (Mulk). Furthermore, He distributes portions of worldly kingship, influence, and wealth to whom He wills as a temporary test, and strips it away in an instant when His decree arrives.",
-    "nakExplanation": "Linguistic reflection focuses on the profound rhetorical cadence of Surah Ali 'Imran (3:26): 'Qul Allahumma Malika al-Mulk tu'til-mulka man tasha'u wa tanzi'ul-mulka mimman tasha'.' Notice the vivid verb 'tanzi'u'—He pulls away power as though tearing off a fabric with sudden, forceful detachment. When human tyrants sit smugly in ivory towers acting as though their regimes will endure forever, this Name shatters all political anxieties. For the vulnerable believer observing worldly geopolitical upheavals, Malik-ul-Mulk grounds the mind in profound peace: kings are merely chess pieces on a board completely owned and governed by the true King of kings.",
-    "quranAyah": {
-      "arabic": "قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَن تَشَاءُ وَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ وَتُعِزُّ مَن تَشَاءُ وَتُذِلُّ مَن تَشَاءُ",
-      "translation": "Say, 'O Allah, Owner of Sovereignty, You give sovereignty to whom You will and You take sovereignty away from whom You will. You honor whom You will and You humble whom You will.'",
-      "surah": "Ali 'Imran 3:26"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَن تَشَاءُ وَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ وَتُعِزُّ مَن تَشَاءُ وَتُذِلُّ مَن تَشَاءُ ۖ بِيَدِكَ الْخَيْرُ ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+      "translation": "Say, 'O Allah, Owner of all dominion, You give dominion to whom You will and You take dominion away from whom You will. You honor whom You will and You humble whom You will. In Your hand is all good. Indeed, You are over all things capable.'",
+      "reference": "Surah Ali 'Imran 3:26"
     },
-    "howToLive": "Never become intoxicated by whatever small realm of authority you hold—your home, business, wealth, or title. Treat all possessions as temporary trusts loaned by the True Owner, and bow in deep humility knowing that what was gifted today can be reclaimed tomorrow.",
-    "dua": "اللَّهُمَّ مَالِكَ الْمُلْكِ، تُؤْتِي الْمُلْكَ مَن تَشَاءُ، وَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ، بِيَدِكَ الْخَيْرُ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ (O Allah, Owner of Sovereignty, You give sovereignty to whom You will and take it from whom You will; in Your hand is all good, indeed You are over all things capable).",
+    "revelationMeaning": "This majestic title directly derives from Surah Ali 'Imran 3:26. It establishes that Allah is the ultimate Owner of kingship and dominion itself. Created rulers possess only transient, conditional custody over worldly realms, which Allah grants as a trial and strips away according to His decree. True sovereignty belongs exclusively to Him.",
+    "quranicReflection": "Surah Ali 'Imran highlights the rise and fall of nations and leaders under the sovereign hand of Malik-ul-Mulk. Remembering this truth frees the believer from being intimidated by worldly empires or despondent over worldly politics, knowing that every throne is temporary and subject to Allah's decree.",
+    "response": "View whatever authority, wealth, or influence you possess as a temporary trust to be managed with humility and accountability. Do not be haughty when elevated, nor despair when worldly circumstances shift.",
+    "heroSummary": "The Absolute Owner of all sovereignty and dominion, who grants authority and withdraws it according to supreme wisdom.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَن تَشَاءُ وَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ وَتُعِزُّ مَن تَشَاءُ وَتُذِلُّ مَن تَشَاءُ ۖ بِيَدِكَ الْخَيْرُ ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+      "translation": "O Allah, Owner of all dominion, You give dominion to whom You will and You take dominion away from whom You will. You honor whom You will and You humble whom You will. In Your hand is all good. Indeed, You are over all things capable.",
+      "reference": "Surah Ali 'Imran 3:26; also transmitted as a supplication in Al-Mu'jam al-Kabir lil-Tabarani"
+    },
+    "suggestedDua": null,
     "natureImage": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "power",
       "humility",
+      "surrender",
       "politics",
-      "anxiety",
-      "surrender"
+      "anxiety"
     ]
   },
   {
     "id": 85,
     "arabic": "ذُو الْجَلَالِ وَالْإِكْرَامِ",
     "transliteration": "Dhū-l-Jalāli wal-Ikrām",
-    "meaning": "The Possessor of Ineffable Majesty and Supreme Generosity",
+    "meaning": "Possessor of Majesty and Honor",
     "root": "ج-ل-ل / ك-ر-م (Jeem-Lam-Lam / Kaf-Ra-Meem)",
-    "rootMeaning": "A dual divine foundation combining 'Jalal' (sublime grandeur, transcendent awe, and unapproachable majesty) with 'Ikram' (noble benevolence, exquisite honor, and lavish honoring of creation).",
+    "rootMeaning": "Combines jalāl (sublime awe, absolute majesty, and unassailable grandeur) with ikrām (noble generosity, honoring, and lavish beneficence).",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Theological analysis notes that this magnificent title holds an exalted status among the Names of Allah; many companions and classical scholars, including Ibn Al-Qayyim, regarded it as containing Al-Ism al-A'zam (The Supreme Name). The Prophet ﷺ explicitly urged: 'Alizzu bi Dhi-l-Jalali wal-Ikram' ('Cling steadfastly to invoking: O Possessor of Majesty and Honor!'). The combination is philosophically breathtaking: 'Jalal' evokes awe, trembling reverence, and recognition of His absolute perfection that transcends creation; 'Ikram' inspires intimacy, affectionate longing, and overflowing gratitude. One inspires fear that prevents sin, while the other inspires love that compels devotion.",
-    "nakExplanation": "Linguistic reflection illuminates the balance in human emotional architecture. If you only perceive someone as majestic and terrifying, you flee from them; if you perceive someone only as generous and soft, you may take them for granted or treat them with casual carelessness. Allah binds both realities together. He is the Possessor of awe-inspiring grandeur that makes mountains crumble, yet He bends down with 'Ikram'—He not only showers you with gifts, but He bestows 'Karamah' (dignity and honor) upon the humble servant who bows before Him.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "تَبَارَكَ اسْمُ رَبِّكَ ذِي الْجَلَالِ وَالْإِكْرَامِ",
-      "translation": "Blessed is the name of your Lord, Owner of Majesty and Honor.",
-      "surah": "Ar-Rahman 55:78"
+      "translation": "Blessed is the name of your Lord, Possessor of Majesty and Honor.",
+      "reference": "Surah Ar-Rahman 55:78"
     },
-    "howToLive": "Hold deep reverence for the sacred boundaries of Allah, never treating His commands casually; simultaneously, honor your fellow human beings with genuine generosity and respect, recognizing the dignity bestowed upon the creation by the Lord of Majesty and Honor.",
-    "dua": "يَا ذَا الْجَلَالِ وَالْإِكْرَامِ، أَسْأَلُكَ الْفَوْزَ بِالْجَنَّةِ وَالنَّجَاةَ مِنَ النَّارِ، وَأَنْ تَحْشُرَنَا مَعَ الْأَبْرَارِ (O Possessor of Majesty and Honor, I ask You for triumph with Paradise, salvation from the Fire, and that You resurrect us among the righteous).",
+    "revelationMeaning": "This composite title balances awe and reverence (Jalāl) with love and hope (Ikrām). Allah possesses supreme majesty that inspires deep awe, yet He is also the One who bestows honor, dignity, and bounties upon His creation. The Prophet ﷺ specifically commanded believers to cling to this Name in supplication, using the proper vocative form: 'يَا ذَا الْجَلَالِ وَالْإِكْرَامِ' (Yā Dhal-Jalāli wal-Ikrām).",
+    "quranicReflection": "In Surah Ar-Rahman (55:27 & 55:78), Allah states that while all transient creation will pass away, the Face of your Lord remains, Possessor of Majesty and Honor. This grounds the heart in the permanence of divine majesty above all mortal decay.",
+    "response": "Combine profound awe and reverence of Allah with eager hope in His bounty. Honor the commands of Allah in your daily life, and treat all fellow humans with the dignity that reflects His honoring of creation.",
+    "heroSummary": "The Possessor of unassailable majesty and noble generosity, whom creation reveres with trembling awe and loving gratitude.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ، تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ",
+      "translation": "O Allah, You are Peace and from You comes peace. Blessed are You, O Possessor of Majesty and Honor.",
+      "reference": "Sahih Muslim 592"
+    },
+    "suggestedDua": {
+      "arabic": "يَا ذَا الْجَلَالِ وَالْإِكْرَامِ، أَسْأَلُكَ رِضَاكَ وَالْجَنَّةَ، وَأَعُوذُ بِكَ مِنْ سَخَطِكَ وَالنَّارِ",
+      "translation": "O Possessor of Majesty and Honor, I ask You for Your pleasure and Paradise, and I seek refuge in You from Your anger and the Fire.",
+      "reference": "Traditional reverent supplication invoking the Prophet's instruction in Jami` at-Tirmidhi 3525"
+    },
     "natureImage": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "majesty",
-      "blessings",
       "honor",
+      "awe",
       "gratitude",
-      "awe"
+      "blessings"
     ]
   },
   {
     "id": 86,
     "arabic": "الْمُقْسِطُ",
     "transliteration": "Al-Muqsiṭ",
-    "meaning": "The Perfectly Equitable, The Restorer of Sacred Balance",
+    "meaning": "The One who establishes perfect justice",
     "root": "ق-س-ط (Qaf-Seen-Ta)",
-    "rootMeaning": "Conveys establishing rigorous equity and harmony; in the fourth verbal form (aqsaṭa), it carries the fascinating grammatical sense of removing 'qasṭ' (crookedness and injustice) to restore impeccable equilibrium.",
+    "rootMeaning": "In the base form (qasaṭa), it means to deviate or act unjustly; in the causative fourth form (aqsaṭa), it signifies removing unfairness and establishing exact equity and fairness.",
     "category": "Justice & Truth",
-    "yqExplanation": "Classical commentary notes a masterclass in Arabic morphology: the base triliteral verb 'qasaṭa' actually means to act unjustly or swerve from the truth (from which 'al-qasitun' in Surah Al-Jinn refers to firewood of Hell), whereas the causative form 'aqsaṭa' (from which 'Al-Muqsiṭ' is derived) employs the hamza of removal (hamzat al-izalah), meaning to eradicate unfairness and establish absolute equity. Scholars such as Imam Al-Ghazali explain that Al-Muqsiṭ does not merely dispense justice by penalizing wrongdoers; He is the One who satisfies the victim of injustice by compensating them with divine bounty while guiding the scales to absolute perfection.",
-    "nakExplanation": "Linguistic insight shows that 'Qist' is not merely cold, mechanical equality where everyone receives the identical share regardless of context; 'Qist' is equity—giving each individual exactly what restores harmony, health, and dignity to their unique condition. In a world fraught with favoritism, broken promises, systemic bias, and emotional inequality, knowing Al-Muqsiṭ brings immense relief. He observes every hidden sacrifice and every unfair compromise you endured in silence, and promises that no ounce of good will be lost.",
-    "quranAyah": {
-      "arabic": "شَهِدَ اللَّهُ أَنَّهُ لَا إِلَٰهَ إِلَّا هُوَ وَالْمَلَائِكَةُ وَأُولُو الْعِلْمِ قَائِمًا بِالْقِسْطِ",
-      "translation": "Allah witnesses that there is no deity except Him, and so do the angels and those of knowledge—maintaining [creation] in justice.",
-      "surah": "Ali 'Imran 3:18"
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
+      "arabic": "شَهِدَ اللَّهُ أَنَّهُ لَا إِلَٰهَ إِلَّا هُوَ وَالْمَلَائِكَةُ وَأُولُو الْعِلْمِ قَائِمًا بِالْقِسْطِ ۚ لَا إِلَٰهَ إِلَّا هُوَ الْعَزِيزُ الْحَكِيمُ",
+      "translation": "Allah witnesses that there is no deity except Him, and so do the angels and those of knowledge—maintaining creation in justice. There is no deity except Him, the Exalted in Might, the Wise.",
+      "reference": "Surah Ali 'Imran 3:18"
     },
-    "howToLive": "Be fiercely honest and equitable in your daily decisions, especially when judgment favors your rival or disadvantages your loved ones. In disputes, seek not merely to win, but to establish fairness and heal bruised relationships.",
-    "dua": "اللَّهُمَّ يَا مُقْسِطُ، أَقِمْ فِي قَلْبِي الْعَدْلَ، وَاجْعَلْنِي مِنَ الْمُقْسِطِينَ الَّذِينَ تُحِبُّهُمْ، وَأَرْضِ عَنِّي خُصَمَائِي يَوْمَ الْقِيَامَةِ (O Allah, O Perfectly Equitable, establish justice firmly in my heart, make me among the equitable whom You love, and satisfy my disputants on my behalf on the Day of Resurrection).",
+    "revelationMeaning": "Al-Muqsit is included in the traditional 99 Name list, though in the Qur'an the attribute appears in verbal and participial descriptions (such as Allah upholding creation with qist: 'Qā’iman bil-qisṭ', and loving those who act with equity: 'Yuḥibbu al-muqsiṭīn'). It requires scholarly review as a standalone nominal name. Linguistically and theologically, Al-Muqsit is not merely vague 'balance' or passive neutrality; it is active, flawless equity that rectifies wrongdoing, restores rights to the oppressed from the oppressor, and awards each soul exactly what it deserves without the slightest injustice.",
+    "quranicReflection": "Surah Ali 'Imran affirms that divine oneness and universal maintenance are fundamentally rooted in justice (qist). In human affairs, justice is often flawed by bias, ignorance, or power dynamics; with Allah, every measure of equity is precise, comprehensive, and incorruptible.",
+    "response": "Uphold rigorous fairness in your personal, family, and professional life, even when it runs contrary to your own immediate interests or those of your closest friends and relatives.",
+    "heroSummary": "The One who establishes perfect justice and exact equity, removing injustice and delivering every rightful due.",
+    "authenticDua": null,
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ يَا عَدْلُ يَا مَنْ يَقُومُ بِالْقِسْطِ، أَلْهِمْنِي الْعَدْلَ فِي الْغَضَبِ وَالرِّضَا، وَاجْعَلْنِي مِنَ الْمُقْسِطِينَ الَّذِينَ تُحِبُّهُمْ",
+      "translation": "O Allah, O Just, O One who maintains all with equity, inspire me to fairness in anger and pleasure, and make me among the equitable whom You love.",
+      "reference": "Traditional reverent supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
-      "fairness",
-      "conflict",
-      "peace",
       "justice",
-      "integrity"
+      "fairness",
+      "integrity",
+      "peace",
+      "conflict"
     ]
   },
   {
     "id": 87,
     "arabic": "الْجَامِعُ",
     "transliteration": "Al-Jāmi‘",
-    "meaning": "The Gatherer, The Uniter of Dispersed Realities",
+    "meaning": "The Gatherer",
     "root": "ج-م-ع (Jeem-Meem-Ayn)",
-    "rootMeaning": "Signifies drawing together scattered, fragmented, or diverse elements into a unified whole, whether across physical space, temporal history, or inner emotional states.",
-    "category": "Creation & Sustenance",
-    "yqExplanation": "Classical scholars note that Al-Jāmi‘ operates on multiple profound levels: cosmologically, He harmonizes disparate and opposite forces across the universe (heat and cold, moisture and dryness, earth and sky); eschatologically, He gathers all of humanity—every scattered cell, cremated atom, or decomposed bone—onto the plain of resurrection on Yawm al-Jami' (The Day of Gathering); and spiritually, He unites separated loved ones and harmonizes divided hearts. As Ibn Al-Qayyim describes, no particle in the depths of the ocean or the dust of the earth escapes His gathering decree.",
-    "nakExplanation": "Linguistic and psychological reflection reveals how often human beings feel mentally scattered and emotionally fragmented. You lose something precious—a relationship, your focus, your inner peace, or your sense of direction—and everything feels broken into a thousand pieces. Al-Jāmi‘ is the One who brings the pieces back together. In classical tradition, when something is lost or a heart feels shattered, one invokes Al-Jāmi‘ because He who assembles decomposed dust across billions of years of history can effortlessly reunite you with what is best for your dunya and akhirah.",
-    "quranAyah": {
+    "rootMeaning": "Signifies assembling, gathering, and bringing together diverse, scattered, or separated entities into one unified gathering.",
+    "category": "Majesty & Sovereignty",
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
       "arabic": "رَبَّنَا إِنَّكَ جَامِعُ النَّاسِ لِيَوْمٍ لَّا رَيْبَ فِيهِ ۚ إِنَّ اللَّهَ لَا يُخْلِفُ الْمِيعَادَ",
-      "translation": "Our Lord, surely You will gather the people for a Day about which there is no doubt. Indeed, Allah does not break His promise.",
-      "surah": "Ali 'Imran 3:9"
+      "translation": "Our Lord, surely You will gather mankind for a Day about which there is no doubt. Indeed, Allah does not break His promise.",
+      "reference": "Surah Ali 'Imran 3:9"
     },
-    "howToLive": "Strive to be an instrument of unity rather than division. Heal severed family ties, reconcile friends who have fallen into discord, and gather your own scattered thoughts and intentions into a single sincere purpose for Allah.",
-    "dua": "اللَّهُمَّ يَا جَامِعَ النَّاسِ لِيَوْمٍ لَا رَيْبَ فِيهِ، اجْمَعْ بَيْنِي وَبَيْنَ ضَالَّتِي، وَاجْمَعْ عَلَى الْهُدَى شَمْلِي، وَأَلِّفْ بَيْنَ قُلُوبِنَا (O Allah, O Gatherer of mankind for a Day in which there is no doubt, reunite me with what I have lost, unite my scattered affairs upon guidance, and harmonize our hearts).",
+    "revelationMeaning": "In the Qur'an, this attribute appears in construct form ('Jāmi‘un-Nās' - Gatherer of mankind) rather than as an isolated standalone noun; it is preserved in the traditional list and marked for evidence review. Its primary Qur'anic application is eschatological: gathering all created beings—across every generation, land, and era—onto the Plain of Resurrection for final judgment. Beyond this primary sense, He also gathers complementary realities across the cosmos and harmonizes divided hearts upon truth.",
+    "quranicReflection": "Surah Ali 'Imran 3:9 pairs the gathering of mankind with the unshakeable truth of the divine promise. No bone decomposed in the soil and no atom dispersed in the ocean depths is beyond His power to reconstitute and assemble on the Day of Reckoning.",
+    "response": "Keep the Day of Gathering constantly in mind when making moral choices. Strive in this world to bring hearts together in harmony, heal fractured ties, and unite your scattered thoughts in focused devotion to Allah.",
+    "heroSummary": "The Gatherer of all creation for the Day of Judgment, from whose cosmic assembly no creature can hide.",
+    "authenticDua": null,
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ يَا جَامِعَ النَّاسِ لِيَوْمٍ لَا رَيْبَ فِيهِ، اجْمَعْ قُلُوبَنَا عَلَى طَاعَتِكَ، وَاجْمَعْ عَلَى الْهُدَى أَمْرَنَا، وَاحْشُرْنَا فِي زُمْرَةِ الصَّالِحِينَ",
+      "translation": "O Allah, O Gatherer of mankind for a Day about which there is no doubt, gather our hearts upon Your obedience, unite our affairs upon guidance, and resurrect us among the righteous.",
+      "reference": "Traditional reverent supplication invoking Surah Ali 'Imran 3:9"
+    },
     "natureImage": "https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "reunion",
-      "lost items",
       "unity",
       "hope",
-      "heartbreak"
+      "heartbreak",
+      "lost items"
     ]
   },
   {
     "id": 88,
     "arabic": "الْغَنِيُّ",
     "transliteration": "Al-Ghaniyy",
-    "meaning": "The Self-Sufficient, The Rich Beyond All Measure",
+    "meaning": "The One completely free of need",
     "root": "غ-ن-ي (Ghayn-Nun-Ya)",
-    "rootMeaning": "Denotes complete self-sufficiency, intrinsic abundance, and being so utterly devoid of any need or deficiency that reliance upon anything outside oneself is an absolute impossibility.",
+    "rootMeaning": "Signifies absolute independence, intrinsic sufficiency, and having no need of anything or anyone in essence, attributes, or actions.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Classical theological treatises explain that while human wealth is defined by the accumulation of external possessions (which in reality increases one's vulnerability and dependence upon caretakers, banks, and security), Allah's Ghina (richness) is essential, absolute, and independent of all external existence. He has no need for the worship of the obedient, nor is He harmed by the rebellion of the disobedient. If all creation from the beginning of time to the end of eternity were as pious as the most righteous heart among them, it would not add a speck to His kingdom. He is Al-Ghaniyy, while all creation is intrinsically Faqir (destitute and dependent).",
-    "nakExplanation": "Linguistic contemplation illuminates the liberation embedded within this Name. When you realize that Allah has zero personal agenda or need for you, you understand that every single commandment, prohibition, and piece of divine guidance is purely for your own protection and elevation. Human relationships often carry strings attached—people give because they expect something in return: affirmation, status, or companionship. But Al-Ghaniyy gives purely out of noble benevolence. Surrendering your worries to the One who needs nothing eliminates the anxiety of pleasing fickle human masters.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "يَا أَيُّهَا النَّاسُ أَنتُمُ الْفُقَرَاءُ إِلَى اللَّهِ ۖ وَاللَّهُ هُوَ الْغَنِيُّ الْحَمِيدُ",
-      "translation": "O mankind, you are those in need of Allah, while Allah is the Free of need, the Praiseworthy.",
-      "surah": "Fatir 35:15"
+      "translation": "O mankind, you are those in need of Allah, while Allah is the One completely free of need, the Praiseworthy.",
+      "reference": "Surah Fatir 35:15"
     },
-    "howToLive": "Recognize your radical, moment-by-moment dependence upon Allah for every breath and heartbeat. Free yourself from desperate dependency on people's approval, cultivating true 'Ghinā an-Nafs' (wealth of the soul) by finding contentment in what Allah has apportioned.",
-    "dua": "اللَّهُمَّ يَا غَنِيُّ يَا حَمِيدُ، أَغْنِنِي بِحَلَالِكَ عَنْ حَرَامِكَ، وَبِطَاعَتِكَ عَنْ مَعْصِيَتِكَ، وَبِفَضْلِكَ عَمَّنْ سِوَاكَ (O Allah, O Self-Sufficient, O Praiseworthy, enrich me with Your lawful against Your unlawful, with Your obedience against Your disobedience, and by Your bounty make me independent of all besides You).",
+    "revelationMeaning": "Al-Ghaniyy denotes that Allah is completely self-sufficient and free of every need. All creation is fundamentally dependent (faqīr) upon Him for every breath, sustenance, and continuation of existence, while He needs nothing from creation. The obedience of the righteous brings Him no benefit, and the rebellion of the disobedient causes Him no harm.",
+    "quranicReflection": "Surah Fatir sets forth the profound contrast between created destitution and divine self-sufficiency. Because Allah needs nothing from His servants, every command and boundary He ordains is solely for human benefit and protection, never out of divine self-interest.",
+    "response": "Acknowledge your utter, moment-by-moment dependence upon Allah. Free yourself from the slavery of seeking validation from creation, finding genuine independence of soul (ghinā an-nafs) through reliance on Him alone.",
+    "heroSummary": "The One completely free of need, upon whom all creation depends while He needs nothing from any creature.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَى وَالتُّقَى وَالْعَفَافَ وَالْغِنَى",
+      "translation": "O Allah, I ask You for guidance, piety, chastity, and self-sufficiency.",
+      "reference": "Sahih Muslim 2721"
+    },
+    "suggestedDua": null,
     "natureImage": "https://images.unsplash.com/photo-1516912481808-3406841bd33c?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "independence",
-      "poverty",
-      "trust",
       "contentment",
-      "financial stress"
+      "trust",
+      "financial stress",
+      "poverty"
     ]
   },
   {
     "id": 89,
     "arabic": "الْمُغْنِي",
     "transliteration": "Al-Mughnī",
-    "meaning": "The Enricher, The Bestower of True Wealth and Sufficiency",
+    "meaning": "The Giver of sufficiency",
     "root": "غ-ن-ي (Ghayn-Nun-Ya)",
-    "rootMeaning": "The causative form that signifies actively lifting someone from deprivation into abundance, satisfying their deepest longings, and pouring sufficiency into their life and heart.",
+    "rootMeaning": "The causative form meaning to enrich, satisfy need, bestow sufficiency, and free someone from dependence on others.",
     "category": "Creation & Sustenance",
-    "yqExplanation": "Classical commentary pairs Al-Ghaniyy with Al-Mughnī: while Al-Ghaniyy is the One who is intrinsically Self-Sufficient in His essence, Al-Mughnī is the One whose grace overflows onto others, liberating them from need. Scholars like Imam Al-Ghazali explain that true enrichment from Al-Mughnī is twofold: the lesser enrichment is material provision (wealth, resources, and physical sustenance), while the supreme enrichment is spiritual contentment (Ghinā al-Qalb). When Allah enriches the heart of a believer with faith and certainty, that person walks with kings even if they possess only a crust of bread.",
-    "nakExplanation": "Linguistic nuance highlights the transition from helplessness to self-assurance: 'Wa wawajadaka 'a'ilan fa-aghna' ('And He found you in poverty and made you self-sufficient'). When someone is struggling financially or feeling empty inside, they often chase worldly assets thinking numbers in a bank account will grant security, only to find anxiety multiplying. Al-Mughnī does not just give you things; He removes the persistent ache of need from your chest. He makes you feel full, dignified, and secure even when the material means around you seem scarce.",
-    "quranAyah": {
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
       "arabic": "وَأَنَّهُ هُوَ أَغْنَىٰ وَأَقْنَىٰ",
-      "translation": "And that it is He who enriches and suffices.",
-      "surah": "An-Najm 53:48"
+      "translation": "And that it is He who enriches and grants sufficiency.",
+      "reference": "Surah An-Najm 53:48"
     },
-    "howToLive": "Be a conduit of enrichment for others: share your resources, teach valuable skills, and offer encouraging words that build self-worth in those who feel defeated. Guard your heart against greed by remembering that true wealth is an enriched soul, not abundant possessions.",
-    "dua": "اللَّهُمَّ يَا مُغْنِي، أَغْنِ فَقْرِي، وَاشْرَحْ صَدْرِي، وَاجْعَلْ غِنَايَ فِي قَلْبِي، وَبَارِكْ لِي فِيمَا رَزَقْتَنِي (O Allah, O Enricher, remedy my poverty, expand my chest, place my wealth within my heart, and bless me in all that You have provided for me).",
+    "revelationMeaning": "Al-Mughni is preserved in the traditional list of names and requires scholarly review as a standalone nominal form, as the Qur'an uses verbal forms ('Aghnā wa Aqnā'). Critically, His enrichment must not be artificially restricted to 'inner wealth' or spiritual contentment alone: Al-Mughni bestows both material sufficiency (wealth, provision, resources) and spiritual sufficiency (peace of mind, contentment, faith) according to His wisdom.",
+    "quranicReflection": "In Surah An-Najm 53:48 and Surah Ad-Duha 93:8 ('And He found you poor and made you self-sufficient'), Allah affirms that all enrichment, whether tangible resources or internal contentment, originates from His generosity.",
+    "response": "Ask Allah for both material halal provision and contentment of the heart. Be a means of providing sufficiency for others by supporting the needy and sharing your knowledge and wealth.",
+    "heroSummary": "The Giver of sufficiency who enriches His creation with both material provision and inner contentment according to His wisdom.",
+    "authenticDua": null,
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ يَا غَنِيُّ يَا كَرِيمُ، أَغْنِنِي بِحَلَالِكَ عَنْ حَرَامِكَ، وَبِطَاعَتِكَ عَنْ مَعْصِيَتِكَ، وَبِفَضْلِكَ عَمَّنْ سِوَاكَ",
+      "translation": "O Allah, O Self-Sufficient, O Generous, suffice me with Your lawful against Your unlawful, with Your obedience against Your disobedience, and by Your bounty make me independent of all besides You.",
+      "reference": "Jami` at-Tirmidhi 3563 (Hasan)"
+    },
     "natureImage": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "wealth",
-      "content",
       "prosperity",
       "financial stress",
+      "contentment",
       "gratitude"
     ]
   },
@@ -2316,19 +3173,26 @@ export const NAMES_DATA = [
     "id": 90,
     "arabic": "الْمَانِعُ",
     "transliteration": "Al-Māni‘",
-    "meaning": "The Withholder, The Protective Shield",
+    "meaning": "The Withholder and Preventer",
     "root": "م-ن-ع (Meem-Nun-Ayn)",
-    "rootMeaning": "Signifies preventing, defending, and withholding; it conveys the dual imagery of a fortified sanctuary that shields what is vulnerable from harm, and the deliberate restriction of something out of higher wisdom.",
-    "category": "Protection & Trust",
-    "yqExplanation": "Classical theology emphasizes that Al-Māni‘ must never be viewed as a negative attribute of stinginess or arbitrary deprivation. As Ibn Al-Qayyim beautifully articulated: 'His withholding is in reality a form of giving' (Man'uhu 'Ata'). When Allah withholds something you desperately craved—a specific job, marriage proposal, financial windfall, or opportunity—it is not because He lacks resources, but because His all-encompassing knowledge sees that granting it at that moment would poison your spiritual life, destroy your character, or lead to hidden calamity. He withholds out of profound protective love.",
-    "nakExplanation": "Linguistic and psychological reflection offers profound solace during experiences of rejection. When a door slams in your face, the immediate human reaction is bitterness, rejection, and grief. But when you understand Al-Māni‘—the Divine Shield—you reframe the closed door: it wasn't a punishment, it was a divine interception. Just as a loving parent physically snatches a shiny, razor-sharp blade away from a crying toddler who thinks they are being deprived of a toy, Al-Māni‘ blocks things that would cut our souls to pieces.",
-    "quranAyah": {
+    "rootMeaning": "Signifies withholding, preventing, guarding, and shielding from access or harm.",
+    "category": "Power & Might",
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
       "arabic": "مَّا يَفْتَحِ اللَّهُ لِلنَّاسِ مِن رَّحْمَةٍ فَلَا مُمْسِكَ لَهَا ۖ وَمَا يُمْسِكْ فَلَا مُرْسِلَ لَهُ مِن بَعْدِهِ ۚ وَهُوَ الْعَزِيزُ الْحَكِيمُ",
       "translation": "Whatever mercy Allah opens to people, none can withhold; and whatever He withholds, none can release after Him. And He is the Exalted in Might, the Wise.",
-      "surah": "Fatir 35:2"
+      "reference": "Surah Fatir 35:2"
     },
-    "howToLive": "Practice beautiful acceptance (Rida) when things do not go your way. When you face denial or closed doors, trust that Allah's withholding is your protection. Likewise, withhold your tongue, hands, and desires from anything that incurs His displeasure.",
-    "dua": "اللَّهُمَّ لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ، وَلَا يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ (O Allah, none can withhold what You have given, and none can give what You have withheld, and the wealth and majesty of the wealthy person cannot benefit him against You).",
+    "revelationMeaning": "Al-Mani' is included in the traditional 99 Name list, while in authentic Sunnah its verbal participle is firmly affirmed: 'O Allah, none can withhold what You give, and none can give what You withhold' (Sahih al-Bukhari 844). It should not be reduced merely to 'preventer of harm'; rather, Allah withholds and prevents according to His transcendent wisdom. When He withholds a worldly matter, it is not due to inability or scarcity, but out of wise guidance, protection, or a higher purpose.",
+    "quranicReflection": "Surah Fatir 35:2 affirms the absolute sovereignty of Allah's giving and withholding. When doors close in life, the believer recognizes that no created entity has the ultimate power to block divine mercy, nor can anyone force an opening that Allah has decreed closed.",
+    "response": "Cultivate contented acceptance when aspirations are denied, trusting that Allah's withholding is rooted in wisdom and protection. Restrain yourself from that which Allah has prohibited.",
+    "heroSummary": "The Withholder and Preventer who gives and restricts with absolute sovereignty and perfect wisdom.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ، وَلَا يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ",
+      "translation": "O Allah, none can withhold what You have given, and none can give what You have withheld, and no fortune can benefit the fortunate person against You.",
+      "reference": "Sahih al-Bukhari 844, Sahih Muslim 593"
+    },
+    "suggestedDua": null,
     "natureImage": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "protection",
@@ -2342,45 +3206,59 @@ export const NAMES_DATA = [
     "id": 91,
     "arabic": "الضَّارُّ",
     "transliteration": "Aḍ-Ḍārr",
-    "meaning": "The Creator of Trials, The Permitter of Affliction",
+    "meaning": "No harm occurs except by His permission and wisdom",
     "root": "ض-ر-ر (Dad-Ra-Ra)",
-    "rootMeaning": "Denotes harm, adversity, or distress; in the divine context, it signifies that no affliction, pain, or difficulty can occur in existence without His sovereign will and supreme wisdom.",
+    "rootMeaning": "Signifies harm, adversity, or affliction, designating in theological context that no detriment can touch creation except by His sovereign decree and wisdom.",
     "category": "Power & Might",
-    "yqExplanation": "Classical scholars, including Imam Al-Ghazali, emphasize an essential theological rule of adab (spiritual courtesy): this attribute is traditionally mentioned in tandem with its complement, An-Nāfi‘ (The Bestower of Benefit)—'Ad-Darr An-Nafi''. Attributing harm isolated from benefit can mislead the untrained mind. In Islamic monotheism, nothing harms except by Allah's permission, and nothing benefits except through His grace. Adversity is not created for malicious intent, but as a crucible that burns away spiritual rust, humbles arrogant souls, and directs desperate hearts back to their Creator.",
-    "nakExplanation": "Linguistic analysis points to how the Qur'an contextualizes hardship: 'Wa in yamsaska Allahu bi-durrin fala kashifa lahu illa Huw' ('And if Allah should touch you with adversity, there is none who can remove it except Him'). Notice the gentle word 'touch' (yamsaska)—hardship in this world is merely a temporary graze compared to eternity. When illness, financial ruin, or grief strikes, knowing that Allah is the ultimate controller of that affliction liberates the mind from superstitious dread of black magic, human enemies, or chaotic bad luck. If He decreed the storm, He alone holds the power to turn it into sunshine.",
-    "quranAyah": {
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
       "arabic": "وَإِن يَمْسَسْكَ اللَّهُ بِضُرٍّ فَلَا كَاشِفَ لَهُ إِلَّا هُوَ ۖ وَإِن يَمْسَسْكَ بِخَيْرٍ فَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
       "translation": "And if Allah should touch you with adversity, there is none who can remove it except Him; and if He touches you with good, then He is over all things capable.",
-      "surah": "Al-An'am 6:17"
+      "reference": "Surah Al-An'am 6:17"
     },
-    "howToLive": "When adversity touches your life, bypass bitterness and blame. Turn immediately to the One who allowed the trial, recognizing that the very medicine that cures your spiritual arrogance often tastes bitter to the palate.",
-    "dua": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الضُّرِّ فِي الدِّينِ وَالدُّنْيَا، رَبِّ إِنِّي مَسَّنِيَ الضُّرُّ وَأَنْتَ أَرْحَمُ الرَّاحِمِينَ (O Allah, I seek refuge in You from harm in religion and worldly life. My Lord, indeed adversity has touched me, and You are the Most Merciful of the merciful).",
+    "revelationMeaning": "Ad-Darr is from the traditional list and requires a strong evidence note. Scholars emphasize that it is not established as a standalone Qur'anic nominal name, and spiritual courtesy dictates that it should not be invoked in isolation, but paired with its complement: An-Nafi' (The Benefactor). Islamic monotheism affirms that no harm occurs in the universe except by Allah's permission, will, and wisdom. Adversity is never gratuitous; it serves as testing, expiation, purification, or warning.",
+    "quranicReflection": "In Surah Al-An'am 6:17 and Surah Yunus 10:107, the Qur'an teaches that harm and benefit are solely under divine command. This completely liberates the human soul from the fear of charms, omens, superstition, or created entities, knowing that none can harm without Allah's sovereign decree.",
+    "response": "When adversity strikes, turn immediately to Allah rather than falling into despair, superstition, or blaming secondary causes. Recognize trials as opportunities for patience and spiritual elevation.",
+    "heroSummary": "The Sovereign Lord without whose permission and wisdom no harm can touch creation, paired always with His power to benefit.",
+    "authenticDua": null,
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ يَا مَالِكَ النَّفْعِ وَالضَّرِّ، اكْشِفْ عَنِّي كُلَّ ضُرٍّ، وَاصْرِفْ عَنِّي السُّوءَ، وَلَا تَكِلْنِي إِلَى أَحَدٍ سِوَاكَ",
+      "translation": "O Allah, O Sovereign over benefit and harm, remove from me every adversity, turn away from me all evil, and do not leave me to anyone other than You.",
+      "reference": "Traditional reverent supplication invoking Surah Al-An'am 6:17"
+    },
     "natureImage": "https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "trials",
-      "sickness",
       "hardship",
-      "pain",
-      "patience"
+      "sickness",
+      "patience",
+      "pain"
     ]
   },
   {
     "id": 92,
     "arabic": "النَّافِعُ",
     "transliteration": "An-Nāfi‘",
-    "meaning": "The Bestower of Benefit, The Source of All Good and Growth",
+    "meaning": "The One from whom all true benefit comes",
     "root": "ن-ف-ع (Nun-Fa-Ayn)",
-    "rootMeaning": "Signifies imparting genuine advantage, healing, nourishment, prosperity, and goodness that enriches the receiver without causing collateral harm.",
+    "rootMeaning": "Signifies imparting utility, good, nourishment, and beneficial outcomes.",
     "category": "Creation & Sustenance",
-    "yqExplanation": "Classical theology illustrates that every beneficial particle in creation—the cooling drop of water on a parched tongue, the healing efficacy of a medicinal compound, the comfort of companionship, and the dawn of guidance—is a direct manifestation of An-Nāfi‘. When a physician administers a treatment, the medicine has no autonomous power to heal; it is merely a physical cause, while An-Nāfi‘ is the One who breathes the capability of benefit into that cause. Recognizing this purifies the soul from attributing blessings to secondary intermediaries.",
-    "nakExplanation": "Linguistic reflection highlights the distinction between temporary material gains that rot into regret and true 'Naf'' (benefit) that endures into the akhirah. Often, human beings chase things they imagine will bring them delight, only to find them hollow or destructive. An-Nāfi‘ provides that which is wholesome, nourishing, and spiritually restorative. When you pray for benefit, you are asking for light that enriches your current day and stands as an eternal witness for you on the Day when worldly riches dissolve.",
-    "quranAyah": {
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
       "arabic": "قُل لَّا أَمْلِكُ لِنَفْسِي نَفْعًا وَلَا ضَرًّا إِلَّا مَا شَاءَ اللَّهُ",
       "translation": "Say, 'I hold not for myself the power of benefit or harm, except what Allah wills.'",
-      "surah": "Al-A'raf 7:188"
+      "reference": "Surah Al-A'raf 7:188"
     },
-    "howToLive": "Strive to be of immense benefit to everyone around you, as the Prophet ﷺ taught: 'The most beloved of people to Allah are those who are most beneficial to others.' Be a source of encouragement, practical help, and relief wherever you go.",
-    "dua": "اللَّهُمَّ يَا نَافِعُ، انْفَعْنِي بِمَا عَلَّمْتَنِي، وَعَلِّمْنِي مَا يَنْفَعُنِي، وَزِدْنِي عِلْمًا وَعَمَلًا يُقَرِّبُنِي إِلَيْكَ (O Allah, O Bestower of Benefit, benefit me with what You have taught me, teach me that which will benefit me, and increase me in knowledge and good deeds that draw me close to You).",
+    "revelationMeaning": "An-Nafi' is preserved in the traditional list and must be paired conceptually with Ad-Darr, reflecting complete divine control over both benefit and adversity. Every beneficial outcome—nourishment, health, knowledge, peace, and spiritual growth—originates from Allah's grace. It must be noted with scholarly care that recognizing Allah as the source of benefit does not imply guaranteed physical healing in every worldly trial, but that ultimate, wholesome benefit lies in what He decrees.",
+    "quranicReflection": "In Surah Al-A'raf 7:188, even the Prophet ﷺ is commanded to proclaim that he possesses no independent power to bring benefit or repel harm except as Allah wills. This directs human hope exclusively to the Creator rather than intermediaries.",
+    "response": "Strive to be a conduit of sincere benefit to people, seeking reward solely from Allah. When utilizing medicine or worldly means, acknowledge that the capacity to benefit is placed within them solely by Allah.",
+    "heroSummary": "The One from whom all genuine benefit and good flow, holding absolute sovereignty over every beneficial cause.",
+    "authenticDua": null,
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ يَا نَافِعُ، انْفَعْنَا بِمَا عَلَّمْتَنَا، وَعَلِّمْنَا مَا يَنْفَعُنَا، وَاجْعَلْنَا نَافِعِينَ لِعِبَادِكَ مُبَارَكِينَ أَيْنَمَا كُنَّا",
+      "translation": "O Allah, O Giver of benefit, benefit us with what You have taught us, teach us that which benefits us, and make us beneficial to Your servants and blessed wherever we may be.",
+      "reference": "Traditional reverent supplication adapted from Sunan Ibn Majah 251"
+    },
     "natureImage": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "health",
@@ -2394,51 +3272,65 @@ export const NAMES_DATA = [
     "id": 93,
     "arabic": "النُّورُ",
     "transliteration": "An-Nūr",
-    "meaning": "The Primordial Light, The Illuminator of All Realities",
+    "meaning": "The Light of the heavens and the earth",
     "root": "ن-و-ر (Nun-Waw-Ra)",
-    "rootMeaning": "Signifies radiant illumination that is intrinsically luminous in itself and actively reveals, manifests, and clarifies everything else from the obscurity of non-existence and confusion.",
+    "rootMeaning": "Signifies light, radiant illumination, and clarifying visibility that dispels darkness and reveals truth.",
     "category": "Wisdom & Knowledge",
-    "yqExplanation": "Classical commentary expounds extensively on Ayat an-Nur (Surah An-Nur 24:35): 'Allahu nuru as-samawati wal-ard'. Classical scholars explain that Allah is the Light of the heavens and earth in both a physical and spiritual sense. Physically, His light illuminates the cosmic spheres, stars, and skies; spiritually, His revelation illuminates the darkness of ignorance, confusion, and moral decay. Without physical light, the eye is completely blind even if healthy; likewise, without the divine light of revelation from An-Nūr, the human intellect, despite all its brilliance, stumbles in existential blindness and ethical bankruptcy.",
-    "nakExplanation": "Linguistic and visual contemplation of the Quranic parable in Surah An-Nur reveals an awe-inspiring depiction of the human soul: the niche, the glass lantern glowing like a radiant pearl, fueled by the oil of a blessed olive tree that is neither of the east nor of the west, whose oil well-nigh glows even untouched by fire—'Light upon Light'. The innate pure nature (Fitrah) inside the human heart is like that pristine oil; when the divine revelation of the Qur'an touches it, an explosive spiritual illumination occurs. When your soul feels clouded by despair, nihilism, or doubt, invoking An-Nūr cuts through the fog like a brilliant dawn.",
-    "quranAyah": {
-      "arabic": "اللَّهُ نُورُ السَّمَاوَاتِ وَالْأَرْضِ ۚ مَثَلُ نُورِهِ كَمِشْكَاةٍ فِيهَا مِصْبَاحٌ",
-      "translation": "Allah is the Light of the heavens and the earth. The example of His light is like a niche within which is a lamp.",
-      "surah": "An-Nur 24:35"
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
+      "arabic": "اللَّهُ نُورُ السَّمَاوَاتِ وَالْأَرْضِ ۚ مَثَلُ نُورِهِ كَمِشْكَاةٍ فِيهَا مِصْبَاحٌ ۖ الْمِصْبَاحُ فِي زُجَاجَةٍ ۖ الزُّجَاجَةُ كَأَنَّهَا كَوْكَبٌ دُرِّيٌّ",
+      "translation": "Allah is the Light of the heavens and the earth. The example of His light is like a niche within which is a lamp, the lamp is within glass, the glass as if it were a pearly star.",
+      "reference": "Surah An-Nur 24:35"
     },
-    "howToLive": "Let your conduct reflect divine illumination. Cultivate an aura of integrity, speak words that clarify rather than confuse, avoid the dark avenues of sin and deceit, and illuminate the lives of others with empathy and upright guidance.",
-    "dua": "اللَّهُمَّ اجْعَلْ فِي قَلْبِي نُورًا، وَفِي بَصَرِي نُورًا، وَفِي سَمْعِي نُورًا، وَعَنْ يَمِينِي نُورًا، وَعَنْ يَسَارِي نُورًا، وَاجْعَلْ لِي نُورًا (O Allah, place light in my heart, light in my sight, light in my hearing, light on my right, light on my left, and grant me light).",
+    "revelationMeaning": "Direct adherence to Surah An-Nur 24:35 is essential: Allah describes Himself as the Light of the heavens and the earth. Classical commentary explains this as the Illuminator of the heavens and the earth and the Guide of their inhabitants. Believers avoid speculative metaphysical attempts to define the physical nature of divine light, affirming that His veil is light (Sahih Muslim 179) and that His revelation is spiritual light that guides hearts out of the darkness of disbelief and ignorance into the illumination of faith.",
+    "quranicReflection": "The magnificent parable in Surah An-Nur portrays how divine guidance resonates with the pure human fitrah—'Light upon Light' (Nūrun ‘alā Nūr). Without the light of revelation, human intellect cannot navigate moral and spiritual truth.",
+    "response": "Fill your life and actions with the light of the Qur'an. Avoid dark avenues of dishonesty and sin, and let your speech and conduct bring clarity, truth, and warmth to those around you.",
+    "heroSummary": "The Light of the heavens and the earth who illuminates creation with cosmic radiance and guides hearts with divine revelation.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ لَكَ الْحَمْدُ، أَنْتَ نُورُ السَّمَاوَاتِ وَالْأَرْضِ وَمَنْ فِيهِنَّ، وَلَكَ الْحَمْدُ، أَنْتَ قَيِّمُ السَّمَاوَاتِ وَالْأَرْضِ وَمَنْ فِيهِنَّ",
+      "translation": "O Allah, to You belongs all praise; You are the Light of the heavens and the earth and all that is within them. To You belongs all praise; You are the Upholder of the heavens and the earth and all that is within them.",
+      "reference": "Sahih al-Bukhari 1120, Sahih Muslim 769"
+    },
+    "suggestedDua": null,
     "natureImage": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
-      "darkness",
-      "confusion",
       "clarity",
       "hope",
-      "guidance"
+      "guidance",
+      "darkness",
+      "peace"
     ]
   },
   {
     "id": 94,
     "arabic": "الْهَادِي",
     "transliteration": "Al-Hādī",
-    "meaning": "The Supreme Guide, The Leader of Lost Souls Home",
+    "meaning": "The Guide",
     "root": "ه-د-ي (Ha-Dal-Ya)",
-    "rootMeaning": "Signifies showing direction with tender care, gentle companionship, and loving gift-giving (hadiyyah); guiding step-by-step until the traveler arrives safely at their ultimate haven.",
+    "rootMeaning": "Signifies showing direction gently, pointing out the right path, and guiding toward a safe destination.",
     "category": "Wisdom & Knowledge",
-    "yqExplanation": "Classical scholars, notably Ibn Al-Qayyim in 'Shifa' al-'Alil', categorise divine guidance (Hidayah) into four cascading levels: 1) General guidance (Hidayah 'Ammah) granted to all creation, such as a newborn suckling instinctively or a bird migrating thousands of miles; 2) Guidance of explanation and invitation (Hidayat al-Bayan), sent through prophets and scriptures to show right from wrong; 3) Guidance of internal illumination and divine facilitation (Hidayat at-Tawfiq), wherein Allah opens the specific heart of a believer to embrace faith; and 4) Guidance to the pathways of eternal Paradise in the hereafter. Al-Hādī is the sole source of all four levels.",
-    "nakExplanation": "Linguistic analysis uncovers the profound tenderness embedded in the root 'ha-da-ya'. In classical Arabic, a gift presented out of sincere affection is called 'hadiyyah' because true guidance is never forced with harsh brutality; it is gently presented as the ultimate gift of love. Furthermore, the guide is not someone shouting directions from far away; a 'hadi' in the desert walks alongside the confused traveler, holding the lantern, warning of pits, and encouraging them forward. When you feel spiritually numb or lose your path in a bewildering modern world, Al-Hādī gently takes your hand and leads you back step by step.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "وَإِنَّ اللَّهَ لَهَادِ الَّذِينَ آمَنُوا إِلَىٰ صِرَاطٍ مُّسْتَقِيمٍ",
       "translation": "And indeed, Allah is the Guide of those who have believed to a straight path.",
-      "surah": "Al-Hajj 22:54"
+      "reference": "Surah Al-Hajj 22:54"
     },
-    "howToLive": "Constantly seek guidance with genuine humility, never arrogantly assuming you are immune to straying. Guide others with patience, empathy, and wisdom rather than harsh judgment, offering your advice as a heartfelt gift.",
-    "dua": "اللَّهُمَّ يَا هَادِيَ الْمُضِلِّينَ، اهْدِ قَلْبِي، وَثَبِّتْ قَدَمِي، وَخُذْ بِيَدِي إِلَى صِرَاطِكَ الْمُسْتَقِيمِ (O Allah, O Guide of the astray, guide my heart, make firm my footing, and take my hand to Your straight path).",
+    "revelationMeaning": "Theologians meticulously distinguish two core categories of divine guidance: 1) Guidance of instruction and clarification (Hidāyat al-Irshād wad-Dalālah), which Allah provides to all people through prophets, scripture, and intellect; and 2) Guidance of divine facilitation and heartfelt acceptance (Hidāyat at-Tawfīq wal-Ilhām), which belongs exclusively to Allah, wherein He opens and inclines the heart to embrace and act upon the truth.",
+    "quranicReflection": "Surah Al-Furqan 25:31 concludes: 'And sufficient is your Lord as a Guide and a Helper.' While human teachers can explain the path, only Al-Hadi has the power to place guidance firmly inside the human heart.",
+    "response": "Continually seek guidance in your prayers ('Ihdina as-Sirat al-Mustaqim'), never relying solely on your intellect or past righteousness. Share knowledge gently and kindly with others without arrogance.",
+    "heroSummary": "The Guide who clarifies the straight path and alone possesses the power to open hearts to faith and righteousness.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ اهْدِنِي فِيمَنْ هَدَيْتَ، وَعَافِنِي فِيمَنْ عَافَيْتَ، وَتَوَلَّنِي فِيمَنْ تَوَلَّيْتَ",
+      "translation": "O Allah, guide me among those You have guided, grant me well-being among those You have granted well-being, and take charge of me among those You have taken charge of.",
+      "reference": "Sunan Abi Dawud 1425, Jami` at-Tirmidhi 464 (Sahih)"
+    },
+    "suggestedDua": null,
     "natureImage": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "guidance",
       "doubt",
       "lost",
-      "confusion",
+      "clarity",
       "peace"
     ]
   },
@@ -2446,19 +3338,26 @@ export const NAMES_DATA = [
     "id": 95,
     "arabic": "الْبَدِيعُ",
     "transliteration": "Al-Badī‘",
-    "meaning": "The Incomparable Originator, The Creator of Unprecedented Wonders",
+    "meaning": "The Originator without precedent",
     "root": "ب-د-ع (Ba-Dal-Ayn)",
-    "rootMeaning": "Signifies originating, inventing, and fashioning something entirely unprecedented, breathtakingly novel, and without any prior model, template, or blueprint to imitate.",
+    "rootMeaning": "Signifies originating, initiating, or fashioning something entirely unprecedented without any prior model, template, or pre-existing material.",
     "category": "Creation & Sustenance",
-    "yqExplanation": "Theological analysis distinguishes Al-Badī‘ from other creative attributes like Al-Khaliq (The Creator who measures) and Al-Bari' (The Maker who brings into physical form). Human creators can design incredible buildings or compose masterworks, but they inherently manipulate preexisting materials, ideas, and templates inspired by the natural world. Allah as Al-Badī‘ originated the universe out of absolute non-existence (creation ex nihilo) without any prior prototype, material, or precedent. From the intricate geometry of a single snowflake to the spiraling choreography of galactic clusters, His artistry is wholly peerless.",
-    "nakExplanation": "Linguistic insight shows how the morphological scale 'Fa'eel' (فَعِيل) denotes not merely one who does something, but one whose very essence radiates superlative perfection in that quality. When you walk through a lush forest, look into the fractal patterns of a fern, or watch the colors shift across a twilight sky, your spirit experiences awe—'Ibtida''. Contemplating Al-Badī‘ awakens wonder and cures spiritual burnout. It reminds you that the One who painted the cosmos with such breathtaking originality can easily craft unprecedented solutions, novel openings, and beautiful chapters in your personal life.",
-    "quranAyah": {
+    "evidenceStatus": "Explicit in the Qur'an",
+    "evidence": {
       "arabic": "بَدِيعُ السَّمَاوَاتِ وَالْأَرْضِ ۖ وَإِذَا قَضَىٰ أَمْرًا فَإِنَّمَا يَقُولُ لَهُ كُن فَيَكُونُ",
       "translation": "Originator of the heavens and the earth. When He decrees a matter, He only says to it, 'Be,' and it is.",
-      "surah": "Al-Baqarah 2:117"
+      "reference": "Surah Al-Baqarah 2:117"
     },
-    "howToLive": "Appreciate the breathtaking beauty of creation around you and let it fuel your gratitude. Express positive creativity in your work, thinking outside conventional limits to solve problems and bring noble, uplifting benefit to humanity.",
-    "dua": "اللَّهُمَّ يَا بَدِيعَ السَّمَاوَاتِ وَالْأَرْضِ، يَا ذَا الْجَلَالِ وَالْإِكْرَامِ، ابْتَدِعْ لِي فِي حَيَاتِي خَيْرًا لَمْ يَخْطُرْ عَلَى بَالِي (O Allah, O Incomparable Originator of the heavens and the earth, O Possessor of Majesty and Honor, originate in my life goodness that has never crossed my mind).",
+    "revelationMeaning": "The translation 'The Originator without precedent' captures the exact linguistic and theological essence of Badī‘. Unlike human invention, which recombines preexisting materials and adapts existing concepts, Allah originated the cosmos out of nothingness without prior blueprint or precedent. His creative majesty is entirely original, flawless, and beyond comparison.",
+    "quranicReflection": "Surah Al-Baqarah 2:117 and Surah Al-An'am 6:101 declare Allah as 'Badī‘u as-samāwāti wal-arḍ.' His origination is effortless: when He decrees a matter, He merely commands 'Be,' and it comes into existence.",
+    "response": "Reflect upon the staggering diversity and beauty of the natural world as evidence of Allah's peerless origination. Cultivate constructive innovation and excellence in your work that serves humanity and honors the Creator.",
+    "heroSummary": "The Originator without precedent who brought the heavens and the earth into existence without prior blueprint or material.",
+    "authenticDua": {
+      "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِأَنَّ لَكَ الْحَمْدَ لَا إِلَٰهَ إِلَّا أَنْتَ الْمَنَّانُ بَدِيعُ السَّمَاوَاتِ وَالْأَرْضِ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ يَا حَيُّ يَا قَيُّومُ",
+      "translation": "O Allah, I ask You by virtue of all praise belonging to You; there is no deity except You, the Bestower, Originator of the heavens and the earth, O Possessor of Majesty and Honor, O Ever-Living, O Self-Sustaining.",
+      "reference": "Sunan Abi Dawud 1495, Jami` at-Tirmidhi 3544 (Sahih)"
+    },
+    "suggestedDua": null,
     "natureImage": "https://images.unsplash.com/photo-1476820865390-c52aeebb9891?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "wonder",
@@ -2472,19 +3371,26 @@ export const NAMES_DATA = [
     "id": 96,
     "arabic": "الْبَاقِي",
     "transliteration": "Al-Bāqī",
-    "meaning": "The Everlasting, The Eternal When All Else Fades",
+    "meaning": "The Everlasting",
     "root": "ب-ق-ي (Ba-Qaf-Ya)",
-    "rootMeaning": "Signifies remaining, enduring, and persisting perpetually through time without being touched by expiration, decay, interruption, or extinction.",
+    "rootMeaning": "Signifies remaining, persisting, enduring eternally, and being completely immune to cessation, decay, or expiration.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Classical philosophical and theological works note that all created existence is characterized by contingency and temporal expiration: everything in creation is either preceding its birth or accelerating toward its demise ('Kullu man 'alayha fan'). Allah alone is Al-Bāqī: His existence is intrinsically necessary (Wajib al-Wujud), having no beginning and no termination. When stars exhaust their hydrogen and collapse into darkness, when civilizations turn to dust, and when the trumpet sounds and every living soul perishes, Al-Bāqī remains in solitary, undiminished majesty. Attaching your ultimate hopes to mortal things is setting yourself up for heartbreak; anchoring to Al-Bāqī anchors you to the unshakeable.",
-    "nakExplanation": "Linguistic reflection illuminates the bittersweet reality of human existence. The most heartbreaking experience in human life is loss: youth fades, beauty wrinkles, wealth dissipates, and beloved people pass away. This universal transience leaves the heart with a quiet ache of nostalgia. The Qur'an addresses this existential ache directly: 'Wa yabqa wajhu rabbika dhu-l-jalali wal-ikram' ('And there will remain the Face of your Lord, Owner of Majesty and Honor'). When you anchor your deeds, love, and ambitions to Al-Bāqī, they transcend the decay of this world and are preserved forever in His presence.",
-    "quranAyah": {
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
       "arabic": "كُلُّ مَنْ عَلَيْهَا فَانٍ ۝ وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو الْجَلَالِ وَالْإِكْرَامِ",
-      "translation": "Everyone upon the earth will perish, and there will remain the Face of your Lord, Owner of Majesty and Honor.",
-      "surah": "Ar-Rahman 55:26-27"
+      "translation": "Everyone upon the earth will perish, and there will remain the Face of your Lord, Possessor of Majesty and Honor.",
+      "reference": "Surah Ar-Rahman 55:26-27"
     },
-    "howToLive": "Invest your precious time, energy, and resources into things that endure eternally (Al-Baqiyat As-Salihat)—charity, righteous character, and sincere worship—rather than exhausting your life chasing ephemeral worldly validation that disappears into the wind.",
-    "dua": "اللَّهُمَّ يَا بَاقِي بَعْدَ فَنَاءِ كُلِّ شَيْءٍ، ارْزُقْنِي أَعْمَالًا صَالِحَةً تَبْقَى لِي فِي أُخْرَايَ، وَلَا تَعْلِّقْ قَلْبِي بِمَا يَفْنَى (O Allah, O Everlasting after the demise of all things, grant me righteous deeds that endure for me in my hereafter, and do not attach my heart to that which perishes).",
+    "revelationMeaning": "Al-Baqi is a traditional-list formulation that requires scholarly review regarding its standalone nominal usage, while the divine attribute of everlastingness (Al-Baqā’) is explicitly established in the Qur'an through Surah Ar-Rahman 55:26-27 and Surah Al-Qasas 28:88 ('Everything will perish except His Face'). All created existence is transient, fleeting, and perishable, while Allah's existence is eternal, having no beginning and no end.",
+    "quranicReflection": "Surah Ar-Rahman powerfully contrasts universal mortality with the eternal endurance of Allah. In a world where youth fades, wealth diminishes, and loved ones depart, the soul finds comfort by attaching its ultimate devotion to the One who never dies.",
+    "response": "Invest your time, energy, and resources into deeds that endure eternally (al-bāqiyāt aṣ-ṣāliḥāt)—charity, righteous conduct, and sincere worship—rather than exhausting yourself for ephemeral worldly acclaim.",
+    "heroSummary": "The Everlasting whose existence endures perpetually, remaining in undiminished majesty when all creation perishes.",
+    "authenticDua": null,
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ يَا حَيُّ يَا بَاقِي بَعْدَ فَنَاءِ كُلِّ شَيْءٍ، ارْزُقْنَا أَعْمَالًا صَالِحَةً تَبْقَى لَنَا عِنْدَكَ، وَلَا تَعْلِّقْ قُلُوبَنَا بِمَا يَفْنَى",
+      "translation": "O Allah, O Ever-Living, O Everlasting after the passing of all things, grant us righteous deeds that endure for us in Your presence, and do not attach our hearts to that which perishes.",
+      "reference": "Traditional reverent supplication"
+    },
     "natureImage": "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "loss",
@@ -2498,51 +3404,65 @@ export const NAMES_DATA = [
     "id": 97,
     "arabic": "الْوَارِثُ",
     "transliteration": "Al-Wārith",
-    "meaning": "The Ultimate Inheritor, The Sole Survivor of Creation",
+    "meaning": "The Inheritor to whom all returns",
     "root": "و-ر-ث (Waw-Ra-Tha)",
-    "rootMeaning": "Signifies inheriting, succeeding to ownership, and receiving back all possessions and realms after temporary custodians and earthly holders have perished.",
+    "rootMeaning": "Signifies succeeding to possession and remaining after transient possessors depart; in the divine context, all ownership reverts to Him after creation passes away.",
     "category": "Majesty & Sovereignty",
-    "yqExplanation": "Theological analysis observes that earthly inheritance occurs when an owner passes away and transfers their estate to an heir. But in the divine reality, it is the creatures who pass away, leaving everything back to their true, original Creator: 'Wa lillahi mirathu as-samawati wal-ard' ('And to Allah belongs the inheritance of the heavens and the earth'). Earthly titles, deeds, borders, bank accounts, and kingdoms are mere temporary loans. When the final generation takes its last breath, all cosmic ownership reverts indisputably to Al-Wārith, who then calls out: 'Liman al-mulk al-yawm?' ('To whom belongs the kingdom this Day?').",
-    "nakExplanation": "Linguistic reflection sheds light on the folly of human possessiveness. People fight bitter legal battles, break family ties, and hoard resources over land and money, shouting 'this is mine!' But the word 'Wārith' whispers a sobering truth: you do not truly own anything; you are merely a transient tenant passing through an estate that will outlive you. When Prophet Zakariyya cried out in old age without an heir, he prayed: 'Rabbi la tadharni fardan wa Anta khayru al-warithin' ('My Lord, do not leave me alone, and You are the best of inheritors'). Entrusting your legacy to Al-Wārith removes anxiety about what will happen after you are gone.",
-    "quranAyah": {
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
       "arabic": "وَإِنَّا لَنَحْنُ نُحْيِي وَنُمِيتُ وَنَحْنُ الْوَارِثُونَ",
       "translation": "And indeed, it is We who give life and cause death, and We are the Inheritors.",
-      "surah": "Al-Hijr 15:23"
+      "reference": "Surah Al-Hijr 15:23"
     },
-    "howToLive": "Hold worldly possessions lightly with an open hand rather than a clenched fist. Leave behind a legacy of righteousness, beneficial knowledge, and upright character that will testify for you when all worldly property is inherited by Allah.",
-    "dua": "رَبِّ لَا تَذَرْنِي فَرْدًا وَأَنْتَ خَيْرُ الْوَارِثِينَ، اللَّهُمَّ اجْعَلْنَا نُورَثُ الْفِرْدَوْسَ الْأَعْلَى مَعَ النَّبِيِّينَ وَالصِّدِّيقِينَ (My Lord, do not leave me solitary, and You are the Best of inheritors. O Allah, make us inherit the Highest Paradise with the Prophets and the truthful).",
+    "revelationMeaning": "The nominal singular form Al-Warith is found in the traditional 99 Name list, while the Qur'an uses the plural form ('Wa Naḥnu al-Wārithūn' in Surah Al-Hijr 15:23 and Zakariyya's prayer: 'Wa Anta Khayrul-Wārithīn' in Surah Al-Anbiya 21:89). It is marked for evidence review as a standalone singular name. Crucially, divine inheritance must never be equated to human inheritance: human heirs receive property upon the death of a predecessor, whereas Allah was the original and true Owner all along. When temporary created owners perish, all dominion simply reverts to Him.",
+    "quranicReflection": "Surah Maryam 19:40 states: 'Indeed, it is We who will inherit the earth and whoever is upon it, and to Us they will be returned.' This reminder shatters the illusion of human possession, emphasizing that earthly wealth and land are mere loans.",
+    "response": "Hold worldly possessions with an open hand, recognizing that you are a transient trustee rather than an absolute owner. Strive to inherit the everlasting gardens of Paradise through righteousness.",
+    "heroSummary": "The Ultimate Inheritor to whom all dominion and possessions revert when all temporary owners pass away.",
+    "authenticDua": {
+      "arabic": "رَبِّ لَا تَذَرْنِي فَرْدًا وَأَنْتَ خَيْرُ الْوَارِثِينَ",
+      "translation": "My Lord, do not leave me solitary, and You are the Best of inheritors.",
+      "reference": "Surah Al-Anbiya 21:89 (The authentic prayer of Prophet Zakariyya)"
+    },
+    "suggestedDua": null,
     "natureImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "loss",
       "death",
       "legacy",
-      "loneliness",
-      "humility"
+      "humility",
+      "loneliness"
     ]
   },
   {
     "id": 98,
     "arabic": "الرَّشِيدُ",
     "transliteration": "Ar-Rashīd",
-    "meaning": "The Flawless Guide of Impeccable Wisdom and Perfect Timing",
+    "meaning": "The Guide to what is right",
     "root": "ر-ش-د (Ra-Sheen-Dal)",
-    "rootMeaning": "Signifies mature uprightness, flawless discernment, and orchestrating events with immaculate wisdom and impeccable strategy toward the most praiseworthy outcome without false steps.",
+    "rootMeaning": "Signifies mature uprightness, sound discernment, rectitude, and directing matters unerringly toward praiseworthy ends.",
     "category": "Wisdom & Knowledge",
-    "yqExplanation": "Classical scholars, including Imam Al-Ghazali in 'Al-Maqsad Al-Asna', highlight that Ar-Rashīd is the One whose actions, decrees, and timing are perfectly directed toward their optimal ends without needing consultation, correction, or hesitation. Human planners, no matter how strategic or intelligent, are plagued by unintended consequences, blind spots, and timing errors. Ar-Rashīd weaves billions of divergent circumstances, tests, heartbreaks, and unexpected meetings across history into an intricate tapestry where every single thread arrives at its intended wisdom with stunning flawlessness.",
-    "nakExplanation": "Linguistic insight shows that 'Rushd' is higher than mere knowledge ('Ilm). A person can possess multiple degrees and vast data yet act foolishly and wreck their personal life because they lack 'Rushd'—mature good judgment and practical wisdom. The young men of the Cave (Ashab al-Kahf) prayed when cornered in a terrifying impasse: 'Rabbana atina min ladunka rahmatan wa hayyi' lana min amrina rashada' ('Our Lord, grant us from Yourself mercy and facilitate for us our affair with right guidance'). When you find yourself in a complex crossroad and your mind is tangled in uncertainty, calling upon Ar-Rashīd aligns your choices and unlocks divine clarity.",
-    "quranAyah": {
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
       "arabic": "إِذْ أَوَى الْفِتْيَةُ إِلَى الْكَهْفِ فَقَالُوا رَبَّنَا آتِنَا مِن لَّدُنكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا",
       "translation": "When the youths retreated to the cave and said, 'Our Lord, grant us from Yourself mercy and facilitate for us from our affair right guidance.'",
-      "surah": "Al-Kahf 18:10"
+      "reference": "Surah Al-Kahf 18:10"
     },
-    "howToLive": "Seek wisdom and deliberate thoroughly before making major life decisions, suppressing reactive emotional impulses. When circumstances do not align with your personal timetable, trust the flawless timing and immaculate orchestration of Ar-Rashīd.",
-    "dua": "اللَّهُمَّ يَا رَشِيدُ، أَلْهِمْنِي رُشْدِي، وَأَعِذْنِي مِنْ شَرِّ نَفْسِي، وَهَيِّئْ لِي مِنْ أَمْرِي رَشَدًا يُرْضِيكَ عَنِّي (O Allah, O Flawlessly Wise Guide, inspire me with right conduct, protect me from the evil of my soul, and facilitate for me in my affairs wise guidance that pleases You).",
+    "revelationMeaning": "Ar-Rashid is preserved in the traditional list of 99 Names and requires scholarly review regarding its standalone nominal usage, as it appears in the Qur'an in nominal abstract forms (rushd, rashad) and as a description of people. The attribute signifies that Allah guides affairs to their proper, upright destination through infallible wisdom. Describing divine guidance as 'impeccable strategy' is avoided, as human concepts of strategy imply contrivance or maneuvering against limits; Allah's decree is effortless, flawlessly wise, and inherently right.",
+    "quranicReflection": "In Surah Al-Kahf, the youths sought rashad (right direction) when trapped in a seemingly hopeless situation. Allah guided their steps and preserved them in ways no human mind could have anticipated, demonstrating that divine direction leads to the most praiseworthy outcome.",
+    "response": "Seek sound guidance (rushd) from Allah before taking critical decisions. Exercise emotional discipline and wise deliberation in your daily choices, avoiding reckless or hasty impulses.",
+    "heroSummary": "The Guide to what is right who directs all affairs to their upright and praiseworthy ends with infallible wisdom.",
+    "authenticDua": null,
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ رَبَّنَا آتِنَا مِنْ لَدُنْكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا، وَأَلْهِمْنَا رُشْدَنَا، وَقِنَا شَرَّ أَنْفُسِنَا",
+      "translation": "O Allah, our Lord, grant us from Yourself mercy and facilitate for us from our affair right guidance; inspire us with our sound conduct, and protect us from the evil of ourselves.",
+      "reference": "Traditional supplication combining Surah Al-Kahf 18:10 and Sunan at-Tirmidhi 3483"
+    },
     "natureImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
-      "decisions",
       "wisdom",
-      "life path",
+      "decisions",
       "confusion",
+      "life path",
       "patience"
     ]
   },
@@ -2550,33 +3470,40 @@ export const NAMES_DATA = [
     "id": 99,
     "arabic": "الصَّبُورُ",
     "transliteration": "Aṣ-Ṣabūr",
-    "meaning": "The Supremely Patient, The One Unhurried by Provocation",
+    "meaning": "The Perfectly Patient who does not hasten punishment",
     "root": "ص-ب-ر (Sad-Ba-Ra)",
-    "rootMeaning": "Signifies steady endurance, restraint, and holding back from hasty impulse or premature reaction, calmly continuing with unwavering steadfastness until the appointed time.",
+    "rootMeaning": "Signifies patient endurance, steadfast restraint, and withholding from hasty reaction or premature retribution.",
     "category": "Mercy & Compassion",
-    "yqExplanation": "Classical theological masters note that Aṣ-Ṣabūr is one of the most astonishing, awe-inspiring attributes of the Divine. In a famous Sahih Hadith, the Prophet ﷺ declared: 'None is more patient over harm that he hears than Allah: they attribute a son to Him, yet He grants them good health and provides them sustenance.' Human patience is born of constraint, weakness, or the inability to strike back immediately. But Allah holds infinite power to annihilate any rebellious tyrant in a fraction of a millisecond; yet His Sabr is unhurried, measured, and intertwined with supreme forbearance. He extends rope to the wrongdoer, giving ample time and opportunity for sincere repentance.",
-    "nakExplanation": "Linguistic and psychological reflection offers a magnificent culmination to the 99 Names. The intensive pattern 'Fa'ool' (فَعُول) portrays patience that is constant, profound, and steady as an unshakeable bedrock. In an age of digital instant gratification, human beings have become profoundly impatient—we expect instant results, quick fixes, and immediate answers to prayers, despairing when changes take time. Contemplating Aṣ-Ṣabūr anchors the human spirit in steady maturity. It teaches you that true strength is not frantic reaction, but majestic emotional discipline and faith that divine plans blossom when the time is truly ripe.",
-    "quranAyah": {
+    "evidenceStatus": "Traditional-list formulation requiring further scholarly review",
+    "evidence": {
       "arabic": "وَاصْبِرْ وَمَا صَبْرُكَ إِلَّا بِاللَّهِ ۚ وَلَا تَحْزَنْ عَلَيْهِمْ وَلَا تَكُ فِي ضَيْقٍ مِّمَّا يَمْكُرُونَ",
       "translation": "And be patient, and your patience is not but through Allah. And do not grieve over them and do not be in distress over what they conspire.",
-      "surah": "An-Nahl 16:127"
+      "reference": "Surah An-Nahl 16:127"
     },
-    "howToLive": "Conquer hotheaded impulsiveness and quick tempers in your daily interactions. Practice patient endurance during periods of trial, steadfast consistency in your worship, and forbearance with the flaws of people who test your patience.",
-    "dua": "اللَّهُمَّ يَا صَبُورُ، أَفْرِغْ عَلَيْنَا صَبْرًا، وَثَبِّتْ أَقْدَامَنَا، وَارْزُقْنَا صَبْرًا جَمِيلًا عِنْدَ الشَّدَائِدِ، وَلَا تَحْرِمْنَا رِضَاكَ (O Allah, O Supremely Patient, pour out upon us patience, make firm our feet, grant us beautiful patience during hardships, and do not deprive us of Your good pleasure).",
+    "revelationMeaning": "As-Sabur is recorded in the traditional list of names and requires evidence review as a standalone nominal name. However, the attribute of patience (Ṣabr) is explicitly affirmed for Allah in authentic hadith: the Prophet ﷺ said: 'None is more patient over harm that he hears than Allah: they attribute a partner or son to Him, yet He pardons them and provides for them' (Sahih al-Bukhari 7378, Sahih Muslim 2804). The intensive pattern Fa'ūl denotes that Allah does not hasten punishment against wrongdoers, granting them extended respite to repent. Allah is never pressured or perturbed; His patience is sublime forbearance born of absolute power and wisdom.",
+    "quranicReflection": "Throughout the Qur'an, Allah commands the prophets to exhibit patience and reminds humanity that He gives respite to the unjust until an appointed term. His delay of punishment is not neglect or weakness, but an opening of mercy so that wayward souls may turn back.",
+    "response": "Practice patient forbearance in your daily life. Restrain hotheaded anger, do not rush to retaliate when offended, and persevere steadfastly in doing good during difficult circumstances.",
+    "heroSummary": "The Perfectly Patient who does not hasten punishment, extending respite to wrongdoers out of supreme forbearance and wisdom.",
+    "authenticDua": null,
+    "suggestedDua": {
+      "arabic": "اللَّهُمَّ أَفْرِغْ عَلَيْنَا صَبْرًا، وَثَبِّتْ أَقْدَامَنَا، وَارْزُقْنَا صَبْرًا جَمِيلًا عِنْدَ الشَّدَائِدِ، وَلَا تَحْرِمْنَا أَمْنَكَ وَرِضَاكَ",
+      "translation": "O Allah, pour out upon us patience, make firm our feet, grant us beautiful patience during hardships, and do not deprive us of Your security and pleasure.",
+      "reference": "Traditional reverent supplication invoking Surah Al-Baqarah 2:250"
+    },
     "natureImage": "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80",
     "moodTags": [
       "patience",
-      "enduring",
       "calmness",
+      "hardship",
       "anger",
-      "hardship"
+      "enduring"
     ]
   }
 ];
 
 export const CATEGORIES = [
   "All",
-  "Lafz al-Jalālah (The All-Encompassing Name)",
+  "The Name Allah",
   "Mercy & Compassion",
   "Majesty & Sovereignty",
   "Creation & Sustenance",
