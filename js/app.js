@@ -4,6 +4,29 @@ import { SITUATIONAL_THEMES } from './data/situational.js';
 import { Storage } from './storage.js';
 import { QuizManager } from './quiz.js';
 
+// Search text normalizers to eliminate diacritics / vocalization mismatches
+function normalizeArabic(str) {
+  if (!str) return '';
+  return str
+    .replace(/[\u064B-\u065F\u0670\u0640]/g, '') // remove tashkeel, dagger alif, tatweel
+    .replace(/[إأآٱ]/g, 'ا') // normalize alef variants
+    .replace(/ة/g, 'ه') // normalize teh marbuta
+    .replace(/ى/g, 'ي') // normalize alef maksura
+    .trim();
+}
+
+function normalizeLatin(str) {
+  if (!str) return '';
+  return str
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // strip combining diacritics (macrons, dots, etc.)
+    .replace(/[\u2018\u2019\u0027\u0060\u02BB\u02BC]/g, '') // strip quotes / ayin marks
+    .replace(/-/g, ' ') // convert hyphens to space so "ar-rahman" matches "ar rahman"
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 class TawheedApp {
   constructor() {
     this.names = NAMES_DATA || [];
@@ -209,13 +232,23 @@ class TawheedApp {
 
       // Search query
       if (this.searchQuery) {
-        const q = this.searchQuery.toLowerCase().trim();
-        const matchesArabic = item.arabic && item.arabic.includes(q);
-        const matchesTranslit = item.transliteration && item.transliteration.toLowerCase().includes(q);
-        const matchesMeaning = item.meaning && item.meaning.toLowerCase().includes(q);
-        const matchesRoot = item.root && item.root.toLowerCase().includes(q);
-        const matchesTags = item.moodTags && item.moodTags.some(t => t.toLowerCase().includes(q));
-        return matchesArabic || matchesTranslit || matchesMeaning || matchesRoot || matchesTags;
+        const rawQ = this.searchQuery.trim();
+        const numQ = rawQ.replace(/^#/, '').trim();
+        if (numQ && !isNaN(numQ) && String(item.id) === numQ) return true;
+
+        const isArabicQuery = /[\u0600-\u06FF]/.test(rawQ);
+        if (isArabicQuery) {
+          const normQ = normalizeArabic(rawQ);
+          const matchesArabic = item.arabic && normalizeArabic(item.arabic).includes(normQ);
+          return matchesArabic;
+        } else {
+          const normQ = normalizeLatin(rawQ);
+          const matchesTranslit = item.transliteration && normalizeLatin(item.transliteration).includes(normQ);
+          const matchesMeaning = item.meaning && normalizeLatin(item.meaning).includes(normQ);
+          const matchesRoot = item.root && normalizeLatin(item.root).includes(normQ);
+          const matchesTags = item.moodTags && item.moodTags.some(t => normalizeLatin(t).includes(normQ));
+          return matchesTranslit || matchesMeaning || matchesRoot || matchesTags;
+        }
       }
 
       return true;
@@ -231,13 +264,24 @@ class TawheedApp {
         if (!this.searchQuery) {
           showAllahCard = true;
         } else {
-          const q = this.searchQuery.toLowerCase().trim();
-          const matchesArabic = this.allahIntro.arabic && this.allahIntro.arabic.includes(q);
-          const matchesTranslit = this.allahIntro.transliteration && this.allahIntro.transliteration.toLowerCase().includes(q);
-          const matchesMeaning = this.allahIntro.meaning && this.allahIntro.meaning.toLowerCase().includes(q);
-          const matchesRoot = this.allahIntro.root && this.allahIntro.root.toLowerCase().includes(q);
-          const matchesTags = this.allahIntro.moodTags && this.allahIntro.moodTags.some(t => t.toLowerCase().includes(q));
-          showAllahCard = matchesArabic || matchesTranslit || matchesMeaning || matchesRoot || matchesTags;
+          const rawQ = this.searchQuery.trim();
+          const numQ = rawQ.replace(/^#/, '').trim();
+          if (numQ === '0') {
+            showAllahCard = true;
+          } else {
+            const isArabicQuery = /[\u0600-\u06FF]/.test(rawQ);
+            if (isArabicQuery) {
+              const normQ = normalizeArabic(rawQ);
+              showAllahCard = this.allahIntro.arabic && normalizeArabic(this.allahIntro.arabic).includes(normQ);
+            } else {
+              const normQ = normalizeLatin(rawQ);
+              const matchesTranslit = this.allahIntro.transliteration && normalizeLatin(this.allahIntro.transliteration).includes(normQ);
+              const matchesMeaning = this.allahIntro.meaning && normalizeLatin(this.allahIntro.meaning).includes(normQ);
+              const matchesRoot = this.allahIntro.root && normalizeLatin(this.allahIntro.root).includes(normQ);
+              const matchesTags = this.allahIntro.moodTags && this.allahIntro.moodTags.some(t => normalizeLatin(t).includes(normQ));
+              showAllahCard = matchesTranslit || matchesMeaning || matchesRoot || matchesTags;
+            }
+          }
         }
       }
     }
@@ -1031,14 +1075,34 @@ ${duaText}
 
 — Learned via Tawheed (The Beautiful Names of Allah)`;
 
+    const triggerSuccess = () => {
+      this.triggerCelebration('Reflection card copied to clipboard! 📋');
+    };
+
     if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).then(() => {
-        this.triggerCelebration('Reflection card copied to clipboard! 📋');
-      }).catch(() => {
-        this.triggerCelebration('Reflection copied! 📋');
+      navigator.clipboard.writeText(text).then(triggerSuccess).catch(() => {
+        this.fallbackCopyText(text, triggerSuccess);
       });
     } else {
-      this.triggerCelebration('Reflection copied! 📋');
+      this.fallbackCopyText(text, triggerSuccess);
+    }
+  }
+
+  fallbackCopyText(text, onSuccess) {
+    try {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.style.position = 'fixed';
+      textarea.style.opacity = '0';
+      textarea.style.pointerEvents = 'none';
+      document.body.appendChild(textarea);
+      textarea.focus();
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      if (onSuccess) onSuccess();
+    } catch (e) {
+      this.triggerCelebration('Reflection ready to share! 📋');
     }
   }
 
